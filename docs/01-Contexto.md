@@ -1,22 +1,22 @@
 # Introdução
+O descarte irregular de medicamentos e de suas embalagens gera riscos ambientais e de saúde, agravando problemas como a contaminação do solo e da água. Apesar disso, muitas pessoas ainda não têm acesso a informações ou alternativas acessíveis para o descarte correto desses resíduos.
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. Visando contextualizar melhor o projeto e destacar sua importância para a disciplina, que é **extensionista**, acrescente todas as informações relevantes que julgar necessárias.
+Com o objetivo de enfrentar esse problema, este projeto propõe uma solução sustentável e de impacto social, unindo farmácias, consumidores e ciclistas em uma plataforma digital. A iniciativa cria pontos de coleta em farmácias parceiras e recompensa o público que realiza o descarte adequado com descontos em produtos não medicamentosos. Outro diferencial é a substituição de entregas motorizadas por ciclistas, reduzindo a emissão de poluentes e tornando a logística mais ecológica. O projeto visa fomentar a conscientização ambiental e incentivar práticas de consumo e descarte mais responsáveis. A proposta busca beneficiar tanto o meio ambiente quanto a economia local, atingindo um público variado entre 20 e 65 anos, que inclui consumidores comuns, cuidadores e pessoas que fazem uso contínuo de medicamentos.
+
+Por se tratar de um projeto com caráter extensionista, a iniciativa ultrapassa o espaço acadêmico e busca gerar um impacto positivo direto na sociedade, ao mesmo tempo em que promove debates sobre sustentabilidade e inovação no setor farmacêutico.
 
 ## Cliente 
 A empresa parceira do projeto ECO Farma é a Drogaria Mais Saúde, localizada na Rua do Rosário, no bairro Angola, em Betim, MG, onde atua há 24 anos. Como uma drogaria comprometida com a saúde e o bem-estar da comunidade, sua missão é oferecer produtos de qualidade e um atendimento humanizado, prezando pela acessibilidade e confiança dos clientes. Seu ramo de atuação engloba a comercialização de medicamentos, produtos de higiene, cosméticos e bem-estar, atendendo a um público diverso. 
 Um dos principais desafios enfrentados é a concorrência com grandes redes de farmácias, como Drogaria Araújo, Droga Raia, entre outros, que possuem ampla presença no mercado, maior capacidade de investimento em publicidade e políticas agressivas de preços e descontos. Para se destacar, a drogaria busca constantemente inovar e aprimorar seus serviços, oferecendo um atendimento mais próximo e personalizado.
 
 ## Problema
-Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
+O descarte de medicamentos e embalagens farmacêuticas de forma inadequada é um problema silencioso, mas com grandes repercussões. Resíduos químicos de remédios descartados em lixo doméstico ou no esgoto urbano alcançam rios, lençóis freáticos e até a cadeia alimentar, afetando a saúde da população e o equilíbrio dos ecossistemas. Além dos danos ambientais, essa prática contribui para o surgimento de superbactérias, tornando o tratamento de infecções mais difícil e colocando em risco a eficácia de medicamentos essenciais.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
+Esse cenário reflete a falta de estrutura acessível para que a população realize o descarte correto desses resíduos, somado à carência de campanhas de conscientização e incentivos que estimulem boas práticas. Em paralelo, o transporte de produtos por meios motorizados, amplamente utilizado por farmácias em áreas urbanas, gera um impacto adicional, elevando os níveis de poluição do ar e contribuindo para a crise climática.
 
-O grupo pode optar por fazer uso de ferramentas como Design Thinking, que permite uma visão completa do problema.
+Diante disso, este projeto propõe uma solução inovadora que atua em duas frentes: a criação de pontos de coleta de resíduos farmacêuticos em farmácias parceiras e a implementação de um sistema de entregas sustentáveis, operado por ciclistas. A aplicação será uma plataforma online que conecta consumidores, farmácias e entregadores, proporcionando um ecossistema de logística e descarte mais responsável e ambientalmente consciente.
 
-> **Links úteis**:
-> - [Objetivos, problema de pesquisa e justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz certezas, suposições e dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O foco do projeto está em ambientes urbanos, onde o consumo de medicamentos é elevado e a produção de resíduos farmacêuticos é constante. A proposta busca transformar a relação da comunidade com o meio ambiente e com a própria saúde, promovendo uma cadeia sustentável que gera benefícios tanto para a população quanto para o setor farmacêutico.
 
 ## Objetivos
 
