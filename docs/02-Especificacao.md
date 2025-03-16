@@ -138,9 +138,11 @@ Os requisitos foram priorizados usando a técnica MoSCoW (Must have, Should have
 |RF-002| Exibir mapa interativo com geolocalização de farmácias parceiras | ALTA |
 |RF-003| Sistema de pontuação por descarte de blisters (ex: 1 blister = 10 pontos) | ALTA |
 |RF-004| Enviar notificações push sobre novos descontos e campanhas | BAIXA |
-|RF-005| Permitir que farmácias cadastrem descontos em produtos que não sejam medicamentos | MÉDIA |
+|RF-005| Permitir que farmácias cadastrem descontos em produtos que não sejam medicamentos | ALTA |
 |RF-006| Sistema de confirmação de coleta via QR Code ou foto do material descartado | MÉDIA |
 |RF-007| Permitir que ciclistas visualizem solicitações de coleta próximas | ALTA |
+|RF-008| Permitir que farmácias se cadastrem na plataforma | ALTA | 
+|RF-008| Dashboard com métricas de descarte | MÉDIA | 
 
 ### Requisitos não funcionais
 
@@ -150,7 +152,7 @@ Os requisitos foram priorizados usando a técnica MoSCoW (Must have, Should have
 |RNF-002| Código otimizado para consumo mínimo de memória e energia | MÉDIA | 
 |RNF-003| Integração com APIs de geolocalização (ex: Google Maps) | ALTA | 
 |RNF-004| Gamificação com badges para usuários que mais reciclam | BAIXA | 
-|RNF-005| Armazenamento de dados em bancos de dados otimizados para reduzir consumo de energia | BAIXA | 
+|RNF-005| Armazenamento de dados em bancos de dados otimizados para reduzir consumo de energia | ALTA | 
 |RNF-006| Suporte para português e inglês | BAIXA | 
 
 
