@@ -176,3 +176,139 @@ O projeto está restrito aos itens apresentados na tabela a seguir:
 
 <img src="https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/blob/main/docs/images/Diagrma%20caso%20de%20uso%20TI.jpeg?raw=true" alt="Diagrama de caso de uso">
 
+Documento de Casos de Uso - Sistema ECO Farma
+
+Caso de Uso: Cadastrar no sistema (Cliente)
+Nome: Cadastrar no sistema (Cliente)
+Ator: Cliente
+Pré-condição: O cliente deve fornecer os dados necessários para o cadastro.
+Fluxo Normal:
+1.	O cliente acessa o sistema.
+2.	O cliente informa os dados pessoais exigidos.
+3.	O sistema valida as informações.
+4.	O sistema confirma o cadastro e libera o acesso.
+Pós-condição: O cliente está cadastrado no sistema e pode utilizar as funcionalidades disponíveis.
+
+Caso de Uso: Cadastrar no sistema (Farmácia)
+Nome: Cadastrar no sistema (Farmácia)
+Ator: Farmácia
+Pré-condição: A farmácia deve fornecer os dados necessários para o cadastro.
+Fluxo Normal:
+1.	A farmácia acessa o sistema.
+2.	A farmácia informa os dados exigidos.
+3.	O sistema valida as informações.
+4.	O sistema confirma o cadastro e libera o acesso.
+Pós-condição: A farmácia está cadastrada no sistema e pode utilizar as funcionalidades disponíveis.
+
+Caso de Uso: Cadastrar no sistema (Ciclista)
+Nome: Cadastrar no sistema (Ciclista)
+Ator: Ciclista
+Pré-condição: O ciclista deve fornecer os dados necessários para o cadastro.
+Fluxo Normal:
+1.	O ciclista acessa o sistema.
+2.	O ciclista informa os dados exigidos.
+3.	O sistema valida as informações.
+4.	O sistema confirma o cadastro e libera o acesso.
+Pós-condição: O ciclista está cadastrado no sistema e pode utilizar as funcionalidades disponíveis.
+
+Caso de Uso: Cadastrar itens no sistema
+Nome: Cadastrar itens no sistema
+Ator: Farmácia
+Pré-condição: A farmácia deve estar cadastrada no sistema.
+Fluxo Normal:
+1.	A farmácia acessa o sistema.
+2.	A farmácia insere as informações dos itens.
+3.	O sistema valida e armazena os dados.
+Pós-condição: Os itens estão cadastrados e disponíveis no sistema.
+
+Caso de Uso: Realizar descarte dos materiais
+Nome: Realizar descarte dos materiais
+Ator: Farmácia, Cliente
+Pré-condição: O usuário deve estar cadastrado no sistema.
+Fluxo Normal:
+1.	O usuário seleciona os materiais a serem descartados.
+2.	O sistema verifica se o descarte é permitido.
+3.	O sistema confirma a operação e atualiza o estoque.
+Pós-condição: O descarte dos materiais é registrado no sistema.
+
+Caso de Uso: Receber os materiais de descarte
+Nome: Receber os materiais de descarte
+Ator: Farmácia
+Pré-condição: O cliente deve ter realizado a solicitação de descarte.
+Fluxo Normal:
+1.	A farmácia recebe os materiais.
+2.	O sistema valida a entrega.
+3.	O sistema registra o recebimento.
+Pós-condição: O material é aceito pela farmácia e registrado no sistema.
+
+Caso de Uso: Gerar solicitação de envio dos produtos solicitados
+Nome: Gerar solicitação de envio dos produtos solicitados
+Ator: Farmácia
+Pré-condição: O pedido do cliente deve estar registrado no sistema.
+Fluxo Normal:
+1.	A farmácia acessa o sistema.
+2.	A farmácia confirma os produtos a serem enviados.
+3.	O sistema registra a solicitação de envio.
+Pós-condição: O pedido está pronto para ser entregue.
+
+Caso de Uso: Gerar os cupons de desconto
+Nome: Gerar os cupons de desconto
+Ator: Farmácia
+Pré-condição: Deve haver registros de descarte válidos.
+Fluxo Normal:
+1.	A farmácia acessa o sistema.
+2.	A farmácia gera os cupons para os clientes.
+3.	O sistema valida e disponibiliza os cupons.
+Pós-condição: Os cupons são gerados e disponibilizados para os clientes.
+
+Caso de Uso: Cadastrar o cupom de desconto no sistema
+Nome: Cadastrar o cupom de desconto no sistema
+Ator: Cliente
+Pré-condição: O cliente deve possuir um cupom válido.
+Fluxo Normal:
+1.	O cliente acessa o sistema.
+2.	O cliente informa o código do cupom.
+3.	O sistema valida e registra o cupom.
+Pós-condição: O cupom é registrado e pode ser utilizado em compras futuras.
+
+Caso de Uso: Realizar compras no sistema
+Nome: Realizar compras no sistema
+Ator: Cliente
+Pré-condição: O cliente deve estar cadastrado e possuir produtos disponíveis no sistema.
+Fluxo Normal:
+1.	O cliente acessa o sistema.
+2.	O cliente seleciona os produtos desejados.
+3.	O sistema verifica disponibilidade no estoque.
+4.	O cliente finaliza a compra.
+5.	O sistema confirma a transação.
+Pós-condição: A compra é registrada e os produtos são enviados para entrega.
+
+Caso de Uso: Selecionar o delivery
+Nome: Selecionar o delivery
+Ator: Ciclista
+Pré-condição: Deve haver pedidos pendentes de entrega.
+Fluxo Normal:
+1.	O ciclista acessa o sistema.
+2.	O ciclista escolhe um pedido disponível.
+3.	O sistema confirma a seleção e atualiza o status do pedido.
+Pós-condição: O pedido está atribuído a um entregador.
+
+Caso de Uso: Entregar os produtos solicitados
+Nome: Entregar os produtos solicitados
+Ator: Ciclista
+Pré-condição: O ciclista deve ter um pedido atribuído.
+Fluxo Normal:
+1.	O ciclista retira os produtos na farmácia.
+2.	O ciclista realiza a entrega ao cliente.
+3.	O sistema confirma a entrega.
+Pós-condição: Os produtos são entregues ao cliente e o pedido é finalizado.
+
+Caso de Uso: Receber os produtos comprados
+Nome: Receber os produtos comprados
+Ator: Cliente
+Pré-condição: O cliente deve ter realizado uma compra.
+Fluxo Normal:
+1.	O cliente recebe os produtos do ciclista.
+2.	O sistema registra a entrega.
+3.	O cliente confirma o recebimento no sistema.
+Pós-condição: A compra é concluída com sucesso.
