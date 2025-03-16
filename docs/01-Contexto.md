@@ -3,9 +3,8 @@
 Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto. Visando contextualizar melhor o projeto e destacar sua importância para a disciplina, que é **extensionista**, acrescente todas as informações relevantes que julgar necessárias.
 
 ## Cliente 
-Nesta seção, devem ser apresentadas informações essenciais sobre o cliente (parceiro) para garantir um entendimento mais preciso do projeto como uma iniciativa extensionista.  
-
-Recomenda-se incluir dados como missão, visão e valores da organização, além de seu ramo de atuação, porte, nicho de mercado e principais desafios enfrentados. Também é relevante fornecer informações sobre sua localização, histórico, impacto social e possíveis demandas específicas. Quanto mais detalhadas forem essas informações, mais embasada será a análise do contexto, permitindo uma abordagem estratégica e alinhada às necessidades do cliente.
+A empresa parceira do projeto ECO Farma é a Drogaria Mais Saúde, localizada na Rua do Rosário, no bairro Angola, em Betim, MG, onde atua há 24 anos. Como uma drogaria comprometida com a saúde e o bem-estar da comunidade, sua missão é oferecer produtos de qualidade e um atendimento humanizado, prezando pela acessibilidade e confiança dos clientes. Seu ramo de atuação engloba a comercialização de medicamentos, produtos de higiene, cosméticos e bem-estar, atendendo a um público diverso. 
+Um dos principais desafios enfrentados é a concorrência com grandes redes de farmácias, como Drogaria Araújo, Droga Raia, entre outros, que possuem ampla presença no mercado, maior capacidade de investimento em publicidade e políticas agressivas de preços e descontos. Para se destacar, a drogaria busca constantemente inovar e aprimorar seus serviços, oferecendo um atendimento mais próximo e personalizado.
 
 ## Problema
 Aqui, a equipe deve fornecer uma descrição detalhada do problema a ser resolvido. Não é o momento adequado para abordar questões técnicas relacionadas ao desenvolvimento da aplicação. O objetivo é compreender e comunicar de maneira precisa qual é o desafio ou necessidade que motiva a criação da aplicação.
