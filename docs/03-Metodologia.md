@@ -62,6 +62,7 @@ Atualizado em: 16/03/2025
 | Bianca M.  | Organizar o projeto  |    27/02/2025       | 28/02/2025 | ✔️   |   27/02/2025     |
 | Bianca M.   | Protótipo |    27/02/2025     | 05/03/2025 | ✔️    |    12/03/2025 |
 | Victória G.        | Diagrama de caso de uso  |    06/03/2025        | 17/03/2025 | ✔️    |    14/03/2025   |
+| Victória G.        | Dcumentação do diagrama de caso de uso  |    06/03/2025        | 17/03/2025 | ✔️    |    14/03/2025   |
 | Camila de Paula       | Preenchimento de todas as Personas |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Camila de Paula       | Preenchimento de Requisitos Funcionais e Não Funcionais |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Camila de Paula       | Preenchimento das duas últimas referências |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
