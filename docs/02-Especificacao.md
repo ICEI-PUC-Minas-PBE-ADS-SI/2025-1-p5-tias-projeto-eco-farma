@@ -19,8 +19,8 @@ Perfil: Consumidora frequente de medicamentos para a família, preocupa-se com o
 Motivação: Quer contribuir para a reciclagem e aproveitar descontos em produtos de higiene ou alimentícios 
 
 Frustrações: 
-- Falta de pontos de coleta próximos de casa 
-- Desconhecimento sobre como blisters impactam o solo
+- Falta de conhecimento sobre os pontos de coleta próximos de sua casa 
+- Desconhecimento sobre como blisters descartados de forma incorreta impactam o meio ambiente
 
 ---------------
 
@@ -37,9 +37,7 @@ Perfil: Busca diferenciar sua farmácia como sustentável e atrair novos cliente
 Motivação: Quer reduzir custos com descarte de resíduos e aumentar o fluxo de clientes 
 
 Frustrações: 
-
 - Dificuldade em gerenciar resíduos de blisters 
-
 - Baixo engajamento em campanhas ambientais anteriores 
 
 ---------------
@@ -57,9 +55,7 @@ Perfil: Usa a bicicleta como meio de transporte e busca renda extra
 Motivação: Quer trabalhar com entregas sustentáveis e evitar empregos tradicionais poluentes 
 
 Frustrações: 
-
 - Falta de oportunidades de trabalho flexíveis que aliem renda e propósito 
-
 - Entregas via aplicativos tradicionais não valorizam sua pegada ecológica 
 
 ---------------
@@ -77,11 +73,8 @@ Perfil: Lutadora por causas ambientais, busca parcerias para aumentar a reciclag
 Motivação: Quer ampliar a capacidade de processamento de blisters (alumínio e plástico) 
 
 Frustrações: 
-
 - Dificuldade em receber blisters separados corretamente 
-
 - Falta de infraestrutura para reciclagem especializada 
-
 
 
 ## Histórias de usuários
@@ -91,8 +84,8 @@ As US abaixo foram elaboradas com base nas personas definidas e nos casos de uso
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
 |Ana Clara (Consumidora)  | Registrar-me na plataforma com e-mail e CPF | Ter um cadastro no sistema e utiliza-lo |
-|Ana Clara (Consumidora)  | Visualizar pontos de descarte | Entregar blisters no local correto |
-|Ana Clara (Consumidora)  | Converter pontos de descarte em descontos | Ter um cadastro no sistema e utiliza-lo |
+|Ana Clara (Consumidora)  | Visualizar pontos de descarte (farmácias) | Entregar blisters no local correto |
+|Ana Clara (Consumidora)  | Converter pontos de descarte em descontos | Descartar os blister de forma correta e comprar produtos com desconto |
 |Ana Clara (Consumidora)  | Acompanhar o histórico de descartes | Medir e acompanhar meu impacto ambiental |
 
 -----------
@@ -123,6 +116,7 @@ As US abaixo foram elaboradas com base nas personas definidas e nos casos de uso
 |--------------------|------------------------------------|----------------------------------------|
 |Todos os usuários | Registrar-me na plataforma com e-mail e CPF | Ter um cadastro no sistema e utiliza-lo |
 |Todos os usuários | Visualizar pontos de descarte | Entregar blisters no local correto |
+|Todos os usuários | Converter pontos de descarte em descontos | Descartar os blister de forma correta e comprar produtos com desconto |
 
 ## Requisitos
 
