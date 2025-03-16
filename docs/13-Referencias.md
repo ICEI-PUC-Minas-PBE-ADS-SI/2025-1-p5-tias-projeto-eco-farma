@@ -16,6 +16,11 @@ Machine Motors. Como as bicicletas elétricas impulsionam o delivery express. Di
 
 ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE (OPAS). Juntos para combater a resistência aos antimicrobianos. Disponível em: https://www.paho.org/pt/juntos-combater-resistencia-antimicrobianos. Acesso em: 26 fev. 2025.
 
+ABRELPE. (2023). Panorama dos Resíduos Sólidos no Brasil. Disponível em: https://www.abrema.org.br/wpcontent/uploads/dlm_uploads/2024/03/Panorama_2023_P1.pdf
+
+ONU. (2015). Objetivos de Desenvolvimento Sustentável (ODS). Disponível em: www.undp.org.
+
+
 > **Links úteis**:
 > - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/)
