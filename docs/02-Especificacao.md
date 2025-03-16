@@ -142,7 +142,13 @@ Os requisitos foram priorizados usando a técnica MoSCoW (Must have, Should have
 |RF-006| Sistema de confirmação de coleta via QR Code ou foto do material descartado | MÉDIA |
 |RF-007| Permitir que ciclistas visualizem solicitações de coleta próximas | ALTA |
 |RF-008| Permitir que farmácias se cadastrem na plataforma | ALTA | 
-|RF-008| Dashboard com métricas de descarte | MÉDIA | 
+|RF-009| Dashboard com métricas de descarte | MÉDIA | 
+|RF-010| Permitir que farmácias cadastrem itens no sistema | ALTA | 
+|RF-011| Gerar cupons de desconto para os clientes que realizarem descarte de materiais | ALTA | 
+|RF-012| Permitir que clientes cadastrem os cupons de desconto no sistema | ALTA | 
+|RF-013| Permitir que clientes realizem compras no sistema | ALTA | 
+|RF-014| Permitir que ciclistas se cadastrem no sistema | MÉDIA | 
+|RF-015| Permitir que ciclistas selecionem entregas disponíveis | ALTA |
 
 ### Requisitos não funcionais
 
