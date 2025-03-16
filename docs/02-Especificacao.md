@@ -8,19 +8,53 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Exemplo: _Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente por meio de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros._
+*1. Ana Clara, 32 anos*
+Profissão: Analista de Marketing
+Localização: Belo Horizonte - MG
+Estado civil: Casada
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Perfil: Consumidora frequente de medicamentos para a família, preocupa-se com o meio ambiente, mas não sabe como descartar blisters corretamente.
+Motivação: Quer contribuir para a reciclagem e aproveitar descontos em produtos de higiene ou alimentícios.
+Frustrações:
+- Falta de pontos de coleta próximos de casa
+- Desconhecimento sobre como blisters impactam o solo
 
-> **Links úteis**:
-> - [Rock content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+*2.  Carlos Mendes, 45 anos*
+Profissão: Farmacêutico e dono de uma rede de farmácias
+Localização: Contagem - MG
+
+Estado civil: Casado
+Perfil: Busca diferenciar sua farmácia como sustentável e atrair novos clientes.
+Motivação: Quer reduzir custos com descarte de resíduos e aumentar o fluxo de clientes.
+Frustrações:
+- Dificuldade em gerenciar resíduos de blisters
+- Baixo engajamento em campanhas ambientais anteriores
+
+*3. João Ribeiro, 28 anos*
+Profissão: Ciclista freelancer
+Localização: Belo Horizonte - MG
+Estado civil: Solteiro
+
+Perfil: Usa a bicicleta como meio de transporte e busca renda extra
+
+Motivação: Quer trabalhar com entregas sustentáveis e evitar empregos tradicionais poluentes
+
+Frustrações:
+- Falta de oportunidades de trabalho flexíveis que aliem renda e propósito
+- Entregas via aplicativos tradicionais não valorizam sua pegada ecológica
+
+*4. Mariana Costa, 50 anos*
+Profissão: Líder de uma cooperativa de reciclagem
+Localização: Betim - MG
+Estado civil: Viúva
+
+Perfil: Lutadora por causas ambientais, busca parcerias para aumentar a reciclagem de materiais complexos
+
+Motivação: Quer ampliar a capacidade de processamento de blisters
+
+Frustrações:
+- Dificuldade em receber blisters separados corretamente
+- Falta de infraestrutura para reciclagem especializada
 
 ## Histórias de usuários
 
@@ -88,6 +122,8 @@ O projeto está restrito aos itens apresentados na tabela a seguir.
 |002| O custo total do projeto não deve exceder o orçamento definido       |
 
 ## Diagrama de casos de uso
+
+<img src="https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/blob/main/docs/images/Diagrma%20caso%20de%20uso%20TI.jpeg?raw=true" alt="Diagrama de caso de uso">
 
 O diagrama de casos de uso é o próximo passo após a elicitação de requisitos. Ele utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. O diagrama contempla a fronteira do sistema e o detalhamento dos requisitos funcionais, com a indicação dos atores, casos de uso e seus relacionamentos.
 
