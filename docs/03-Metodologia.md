@@ -72,6 +72,7 @@ Atualizado em: 16/03/2025
 | Letícia R.     | Problema |   15/03/2025    |  15/03/2025  | ✔️    |     15/03/2025    |
 | Letícia R.     | Responder 8 perguntas |   15/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Letícia R.     | Slides |   15/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Walisson R.     | Clientes |   15/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 
 #### Sprint 2
 
