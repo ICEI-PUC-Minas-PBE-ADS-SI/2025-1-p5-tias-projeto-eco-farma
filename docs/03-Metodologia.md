@@ -68,6 +68,10 @@ Atualizado em: 16/03/2025
 | Camila de Paula       | Preenchimento das duas últimas referências |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Thiago Lacerda      | Preenchimento das histórias de usuário |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Thiago Lacerda      | Preenchimento das restrições |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Letícia R.     | Introdução |   15/03/2025    |  15/03/2025  | ✔️    |     15/03/2025    |
+| Letícia R.     | Problema |   15/03/2025    |  15/03/2025  | ✔️    |     15/03/2025    |
+| Letícia R.     | Responder 8 perguntas |   15/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Letícia R.     | Slides |   15/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 
 #### Sprint 2
 
