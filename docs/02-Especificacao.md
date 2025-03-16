@@ -103,8 +103,7 @@ As US abaixo foram elaboradas com base nas personas definidas e nos casos de uso
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|João Ribeiro (Ciclista)   | Receber notificações sobre blisters disponíveis para coleta | Agilizar o processo de reciclagem |
-|João Ribeiro (Ciclista)   | Confirmar a coleta de blisters via app | Garantir que receberei o pagamento pela entrega |
+|João Ribeiro (Ciclista)   | Receber notificações sobre entregas a serem feitas para o cliente | Agilizar o processo de reciclagem |
 |João Ribeiro (Ciclista)   | Acompanhar o impacto ambiental das minhas entregas | Comprovar minha contribuição para a sustentabilidade |
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
