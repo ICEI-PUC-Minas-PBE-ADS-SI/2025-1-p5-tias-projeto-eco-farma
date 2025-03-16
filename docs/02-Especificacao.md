@@ -2,9 +2,7 @@
 
 <span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto.
+Esta seção detalha os requisitos funcionais e não funcionais do Eco Farma, alinhados ao diagrama de caso de uso, personas e histórias de usuários. O objetivo é garantir que a solução atenda às necessidades dos usuários, critérios de sustentabilidade e restrições técnicas e operacionais.
 
 ## Personas
 
