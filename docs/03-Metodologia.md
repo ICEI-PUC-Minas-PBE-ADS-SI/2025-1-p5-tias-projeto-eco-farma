@@ -51,8 +51,6 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
   
 ###  Quadro de tarefas
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução:
-
 #### Sprint 1
 
 Atualizado em: 16/03/2025
@@ -89,7 +87,7 @@ Atualizado em: 01/04/2025
 | Bianca M.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
 | Bianca M.        | Processo 1 - Modelagem   | 01/04/2025     | 03/04/2025  | 📝    |                 |
 | Bianca M.       | Tabela de indicadores  | 03/04/2025     | 05/04/2025 | ❌    |                 |
-| Bianca M.        | Documentação word |  05/04/2025   | 05/04/2025| ❌    |       |
+| Bianca M.        | Documentação word |  05/04/2025   | 05/04/2025| ✔️    |   01/04/2025      |
 | AlunoK        | Script de login  |  05/04/2025    | 05/04/2025| ❌    |       |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
