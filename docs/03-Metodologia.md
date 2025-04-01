@@ -135,6 +135,6 @@ Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas platafo
 | Repositório de código fonte         | GitHub                             | http://....                            |
 | Documentos do projeto               | GitHub                             | http://....                            |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/Lpbb2Ynpk2wz6DiaEePzli/Untitled?node-id=0-1&t=47nTjxpuglSzl9sv-1|
-| Gerenciamento do projeto            | GitHub Projects                    | [http://....  ](https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/24)                          |
+| Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/24                          |
 | Hospedagem                          | Vercel                             | http://....                            |
  
