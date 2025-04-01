@@ -37,14 +37,18 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ###  Divisão de papéis
 
-> Apresente a divisão de papéis entre os membros do grupo em cada Sprint. O desejável é que, em cada Sprint, o aluno assuma papéis diferentes na equipe:
-
 #### Sprint 1
 - _Scrum master_: Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
 - Protótipos: Bianca Marques Teixeira
 - Testes: Walisson Ribeiro da Silva 
 - Documentação: Letícia Rodrigues Batista e Victoria Gonçalves da Silva
 
+#### Sprint 2
+- Scrum Master= Walisson Ribeiro da Silva 
+- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa  e Victoria Gonçalves da Silva
+- Documentação= Victoria Gonçalves da Silva e Bianca Marques Teixeira
+- Product Owner= Letícia Rodrigues Batista, Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
+  
 ###  Quadro de tarefas
 
 > Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução:
@@ -76,13 +80,19 @@ Atualizado em: 16/03/2025
 
 #### Sprint 2
 
-Atualizado em: 21/04/2024
+Atualizado em: 01/04/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| AlunaX        | Página inicial   | 01/02/2024     | 07/03/2024 | ✔️    | 05/02/2024      |
-| AlunaZ        | CSS unificado    | 03/02/2024     | 10/03/2024 | 📝    |                 |
-| AlunoY        | Página de login  | 01/02/2024     | 07/03/2024 | ⌛     |                 |
+| Bianca M.      | Diagrama Processo 1 | 24/03/2025    | 24/03/2025 | ✔️    | 24/03/2025     |
+| Bianca M.      | Diagrama Digital - Processo 1 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
+| Bianca M.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
+| Bianca M.        | Processo 1 - Modelagem   | 01/04/2025     | 03/04/2025  | 📝    |                 |
+| Bianca M.       | Tabela de indicadores  | 03/04/2025     | 05/04/2025 | ❌    |                 |
+| Bianca M.        | Documentação word |  05/04/2025   | 05/04/2025| ❌    |       |
+| AlunoK        | Script de login  |  05/04/2025    | 05/04/2025| ❌    |       |
+| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 
 
