@@ -29,15 +29,11 @@ Apresente aqui uma descrição da sua proposta, abordando seus limites e suas li
 
 ## Indicadores de desempenho
 
-Apresente aqui os principais indicadores de desempenho e algumas metas para o processo. Atenção: as informações necessárias para gerar os indicadores devem estar contempladas no diagrama de classe. Coloque no mínimo 5 indicadores.
-
-Use o seguinte modelo:
-
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
-| Percentual de reclamações | Avaliar quantitativamente as reclamações | Percentual de reclamações em relação ao total de atendimentos | Tabela Reclamações | número total de reclamações / número total de atendimentos |
-| Taxa de requisições atendidas | Melhorar a prestação de serviços medindo a porcentagem de requisições atendidas| Mede a % de requisições atendidas na semana | Tabela Solicitações | (número de requisições atendidas / número total de requisições) * 100 |
-| Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela Pedidos | (número de pedidos entregues / número total de pedidos) * 100 |
+| Redução de CO2 nas entregas | Avaliar o impacto ambiental das entregas realizadas | Mede quanto CO2 deixou de ser emitido ao utilizar métodos sustentáveis | Tabela Entregas | (distância total evitada * fator de emissão de CO2) |
+| Escolha otimizada do entregador | Melhorar a eficiência logística na entrega domiciliar| Mede a distância média entre os entregadores e as farmácias no momento da escolha | Tabela Entregadores | soma das distâncias entre entregadores e farmácias / número de entregas realizadas |
+| Garantia de pontos de coleta | Incentivar a reciclagem e o descarte correto de blisters | Mede a quantidade de cartelas inteiras coletadas | Tabela Coletas | número de blisters * 0,25 |
+| Cálculo do valor do frete | Definir um valor justo e eficiente para o custo da entrega| Mede o custo do frete com base na distância, peso do pedido e possíveis taxas adicionais | Tabela Entregas, Tabela Pedidos | (distância da entrega * custo por km) + (peso do pedido * taxa por kg) + taxas adicionais |
+| Receita gerada por assinaturas | Gerar a rentabilidade do programa de assinaturas | Mede a receita total gerada com assinaturas, considerando valor fixo e percentual sobre compras | Tabela Assinaturas, Tabela Pedidos | (número de assinaturas * valor fixo) + (2% * total de compras mensais dos assinantes) |
 
-
-Obs.: todas as informações necessárias para gerar os indicadores devem estar no diagrama de classe a ser apresentado posteriormente.
