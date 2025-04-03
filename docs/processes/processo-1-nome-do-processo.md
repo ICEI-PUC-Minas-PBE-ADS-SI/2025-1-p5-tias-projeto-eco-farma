@@ -1,20 +1,197 @@
 ### 3.3.1 Processo 1 – Entrega dos Produtos
 
-#### Diagrama AS IS
-
-(imagem)
-
 #### Diagrama TO BE
 Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentável.
 
+![TO BE Processo 1](../images/TOBE1.png)
 
-
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
- 
-![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
 
 #### Detalhamento das atividades
+
+**Solicitar Entrega**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| nome_cliente| Caixa de Texto|   obrigatório    |                   |
+| endereço_entrega|    	Área de Texto              |   obrigatório             |                   |
+| telefone_contato| Caixa de Texto   | formato: (99) 99999-9999 |                |
+| observações | Área de Texto  | opcional |           |
+| comprovante_identidade| Arquivo  | formatos permitidos: .pdf, .jpg, .png	 |           |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| continuar | Realizar pagamento  | default |
+| cancelar      |          Fim do processo                      |         cancel          |
+
+
+**Realizar pagamento**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| método_pagamento | Seleção única |  opções: cartão de crédito, débito, boleto    | cartão de crédito    |
+| valor_total     | Número |  obrigatório, maior que zero  |                   |
+| dados_cartão   |  Caixa de Texto   |   obrigatório se método for cartão    |                   |
+| validade_cartão  |  Data  |   obrigatório se método for cartão  |                   |
+| código_segurança    |   Número   |   obrigatório se método for cartão, 3 dígitos    |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+| continuar | 	Enviar pagamento | default |
+| cancelar      |          Fim do processo                      |         cancel          |
+
+
+**Receber solicitação**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Separar valor do produto e frete**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Enviar pagamento**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+**Solicitar entregador**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Enviar dados para entregador**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Coletar produto**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Entregar produto**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+**Confirmar entrega**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
+
+
+**Receber pagamento do frete**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo**          |
+| ---                  | ---                            | ---               |
+|  | 	|  |
+|  | 	|  |
+
 
 _Descreva aqui cada uma das propriedades das atividades do processo 1. 
 Devem estar relacionadas com o modelo de processo apresentado anteriormente._
@@ -44,33 +221,3 @@ _* **Arquivo** - campo de upload de documento_
 _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
-
-
-**Nome da atividade 1**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
-
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
-
-
-**Nome da atividade 2**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
