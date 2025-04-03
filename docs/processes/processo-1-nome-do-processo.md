@@ -57,16 +57,15 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 **Separar valor do produto e frete**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| ---             | ---              | ---            | ---               |
+| valor_produto|Número|   Obrigatório, maior que zero    | -                  |
+| valor_frete| Número              |   Obrigatório, maior que zero   | -                  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+| Continuar | Enviar pagamento	| default |
+| Cancelar | Fim do processo	| cancel |
 
 
 **Enviar pagamento**
