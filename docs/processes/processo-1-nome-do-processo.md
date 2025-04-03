@@ -43,14 +43,15 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 **Receber solicitação**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| tipo_pagamento | Seleção unica | Opções: cartão de crédito, débito, boleto | Cartão de crédito |
-| dados_entrega | Caixa de texto | Obrigatório | - |
-|  |  |  |  |
-|  |  |  |  |
+| ---             | ---              | ---            | ---               |
+| tipo_pagamento|Seleção única|   Opções: cartão de crédito, débito, boleo    | Cartão de ctédito                  |
+| dados_entrega|    	Área de Texto              |   obrigatório             | -                  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
-|  | 	|  |
+| ---                  | ---                            | ---               |
+| Continuar | 	Separar valor do produto e frete | default |
+| Cancelar      |          Fim do processo                      |         cancel          |
 
 
 **Separar valor do produto e frete**
