@@ -1,4 +1,13 @@
-### 3.3.1 Processo 1 – NOME DO PROCESSO
+### 3.3.1 Processo 1 – Entrega dos Produtos
+
+#### Diagrama AS IS
+
+(imagem)
+
+#### Diagrama TO BE
+Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentável.
+
+
 
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
 Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
