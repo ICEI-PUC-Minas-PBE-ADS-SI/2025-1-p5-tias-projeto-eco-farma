@@ -43,8 +43,8 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 **Receber solicitação**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-|  |  |  |  |
+| tipo_pagamento            | Seleção unica              | Opções: cartão de crédito, débito, boleto            | Cartão de crédito               |
+| dados_entrega | Área de texto | Obrigatório |  |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
@@ -52,16 +52,16 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-|  | 	|  |
+| Continuar                 | Separar valor do produto e frete                           |                |
+| Cancelar | Fim do processo	|  |
 |  | 	|  |
 
 
 **Separar valor do produto e frete**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-|  |  |  |  |
+| valor_produto             | Número              | Obrigatório, maior que zero            | -               |
+| valor_frete | Número | Obrigatório, maior que zero |  |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
