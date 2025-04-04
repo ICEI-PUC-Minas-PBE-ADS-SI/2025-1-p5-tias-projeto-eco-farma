@@ -154,10 +154,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | status_entrega | Seleção única | Opções: entregue, não entregue | - |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
@@ -172,16 +169,13 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | pagamento_frete | Número | Obrigatório, maior que zero | - |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | fim do processo | Finalizar	| default |
-|  | 	|  |
+
 
 
 _Descreva aqui cada uma das propriedades das atividades do processo 1. 
