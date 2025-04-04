@@ -153,7 +153,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
+| status_entrega | Seleção única | Opções: entregue, não entregue | - |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
@@ -162,8 +162,8 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+| entregue | Receber pagamento do frete	| default |
+| não entregue | Fazer reembolso	| cancel |
 
 
 
@@ -171,7 +171,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
+| pagamento_frete | Número | Obrigatório, maior que zero | - |
 |  |  |  |  |
 |  |  |  |  |
 |  |  |  |  |
@@ -180,7 +180,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
+| fim do processo | Finalizar	| default |
 |  | 	|  |
 
 
