@@ -45,8 +45,8 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 #### Sprint 2
 - Scrum Master= Walisson Ribeiro da Silva 
-- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa  e Victoria Gonçalves da Silva
-- Documentação= Victoria Gonçalves da Silva e Bianca Marques Teixeira
+- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa  e Victória Gonçalves da Silva
+- Documentação= Victória Gonçalves da Silva e Bianca Marques Teixeira
 - Product Owner= Letícia Rodrigues Batista, Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
   
 ###  Quadro de tarefas
