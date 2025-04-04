@@ -85,7 +85,7 @@ Atualizado em: 01/04/2025
 | Bianca M.      | Diagrama Processo 1 | 24/03/2025    | 24/03/2025 | ✔️    | 24/03/2025     |
 | Bianca M.      | Diagrama Digital - Processo 1 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Bianca M.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
-| Bianca M.        | Processo 1 - Modelagem   | 01/04/2025     | 03/04/2025  | 📝    |                 |
+| Bianca M.        | Processo 1 - Modelagem   | 01/04/2025     | 03/04/2025  | ✔️    |    04/04/2025             |
 | Bianca M.       | Tabela de indicadores  | 03/04/2025     | 05/04/2025 | ✔️    | 03/04/2025|
 | Bianca M.        | Documentação word |  05/04/2025   | 05/04/2025| ✔️    |   01/04/2025      |
 | Victória G.        | Diagrama as is processo 1  |  24/03/2025    | 05/04/2025|  ✔️   |    01/04/2025   |
