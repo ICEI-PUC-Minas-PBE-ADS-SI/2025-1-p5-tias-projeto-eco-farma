@@ -89,7 +89,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 |id_entregador  |Número  | gerado automaticamente | autogerado |
-| autogerado | Área de Texto | obrigatório |  |
+| dados_entrega | Área de Texto | obrigatório |  |
 | pagamento_frete | Número | obrigatório, maior que zero |  |
 | status_entregador | Seleção única | opções: aceitou, recusou | pendente |
 
