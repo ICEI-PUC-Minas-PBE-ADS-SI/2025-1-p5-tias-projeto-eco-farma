@@ -72,84 +72,81 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+| id_pagamento | Número | 	gerado automaticamente | 	autogerado |
+| valor_total | Número | obrigatório, maior que zero |  |
+| status_pagamento | Seleção única |opções: aprovado, pendente, recusado  |  pendente|
+| data_pagamento | Data e Hora | obrigatório se aprovado |  |
+| comprovante | Arquivo | formatos permitidos: .pdf, .jpg, .png |  |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+| Confirmar| 	Solicitar entregador| default |
+| Cancelar | Fim do processo	| cancel |
 
 **Solicitar entregador**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|id_entregador  |Número  | gerado automaticamente | autogerado |
+| autogerado | Área de Texto | obrigatório |  |
+| pagamento_frete | Número | obrigatório, maior que zero |  |
+| status_entregador | Seleção única | opções: aceitou, recusou | pendente |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+|aceitar	|Enviar dados para entregador|	default|
+|recusar	|Solicitar entregador novamente|	cancel|
 
 
 **Enviar dados para entregador**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|id_entrega	|Número|	gerado automaticamente|	autogerado|
+|nome_entregador|	Caixa de Texto|	obrigatório	||
+|dados_entrega|	Área de Texto	|obrigatório	||
+|status_entrega|	Seleção única	|opções: em andamento, finalizada	|em andamento|
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+|confirmar|	Coletar produto|	default|
+|cancelar|	Fim do processo|	cancel|
 
 
 **Coletar produto**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|id_produto|	Número	|gerado automaticamente	|autogerado|
+|descrição_produto|	Área de Texto	|obrigatório	||
+|quantidade|	Número	|obrigatório, maior que zero	||
+|status_coleta|	Seleção única	|opções: coletado, pendente	|pendente|
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+|confirmar|	Entregar produto|	default|
+|cancelar|	Fim do processo|cancel|
 
 
 **Entregar produto**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
-|  |  |  |  |
+|id_entrega	|Número|	gerado automaticamente|autogerado|
+|nome_cliente|	Caixa de Texto|	obrigatório	||
+|status_entrega|	Seleção única	|opções: entregue, não entregue	|pendente|
+|data_entrega|	Data e Hora	|obrigatório se entregue	||
+|comprovante_entrega	|Arquivo|	formatos permitidos: .pdf, .jpg, .png||
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|  | 	|  |
-|  | 	|  |
+|confirmar|	Confirmar entrega|	default|
+|cancelar|	Fim do processo|	cancel|
 
 
 **Confirmar entrega**
