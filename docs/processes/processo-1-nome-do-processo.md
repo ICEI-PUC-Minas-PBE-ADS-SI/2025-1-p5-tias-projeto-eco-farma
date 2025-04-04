@@ -44,7 +44,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| tipo_pagamento|Seleção única|   Opções: cartão de crédito, débito, boleo    | Cartão de ctédito                  |
+| tipo_pagamento|Seleção única|   Opções: cartão de crédito, débito, boleto    | Cartão de crédito                  |
 | dados_entrega|    	Área de Texto              |   obrigatório             | -                  |
 
 
