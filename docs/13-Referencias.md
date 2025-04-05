@@ -20,7 +20,9 @@ ABRELPE. (2023). Panorama dos Resíduos Sólidos no Brasil. Disponível em: http
 
 ONU. (2015). Objetivos de Desenvolvimento Sustentável (ODS). Disponível em: www.undp.org.
 
+DHEKA. 20 dicas práticas de modelagem de processos. Disponível em: https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/. Acesso em: 5 abr. 2025.
 
-> **Links úteis**:
-> - [Padrão PUC Minas de normalização ABNT](http://portal.pucminas.br/biblioteca/documentos/GUIA-COMPLETO-ABNT-Elaborar-formatar-trabalho-cientificoNOVO.pdf)
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
+DHEKA. Modelagem AS IS e TO BE: entenda a diferença. Disponível em: https://dheka.com.br/modelagem-as-is-to-be/. Acesso em: 5 abr. 2025.
+
+BPMN.IO. BPMN - Business Process Model and Notation. Disponível em: https://bpmn.io/. Acesso em: 5 abr. 2025.
+
