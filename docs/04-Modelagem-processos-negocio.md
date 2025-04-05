@@ -1,11 +1,5 @@
 # Modelagem dos processos de negócio
 
-<span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
-
-> **Links úteis**:
-> - [Modelagem de processos AS-IS x TO-BE](https://dheka.com.br/modelagem-as-is-to-be/)
-> - [20 dicas práticas de modelagem de processos](https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/)
-
 ## Modelagem da situação atual (Modelagem AS IS)
 
 Apresente uma descrição textual de como os sistemas atuais resolvem o problema que seu projeto se propõe a resolver. Caso sua proposta seja inovadora e não existam processos claramente definidos, apresente como as tarefas que seu sistema pretende implementar são executadas atualmente, mesmo que não se utilize tecnologia computacional.
@@ -24,7 +18,7 @@ Apresente aqui uma descrição da sua proposta, abordando seus limites e suas li
 
 [Processo 1 – Entrega dos Produtos](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
 
-[PROCESSO 2 - Nome do processo](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
+[Processo 2 - Coleta dos Blisters](./processes/processo-2-nome-do-processo.md "Detalhamento do processo 2.")
 
 
 ## Indicadores de desempenho
