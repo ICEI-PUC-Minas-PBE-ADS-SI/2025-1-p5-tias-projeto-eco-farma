@@ -90,7 +90,7 @@ Atualizado em: 04/04/2025
 | Bianca M.        | Documentação word |  05/04/2025   | 05/04/2025| ✔️    |   01/04/2025      |
 | Victória G.        | Diagrama as is processo 1  |  24/03/2025    | 05/04/2025|  ✔️   |    01/04/2025   |
 | Victória G.        | Modelagem processo 1 - Detalhamento das atividades  |  03/04/2025    | 05/04/2025 |   ✔️   |    04/04/2025   |
-| AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
+| Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | AlunoK        | Script de login  |  01/01/2024    | 12/03/2024 | ❌    |       |
 
 
