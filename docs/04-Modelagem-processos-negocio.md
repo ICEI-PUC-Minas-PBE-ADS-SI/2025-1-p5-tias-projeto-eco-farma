@@ -72,24 +72,20 @@ Problemas identificados:
 ![image](https://github.com/user-attachments/assets/78d4ada2-c654-4052-8541-063d9e424d6a)
 
 Proposta de solução:
-A solução proposta para a coleta de blisters introduz a automação no processo, permitindo que o cliente realize o descarte adequado de blisters diretamente nas farmácias cadastradas através de uma plataforma digital (site/app). A farmácia registra automaticamente o descarte do blister e atribui pontos e descontos ao cliente.
+A solução proposta para a coleta de blisters introduz a automação no processo, permitindo que o cliente realize o descarte adequado de blisters diretamente nas farmácias cadastradas através de uma plataforma digital. A farmácia registra automaticamente o descarte do blister e atribui pontos e descontos ao cliente.
 
 Melhorias propostas:
 - O descarte dos blisters agora é registrado diretamente na plataforma, tornando o processo mais eficiente e sem falhas.
 
 - O cliente ganha pontos que podem ser usados para futuras compras. Isso cria um incentivo para o descarte correto de resíduos farmacêuticos.
 
-- Se o cliente atingir um número mínimo de blisters, ele pode solicitar a coleta sustentável de resíduos diretamente pela plataforma, sem a necessidade de interação manual.
-
 Limitações:
-- Dependência de Farmácias Parceiras: A eficácia do sistema depende da adesão das farmácias à plataforma. Se a farmácia não estiver cadastrada, o cliente não poderá realizar o descarte na localidade desejada.
+- A eficácia do sistema depende da adesão das farmácias à plataforma. Se a farmácia não estiver cadastrada, o cliente não poderá realizar o descarte na localidade desejada.
 
 - Para aproveitar a plataforma, o cliente precisa ter acesso à internet e um smartphone ou computador, o que pode ser uma limitação para uma parte da população.
 
 Oportunidades de melhoria:
 - Incluir mais farmácias no sistema de coleta pode aumentar a cobertura e permitir que mais clientes façam o descarte corretamente.
-
-- A implementação de parcerias com recicladoras para o reaproveitamento dos blisters pode gerar mais benefícios ambientais.
 
 ## Modelagem dos processos
 
