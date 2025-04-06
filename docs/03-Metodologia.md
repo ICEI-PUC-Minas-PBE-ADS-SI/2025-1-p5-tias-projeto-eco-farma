@@ -45,7 +45,7 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 #### Sprint 2
 - Scrum Master= Walisson Ribeiro da Silva 
-- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa  e Victória Gonçalves da Silva
+- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa e Victória Gonçalves da Silva
 - Documentação= Victória Gonçalves da Silva e Bianca Marques Teixeira
 - Product Owner= Letícia Rodrigues Batista, Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
   
@@ -93,11 +93,13 @@ Atualizado em: 06/04/2025
 | Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila de Paula       |  |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila de Paula       |  |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Thiago L.      | Diagrama Digital - Processo 2 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Diagrama Digital - Processo 2 AS IS  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
-| Thiago L.        | Processo 2 - Modelagem   | 01/04/2025     | 04/04/2025  | ✔️    |    04/04/2025             |
-| Thiago L.       | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Thiago L.      | Processo 2 - Modelagem   | 01/04/2025     | 04/04/2025  | ✔️    |    04/04/2025             |
+| Thiago L.      | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 
 
 Legenda:
