@@ -89,7 +89,7 @@ Oportunidades de melhoria:
 
 ## Processo de Venda de Medicamento TO BE
 
-
+![image](https://github.com/user-attachments/assets/e977c203-4a60-47c1-a1aa-c619c972b7e2)
 
 Proposta de solução:
 O processo de venda de medicamentos será automatizado, permitindo que os clientes façam as compras diretamente pela plataforma online. A farmácia receberá os pedidos automaticamente e processará o pagamento de forma eficiente.
