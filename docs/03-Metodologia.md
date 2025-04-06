@@ -93,6 +93,8 @@ Atualizado em: 06/04/2025
 | Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Thiago L.      | Diagrama Digital - Processo 2 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
+| Thiago L.      | Diagrama Digital - Processo 2 AS IS  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 
 
 Legenda:
