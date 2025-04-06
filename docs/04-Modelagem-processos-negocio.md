@@ -32,6 +32,8 @@ Problemas identificados:
 
 ## Processo de Venda de Medicamento AS IS
 
+![image](https://github.com/user-attachments/assets/5f434add-d4cd-4883-bebf-e6fb00dc1cbf)
+
 Cliente:
 
 - O cliente escolhe os medicamentos para compra na farmácia.
