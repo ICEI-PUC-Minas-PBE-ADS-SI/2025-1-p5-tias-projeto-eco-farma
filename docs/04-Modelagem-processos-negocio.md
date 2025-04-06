@@ -72,7 +72,7 @@ Problemas identificados:
 ![image](https://github.com/user-attachments/assets/78d4ada2-c654-4052-8541-063d9e424d6a)
 
 Proposta de solução:
-A solução proposta para a coleta de blisters introduz a automação no processo, permitindo que o cliente realize o descarte adequado de blisters diretamente nas farmácias cadastradas através de uma plataforma digital. A farmácia registra automaticamente o descarte do blister e atribui pontos e descontos ao cliente.
+- A solução proposta para a coleta de blisters introduz a automação no processo, permitindo que o cliente realize o descarte adequado de blisters diretamente nas farmácias cadastradas através de uma plataforma digital. A farmácia registra automaticamente o descarte do blister e atribui pontos e descontos ao cliente.
 
 Melhorias propostas:
 - O descarte dos blisters agora é registrado diretamente na plataforma, tornando o processo mais eficiente e sem falhas.
@@ -92,24 +92,24 @@ Oportunidades de melhoria:
 ![image](https://github.com/user-attachments/assets/e977c203-4a60-47c1-a1aa-c619c972b7e2)
 
 Proposta de solução:
-O processo de venda de medicamentos será automatizado, permitindo que os clientes façam as compras diretamente pela plataforma online. A farmácia receberá os pedidos automaticamente e processará o pagamento de forma eficiente.
+- O processo de venda de medicamentos será automatizado, permitindo que os clientes façam as compras diretamente pela plataforma online. A farmácia receberá os pedidos automaticamente e processará o pagamento de forma eficiente.
 
 Melhorias propostas:
-O cliente poderá selecionar o medicamento e realizar o pagamento diretamente na plataforma ECO FARMA, sem a necessidade de interação manual.
+- O cliente poderá selecionar o medicamento e realizar o pagamento diretamente na plataforma ECO FARMA, sem a necessidade de interação manual.
 
-A farmácia receberá os pedidos diretamente da plataforma, o que agiliza o processo de preparação do medicamento e entrega ao cliente.
+- A farmácia receberá os pedidos diretamente da plataforma, o que agiliza o processo de preparação do medicamento e entrega ao cliente.
 
-O cliente receberá notificações em tempo real sobre o status de sua compra, pagamento e entrega, garantindo maior transparência e conforto.
+- O cliente receberá notificações em tempo real sobre o status de sua compra, pagamento e entrega, garantindo maior transparência e conforto.
 
 Limitações:
-A plataforma depende da participação das farmácias para que o processo funcione corretamente. Em locais onde há pouca adesão das farmácias, o processo pode não ser viável.
+- A plataforma depende da participação das farmácias para que o processo funcione corretamente. Em locais onde há pouca adesão das farmácias, o processo pode não ser viável.
 
-Para a automação ser eficaz, os clientes e farmácias precisam de conexão à internet.
+- Para a automação ser eficaz, os clientes e farmácias precisam de conexão à internet.
 
 Oportunidades de melhoria:
-A inclusão de mais métodos de pagamento pode facilitar o acesso e atrair um público maior.
+- A inclusão de mais métodos de pagamento pode facilitar o acesso e atrair um público maior.
 
-A integração com meios de transporte sustentável, como ciclistas ou veículos elétricos, pode tornar a entrega mais ecológica e alinhada aos princípios do projeto ECO FARMA.
+- A integração com meios de transporte sustentável, como ciclistas ou veículos elétricos, pode tornar a entrega mais ecológica e alinhada aos princípios do projeto ECO FARMA.
 
 ## Modelagem dos processos
 
