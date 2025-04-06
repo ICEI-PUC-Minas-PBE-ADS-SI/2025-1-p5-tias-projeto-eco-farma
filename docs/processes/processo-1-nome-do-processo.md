@@ -3,21 +3,168 @@
 #### Diagrama AS IS 
 Nesse diagrama é o processo atual de entrega de produtos.
 
-![AS IS Processo 1](../images/TOBE1.png)
+![AS IS Processo 1](../images/ASIS1.png)
 
 
 #### Detalhamento das atividades
 
-**titulo**
+**Solicitar entrega**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| | |    |     |
+|Nome do cliente|	Caixa de texto|	Obrigatório|	|
+|Contato do cliente	|Caixa de texto	|Obrigatório (WhatsApp ou telefone)|	|
+|Canal de solicitação|	Seleção única	|WhatsApp, Ligação	|WhatsApp|
+|Data/Hora da solicitação|	Data e Hora	|Obrigatório|	Data/Hora atual|
+|Observações	|Área de texto|	Opcional|	|
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| |   |  |
+|Solicitação enviada	|Farmácia	|Evento de início|
+
+---
+
+**Separar os itens solicitados**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Lista de itens	|Tabela|Obrigatório|	|
+|Estoque disponível	|Seleção única	|Sim, Não|	|
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Itens separados	|Decisão (proximidade da farmácia)	|Evento|
+
+---
+
+**Realizar entrega da encomenda (farmacêutico)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Endereço de entrega|	Caixa de texto	|Obrigatório|	|
+|Data e hora da entrega	|Data e Hora|	Obrigatório|	|
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Entrega realizada	|Cliente	|Evento|
+
+---
+
+**Receber pagamento (presencial)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Valor pago|	Número	|Obrigatório|	|
+|Forma de pagamento	|Seleção única	|Dinheiro, Cartão,Pix	|Pix|
+|Data/Hora do pagamento	|Data e Hora|	Obrigatório|	|
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Pagamento confirmado	|Fim do processo	|Evento|
+
+---
+
+**Solicitar motoboy de plataforma**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Plataforma escolhida|	Seleção única| Loggi, 99Entrega,Uber	||
+|Link da solicitação|	Link	|Obrigatório	||
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Solicitação enviada	|Entregador	|Evento|
+
+---
+
+**Receber o pagamento do cliente (PIX)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Valor total	|Número|	Obrigatório|	|
+|Chave PIX	|Caixa de texto	|Obrigatório	||
+|Comprovante|	Arquivo|	Opcional	||
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Pagamento confirmado	|Próxima atividade	|Evento|
+
+
+---
+
+**Realizar pagamento do motoboy**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Valor da entrega|	Número	|Obrigatório|	|
+|Plataforma usada|	Seleção única	|iFood, Loggi, etc.|	|
+|Comprovante	|Arquivo|	Opcional|	|
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Pagamento realizado	|Entregador|	Evento|
+
+---
+
+**Notificar cliente sobre a entrega**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Canal de notificação	|Seleção única	|WhatsApp, SMS, Telefone	|WhatsApp|
+|Mensagem enviada|	Área de texto|	Obrigatório|	|
+|Data/hora da notificação|	Data e Hora|	Obrigatório	||
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Notificação enviada|	Cliente|	Evento|
+
+---
+
+**Aceitar solicitação de entrega**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Nome do entregador	|Caixa de texto	|Obrigatório|	|
+|Data/Hora da aceitação	|Data e Hora	|Obrigatório	||
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Solicitação aceita|	Entregador|Evento|
+
+---
+
+**Realizar entrega da encomenda (entregador)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Nome do cliente	|Caixa de texto	|Obrigatório	||
+|Foto da entrega	|Imagem|	Opcional	||
+|Data/Hora da entrega	|Data e Hora|	Obrigatório|	|
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Entrega confirmada|	Cliente|	Evento|
+
+---
+
+**Receber pagamento do frete (entregador)**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+|Valor recebido|	Número|	Obrigatório|	|
+|Forma de pagamento	|Seleção única|	PIX, Dinheiro	|PIX|
+|Data/Hora	|Data e Hora	|Obrigatório|	|
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+|Pagamento finalizado|	Fim do processo	|Evento|
 
 ---
 
