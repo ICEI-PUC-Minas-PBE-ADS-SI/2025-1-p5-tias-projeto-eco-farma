@@ -4,6 +4,8 @@
 
 ## Coleta de Blister AS IS
 
+![image](https://github.com/user-attachments/assets/031a3b77-6209-48ac-8885-c0ffcb579957)
+
 A situação atual do processo de descarte de blisters e medicamentos vencidos é bastante ineficiente e não automatizada, o que gera retrabalho e desperdício de tempo tanto para os consumidores quanto para as farmácias. Atualmente, o processo envolve uma série de etapas manuais que não são integradas por nenhuma plataforma digital, o que leva a um fluxo de trabalho fragmentado e propenso a falhas.
 
 Farmácia:
