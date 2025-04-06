@@ -28,7 +28,8 @@ Problemas identificados:
 
 - A falta de incentivos e controle resulta no descarte inadequado de resíduos farmacêuticos, impactando negativamente o meio ambiente e a saúde pública.
 
-Processo de Venda de Medicamento AS IS
+## Processo de Venda de Medicamento AS IS
+
 Cliente:
 
 - O cliente escolhe os medicamentos para compra na farmácia.
