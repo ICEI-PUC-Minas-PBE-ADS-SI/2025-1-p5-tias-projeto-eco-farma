@@ -32,7 +32,7 @@ Problemas identificados:
 
 ## Processo de Venda de Medicamento AS IS
 
-![image](https://github.com/user-attachments/assets/5f434add-d4cd-4883-bebf-e6fb00dc1cbf)
+![image](https://github.com/user-attachments/assets/67598a03-be3b-47bd-8416-6ec7e03074d2)
 
 Cliente:
 
