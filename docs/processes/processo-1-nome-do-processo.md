@@ -1,5 +1,26 @@
 ### 3.3.1 Processo 1 – Entrega dos Produtos
 
+#### Diagrama AS IS 
+Nesse diagrama é o processo atual de entrega de produtos.
+
+![AS IS Processo 1](../images/TOBE1.png)
+
+
+#### Detalhamento das atividades
+
+**titulo**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| | |    |     |
+
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| |   |  |
+
+---
+
 #### Diagrama TO BE
 Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentável.
 
@@ -23,6 +44,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | continuar | Realizar pagamento  | default |
 | cancelar      |          Fim do processo                      |         cancel          |
 
+---
 
 **Realizar pagamento**
 
@@ -39,6 +61,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | continuar | 	Enviar pagamento | default |
 | cancelar      |          Fim do processo                      |         cancel          |
 
+---
 
 **Receber solicitação**
 
@@ -53,6 +76,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | Continuar | 	Separar valor do produto e frete | default |
 | Cancelar      |          Fim do processo                      |         cancel          |
 
+---
 
 **Separar valor do produto e frete**
 
@@ -67,6 +91,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | Continuar | Enviar pagamento	| default |
 | Cancelar | Fim do processo	| cancel |
 
+---
 
 **Enviar pagamento**
 
@@ -84,6 +109,8 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | Confirmar| 	Solicitar entregador| default |
 | Cancelar | Fim do processo	| cancel |
 
+---
+
 **Solicitar entregador**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
@@ -99,6 +126,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 |aceitar	|Enviar dados para entregador|	default|
 |recusar	|Solicitar entregador novamente|	cancel|
 
+---
 
 **Enviar dados para entregador**
 
@@ -115,6 +143,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 |confirmar|	Coletar produto|	default|
 |cancelar|	Fim do processo|	cancel|
 
+---
 
 **Coletar produto**
 
@@ -131,6 +160,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 |confirmar|	Entregar produto|	default|
 |cancelar|	Fim do processo|cancel|
 
+---
 
 **Entregar produto**
 
@@ -148,6 +178,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 |confirmar|	Confirmar entrega|	default|
 |cancelar|	Fim do processo|	cancel|
 
+---
 
 **Confirmar entrega**
 
@@ -156,13 +187,12 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | status_entrega | Seleção única | Opções: entregue, não entregue | - |
 
 
-
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | entregue | Receber pagamento do frete	| default |
 | não entregue | Fazer reembolso	| cancel |
 
-
+---
 
 **Receber pagamento do frete**
 
@@ -170,7 +200,7 @@ Nesse diagrama foi passado a nossa proposta de compra online e entrega sustentá
 | ---             | ---              | ---            | ---               |
 | pagamento_frete | Número | Obrigatório, maior que zero | - |
 
-
+---
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
