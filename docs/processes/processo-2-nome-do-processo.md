@@ -65,3 +65,54 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |                      |                                |                   |
+.............................................................................
+
+
+### Nome da atividade 2
+
+| Campo               | Tipo           | Restrições                          | Valor default |
+|---------------------|----------------|-------------------------------------|---------------|
+| Selecionar Medicamento | Caixa de Texto | formato de nome de medicamento      |               |
+| Escanear produto      | Imagem         | tipo de imagem do código de barras  |               |
+| Realizar pagamento    | Seleção única  | opções de pagamento (cartão, Pix, etc.) |               |
+| Exibir formas de pagamento | Seleção múltipla | opções de formas de pagamento       |               |
+| Utilizar Medicamento  | Caixa de Texto | descrição do uso do medicamento     |               |
+| Encontrou local correto de descarte? | Seleção única | opções (Sim/Não)                   |               |
+| Descarte correto      | Data e Hora    | data e hora do descarte correto     |               |
+| Descarte incorreto    | Data e Hora    | data e hora do descarte incorreto   |               |
+
+---
+
+### Comandos
+
+| [Nome do botão/link]   | Destino                          | Tipo        |
+|------------------------|----------------------------------|-------------|
+| confirmar              | Fim do processo de pagamento     | default     |
+| prosseguir             | Início da etapa de descarte      | default     |
+
+---
+
+### Nome da atividade 2
+
+| Campo               | Tipo           | Restrições                          | Valor default |
+|---------------------|----------------|-------------------------------------|---------------|
+| Selecionar Medicamento | Caixa de Texto | formato de nome de medicamento      |               |
+| Escanear produto      | Imagem         | tipo de imagem do código de barras  |               |
+| Realizar pagamento    | Seleção única  | opções de pagamento (cartão, Pix, etc.) |               |
+| Exibir formas de pagamento | Seleção múltipla | opções de formas de pagamento       |               |
+| Utilizar Medicamento  | Caixa de Texto | descrição do uso do medicamento     |               |
+| Encontrou local correto de descarte? | Seleção única | opções (Sim/Não)                   |               |
+| Descarte correto      | Data e Hora    | data e hora do descarte correto     |               |
+| Descarte incorreto    | Data e Hora    | data e hora do descarte incorreto   |               |
+
+---
+
+### Comandos
+
+| [Nome do botão/link]   | Destino                          | Tipo        |
+|------------------------|----------------------------------|-------------|
+| confirmar              | Fim do processo de pagamento     | default     |
+| prosseguir             | Início da etapa de descarte      | default     |
+
+
+
