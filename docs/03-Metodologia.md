@@ -103,7 +103,10 @@ Atualizado em: 06/04/2025
 | Camila de Paula       | Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Modelagem da situação atual (Modelagem AS IS) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila de Paula       | Descrição geral da proposta (Modelagem TO BE) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Metodologia |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila de Paula       | Metodologia |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    
+| Camila de Paula       | Documentação Word - 3.0 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila de Paula       | Documentação Word - 3.1 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila de Paula       | Documentação Word - 3.2 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Thiago L.      | Diagrama Digital - Processo 2 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Diagrama Digital - Processo 2 AS IS  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
