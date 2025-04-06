@@ -3,7 +3,15 @@
 
 <span style="color:red">Pré-requisitos: <a href="02-Especificacao.md"> Especificação do projeto</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para abordar o problema. Inclua definições sobre os ambientes de trabalho utilizados pela equipe para desenvolver o projeto. Isso abrange a relação dos ambientes utilizados, a estrutura para a gestão do código-fonte, além da definição do processo e das ferramentas por meio dos quais a equipe se organiza (gestão de equipes).
+Utilizamos ferramentas que facilitam a organização e o controle de versões:
+
+GitHub: Armazenamento do código fonte e documentos do projeto. Utilizamos GitHub Projects para o controle de tarefas e progresso.
+
+Figma: Criação do design da interface.
+
+Trabalhamos com reuniões semanais em sala de aula onde aproveitamos o momento presencial para alinhar os próximos passos, além disso, temos a interação diária via WhatsApp para acompanhamento e ajustes rápidos.
+
+O objetivo é minimizar retrabalho e garantir alinhamento entre todos do grupo.
 
 
 ## Controle de versão
