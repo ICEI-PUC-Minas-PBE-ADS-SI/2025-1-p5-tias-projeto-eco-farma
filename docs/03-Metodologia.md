@@ -95,6 +95,9 @@ Atualizado em: 06/04/2025
 | Camila de Paula       | Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Thiago L.      | Diagrama Digital - Processo 2 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Diagrama Digital - Processo 2 AS IS  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
+| Thiago L.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
+| Thiago L.        | Processo 2 - Modelagem   | 01/04/2025     | 04/04/2025  | ✔️    |    04/04/2025             |
+| Thiago L.       | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 
 
 Legenda:
