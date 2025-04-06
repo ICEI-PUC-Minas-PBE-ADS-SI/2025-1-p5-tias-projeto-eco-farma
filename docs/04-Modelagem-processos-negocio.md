@@ -87,6 +87,30 @@ Limitações:
 Oportunidades de melhoria:
 - Incluir mais farmácias no sistema de coleta pode aumentar a cobertura e permitir que mais clientes façam o descarte corretamente.
 
+## Processo de Venda de Medicamento TO BE
+
+
+
+Proposta de solução:
+O processo de venda de medicamentos será automatizado, permitindo que os clientes façam as compras diretamente pela plataforma online. A farmácia receberá os pedidos automaticamente e processará o pagamento de forma eficiente.
+
+Melhorias propostas:
+O cliente poderá selecionar o medicamento e realizar o pagamento diretamente na plataforma ECO FARMA, sem a necessidade de interação manual.
+
+A farmácia receberá os pedidos diretamente da plataforma, o que agiliza o processo de preparação do medicamento e entrega ao cliente.
+
+O cliente receberá notificações em tempo real sobre o status de sua compra, pagamento e entrega, garantindo maior transparência e conforto.
+
+Limitações:
+A plataforma depende da participação das farmácias para que o processo funcione corretamente. Em locais onde há pouca adesão das farmácias, o processo pode não ser viável.
+
+Para a automação ser eficaz, os clientes e farmácias precisam de conexão à internet.
+
+Oportunidades de melhoria:
+A inclusão de mais métodos de pagamento pode facilitar o acesso e atrair um público maior.
+
+A integração com meios de transporte sustentável, como ciclistas ou veículos elétricos, pode tornar a entrega mais ecológica e alinhada aos princípios do projeto ECO FARMA.
+
 ## Modelagem dos processos
 
 [Processo 1 – Entrega dos Produtos](./processes/processo-1-nome-do-processo.md "Detalhamento do processo 1.")
