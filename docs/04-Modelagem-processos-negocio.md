@@ -5,43 +5,42 @@
 A situação atual do processo de descarte de blisters e medicamentos vencidos é bastante ineficiente e não automatizada, o que gera retrabalho e desperdício de tempo tanto para os consumidores quanto para as farmácias. Atualmente, o processo envolve uma série de etapas manuais que não são integradas por nenhuma plataforma digital, o que leva a um fluxo de trabalho fragmentado e propenso a falhas.
 
 Processo Atual (AS IS)
-O processo atual para descarte de blisters e compra de medicamentos é descrito a seguir:
 
 Cliente:
 
-- Selecionar Medicamento: O cliente escolhe os medicamentos para compra na farmácia.
+- O cliente escolhe os medicamentos para compra na farmácia.
 
-- Realizar Pagamento: O pagamento é feito de forma tradicional, com o cliente pagando na farmácia.
+- O pagamento é feito de forma tradicional, com o cliente pagando na farmácia.
 
-- Usar Medicamento: Após o pagamento, o cliente usa o medicamento e, quando o blister (cartela de remédios) está vazio ou o medicamento vence, o cliente tem que descartá-lo.
+- Após o pagamento, o cliente usa o medicamento e, quando o blister está vazio ou o medicamento vence, o cliente tem que descartá-lo.
 
-- Descarte de Blister: O cliente não tem um processo claro para o descarte dos resíduos. Se o local de descarte correto for encontrado, o cliente pode realizar o descarte adequado, caso contrário, o descarte é feito de forma inadequada (gerando impactos ambientais e de saúde pública).
+- O cliente não tem um processo claro para o descarte dos resíduos e acaba fazendo o descarte incorreto.
 
 Farmácia:
 
-- Escanear Produto: A farmácia realiza o escaneamento do produto para registro de venda.
+- A farmácia realiza o escaneamento do produto para registro de venda.
 
-- Exibir Formas de Pagamento: A farmácia informa ao cliente as formas de pagamento disponíveis.
+- A farmácia informa ao cliente as formas de pagamento disponíveis.
 
-- Entrega do Produto: Após o pagamento, a farmácia entrega o medicamento ao cliente.
+- Após o pagamento, a farmácia entrega o medicamento ao cliente.
 
-- Descarte: No processo atual, a farmácia não tem um procedimento estruturado para lidar com o descarte de blisters e medicamentos vencidos, o que resulta em ausência de incentivo para práticas sustentáveis.
+- No processo atual, a farmácia tem um procedimento estruturado para lidar com o descarte de blisters e medicamentos vencidos, onde existe uma empresa terceirizada que coleta esses resíduos (a farmácia paga um x valor por kg de resíduos para que a empresa terceirizada leve embora e faça o descarte/uso correto do material), fazendo o descarte correto.
 
 Pontos de ineficiência e retrabalho
-- Descarte Inadequado: A falta de pontos de coleta adequados e a ausência de incentivos resultam no descarte inadequado de blisters e medicamentos, o que agrava a contaminação ambiental.
+- A falta de pontos de coleta adequados e a ausência de incentivos resultam no descarte inadequado de blisters e medicamentos, o que agrava a contaminação ambiental.
 
-- Falta de Automação: O processo de descarte e coleta não é automatizado, o que gera um ciclo ineficiente de idas e vindas entre o cliente e a farmácia, sem um sistema centralizado para registrar e controlar o descarte.
+- O processo de descarte e coleta não é automatizado, o que gera um ciclo ineficiente de idas e vindas entre o cliente e a farmácia, sem um sistema centralizado para registrar e controlar o descarte.
 
-- Ausência de Incentivos: Não há um sistema que incentive o cliente a realizar o descarte correto de medicamentos. Sem recompensas, muitos clientes continuam descartando os resíduos de forma inadequada.
+- Não há um sistema que incentive o cliente a realizar o descarte correto de medicamentos. Sem recompensas, muitos clientes continuam descartando os resíduos de forma inadequada.
 
-- Falta de Logística Sustentável: O processo de entrega e coleta não é sustentável, pois não há um fluxo de transporte ecologicamente correto para levar os resíduos de medicamentos até um local de reciclagem.
+- O processo de entrega e coleta não é sustentável, pois não há um fluxo de transporte ecologicamente correto para levar os resíduos de medicamentos até um local de reciclagem.
 
-Problemas Identificados:
-- Falta de Conectividade entre os Atores: Cliente, farmácia e processo de coleta estão desconectados. Não há uma integração entre as partes.
+Problemas identificados:
+- Cliente, farmácia e processo de coleta estão desconectados. Não há uma integração entre as partes.
 
-- Desperdício e Ineficiência: O processo atual depende de ações manuais que tornam o processo lento e suscetível a erros e falhas. Além disso, não há um sistema de monitoramento para avaliar o impacto ambiental.
+- O processo atual depende de ações manuais que tornam o processo lento e suscetível a erros e falhas. Além disso, não há um sistema de monitoramento para avaliar o impacto ambiental.
 
-- Impacto Ambiental: A falta de incentivos e controle resulta no descarte inadequado de resíduos farmacêuticos, o que impacta negativamente o meio ambiente e a saúde pública.
+- A falta de incentivos e controle resulta no descarte inadequado de resíduos farmacêuticos, o que impacta negativamente o meio ambiente e a saúde pública.
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
