@@ -73,9 +73,9 @@ Atualizado em: 16/03/2025
 | Bianca M.   | Protótipo |    27/02/2025     | 05/03/2025 | ✔️    |    12/03/2025 |
 | Victória G.        | Diagrama de caso de uso  |    06/03/2025        | 17/03/2025 | ✔️    |    14/03/2025   |
 | Victória G.        | Dcumentação do diagrama de caso de uso  |    06/03/2025        | 17/03/2025 | ✔️    |    14/03/2025   |
-| Camila de Paula       | Preenchimento de todas as Personas |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
-| Camila de Paula       | Preenchimento de Requisitos Funcionais e Não Funcionais |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
-| Camila de Paula       | Preenchimento das duas últimas referências |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Camila P     | Preenchimento de todas as Personas |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Camila P      | Preenchimento de Requisitos Funcionais e Não Funcionais |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
+| Camila P       | Preenchimento das duas últimas referências |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Thiago L.      | Preenchimento das histórias de usuário |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Thiago L.      | Preenchimento das restrições |   16/03/2025    |  16/03/2025  | ✔️    |     16/03/2025    |
 | Letícia R.     | Introdução |   15/03/2025    |  15/03/2025  | ✔️    |     15/03/2025    |
@@ -99,14 +99,14 @@ Atualizado em: 06/04/2025
 | Victória G.        | Diagrama as is processo 1  |  24/03/2025    | 05/04/2025|  ✔️   |    01/04/2025   |
 | Victória G.        | Modelagem processo 1 - Detalhamento das atividades  |  03/04/2025    | 05/04/2025 |   ✔️   |    04/04/2025   |
 | Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Modelagem da situação atual (Modelagem AS IS) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Descrição geral da proposta (Modelagem TO BE) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Metodologia |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    
-| Camila de Paula       | Documentação Word - 3.0 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Documentação Word - 3.1 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
-| Camila de Paula       | Documentação Word - 3.2 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P     | Presencial - Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P      | Presencial - Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P     | Github - Modelagem da situação atual (Modelagem AS IS) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P      | Github - Descrição geral da proposta (Modelagem TO BE) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P      | Github - Metodologia |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    
+| Camila P       | Documentação Word - 3.0 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P      | Documentação Word - 3.1 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Camila P     | Documentação Word - 3.2 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Thiago L.      | Diagrama Digital - Processo 2 TO BE  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Diagrama Digital - Processo 2 AS IS  | 30/03/2025    | 31/03/2025 | ✔️    | 31/03/2025     |
 | Thiago L.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
