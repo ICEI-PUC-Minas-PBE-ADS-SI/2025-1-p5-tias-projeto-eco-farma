@@ -112,6 +112,7 @@ Atualizado em: 06/04/2025
 | Thiago L.      | Editar Diagrama  | 01/04/2025    | 01/04/2025 | ✔️    | 01/04/2025     |
 | Thiago L.      | Processo 2 - Modelagem   | 01/04/2025     | 04/04/2025  | ✔️    |    04/04/2025             |
 | Thiago L.      | Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Thiago L       | Documentação Word - 3.3 |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 
 
 Legenda:
