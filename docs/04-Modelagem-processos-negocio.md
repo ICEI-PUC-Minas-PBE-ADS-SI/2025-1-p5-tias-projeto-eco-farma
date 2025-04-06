@@ -2,7 +2,7 @@
 
 ## Modelagem da situação atual (Modelagem AS IS)
 
-## Coleta de Blister AS IS
+### Coleta de Blister AS IS
 
 ![image](https://github.com/user-attachments/assets/031a3b77-6209-48ac-8885-c0ffcb579957)
 
@@ -30,7 +30,7 @@ Problemas identificados:
 
 - A falta de incentivos e controle resulta no descarte inadequado de resíduos farmacêuticos, impactando negativamente o meio ambiente e a saúde pública.
 
-## Processo de Venda de Medicamento AS IS
+### Processo de Venda de Medicamento AS IS
 
 ![image](https://github.com/user-attachments/assets/67598a03-be3b-47bd-8416-6ec7e03074d2)
 
@@ -67,7 +67,7 @@ Problemas identificados:
 
 ## Descrição geral da proposta (Modelagem TO BE)
 
-## Coleta de Blister TO BE
+### Coleta de Blister TO BE
 
 ![image](https://github.com/user-attachments/assets/78d4ada2-c654-4052-8541-063d9e424d6a)
 
@@ -87,7 +87,7 @@ Limitações:
 Oportunidades de melhoria:
 - Incluir mais farmácias no sistema de coleta pode aumentar a cobertura e permitir que mais clientes façam o descarte corretamente.
 
-## Processo de Venda de Medicamento TO BE
+### Processo de Venda de Medicamento TO BE
 
 ![image](https://github.com/user-attachments/assets/e977c203-4a60-47c1-a1aa-c619c972b7e2)
 
