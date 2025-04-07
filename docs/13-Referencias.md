@@ -20,7 +20,7 @@ ONU – ORGANIZAÇÃO DAS NAÇÕES UNIDAS. **Objetivos de Desenvolvimento Susten
 
 OPAS – ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. **Juntos para combater a resistência aos antimicrobianos**. Brasília: OPAS, 2022.
 
-PILBOX BRASIL. **Como melhorar a adesão dos pacientes aos medicamentos com essa ferramenta simples. [S. l.]: PILBOX Brasil, [s. d.].
+PILBOX BRASIL. **Como melhorar a adesão dos pacientes aos medicamentos com essa ferramenta simples**. [S. l.]: PILBOX Brasil, [s. d.].
 
 STACHEWSKI, Ana Laura. **Eles criaram um serviço de entregas sustentável e movido a bicicletas**. Revista Pequenas Empresas & Grandes Negócios, São Paulo, 10 abr. 2019.
 
