@@ -101,6 +101,7 @@ Atualizado em: 06/04/2025
 | Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Letícia R.        | Atualizar tarefas no Kanban  |  06/04/2025    | 07/04/2025 | ✔️    |   07/04/2025    |
 | Letícia R.        | Preencher CITATION  |  07/04/2025    | 07/04/2025 | ✔️    |   07/04/2025    |
+| Letícia R.     | Presencial - Visita na empresa |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila P     | Presencial - Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila P      | Presencial - Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila P     | Github - Modelagem da situação atual (Modelagem AS IS) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
