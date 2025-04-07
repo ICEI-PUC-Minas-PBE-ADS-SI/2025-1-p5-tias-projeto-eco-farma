@@ -99,6 +99,8 @@ Atualizado em: 06/04/2025
 | Victória G.        | Diagrama as is processo 1  |  24/03/2025    | 05/04/2025|  ✔️   |    01/04/2025   |
 | Victória G.        | Modelagem processo 1 - Detalhamento das atividades  |  03/04/2025    | 05/04/2025 |   ✔️   |    04/04/2025   |
 | Letícia R.        | Slides  |  03/03/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
+| Letícia R.        | Atualizar tarefas no Kanban  |  06/04/2025    | 07/04/2025 | ✔️    |   07/04/2025    |
+| Letícia R.        | Preencher CITATION  |  07/04/2025    | 07/04/2025 | ✔️    |   07/04/2025    |
 | Camila P     | Presencial - Ir à farmácia e conversar com stakeholder principal |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila P      | Presencial - Assinatura do responsável pela empresa na carta de apresentação |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
 | Camila P     | Github - Modelagem da situação atual (Modelagem AS IS) |  05/04/2025    | 05/04/2025 | ✔️    |   05/04/2025    |
