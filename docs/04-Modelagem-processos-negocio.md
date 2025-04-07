@@ -126,5 +126,5 @@ Oportunidades de melhoria:
 | Escolha otimizada do entregador | Melhorar a eficiência logística na entrega domiciliar| Mede a distância média entre os entregadores e as farmácias no momento da escolha | Tabela Entregadores | soma das distâncias entre entregadores e farmácias / número de entregas realizadas |
 | Garantia de pontos de coleta | Incentivar a reciclagem e o descarte correto de blisters | Mede a quantidade de cartelas inteiras coletadas | Tabela Coletas | número de blisters * 0,25 |
 | Cálculo do valor do frete | Definir um valor justo e eficiente para o custo da entrega| Mede o custo do frete com base na distância, peso do pedido e possíveis taxas adicionais | Tabela Entregas, Tabela Pedidos | (distância da entrega * custo por km) + (peso do pedido * taxa por kg) + taxas adicionais |
-| Receita gerada por assinaturas | Gerar a rentabilidade do programa de assinaturas | Mede a receita total gerada com assinaturas, considerando valor fixo e percentual sobre compras | Tabela Assinaturas, Tabela Pedidos | (número de assinaturas * valor fixo) + (2% * total de compras mensais dos assinantes) |
+| Receita gerada por assinaturas | Gerar a rentabilidade do programa de assinaturas | Mede a receita total gerada com assinaturas, considerando valor fixo e percentual sobre compras | Tabela Assinaturas, Tabela Pedidos | (número de assinaturas * valor fixo) |
 
