@@ -1,9 +1,10 @@
 # Introdução
-O descarte irregular de medicamentos e de suas embalagens gera riscos ambientais e de saúde, agravando problemas como a contaminação do solo e da água. Apesar disso, muitas pessoas ainda não têm acesso a informações ou alternativas acessíveis para o descarte correto desses resíduos.
+O descarte inadequado de medicamentos e suas embalagens gera sérios riscos ambientais e de saúde, como a contaminação do solo e da água, além do aumento da resistência bacteriana. No entanto, a falta de acesso a informações e alternativas adequadas para o descarte correto ainda é um grande obstáculo. A prática inadequada de descarte contribui para o agravamento de problemas de saúde pública e o desequilíbrio ecológico. Este projeto propõe uma solução sustentável e de impacto social ao criar uma plataforma digital que conecta farmácias, consumidores e ciclistas. 
 
-Com o objetivo de enfrentar esse problema, este projeto propõe uma solução sustentável e de impacto social, unindo farmácias, consumidores e ciclistas em uma plataforma digital. A iniciativa cria pontos de coleta em farmácias parceiras e recompensa o público que realiza o descarte adequado com descontos em produtos não medicamentosos. Outro diferencial é a substituição de entregas motorizadas por ciclistas, reduzindo a emissão de poluentes e tornando a logística mais ecológica. O projeto visa fomentar a conscientização ambiental e incentivar práticas de consumo e descarte mais responsáveis. A proposta busca beneficiar tanto o meio ambiente quanto a economia local, atingindo um público variado entre 20 e 65 anos, que inclui consumidores comuns, cuidadores e pessoas que fazem uso contínuo de medicamentos.
+A iniciativa oferece pontos de coleta em farmácias parceiras, onde os consumidores podem realizar o descarte adequado de medicamentos e embalagens, recebendo em troca descontos em produtos não medicamentosos. Além disso, substitui as entregas motorizadas por ciclistas, reduzindo a emissão de poluentes e promovendo uma logística mais ecológica. Com um caráter extensionista, o projeto vai além do ambiente acadêmico, buscando gerar um impacto positivo na sociedade. Além de promover a conscientização ambiental, a proposta estimula práticas mais responsáveis de consumo e descarte, beneficiando o meio ambiente, a economia local e um público diversificado, que inclui consumidores, cuidadores e pessoas em uso contínuo de medicamentos.
 
-Por se tratar de um projeto com caráter extensionista, a iniciativa ultrapassa o espaço acadêmico e busca gerar um impacto positivo direto na sociedade, ao mesmo tempo em que promove debates sobre sustentabilidade e inovação no setor farmacêutico.
+O projeto visa resolver os problemas de descarte inadequado de resíduos farmacêuticos e o impacto das entregas motorizadas em ambientes urbanos. Ao conectar consumidores e farmácias em um ecossistema sustentável, o projeto promove uma mudança no comportamento da comunidade, incentivando práticas responsáveis e gerando benefícios tanto para a população quanto para o setor farmacêutico.
+
 
 ## Cliente 
 A empresa parceira do projeto ECO Farma é a Drogaria Mais Saúde, localizada na Rua do Rosário, no bairro Angola, em Betim, MG, onde atua há 24 anos. Como uma drogaria comprometida com a saúde e o bem-estar da comunidade, sua missão é oferecer produtos de qualidade e um atendimento humanizado, prezando pela acessibilidade e confiança dos clientes. Seu ramo de atuação engloba a comercialização de medicamentos, produtos de higiene, cosméticos e bem-estar, atendendo a um público diverso. 
@@ -20,20 +21,25 @@ O foco do projeto está em ambientes urbanos, onde o consumo de medicamentos é 
 
 ## Objetivos
 
-O projeto tem como principal objetivo incentivar a reciclagem tanto dos blisters de medicamentos quanto remédios vencidos por meio de um sistema de troca que oferece benefícios aos consumidores. Para isso, as farmácias que possuem o ponto de coleta podem ser cadastrados no site, e os usuários que descartarem corretamente esses materiais poderão receber descontos em suas compras em itens que não são medicamentos (produtos alimentícios, itens de higiene, etc.).
+O projeto tem como principal objetivo incentivar a reciclagem tanto dos blisters de medicamentos quanto de remédios vencidos, por meio de um sistema de troca que oferece benefícios aos consumidores. As farmácias que atuam como pontos de coleta podem ser cadastradas na plataforma digital, e os usuários que realizarem o descarte correto desses materiais poderão receber descontos em compras de itens não medicamentosos, como produtos alimentícios, itens de higiene, entre outros.
 
-Além disso, buscamos tornar o serviço de delivery das farmácias mais sustentável, substituindo os meios de transporte poluentes por ciclistas cadastrados em nossa plataforma. Dessa forma, pretendemos reduzir o impacto ambiental causado pelo descarte inadequado de resíduos e pela logística tradicional de entrega.
-
+Além disso, o projeto propõe tornar o serviço de delivery das farmácias mais sustentável, substituindo os meios de transporte poluentes por ciclistas cadastrados na plataforma. Essa iniciativa busca reduzir o impacto ambiental causado pelo descarte inadequado de resíduos e pela logística tradicional de entrega.
 Os objetivos específicos incluem:
 
-- **Criar uma rede de farmácias parceiras** que atuem como pontos de coleta de blisters.
-- **Desenvolver uma plataforma digital** para conectar consumidores, farmácias e ciclistas entregadores.
-- **Incentivar a conscientização ambiental** sobre o descarte adequado dos resíduos.
-- **Reduzir a pegada de carbono** associada à entrega de medicamentos e produtos farmacêuticos.
+- Criar uma rede de farmácias parceiras que atuam como pontos de coleta de blisters e medicamentos vencidos;
+- Desenvolver uma plataforma digital para conectar consumidores, farmácias e ciclistas entregadores;
+- Incentivar a conscientização ambiental sobre o descarte adequado dos resíduos farmacêuticos;
+- Reduzir a pegada de carbono associada à entrega de medicamentos e produtos farmacêuticos.
+
 
 ## Justificativa
 
-O descarte inadequado, especialmente de antibióticos, contribui para o aumento da resistência bacteriana, um problema que afeta diretamente a saúde humana e o meio ambiente. O projeto criado visa conscientizar a população sobre a importância do descarte correto de medicamentos, evitando a contaminação do solo, da água e dos alimentos. Além disso, a proposta do delivery ecológico se destaca por ser uma alternativa sustentável às entregas motorizadas, reduzindo a emissão de gases prejudiciais à camada de ozônio e ao aquecimento global. Essa opção, além de ser ambientalmente responsável, mantém a mesma eficiência logística e ainda apresenta um custo reduzido. Queremos ampliar o conhecimento sobre esses temas, que ainda são pouco discutidos, mas possuem um impacto significativo na natureza. Com o avanço da tecnologia e o alcance da internet, nosso site facilitará a disseminação dessas informações, promovendo uma conscientização mais ampla e acessível. 
+O descarte inadequado de medicamentos, especialmente de antibióticos, contribui significativamente para o aumento da resistência bacteriana, um problema que afeta diretamente a saúde humana e o meio ambiente. Segundo dados do Ministério da Saúde, a poluição causada por atividades humanas têm um papel significativo no agravamento da resistência antimicrobiana (RAM) no meio ambiente. Em 2019, a resistência bacteriana esteve associada a cerca de 5 milhões de mortes em todo o mundo, sendo que aproximadamente 1,3 milhão dessas mortes foram diretamente causadas pela RAM.
+
+Diante desse cenário preocupante, medidas preventivas como o tratamento adequado de resíduos provenientes de áreas urbanas, atividades agrícolas e processos industriais tornam-se fundamentais para conter a disseminação da resistência microbiana e proteger a saúde pública. O projeto tem como objetivo conscientizar a população sobre a importância do descarte correto desses produtos, evitando a contaminação do solo, da água e dos alimentos. A proposta do delivery ecológico também se destaca como uma alternativa sustentável às entregas motorizadas, reduzindo a emissão de gases prejudiciais à camada de ozônio e ao agravamento do aquecimento global. 
+
+Essa solução, além de ambientalmente responsável, mantém a mesma eficiência logística e ainda apresenta um custo reduzido. O projeto busca ampliar o conhecimento sobre esses temas, que ainda são pouco discutidos, mas que geram impactos significativos na natureza. Com o avanço da tecnologia e o amplo alcance da internet, a plataforma desenvolvida facilitará a disseminação dessas informações, promovendo uma conscientização mais ampla e acessível.
+
 
 ## Público-alvo
 
