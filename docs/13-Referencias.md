@@ -1,28 +1,27 @@
 # Referências
 
-Ministério da Saúde (Brasil). Prevenindo juntos a resistência antimicrobiana: 18 a 24/11 Semana Mundial de Conscientização sobre Antimicrobianos. Disponível em: https://bvsms.saude.gov.br/prevenindo-juntos-a-resistencia-antimicrobiana-18-a-24-11-semana-mundial-de-conscientizacao-sobre-antimicrobianos/. Acesso em: 26 fev. 2025.
+ABRELPE – ASSOCIAÇÃO BRASILEIRA DE EMPRESAS DE LIMPEZA PÚBLICA E RESÍDUOS ESPECIAIS. **Panorama dos resíduos sólidos no Brasil**. São Paulo: ABRELPE, 2023.
 
-Ministério da Saúde (Brasil). Síntese de evidências para políticas de saúde: tratamento medicamentoso. Brasília: Ministério da Saúde, 2018. Disponível em: https://bvsms.saude.gov.br/bvs/publicacoes/sintese_evidencias_politicas_tratamento_medicamentoso.pdf. Acesso em: 26 fev. 2025.
+BPMN.IO. **BPMN - Business Process Model and Notation**. [S. l.]: [s. n.], [s. d.].
 
-PILBOX Brasil. Como melhorar a adesão dos pacientes aos medicamentos com essa ferramenta simples. Disponível em: https://blog.pilboxbrasil.com.br/como-melhorar-a-adesao-dos-pacientes-aos-medicamentos-com-essa-ferramenta-simples/. Acesso em: 26 fev. 2025.
+DHEKA. **20 dicas práticas de modelagem de processos**. [S. l.]: [s. n.], [s. d.].
 
-Universidade Federal do Vale do São Francisco. Descarte de medicamentos vencidos: como e onde descartar corretamente. Disponível em: https://portais.univasf.edu.br/sustentabilidade/noticias-sustentaveis/descarte-de-medicamentos-vencidos-como-e-onde-descartar-corretamente. Acesso em: 26 fev. 2025.
+DHEKA. **Modelagem AS IS e TO BE: entenda a diferença**. [S. l.]: [s. n.], [s. d.].
 
-Governo Federal (Brasil). Do armazenamento ao descarte: saiba como guardar remédios ou jogar fora os que estão em desuso. Disponível em: https://www.gov.br/pt-br/noticias/saude-e-vigilancia-sanitaria/2022/12/do-armazenamento-ao-descarte-saiba-como-guardar-remedios-ou-jogar-fora-os-que-estao-em-desuso. Acesso em: 26 fev. 2025.
+GOVERNO FEDERAL (Brasil). **Do armazenamento ao descarte: saiba como guardar remédios ou jogar fora os que estão em desuso**. Brasília: Governo Federal, 2022.
 
-STACHEWSKI, Ana Laura. Eles criaram um serviço de entregas sustentável e movido a bicicletas. Revista Pequenas Empresas & Grandes Negócios, 10 abr. 2019. Disponível em: https://revistapegn.globo.com/Banco-de-ideias/E-commerce/noticia/2019/04/eles-criaram-um-servico-de-entregas-sustentavel-e-movido-bicicletas.html. Acesso em: 26 fev. 2025.
+MACHINE MOTORS. **Como as bicicletas elétricas impulsionam o delivery express**. [S. l.]: Machine Motors, [s. d.].
 
-Machine Motors. Como as bicicletas elétricas impulsionam o delivery express. Disponível em: https://machinemotors.com.br/blog/post/bicicletas-eletricas-delivery-express-meio-ambiente-entregadores?srsltid=AfmBOoqqzjP2I9Mp8qqs4Bm_pkWAC4i6b2acK9DIWitKE0FxfYqLTgCZ. Acesso em: 26 fev. 2025.
+MINISTÉRIO DA SAÚDE (Brasil). **Prevenindo juntos a resistência antimicrobiana: 18 a 24/11 Semana Mundial de Conscientização sobre Antimicrobianos**. Brasília: Ministério da Saúde, 2022.
 
-ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE (OPAS). Juntos para combater a resistência aos antimicrobianos. Disponível em: https://www.paho.org/pt/juntos-combater-resistencia-antimicrobianos. Acesso em: 26 fev. 2025.
+MINISTÉRIO DA SAÚDE (Brasil). **Síntese de evidências para políticas de saúde: tratamento medicamentoso**. Brasília: Ministério da Saúde, 2018.
 
-ABRELPE. (2023). Panorama dos Resíduos Sólidos no Brasil. Disponível em: https://www.abrema.org.br/wpcontent/uploads/dlm_uploads/2024/03/Panorama_2023_P1.pdf
+ONU – ORGANIZAÇÃO DAS NAÇÕES UNIDAS. **Objetivos de Desenvolvimento Sustentável (ODS)**. Nova Iorque: ONU, 2015.
 
-ONU. (2015). Objetivos de Desenvolvimento Sustentável (ODS). Disponível em: www.undp.org.
+OPAS – ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. **Juntos para combater a resistência aos antimicrobianos**. Brasília: OPAS, 2022.
 
-DHEKA. 20 dicas práticas de modelagem de processos. Disponível em: https://dheka.com.br/20-dicas-praticas-de-modelagem-de-processos/. Acesso em: 5 abr. 2025.
+PILBOX BRASIL. **Como melhorar a adesão dos pacientes aos medicamentos com essa ferramenta simples. [S. l.]: PILBOX Brasil, [s. d.].
 
-DHEKA. Modelagem AS IS e TO BE: entenda a diferença. Disponível em: https://dheka.com.br/modelagem-as-is-to-be/. Acesso em: 5 abr. 2025.
+STACHEWSKI, Ana Laura. **Eles criaram um serviço de entregas sustentável e movido a bicicletas**. Revista Pequenas Empresas & Grandes Negócios, São Paulo, 10 abr. 2019.
 
-BPMN.IO. BPMN - Business Process Model and Notation. Disponível em: https://bpmn.io/. Acesso em: 5 abr. 2025.
-
+UNIVERSIDADE FEDERAL DO VALE DO SÃO FRANCISCO. **Descarte de medicamentos vencidos: como e onde descartar corretamente**. Petrolina: UNIVASF, 2022.
