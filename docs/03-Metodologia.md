@@ -118,8 +118,6 @@ Atualizado em: 08/04/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Bianca M.      | Projeto interface - wireframe | -   | 13/04/2025 | ❌    | -   |
 | Bianca M.      | Projeto interface - diagrama de fluxo  | -   | 13/04/2025 | ❌   | -    |
-| Bianca M.      | Seção 4. Projeto da Solução | -   | 20/04/2025 | ❌   | -    |
-| Bianca M.      | Seção 4.1. Protótipos de telas | -   | 20/04/2025 | ❌   | -    |
 | Bianca M.      | Seção 4.1.1. Processo x: [nome da tarefa] | -   | 20/04/2025 | ❌   | -    |
 
 
