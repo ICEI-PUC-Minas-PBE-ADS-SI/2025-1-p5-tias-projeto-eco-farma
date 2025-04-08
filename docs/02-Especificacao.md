@@ -1,8 +1,5 @@
 # Especificação do projeto
 
-<span style="color:red">Pré-requisitos: <a href="01-Contexto.md"> Documentação de contexto</a></span>
-
-Esta seção detalha os requisitos funcionais e não funcionais do Eco Farma, alinhados ao diagrama de caso de uso, personas e histórias de usuários. O objetivo é garantir que a solução atenda às necessidades dos usuários, critérios de sustentabilidade e restrições técnicas e operacionais.
 
 ## Personas
 
