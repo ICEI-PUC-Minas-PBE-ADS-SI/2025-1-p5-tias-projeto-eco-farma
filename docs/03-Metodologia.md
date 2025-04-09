@@ -116,9 +116,9 @@ Atualizado em: 08/04/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Bianca M.      | Projeto interface - wireframe | -   | 13/04/2025 | ❌    | -   |
-| Bianca M.      | Projeto interface - diagrama de fluxo  | -   | 13/04/2025 | ❌   | -    |
-| Bianca M.      | Seção 4.1.1. Processo x: [nome da tarefa] | -   | 20/04/2025 | ❌   | -    |
+| Bianca M.      | 06 - Template Padrão | -   | 20/04/2025 | ❌    | -   |
+|      |  |    | |     |    |
+
 
 
 Legenda:
