@@ -116,7 +116,7 @@ Atualizado em: 08/04/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Bianca M.      | 06 - Template Padrão | -   | 20/04/2025 | ❌    | -   |
+| Bianca M.      | 06 - Template Padrão | 10/04/2025   | 20/04/2025 | 📝    | -   |
 |      |  |    | |     |    |
 
 
