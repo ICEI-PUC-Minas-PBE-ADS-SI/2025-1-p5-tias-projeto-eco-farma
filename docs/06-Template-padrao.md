@@ -24,7 +24,7 @@ Com base na escolha das logos, foram implementadas o uso das cores mostradas no 
 
 ![Eco farma](https://github.com/user-attachments/assets/f5583181-f143-499f-99d8-f1748987fc5e)
 
-Essa logo tem uma proposta onde o nome do projeto é explicíto, de modo que seja simples e fácil de entender a lógica do significado do projeto. As letras arredondadas são para trazer facilidade, simplificação, agradável aos olhos, com o conjunto do nome "farma" que segue junto a letra "O". Da mesma forma foi feita com a logo a seguir. O processo pensado foi o mesmo mas com as palavras trocadas, porém, trazendo uma logo mais "longa".
+Essa logo tem uma proposta onde o nome do projeto é explicíto, de modo que seja simples e fácil de entender a lógica do significado do projeto. As letras arredondadas são para trazer facilidade, simplificação, agradável aos olhos, com o conjunto do nome "farma" que segue junto a letra "O". Da mesma forma foi feita com a logo a seguir. O processo pensado foi o mesmo, mas com as palavras trocadas, entretanto, trazendo uma logo mais "longa".
 
 ![Farma eco](https://github.com/user-attachments/assets/5fede6f6-1768-4c1c-9f10-a0319964f48a)
 
