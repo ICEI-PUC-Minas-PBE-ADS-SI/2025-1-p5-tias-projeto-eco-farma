@@ -27,9 +27,77 @@ Uma escolha de cores bem planejada contribui diretamente para a clareza da comun
 
 Neste projeto, a paleta foi desenvolvida com o objetivo de refletir os valores de leveza, acessibilidade e sustentabilidade, utilizando cores que despertam sensações de confiança, modernidade e bem-estar. As cores foram selecionadas para criar um ambiente visual acolhedor e, ao mesmo tempo, transmitir tecnologia de maneira simples e amigável. No processo de escolha foram colocados 3 paletas que tinham essas definições em mente:
 
-![paleta_cores](https://github.com/user-attachments/assets/841d9e77-dd6c-44eb-94c9-eea1b2b8901a)
+![Paleta_cores](https://github.com/user-attachments/assets/51f8d9a9-8a46-4af6-9d50-0f4bc0b8ffb0)
 
-### Tipografia
+A definição da paleta de cores foi um passo fundamental e caminhou lado a lado com o processo de criação da logo. A escolha das cores foi feita de forma conjunta, garantindo harmonia entre a identidade visual e o logotipo. Ao final, a paleta escolhida foi a seguinte:
+
+(foto da cor escolhida)
+
+#### Equilíbrio entre Verde e Vermelho
+Essa paleta combina tons de verde com nuances de vermelho e laranja, criando uma composição que remete tanto à natureza quanto à energia e dinamismo.
+
+228B22 — Forest Green: transmite solidez e conexão com o meio ambiente.
+
+8ADD73 — Light Green: adiciona leveza e frescor à composição.
+
+C1E1C2 — Tea Green: tom suave que equilibra as cores fortes.
+
+E15C55 — Indian Red: aquece a paleta com um toque emocional.
+
+C21A1A — Engineering Orange: reforça energia, força e visibilidade.
+
+#### Variedade de Tons de Verde
+Focada em explorar as diferentes camadas do verde, essa paleta reforça a ideia de crescimento, vitalidade e sustentabilidade.
+
+60C756 — Mantis: tom vibrante e amigável.
+
+1AA528 — Pigment Green: verde puro, associado à natureza.
+
+208C16 — Forest Green: equilíbrio entre naturalidade e força.
+
+0D5F10 — Dartmouth Green: tom escuro que sugere tradição e confiança.
+
+041B02 — Dark Green: profundidade e sobriedade.
+
+#### Natureza e Neutralidade
+Essa paleta mistura verdes naturais com tons terrosos e neutros, sugerindo equilíbrio, estabilidade e aconchego.
+
+556B2F — Dark Moss Green: robusto e discreto.
+
+228B22 — Forest Green: reforça a ligação com o natural.
+
+A9CA66 — Pistachio: tom suave que traz leveza.
+
+AA7148 — Brown Sugar: aquece e humaniza a composição.
+
+F5F5DC — Beige: cor neutra, ideal para fundos e elementos de apoio.
+
+### Tipografia 
+
+A tipografia não é só sobre “qual fonte é bonita” — ela impacta diretamente na legibilidade, identidade da marca e experiência do usuário. Durante o processo de escolha, alguns pontos precisaram ser considerados:
+
+1. **Legibilidade:**  
+   A fonte precisa ser fácil de ler em tamanhos diferentes, tanto em telas de celular quanto em monitores maiores. Isso evita que o usuário se canse ou desista de ler.
+
+2. **Personalidade:**  
+   A fonte deve combinar com o tom e o propósito do site. Por exemplo, uma farmácia ou clínica pede uma fonte limpa e confiável, enquanto um site criativo pode usar algo mais ousado.
+
+3. **Compatibilidade Web:**  
+   Fontes precisam ser bem renderizadas em todos os navegadores. Por isso, geralmente é recomendado usar fontes web seguras ou do Google Fonts.
+
+4. **Hierarquia Visual:**  
+   Escolher uma combinação de fontes — uma para títulos (headline) e outra para o texto corrido (body) — que se complementem e organizem bem a leitura.
+
+#### Escolhas pensadas para usar no site:
+
+**Para títulos (headline) e identidade visual forte:**  
+- **Poppins** — Moderna, geométrica e muito popular.  
+- **Montserrat** — Sofisticada e altamente legível.
+
+**Para textos corridos (parágrafos):**  
+- **Roboto** — Muito limpa, perfeita para leitura digital.  
+- **Open Sans** — Simples, confiável e adaptável em qualquer contexto.  
+
 
 ## Logotipo da Aplicação
 
@@ -47,10 +115,40 @@ O processo de decisão da logomarca ocorreu ao longo de duas semanas, por meio d
 
 #### Logos selecionadas na segunda semana:
 
+![logos_escolhidas_2](https://github.com/user-attachments/assets/8c37f9d2-abd8-4327-b1ff-f52d1227092b)
 
 Nesta fase, as logos também receberam a aplicação das paletas de cores, permitindo uma análise mais realista e completa do resultado final. Além de trazer uma aspecto visual mais agradável, ajuda na escolha das logos novamente: 
 
+![logo_farma](https://github.com/user-attachments/assets/c641e09b-28ab-43d3-ba65-0adbe0f1b7db)
 
+![logo_blister](https://github.com/user-attachments/assets/7436085e-d314-499e-b548-efaf6d784110)
+
+![logo_cruz](https://github.com/user-attachments/assets/1a773279-2310-46b2-a4ab-4e668046f8d6)
+
+Após o processo com a logo com as paletas de cores colocadas, foi decidido a logo seguinte:
+
+(foto da logo)
+
+#### 1. Primeira Logo — Folhas e Blister
+Essa proposta traz uma representação visual bastante simbólica:
+
+- O uso de folhas reforça o conceito de sustentabilidade, natureza e responsabilidade ambiental.
+- O blister de comprimidos inserido entre as folhas comunica diretamente a área farmacêutica da marca e a coleta deles.
+- O contraste de formas orgânicas (folhas) com o retângulo rígido (cartela de comprimidos) cria equilíbrio entre o natural e o científico, expressando o compromisso da marca em oferecer soluções de saúde que respeitam o meio ambiente.
+
+#### 2. Segunda Logo — Tipografia "Farma" estilizada
+Aqui o foco está na simplicidade e na força do nome:
+
+- A palavra "Farma" foi desenhada com uma tipografia personalizada, onde as letras possuem traços arredondados, criando uma sensação de acolhimento e modernidade.
+- O prefixo "Eco" aparece discretamente, destacando que a empresa está inserida em um contexto ecológico sem ofuscar o setor farmacêutico.
+- O visual minimalista facilita no entendimento da proposta do projeto.
+
+#### 3. Terceira Logo — Símbolo + Circularidade
+Nessa proposta, a abordagem é mais institucional:
+
+- O símbolo central utiliza o clássico formato de “cruz”, bastante associado à área da saúde, mas com sobreposição de tons suaves, sugerindo integração, equilíbrio e transparência.
+- O texto “Eco Farma / Farma Eco” ao redor cria movimento e reforça a identidade de marca.
+- O formato circular transmite ideia de continuidade, sustentabilidade e proteção, fortalecendo a percepção de marca confiável e consciente.
 
 ## Iconografia
 
