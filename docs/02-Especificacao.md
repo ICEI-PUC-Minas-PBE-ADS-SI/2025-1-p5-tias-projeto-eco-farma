@@ -173,7 +173,7 @@ O projeto está restrito aos itens apresentados na tabela a seguir:
 
 ## Diagrama de casos de uso
 
-<img src="https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/blob/main/docs/images/Diagrma%20caso%20de%20uso%20TI.jpeg?raw=true" alt="Diagrama de caso de uso">
+<img src="docs/images/Diagrama de caso de uso atualizado.png" alt="Diagrama de caso de uso">
 
 Documento de Casos de Uso - Sistema ECO Farma
 
