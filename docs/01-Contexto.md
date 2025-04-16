@@ -7,28 +7,33 @@ O projeto visa resolver os problemas de descarte inadequado de resíduos farmac�
 
 
 ## Cliente 
-A empresa parceira do projeto ECO Farma é a Drogaria Mais Saúde, localizada na Rua do Rosário, no bairro Angola, em Betim, MG, onde atua há 24 anos. Como uma drogaria comprometida com a saúde e o bem-estar da comunidade, sua missão é oferecer produtos de qualidade e um atendimento humanizado, prezando pela acessibilidade e confiança dos clientes. Seu ramo de atuação engloba a comercialização de medicamentos, produtos de higiene, cosméticos e bem-estar, atendendo a um público diverso. 
-Um dos principais desafios enfrentados é a concorrência com grandes redes de farmácias, como Drogaria Araújo, Droga Raia, entre outros, que possuem ampla presença no mercado, maior capacidade de investimento em publicidade e políticas agressivas de preços e descontos. Para se destacar, a drogaria busca constantemente inovar e aprimorar seus serviços, oferecendo um atendimento mais próximo e personalizado.
+A empresa parceira do projeto ECO Farma é a Drogaria Mais Saúde, localizada na Rua do Rosário, no bairro Angola, em Betim, MG, onde atua há 24 anos. Como uma drogaria comprometida com a saúde e o bem-estar da comunidade, a missão da empresa é oferecer produtos de qualidade e um atendimento humanizado, prezando pela acessibilidade e confiança dos clientes. Seu ramo de atuação engloba a comercialização de medicamentos, produtos de higiene, cosméticos e bem-estar, atendendo a um público diverso. Um dos principais desafios enfrentados pela drogaria é a concorrência com grandes redes de farmácias, como a Drogaria Araújo, a Droga Raia, entre outras, que possuem ampla presença no mercado, maior capacidade de investimento em publicidade e políticas agressivas de preços e descontos. Para se destacar, a Drogaria Mais Saúde busca constantemente inovar e aprimorar seus serviços, oferecendo um atendimento mais próximo e personalizado.
+
 
 ## Problema
 O descarte de medicamentos e embalagens farmacêuticas de forma inadequada é um problema silencioso, mas com grandes repercussões. Resíduos químicos de remédios descartados em lixo doméstico ou no esgoto urbano alcançam rios, lençóis freáticos e até a cadeia alimentar, afetando a saúde da população e o equilíbrio dos ecossistemas. Além dos danos ambientais, essa prática contribui para o surgimento de superbactérias, tornando o tratamento de infecções mais difícil e colocando em risco a eficácia de medicamentos essenciais.
 
 Esse cenário reflete a falta de estrutura acessível para que a população realize o descarte correto desses resíduos, somado à carência de campanhas de conscientização e incentivos que estimulem boas práticas. Em paralelo, o transporte de produtos por meios motorizados, amplamente utilizado por farmácias em áreas urbanas, gera um impacto adicional, elevando os níveis de poluição do ar e contribuindo para a crise climática.
 
-Diante disso, este projeto propõe uma solução inovadora que atua em duas frentes: a criação de pontos de coleta de resíduos farmacêuticos em farmácias parceiras e a implementação de um sistema de entregas sustentáveis, operado por ciclistas. A aplicação será uma plataforma online que conecta consumidores, farmácias e entregadores, proporcionando um ecossistema de logística e descarte mais responsável e ambientalmente consciente.
+Diante disso, o projeto propõe uma solução inovadora que atua em duas frentes: a criação de pontos de coleta de resíduos farmacêuticos em farmácias parceiras e a implementação de um sistema de entregas sustentáveis, operado por ciclistas. A aplicação será uma plataforma online que conecta consumidores, farmácias e entregadores, proporcionando um ecossistema de logística e descarte mais responsável e ambientalmente consciente.
 
 O foco do projeto está em ambientes urbanos, onde o consumo de medicamentos é elevado e a produção de resíduos farmacêuticos é constante. A proposta busca transformar a relação da comunidade com o meio ambiente e com a própria saúde, promovendo uma cadeia sustentável que gera benefícios tanto para a população quanto para o setor farmacêutico.
 
+
 ## Objetivos
 
-O projeto tem como principal objetivo incentivar a reciclagem tanto dos blisters de medicamentos quanto de remédios vencidos, por meio de um sistema de troca que oferece benefícios aos consumidores. As farmácias que atuam como pontos de coleta podem ser cadastradas na plataforma digital, e os usuários que realizarem o descarte correto desses materiais poderão receber descontos em compras de itens não medicamentosos, como produtos alimentícios, itens de higiene, entre outros.
+O projeto tem como principal objetivo incentivar a reciclagem tanto dos blisters de medicamentos quanto de remédios vencidos, por meio de um sistema de troca que oferece benefícios aos consumidores. As farmácias que atuarem como pontos de coleta poderão ser cadastradas em uma plataforma digital, e os usuários que realizarem o descarte correto desses materiais terão a possibilidade de receber descontos em compras de itens não medicamentosos, como produtos alimentícios, itens de higiene, entre outros.
 
-Além disso, o projeto propõe tornar o serviço de delivery das farmácias mais sustentável, substituindo os meios de transporte poluentes por ciclistas cadastrados na plataforma. Essa iniciativa busca reduzir o impacto ambiental causado pelo descarte inadequado de resíduos e pela logística tradicional de entrega.
+Além disso, o projeto propõe tornar o serviço de delivery das farmácias mais sustentável, substituindo os meios de transporte poluentes por ciclistas previamente cadastrados na plataforma. Essa iniciativa busca reduzir o impacto ambiental causado tanto pelo descarte inadequado de resíduos quanto pela logística tradicional de entrega.
+
 Os objetivos específicos incluem:
 
-- Criar uma rede de farmácias parceiras que atuam como pontos de coleta de blisters e medicamentos vencidos;
+- Criar uma rede de farmácias parceiras que atuem como pontos de coleta de blisters e medicamentos vencidos;
+
 - Desenvolver uma plataforma digital para conectar consumidores, farmácias e ciclistas entregadores;
+
 - Incentivar a conscientização ambiental sobre o descarte adequado dos resíduos farmacêuticos;
+
 - Reduzir a pegada de carbono associada à entrega de medicamentos e produtos farmacêuticos.
 
 
@@ -43,6 +48,6 @@ Essa solução, além de ambientalmente responsável, mantém a mesma eficiênci
 
 ## Público-alvo
 
-Nosso público-alvo abrange pessoas de 20 a 65 anos, com um propósito amplo e inclusivo. O serviço é ideal para quem busca economia em produtos de higiene, cuidados com a pele, maquiagem e unhas, além de atender aqueles focados na saúde, oferecendo descontos em suplementos.  
+O público-alvo do projeto abrange pessoas de 20 a 65 anos, com um propósito amplo e inclusivo. O serviço é ideal para consumidores que buscam economia em produtos de higiene, cuidados com a pele, maquiagem e unhas, além de atender aqueles com foco na saúde, por meio de descontos em suplementos.
 
-Também é voltado para quem faz uso contínuo de medicamentos, assim como familiares e cuidadores responsáveis pela compra e descarte seguro. Ao englobar um público diversificado, criamos uma demanda que auxilia as farmácias na conscientização sobre o descarte correto de resíduos, demonstrando que essa prática sustentável pode trazer benefícios para todos.
+Também é direcionado a indivíduos que fazem uso contínuo de medicamentos, bem como a familiares e cuidadores responsáveis pela compra e pelo descarte seguro desses produtos. Ao englobar um público diversificado, o projeto contribui para a geração de uma demanda que auxilia as farmácias na conscientização sobre o descarte correto de resíduos, demonstrando que essa prática sustentável pode gerar benefícios para todos.
