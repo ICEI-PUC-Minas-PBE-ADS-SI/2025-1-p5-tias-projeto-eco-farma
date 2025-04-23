@@ -112,11 +112,17 @@ Atualizado em: 06/04/2025
 
 #### Sprint 3
 
-Atualizado em: 08/04/2025
+Atualizado em: 23/04/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Bianca M.      | 06 - Template Padrão | 10/04/2025   | 20/04/2025 | 📝    | -   |
+| Bianca M.      | 06 - Template Padrão - Identidade visual | 10/04/2025   | 20/04/2025 | ✔️    | 14/04/2025   |
+| Bianca M.      | 06 - Template Padrão - Paleta de Cores| 10/04/2025   | 20/04/2025 | ✔️    | 24/04/2025   |
+| Bianca M.      | 06 - Template Padrão - Tipografia | 10/04/2025   | 20/04/2025 | ✔️    | 14/04/2025   |
+| Bianca M.      | 06 - Template Padrão - Logotipo da Aplicação | 10/04/2025   | 20/04/2025 | ✔️    | 24/04/2025   |
+| Bianca M.      | 06 - Template Padrão - Iconografia | 23/04/2025   | 24/04/2025 | ✔️    | 23/04/2025    |
+| Bianca M.      | 06 - Template Padrão - Layout | -  | 20/04/2025 | ❌    | -   |
+| Bianca M.      | 06 - Template Padrão - Aspectos de Responsividade | -  | 20/04/2025 | ❌   | -   |
 |      |  |    | |     |    |
 
 
