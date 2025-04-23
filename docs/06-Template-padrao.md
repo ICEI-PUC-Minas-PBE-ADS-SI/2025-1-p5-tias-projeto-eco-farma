@@ -152,6 +152,18 @@ Nessa proposta, a abordagem é mais institucional:
 
 ## Iconografia
 
+O processo de escolha da iconografia para um site de compras, exige atenção a diversos fatores que impactam diretamente a experiência do usuário. A iconografia, nesse contexto, não é apenas um elemento decorativo, mas uma ferramenta funcional de comunicação visual que auxilia o usuário na navegação, na identificação rápida de categorias e ações, e no fortalecimento da identidade da marca. Inicialmente, é essencial compreender o público-alvo do site. Saber quem são os usuários, suas faixas etárias, familiaridade com tecnologia e expectativas visuais ajuda a definir o grau de abstração ou literalidade dos ícones. Por exemplo, para um público mais amplo e diverso, ícones mais simples e representativos, muitas vezes acompanhados por texto explicativo, tendem a ser mais eficazes.
+
+Com o público mapeado, o próximo passo é identificar todas as áreas do site que demandam representação visual por meio de ícones. Isso inclui categorias de produtos, como higiene pessoal, beleza, medicamentos, cuidados infantis e alimentação, bem como funcionalidades do sistema, como o carrinho de compras, filtros de busca, favoritos, e o menu do usuário. Cada um desses elementos deve possuir um ícone que o represente de maneira clara e coerente.
+
+A seguir, define-se o estilo visual que será adotado. O ideal é que os ícones estejam alinhados com o design geral da marca. Com base nas categorias, os ícones são escolhidos de forma a representar visualmente cada uma delas. Para higiene pessoal, pode-se utilizar imagens de sabonetes ou escovas de dente; para maquiagem, batons e pincéis; para medicamentos, frascos e cruzes médicas; para fraldas, ícones de bebês ou fraldas desenhadas; e para alimentos, símbolos como maçãs ou cestas. A clareza simbólica de cada ícone deve ser testada com usuários reais ou por meio de pesquisas rápidas, garantindo que a mensagem visual seja intuitiva.
+
+![image](https://github.com/user-attachments/assets/a71d7e90-988d-4f59-9dda-609777599eb9)
+
+![image](https://github.com/user-attachments/assets/3805edfe-965f-41c1-9b6c-ebcf7b164226)
+
+Por fim, recomenda-se utilizar bibliotecas confiáveis de ícones, como Font Awesome, Material Icons ou Heroicons. Independentemente da fonte, o objetivo deve ser sempre a legibilidade, a usabilidade e a coesão visual com a identidade do site. Assim, a escolha da iconografia, quando bem planejada e executada, contribui diretamente para a usabilidade do site, facilitando o processo de compra e promovendo uma experiência mais fluida e agradável para o usuário.
+
 ## Layout
 
 ## Aspectos de Responsividade
