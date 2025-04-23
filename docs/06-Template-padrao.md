@@ -31,7 +31,7 @@ Neste projeto, a paleta foi desenvolvida com o objetivo de refletir os valores d
 
 A definição da paleta de cores foi um passo fundamental e caminhou lado a lado com o processo de criação da logo. A escolha das cores foi feita de forma conjunta, garantindo harmonia entre a identidade visual e o logotipo. Ao final, a paleta escolhida foi a seguinte:
 
-(foto da cor escolhida)
+![image](https://github.com/user-attachments/assets/6e046c80-c26d-4c08-829c-457e5ef3f6bc)
 
 #### Equilíbrio entre Verde e Vermelho
 Essa paleta combina tons de verde com nuances de vermelho e laranja, criando uma composição que remete tanto à natureza quanto à energia e dinamismo.
@@ -45,32 +45,6 @@ C1E1C2 — Tea Green: tom suave que equilibra as cores fortes.
 E15C55 — Indian Red: aquece a paleta com um toque emocional.
 
 C21A1A — Engineering Orange: reforça energia, força e visibilidade.
-
-#### Variedade de Tons de Verde
-Focada em explorar as diferentes camadas do verde, essa paleta reforça a ideia de crescimento, vitalidade e sustentabilidade.
-
-60C756 — Mantis: tom vibrante e amigável.
-
-1AA528 — Pigment Green: verde puro, associado à natureza.
-
-208C16 — Forest Green: equilíbrio entre naturalidade e força.
-
-0D5F10 — Dartmouth Green: tom escuro que sugere tradição e confiança.
-
-041B02 — Dark Green: profundidade e sobriedade.
-
-#### Natureza e Neutralidade
-Essa paleta mistura verdes naturais com tons terrosos e neutros, sugerindo equilíbrio, estabilidade e aconchego.
-
-556B2F — Dark Moss Green: robusto e discreto.
-
-228B22 — Forest Green: reforça a ligação com o natural.
-
-A9CA66 — Pistachio: tom suave que traz leveza.
-
-AA7148 — Brown Sugar: aquece e humaniza a composição.
-
-F5F5DC — Beige: cor neutra, ideal para fundos e elementos de apoio.
 
 ### Tipografia 
 
@@ -127,28 +101,14 @@ Nesta fase, as logos também receberam a aplicação das paletas de cores, permi
 
 Após o processo com a logo com as paletas de cores colocadas, foi decidido a logo seguinte:
 
-(foto da logo)
+![image](https://github.com/user-attachments/assets/6fcfa827-2056-42df-8928-e7227d9956cb)
 
-#### 1. Primeira Logo — Folhas e Blister
-Essa proposta traz uma representação visual bastante simbólica:
-
-- O uso de folhas reforça o conceito de sustentabilidade, natureza e responsabilidade ambiental.
-- O blister de comprimidos inserido entre as folhas comunica diretamente a área farmacêutica da marca e a coleta deles.
-- O contraste de formas orgânicas (folhas) com o retângulo rígido (cartela de comprimidos) cria equilíbrio entre o natural e o científico, expressando o compromisso da marca em oferecer soluções de saúde que respeitam o meio ambiente.
-
-#### 2. Segunda Logo — Tipografia "Farma" estilizada
+#### Tipografia "Farma" estilizada
 Aqui o foco está na simplicidade e na força do nome:
 
 - A palavra "Farma" foi desenhada com uma tipografia personalizada, onde as letras possuem traços arredondados, criando uma sensação de acolhimento e modernidade.
 - O prefixo "Eco" aparece discretamente, destacando que a empresa está inserida em um contexto ecológico sem ofuscar o setor farmacêutico.
 - O visual minimalista facilita no entendimento da proposta do projeto.
-
-#### 3. Terceira Logo — Símbolo + Circularidade
-Nessa proposta, a abordagem é mais institucional:
-
-- O símbolo central utiliza o clássico formato de “cruz”, bastante associado à área da saúde, mas com sobreposição de tons suaves, sugerindo integração, equilíbrio e transparência.
-- O texto “Eco Farma / Farma Eco” ao redor cria movimento e reforça a identidade de marca.
-- O formato circular transmite ideia de continuidade, sustentabilidade e proteção, fortalecendo a percepção de marca confiável e consciente.
 
 ## Iconografia
 
