@@ -118,13 +118,21 @@ Com o público mapeado, o próximo passo é identificar todas as áreas do site 
 
 A seguir, define-se o estilo visual que será adotado. O ideal é que os ícones estejam alinhados com o design geral da marca. Com base nas categorias, os ícones são escolhidos de forma a representar visualmente cada uma delas. Para higiene pessoal, pode-se utilizar imagens de sabonetes ou escovas de dente; para maquiagem, batons e pincéis; para medicamentos, frascos e cruzes médicas; para fraldas, ícones de bebês ou fraldas desenhadas; e para alimentos, símbolos como maçãs ou cestas. A clareza simbólica de cada ícone deve ser testada com usuários reais ou por meio de pesquisas rápidas, garantindo que a mensagem visual seja intuitiva.
 
-![image](https://github.com/user-attachments/assets/a71d7e90-988d-4f59-9dda-609777599eb9)
-
 ![image](https://github.com/user-attachments/assets/3805edfe-965f-41c1-9b6c-ebcf7b164226)
 
-Por fim, recomenda-se utilizar bibliotecas confiáveis de ícones, como Font Awesome, Material Icons ou Heroicons. Independentemente da fonte, o objetivo deve ser sempre a legibilidade, a usabilidade e a coesão visual com a identidade do site. Assim, a escolha da iconografia, quando bem planejada e executada, contribui diretamente para a usabilidade do site, facilitando o processo de compra e promovendo uma experiência mais fluida e agradável para o usuário.
+Por fim, será utilizado bibliotecas confiáveis de ícones, como Font Awesome, Material Icons ou Heroicons. Independentemente da fonte, o objetivo deve ser sempre a legibilidade, a usabilidade e a coesão visual com a identidade do site. Assim, a escolha da iconografia, quando bem planejada e executada, contribui diretamente para a usabilidade do site, facilitando o processo de compra e promovendo uma experiência mais fluida e agradável para o usuário.
 
 ## Layout
+No processo de escolha, baseando-se nos sites de compras habituais da equipe, foi verificado que a sua maioria utiliza-se do layout em caixas. Um layout baseado em caixas, também conhecido como layout em grid ou layout modular, é amplamente reconhecido por sua organização visual clara e eficiente. Esse tipo de estrutura divide a página em seções bem definidas, geralmente com elementos dispostos em retângulos ou quadrados, criando uma hierarquia visual que facilita a navegação e destaca as informações mais importantes. Ao adotar esse modelo, o site transmite profissionalismo e acessibilidade, o que é essencial para conquistar e manter a confiança dos consumidores.
+
+![image](https://github.com/user-attachments/assets/845a223c-123d-44a2-b110-ef86eeaec727)
+
+No contexto de um site de compras com foco em descontos relacionados à coleta de blisters em farmácias, o layout em caixas se mostra especialmente eficaz. Cada produto pode ser apresentado em sua própria "caixa", contendo imagem, nome, preço original, preço com desconto e o ícone de elegibilidade para o desconto com blister. Isso permite que o cliente, de forma rápida e intuitiva, visualize as ofertas disponíveis e compreenda o impacto positivo da coleta de blisters tanto no preço final quanto no meio ambiente.
+
+Além disso, esse tipo de layout é ideal para dispositivos móveis, permitindo uma navegação fluida e responsiva, com elementos que se reorganizam conforme o tamanho da tela. A experiência de compra se torna mais agradável, uma vez que o usuário encontra facilmente o que procura, visualiza produtos por categorias bem segmentadas, e interage com um design que inspira confiança. A combinação de propósito social e praticidade comercial é valorizada por meio de uma apresentação visual moderna e eficiente — exatamente o que se espera de um e-commerce consciente e voltado ao bem-estar coletivo. Ao final do procedimento de escolha, foi colocado em uma IA que gera imagens para visualizar como seria esse layout no site desse projeto, baseado em um site em um dispositivo móvel:
+
+<img src="https://github.com/user-attachments/assets/29ea47fb-15e8-429e-8290-23f8df12e12c" width="500">
+
 
 ## Aspectos de Responsividade
 
