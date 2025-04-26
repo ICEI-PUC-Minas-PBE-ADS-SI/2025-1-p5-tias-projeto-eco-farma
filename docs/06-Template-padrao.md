@@ -136,3 +136,12 @@ Além disso, esse tipo de layout é ideal para dispositivos móveis, permitindo 
 
 ## Aspectos de Responsividade
 
+No projeto do site de compras da Eco Farma, a responsividade foi concebida como um dos pilares centrais desde o início do planejamento. A proposta foi garantir uma experiência fluida e agradável para todos os usuários, independentemente do dispositivo utilizado — desktop, tablet ou celular. Considerando que a maior parte do público-alvo deverá acessar a plataforma via smartphone, a responsividade foi tratada não apenas como uma melhoria desejável, mas como um requisito essencial para a conversão e usabilidade.
+
+#### Principais Estratégias Pensadas
+
+O layout foi idealizado com foco inicial em telas menores (estratégia mobile-first), assegurando que os elementos mais importantes — como exibição de produtos, descontos disponíveis e funcionalidades de troca de blisters — fossem rapidamente acessíveis em dispositivos móveis. A utilização de tecnologias como CSS Flexbox e CSS Grid foi planejada para estruturar layouts dinâmicos e flexíveis. Também se considerou a adoção de frameworks como o Bootstrap, para acelerar a criação de componentes visuais responsivos e garantir padrões de design consistentes.
+Em relação aos elementos adaptáveis, foi definido que banners promocionais, cards de produtos e menus de navegação seriam projetados para se reorganizar automaticamente de acordo com a largura da tela, mantendo sempre a legibilidade, a acessibilidade e a fluidez da navegação. Além disso, a experiência visual e funcional está sendo pensada para oferecer carregamento rápido, otimização de imagens e uma navegação intuitiva que valorize a troca de blisters por descontos — o grande diferencial da plataforma.
+
+
+
