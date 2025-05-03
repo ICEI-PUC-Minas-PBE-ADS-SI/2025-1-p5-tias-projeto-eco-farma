@@ -16,11 +16,29 @@ O diagrama de classes ilustra graficamente a estrutura do software e como cada u
 
 ##  Modelo de dados
 
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam realizar o cadastro de dados e os controles associados aos processos identificados, assim como suas recuperações.
+### Diagrama Entidade-Relacionamento (DER) em notação Peter Chen
+Com a notação DER (Diagrama Entidade-Relacionamento), foi feito o relacionamento de todas as tabelas que serão utilizadas no projeto.
 
-Utilizando a notação do DER (Diagrama Entidade-Relacionamento), elabore um modelo, usando alguma ferramenta, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar também o controle de acesso dos usuários (partes interessadas nos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
+![Diagrama sem nome drawio (1)](https://github.com/user-attachments/assets/103afb94-2243-4dcd-843c-3cfa076e131c)
 
-Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos.
+### Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
+ (FOTO)
+ 
+#### Relacionamentos
+
+- Produto(N) --> Tem --> Promocao(1)
+- Produto(1) --> Tem --> Avaliacao_produto(N)
+- Pedido(1) --> Conjunto de --> Produto(N)
+- Pedido(N) --> Possui --> Entrega(1)
+- Farmacia(1) --> Recebe --> Pedido(N)
+- Farmacia(1) --> Cria --> Produto(N)
+- Farmacia(1) --> Possui --> Login(1)
+- Cliente(1) --> Possui --> Login(1)
+- Cliente(1) --> Faz --> Avaliacao(1)
+- Cliente(1) --> Faz --> Avaliacao_produto(N)
+- Cliente(1) --> Faz --> Pedido(N)
+- Entregador(1) --> Possui --> Login(1)
+- Entregador(1) --> Faz --> Entrega(N)
 
 ### Modelo ER
 
