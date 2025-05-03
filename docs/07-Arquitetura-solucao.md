@@ -40,18 +40,10 @@ Com a notação DER (Diagrama Entidade-Relacionamento), foi feito o relacionamen
 - Entregador(1) --> Possui --> Login(1)
 - Entregador(1) --> Faz --> Entrega(N)
 
-### Modelo ER
-
-O Modelo ER representa, por meio de um diagrama, como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
-
-> **Links úteis**:
-> - [Como fazer um diagrama entidade relacionamento](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
 ### Esquema relacional
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-
 ![Exemplo de um modelo relacional](images/modelo_relacional.png "Exemplo de modelo relacional.")
 ---
 
@@ -60,48 +52,111 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ### Modelo físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
-
 ```sql
--- Criação da tabela Medico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+-- CLIENTE
+CREATE TABLE Cliente (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    sexo VARCHAR(10),
+    data_nasc DATE,
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    cpf VARCHAR(14) UNIQUE,
+    endereco VARCHAR(255),
+    cep VARCHAR(10),
+    numero VARCHAR(10)
 );
 
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+-- FARMACIA
+CREATE TABLE Farmacia (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(100),
+    cnpj VARCHAR(18) UNIQUE,
+    telefone VARCHAR(20),
+    cep VARCHAR(10),
+    endereco VARCHAR(255),
+    numero VARCHAR(10)
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+-- LOGIN
+CREATE TABLE Login (
+    id SERIAL PRIMARY KEY,
+    email VARCHAR(100) UNIQUE,
+    senha VARCHAR(255),
+    papel VARCHAR(20) CHECK (papel IN ('cliente', 'entregador', 'farmacia'))
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+-- ENTREGADOR
+CREATE TABLE Entregador (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    sexo VARCHAR(10),
+    data_nasc DATE,
+    email VARCHAR(100),
+    telefone VARCHAR(20),
+    cpf VARCHAR(14) UNIQUE,
+    endereco VARCHAR(255),
+    cep VARCHAR(10),
+    numero VARCHAR(10)
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+-- PRODUTO
+CREATE TABLE Produto (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100),
+    categoria VARCHAR(50),
+    preco NUMERIC(10,2),
+    estoque INT,
+    anexo TEXT,
+    descricao TEXT,
+    id_farmacia INT REFERENCES Farmacia(id)
 );
+
+-- PROMOCAO
+CREATE TABLE Promocao (
+    id SERIAL PRIMARY KEY,
+    id_produto INT REFERENCES Produto(id),
+    preco_promocao NUMERIC(10,2)
+);
+
+-- PEDIDO
+CREATE TABLE Pedido (
+    id SERIAL PRIMARY KEY,
+    id_cliente INT REFERENCES Cliente(id),
+    id_farmacia INT REFERENCES Farmacia(id),
+    id_produto INT REFERENCES Produto(id),
+    qtd_produto INT,
+    preco_produto NUMERIC(10,2)
+);
+
+-- ENTREGA
+CREATE TABLE Entrega (
+    id SERIAL PRIMARY KEY,
+    id_pedido INT REFERENCES Pedido(id),
+    id_entregador INT REFERENCES Entregador(id)
+);
+
+-- AVALIACAO (GERAL)
+CREATE TABLE Avaliacao (
+    id SERIAL PRIMARY KEY,
+    id_cliente INT REFERENCES Cliente(id),
+    autor VARCHAR(100),
+    avaliacao TEXT,
+    nota INT
+);
+
+-- AVALIACAO DE PRODUTO
+CREATE TABLE Avaliacao_produto (
+    id SERIAL PRIMARY KEY,
+    id_produto INT REFERENCES Produto(id),
+    id_cliente INT REFERENCES Cliente(id),
+    autor VARCHAR(100),
+    avaliacao TEXT,
+    nota INT,
+    anexo TEXT
+);
+
 ```
 Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
 
