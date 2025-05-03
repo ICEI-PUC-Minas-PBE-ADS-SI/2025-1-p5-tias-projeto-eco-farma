@@ -112,7 +112,7 @@ Atualizado em: 06/04/2025
 
 #### Sprint 3
 
-Atualizado em: 26/04/2025
+Atualizado em: 03/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -123,7 +123,11 @@ Atualizado em: 26/04/2025
 | Bianca M.      | 06 - Template Padrão - Iconografia | 23/04/2025   | 24/04/2025 | ✔️    | 23/04/2025    |
 | Bianca M.      | 06 - Template Padrão - Layout | 25/04/2025  | 20/04/2025 | ✔️    | 25/04/2025   |
 | Bianca M.      | 06 - Template Padrão - Aspectos de Responsividade | 26/04/2025  | 30/04/2025 | ✔️   | 26/04/2025  |
+|  Bianca M.     | 07 - Arquitetura Solução - (DER) em notação Peter Chen |  03/05/2025   | 05/05/2025 |  ✔️   |   03/05/2025  |
+|   Bianca M.    | 07 - Arquitetura Solução - (DER) em notação Pé de Galinha |  03/05/2025   | 05/05/2025 |  📝   |    |
+|   Bianca M.    | 07 - Arquitetura Solução - Modelo físico| - | 05/05/2025 |  ❌   |    |
 |      |  |    | |     |    |
+
 
 
 
