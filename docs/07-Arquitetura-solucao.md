@@ -158,7 +158,9 @@ CREATE TABLE Avaliacao_produto (
 );
 
 ```
-Esse script deverá ser incluído em um arquivo .sql na pasta [de scripts SQL](../src/db).
+
+Arquivo de script:
+[Script Tabela Ecofarma](images/Tables_ecofarma.sql)
 
 
 ## Tecnologias
