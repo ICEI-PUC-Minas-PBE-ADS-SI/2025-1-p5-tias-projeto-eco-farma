@@ -124,8 +124,9 @@ Atualizado em: 03/05/2025
 | Bianca M.      | 06 - Template Padrão - Layout | 25/04/2025  | 20/04/2025 | ✔️    | 25/04/2025   |
 | Bianca M.      | 06 - Template Padrão - Aspectos de Responsividade | 26/04/2025  | 30/04/2025 | ✔️   | 26/04/2025  |
 |  Bianca M.     | 07 - Arquitetura Solução - (DER) em notação Peter Chen |  03/05/2025   | 05/05/2025 |  ✔️   |   03/05/2025  |
-|   Bianca M.    | 07 - Arquitetura Solução - (DER) em notação Pé de Galinha |  03/05/2025   | 05/05/2025 |  📝   |    |
+|   Bianca M.    | 07 - Arquitetura Solução - (DER) em notação Pé de Galinha |  03/05/2025   | 05/05/2025 |  ✔️   |  03/05/2025  |
 |   Bianca M.    | 07 - Arquitetura Solução - Modelo físico| 03/05/2025 | 05/05/2025 |  ✔️   |  03/05/2025 |
+|  Bianca M.     | Documentação - Projeto do banco de dados |   03/05/2025 |03/05/2025 |   ✔️  |  03/05/2025  |
 |      |  |    | |     |    |
 
 
