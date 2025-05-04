@@ -21,9 +21,57 @@ Com a notação DER (Diagrama Entidade-Relacionamento), foi feito o relacionamen
 
 ![Diagrama sem nome drawio (1)](https://github.com/user-attachments/assets/103afb94-2243-4dcd-843c-3cfa076e131c)
 
-### Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
- (FOTO)
- 
+#### Entidades 
+
+1. Produto
+Representa os produtos vendidos pela farmácia.
+- Atributos: id, nome, categoria, preco, estoque, anexo, descricao, id_farmacia.
+
+
+2. Farmacia
+Representa uma farmácia cadastrada no sistema.
+- Atributos: id, nome, email, cnpj, telefone, cep, endereco, numero.
+
+
+3. Cliente
+Representa um cliente que pode fazer pedidos.
+- Atributos: id, nome, sexo, data_nasc, email, telefone, cpf, endereco, cep, numero.
+
+
+4. Pedido
+Representa um pedido feito por um cliente.
+- Atributos: id, id_cliente, id_farmacia, id_produto, qtd_produto, preco_produto.
+
+
+5. Entrega
+Representa a entrega de um pedido.
+- Atributos: id, id_pedido, id_entregador.
+
+
+6. Entregador
+Representa os entregadores.
+- Atributos: id, nome, sexo, data_nasc, email, telefone, cpf, endereco, cep, numero.
+
+
+7. Promocao
+Representa promoções atreladas aos produtos.
+- Atributos: id, id_produto, preco_promocao.
+
+
+8. Avaliacao
+Representa a avaliação geral de um cliente.
+- Atributos: id, id_cliente, autor, avaliacao, nota.
+
+
+9. Avaliacao_produto
+Representa a avaliação de um produto por um cliente.
+- Atributos: id, id_produto, id_cliente, autor, avaliacao, nota, anexo.
+
+
+10. Login
+Representa o sistema de autenticação.
+- Atributos: id, email, senha, papel (cliente, entregador, farmácia).
+
 #### Relacionamentos
 
 - Produto(N) --> Tem --> Promocao(1)
@@ -39,6 +87,18 @@ Com a notação DER (Diagrama Entidade-Relacionamento), foi feito o relacionamen
 - Cliente(1) --> Faz --> Pedido(N)
 - Entregador(1) --> Possui --> Login(1)
 - Entregador(1) --> Faz --> Entrega(N)
+
+
+### Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
+O diagrama apresentado representa o modelo de dados de um sistema de farmácia online, com funcionalidades como cadastro de usuários, gerenciamento de produtos, pedidos, entregas, promoções e avaliações. 
+
+![Diagrama sem nome1 drawio](https://github.com/user-attachments/assets/95b0fee3-d7e2-42b2-96d6-b6afef8f1c25)
+
+ 
+A entidade Cliente armazena informações pessoais como nome, sexo, data de nascimento, e-mail, telefone, CPF e endereço. O cliente está relacionado ao sistema de Login, responsável por armazenar o e-mail, senha e o papel (perfil de acesso), e também pode realizar Pedidos, fazer Avaliações gerais e de produtos (Avaliacao_produto), sendo essas avaliações compostas por autor, texto, nota e anexo.
+
+A entidade Produto contém dados como nome, categoria, preço, estoque, anexo e descrição, e está vinculada a uma Farmácia (que possui informações como nome, e-mail, telefone, CNPJ e endereço). Produtos podem estar associados a Promoções, que especificam um preço promocional, e podem receber avaliações de clientes. Os Pedidos, feitos por clientes, relacionam farmácia, cliente e produto, armazenando também a quantidade e o preço do produto no momento da compra. Vários pedidos podem gerar uma Entrega, que é realizada por um Entregador, cuja estrutura é similar à do cliente (incluindo CPF e endereço), e também possui vínculo com o sistema de login.
+
 
 ### Esquema relacional
 
