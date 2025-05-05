@@ -9,11 +9,6 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ## Diagrama de classes
 
 <img src="https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/blob/main/docs/images/DIAGRAMADECLASSETI%20(1).jpg?raw=true" alt="Diagrama de classes">
-O diagrama de classes ilustra graficamente a estrutura do software e como cada uma das classes estará interligada. Essas classes servem de modelo para materializar os objetos que serão executados na memória.
-
-> **Links úteis**:
-> - [Diagramas de classes - documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.7.0?topic=diagrams-class)
-> - [O que é um diagrama de classe UML?](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
 
 ##  Modelo de dados
 
@@ -261,3 +256,20 @@ A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, d
 > - [ISO/IEC 25010:2011 - Systems and Software Engineering — Systems and Software Quality Requirements and Evaluation (SQuaRE) — System and Software Quality Models](https://www.iso.org/standard/35733.html/)
 > - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
 > - [Qualidade de software - Engenharia de Software](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209)
+
+A qualidade de software é um conceito multifacetado, cuja definição envolve aspectos técnicos, gerenciais e humanos. No âmbito da engenharia de software, qualidade pode ser compreendida como a capacidade de um produto atender, de maneira eficaz e eficiente, às necessidades explícitas e implícitas de seus usuários e demais partes interessadas. Tal qualidade não é alcançada espontaneamente; ela é o resultado de processos bem definidos, estratégias de desenvolvimento contínuo e foco em métricas e requisitos de avaliação.
+
+Para assegurar que a solução digital proposta pelo projeto ECO Farma atenda a esses requisitos, foram adotadas diretrizes da norma ISO/IEC 25010:2011, que define um modelo de qualidade para produtos de software baseado em oito características principais e trinta subcaracterísticas. Este modelo, sucessor da ISO/IEC 9126 (NBR 13596), orienta a avaliação e o aprimoramento da qualidade de sistemas, fornecendo subsídios para decisões técnicas e gerenciais durante o ciclo de vida do software.
+
+| **Subcaracterística**      | **Justificativa**                                                                                                                                             | **Métricas de Avaliação**                                                                               |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Adequação Funcional**    | Garante que a plataforma contemple funcionalidades como cadastro de usuários, farmácias e ciclistas, além de gestão de pontos de coleta e cupons de desconto. | Percentual de requisitos implementados; índice de satisfação dos usuários em testes funcionais.         |
+| **Maturidade**             | Essencial para manter a confiabilidade do sistema, especialmente em funcionalidades críticas como rastreio de entregas ou registro de descartes.              | Taxa de falhas em produção; tempo médio entre falhas (MTBF).                                            |
+| **Inteligibilidade**       | O sistema será utilizado por públicos com diferentes níveis de letramento digital, exigindo uma interface intuitiva e compreensível.                          | Tempo médio para concluir tarefas básicas; taxa de abandono por dificuldade de uso.                     |
+| **Tempo de Resposta**      | Respostas rápidas em ações como localizar farmácias ou validar cupons são vitais para a experiência do usuário.                                               | Tempo de resposta em milissegundos nas principais interações; desempenho sob carga.                     |
+| **Modificabilidade**       | O projeto pode evoluir para novas cidades ou parceiros, exigindo um código com fácil manutenção e extensão.                                                   | Tempo médio para aplicar correções ou adicionar novas funcionalidades; impacto de mudanças no sistema.  |
+| **Controle de Acesso**     | Necessário para proteger perfis de consumidores, entregadores e farmácias contra acessos indevidos.                                                           | Número de tentativas de acesso bloqueadas; tempo de resposta a eventos de segurança.                    |
+| **Adaptabilidade**         | A plataforma deve operar em diferentes navegadores e dispositivos, inclusive móveis, sem perda de funcionalidade.                                             | Porcentagem de compatibilidade entre navegadores; taxa de erros por dispositivo.                        |
+| **Confidencialidade**      | Protege dados sensíveis como localização, histórico de uso e dados pessoais, promovendo a confiança no sistema.                                               | Quantidade de vazamentos; uso de criptografia nos dados armazenados e em trânsito.                      |
+| **Interoperabilidade**     | Facilita integrações futuras com APIs de geolocalização, programas de pontos ou gateways de pagamento.                                                        | Número de integrações concluídas com sucesso; tempo médio para integração.                              |
+| **Utilização de Recursos** | Para garantir acessibilidade em dispositivos simples, o software deve ser leve e eficiente.                                                                   | Consumo de CPU e memória em operação padrão; tempo de carregamento em dispositivos de baixo desempenho. |
