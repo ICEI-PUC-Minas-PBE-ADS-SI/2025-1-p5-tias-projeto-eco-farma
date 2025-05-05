@@ -20,6 +20,12 @@ ONU – ORGANIZAÇÃO DAS NAÇÕES UNIDAS. Objetivos de Desenvolvimento Sustent�
 
 OPAS – ORGANIZAÇÃO PAN-AMERICANA DA SAÚDE. Juntos para fortalecer a resistência aos antimicrobianos. Brasília: OPAS, 2022.
 
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR ISO/IEC 25010:2011 – Engenharia de sistemas e de software – Requisitos e avaliação da qualidade de produto de software – Modelos de qualidade. Rio de Janeiro: ABNT, 2011.
+
+ASSOCIAÇÃO BRASILEIRA DE NORMAS TÉCNICAS. NBR 13596:1996 (ISO/IEC 9126) – Engenharia de Software – Qualidade de Produto. Rio de Janeiro: ABNT, 1996.
+
+PRESSMAN, Roger S. Engenharia de Software. 8. ed. São Paulo: McGraw Hill Brasil, 2016.
+
 PILBOX BRASIL. Como melhorar a adesão dos pacientes aos medicamentos com essa ferramenta simples. [S.l.]: PILBOX Brasil, [s.d.].
 
 STACHEWSKI, Ana Laura. Eles realizaram um serviço de entregas sustentáveis ​​e movidos para bicicletas. Revista Pequenas Empresas & Grandes Negócios, São Paulo, 10 abr. 2019.
