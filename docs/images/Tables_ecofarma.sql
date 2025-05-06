@@ -24,9 +24,10 @@ CREATE TABLE Farmacia (
     numero VARCHAR(10)
 );
 
--- LOGIN
-CREATE TABLE Login (
+-- USUARIO
+CREATE TABLE Usuario (
     id SERIAL PRIMARY KEY,
+    id_papel INT REFERENCES Farmacia(id);Cliente(id);Entregador(id),
     email VARCHAR(100) UNIQUE,
     senha VARCHAR(255),
     papel VARCHAR(20) CHECK (papel IN ('cliente', 'entregador', 'farmacia'))
