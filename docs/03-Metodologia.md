@@ -127,6 +127,9 @@ Atualizado em: 03/05/2025
 |   Bianca M.    | 07 - Arquitetura Solução - (DER) em notação Pé de Galinha |  03/05/2025   | 05/05/2025 |  ✔️   |  03/05/2025  |
 |   Bianca M.    | 07 - Arquitetura Solução - Modelo físico| 03/05/2025 | 05/05/2025 |  ✔️   |  03/05/2025 |
 |  Bianca M.     | Documentação - Projeto do banco de dados |   03/05/2025 |03/05/2025 |   ✔️  |  03/05/2025  |
+|  Victória G.     | 07 - Arquitetura Solução - Diagrama de classes |   05/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
+|  Victória G.     | 07 - Arquitetura Solução - Tecnologias utilizadas |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
+|  Victória G.     | 07 - Arquitetura Solução - Qualidade de software |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |      |  |    | |     |    |
 
 
