@@ -221,9 +221,13 @@ Arquivo de script:
 
 ## Tecnologias
 
-Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+Nesta etapa do desenvolvimento do projeto ECOFARMA, foram utilizadas as seguintes tecnologias:
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+PostgreSQL: Sistema de gerenciamento de banco de dados relacional utilizado para armazenar e organizar as informações do sistema, como usuários, farmácias, entregas e produtos.
+
+GitHub: Plataforma usada para controle de versão do projeto, permitindo colaboração entre os integrantes da equipe e registro.
+
+Figma: Ferramenta utilizada para o design e prototipação das interfaces do sistema, facilitando a visualização e validação da experiência do usuário (UX).
 
 
 | **Dimensão**   | **Tecnologia**  |
