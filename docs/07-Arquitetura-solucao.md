@@ -15,7 +15,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ### Diagrama Entidade-Relacionamento (DER) em notação Peter Chen
 Com a notação DER (Diagrama Entidade-Relacionamento), foi feito o relacionamento de todas as tabelas que serão utilizadas no projeto.
 
-![Diagrama sem nome drawio (1)](https://github.com/user-attachments/assets/103afb94-2243-4dcd-843c-3cfa076e131c)
+
+![Diagrama sem nome drawio (2)](https://github.com/user-attachments/assets/8a674547-c523-4c90-9dfb-505799a211dc)
 
 #### Entidades 
 
@@ -64,9 +65,9 @@ Representa a avaliação de um produto por um cliente.
 - Atributos: id, id_produto, id_cliente, autor, avaliacao, nota, anexo.
 
 
-10. Login
+10. Usuario
 Representa o sistema de autenticação.
-- Atributos: id, email, senha, papel (cliente, entregador, farmácia).
+- Atributos: id, id_papel, email, senha, papel (cliente, entregador, farmácia).
 
 #### Relacionamentos
 
@@ -76,24 +77,25 @@ Representa o sistema de autenticação.
 - Pedido(N) --> Possui --> Entrega(1)
 - Farmacia(1) --> Recebe --> Pedido(N)
 - Farmacia(1) --> Cria --> Produto(N)
-- Farmacia(1) --> Possui --> Login(1)
-- Cliente(1) --> Possui --> Login(1)
+- Farmacia(1) --> Possui --> Usuario(1)
+- Cliente(1) --> Possui --> Usuario(1)
 - Cliente(1) --> Faz --> Avaliacao(1)
 - Cliente(1) --> Faz --> Avaliacao_produto(N)
 - Cliente(1) --> Faz --> Pedido(N)
-- Entregador(1) --> Possui --> Login(1)
+- Entregador(1) --> Possui --> Usuario(1)
 - Entregador(1) --> Faz --> Entrega(N)
 
 
 ### Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
 O diagrama apresentado representa o modelo de dados de um sistema de farmácia online, com funcionalidades como cadastro de usuários, gerenciamento de produtos, pedidos, entregas, promoções e avaliações. 
 
-![Diagrama sem nome1 drawio](https://github.com/user-attachments/assets/95b0fee3-d7e2-42b2-96d6-b6afef8f1c25)
+
+![Diagrama sem nome1 drawio (1)](https://github.com/user-attachments/assets/6b8ccf24-9e6e-413f-a7a1-d0237b2e9b0e)
 
  
-A entidade Cliente armazena informações pessoais como nome, sexo, data de nascimento, e-mail, telefone, CPF e endereço. O cliente está relacionado ao sistema de Login, responsável por armazenar o e-mail, senha e o papel (perfil de acesso), e também pode realizar Pedidos, fazer Avaliações gerais e de produtos (Avaliacao_produto), sendo essas avaliações compostas por autor, texto, nota e anexo.
+A entidade Cliente armazena informações pessoais como nome, sexo, data de nascimento, e-mail, telefone, CPF e endereço. O cliente está relacionado ao sistema do Usuario, responsável por armazenar o e-mail, senha e o papel (perfil de acesso), e também pode realizar Pedidos, fazer Avaliações gerais e de produtos (Avaliacao_produto), sendo essas avaliações compostas por autor, texto, nota e anexo.
 
-A entidade Produto contém dados como nome, categoria, preço, estoque, anexo e descrição, e está vinculada a uma Farmácia (que possui informações como nome, e-mail, telefone, CNPJ e endereço). Produtos podem estar associados a Promoções, que especificam um preço promocional, e podem receber avaliações de clientes. Os Pedidos, feitos por clientes, relacionam farmácia, cliente e produto, armazenando também a quantidade e o preço do produto no momento da compra. Vários pedidos podem gerar uma Entrega, que é realizada por um Entregador, cuja estrutura é similar à do cliente (incluindo CPF e endereço), e também possui vínculo com o sistema de login.
+A entidade Produto contém dados como nome, categoria, preço, estoque, anexo e descrição, e está vinculada a uma Farmácia (que possui informações como nome, e-mail, telefone, CNPJ e endereço). Produtos podem estar associados a Promoções, que especificam um preço promocional, e podem receber avaliações de clientes. Os Pedidos, feitos por clientes, relacionam farmácia, cliente e produto, armazenando também a quantidade e o preço do produto no momento da compra. Vários pedidos podem gerar uma Entrega, que é realizada por um Entregador, cuja estrutura é similar à do cliente (incluindo CPF e endereço), e também possui vínculo com o sistema de usuario.
 
 
 ### Esquema relacional
@@ -135,9 +137,10 @@ CREATE TABLE Farmacia (
     numero VARCHAR(10)
 );
 
--- LOGIN
-CREATE TABLE Login (
+-- USUARIO
+CREATE TABLE Usuario (
     id SERIAL PRIMARY KEY,
+    id_papel INT REFERENCES Farmacia(id);Cliente(id);Entregador(id),
     email VARCHAR(100) UNIQUE,
     senha VARCHAR(255),
     papel VARCHAR(20) CHECK (papel IN ('cliente', 'entregador', 'farmacia'))
