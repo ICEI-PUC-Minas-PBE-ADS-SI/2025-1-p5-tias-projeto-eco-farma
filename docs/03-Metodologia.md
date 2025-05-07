@@ -130,7 +130,7 @@ Atualizado em: 03/05/2025
 |  Victória G.     | 07 - Arquitetura Solução - Diagrama de classes |   05/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |  Victória G.     | 07 - Arquitetura Solução - Tecnologias utilizadas |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |  Victória G.     | 07 - Arquitetura Solução - Qualidade de software |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
-|      |  |    | |     |    |
+|   Walisson R.   | 07 - Arquitetura Solução - Esquema relacional |  06/05/2025  | 11/05/2025 | ✔️ |  07/05/2025  |
 
 
 
