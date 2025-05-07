@@ -102,7 +102,7 @@ A entidade Produto contém dados como nome, categoria, preço, estoque, anexo e 
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-[Esquema Relacional (2).pdf](https://github.com/user-attachments/files/20091625/Esquema.Relacional.2.pdf)
+![Esquema Relacional (2).pdf](https://github.com/user-attachments/files/20091625/Esquema.Relacional.2.pdf)
 
 
 ### Modelo físico
