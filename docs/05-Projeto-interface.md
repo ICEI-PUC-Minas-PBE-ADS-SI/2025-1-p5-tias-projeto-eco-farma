@@ -34,7 +34,16 @@ Visão geral da interação do usuário por meio das telas do sistema. Apresente
 
 ### Tela principal do sistema
 
-Descrição da tela principal do sistema.
+A página inicial do site Ecofarma apresenta um visual moderno, amigável e com foco em sustentabilidade, economia e saúde. No topo, há uma barra de navegação que permite ao usuário pesquisar por produtos, selecionar sua localização e acessar sua sacola de compras, além de visualizar o sistema de pontos da plataforma. Abaixo, uma faixa de categorias facilita o acesso rápido a diferentes tipos de produtos, como suplementos, dermocosméticos, fraldas, perfumes e testes de COVID-19.
+
+O destaque principal da página é um banner com fundo verde e a imagem de um coelho farmacêutico simpático, promovendo a campanha de troca de blisters de medicamentos vazios por descontos nas próximas compras. A mensagem reforça que a ação é simples, sustentável e vantajosa, convidando o usuário a clicar para saber mais.
+
+Logo em seguida, há uma seção com as principais farmácias parceiras, exibidas por seus logotipos, reforçando a confiabilidade e a variedade da rede. A área de promoções de Páscoa mostra ofertas com produtos em destaque, como medicamentos, fraldas e kits de cereais, com preços promocionais e botão de adicionar ao carrinho. Um coelho com lupa ajuda a ilustrar o caráter promocional e investigativo das ofertas.
+
+
+Por fim, há uma seção de perguntas frequentes que esclarece dúvidas comuns sobre cadastro de farmácias, uso de pontos em lojas físicas e como se tornar entregador. No rodapé, o site apresenta suas informações institucionais, suporte ao cliente, redes sociais e contatos, reforçando o propósito de promover saúde, economia e cuidado com o meio ambiente.
+
+https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=61-3614&t=F0r8faO17xXaZXRz-1
 
 ![Página Inicial](https://github.com/user-attachments/assets/c86eaa00-0d6a-4808-9ae4-9ceb0820cd43)
 
