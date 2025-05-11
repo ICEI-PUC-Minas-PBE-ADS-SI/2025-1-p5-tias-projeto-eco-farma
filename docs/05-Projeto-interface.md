@@ -36,7 +36,7 @@ Visão geral da interação do usuário por meio das telas do sistema. Apresente
 
 Descrição da tela principal do sistema.
 
-> Insira aqui a tela principal do sistema
+![Página Inicial](https://github.com/user-attachments/assets/c86eaa00-0d6a-4808-9ae4-9ceb0820cd43)
 
 
 ###  Telas do processo 1
