@@ -134,7 +134,11 @@ Atualizado em: 11/05/2025
 |  Victória G.     | 07 - Arquitetura Solução - Tecnologias utilizadas |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |  Victória G.     | 07 - Arquitetura Solução - Qualidade de software |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |   Walisson R.   | 07 - Arquitetura Solução - Esquema relacional |  06/05/2025  | 11/05/2025 | ✔️ |  07/05/2025  |
-|   Camila P   | Protótipo |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
+|   Camila P.   | Protótipo |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
+|   Letícia R.   | Protótipo |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
+|   Letícia R.   | Slides |  09/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
+|   Letícia R.   | Processo x: nome da tarefa |  06/04/2025  | 11/05/2025 | ✔️ |  05/05/2025  |
+
 
 
 
