@@ -31,3 +31,39 @@ PILBOX BRASIL. Como melhorar a adesão dos pacientes aos medicamentos com essa f
 STACHEWSKI, Ana Laura. Eles realizaram um serviço de entregas sustentáveis ​​e movidos para bicicletas. Revista Pequenas Empresas & Grandes Negócios, São Paulo, 10 abr. 2019.
 
 UNIVERSIDADE FEDERAL DO VALE DE SÃO FRANCISCO. Descarte de medicamentos vencidos: como e onde descartar corretamente. Petrolina: UNIVASF, 2022.
+
+W3SCHOOLS. CSS Website Layout. [S.l.]: W3Schools, [s.d.].
+
+BIOINFORMATICS WEB DEVELOPMENT. Website page layouts. [S.l.]: [s.n.], [s.d.].
+
+TAYLOR, Matthew James. Perfect Liquid Layouts. [S.l.]: [s.n.], [s.d.].
+
+USABILLA. How and why icons improve your web design. [S.l.]: Usabilla, [s.d.].
+
+NETSHOES. [S.l.]: Netshoes, [s.d.].
+
+AMAZON. [S.l.]: Amazon, [s.d.].
+
+MERCADO LIVRE. [S.l.]: Mercado Livre, [s.d.].
+
+MAGAZINE LUIZA. [S.l.]: Magazine Luiza, [s.d.].
+
+OPERAND. Identidade visual: conexão emocional e a personalidade da marca. [S.l.]: Operand, [s.d.].
+
+SEBRAE. Posicionamento de marca: a importância da identidade visual. [S.l.]: Sebrae, [s.d.].
+
+MEIO & MENSAGEM. Identidade visual. [S.l.]: Meio & Mensagem, [s.d.].
+
+TERRACYCLE. [S.l.]: TerraCycle, [s.d.].
+
+ECYCLE. [S.l.]: eCycle, [s.d.].
+
+SOS AMAZÔNIA. Doe. [S.l.]: SOS Amazônia, [s.d.].
+
+CERRADO DAS ÁGUAS. [S.l.]: Cerrado das Águas, [s.d.].
+
+GOOGLE FONTS. Icons. [S.l.]: Google, [s.d.].
+
+FONT AWESOME. Icons. [S.l.]: Font Awesome, [s.d.].
+
+HOSTINGER. Ideias de layout de site. [S.l.]: Hostinger, [s.d.].
