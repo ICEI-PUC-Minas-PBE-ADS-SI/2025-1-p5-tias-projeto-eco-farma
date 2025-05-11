@@ -9,7 +9,7 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
 
  ## User flow
 
-Fluxo de usuário (user flow) é uma técnica que permite ao desenvolvedor mapear todo o fluxo de navegação do usuário na aplicação. Essa técnica serve para alinhar os caminhos e as possíveis ações que o usuário pode realizar junto com os membros da equipe.
+O mapa de jornada do cliente da EcoFarma representa visualmente toda a experiência do usuário ao utilizar o serviço de entrega de medicamentos e produtos farmacêuticos, desde o primeiro contato até o recebimento final do produto.
 
 ![image](https://github.com/user-attachments/assets/7b9a3135-f159-4e1b-9c5f-5a039eb30c59)
 
