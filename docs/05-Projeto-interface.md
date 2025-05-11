@@ -30,8 +30,6 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, intername
  
 ## Interface do sistema
 
-Visão geral da interação do usuário por meio das telas do sistema. Apresente as principais interfaces da plataforma em sua versão final.
-
 ### Tela principal do sistema
 
 A página inicial do site Ecofarma apresenta um visual moderno, amigável e com foco em sustentabilidade, economia e saúde. No topo, há uma barra de navegação que permite ao usuário pesquisar por produtos, selecionar sua localização e acessar sua sacola de compras, além de visualizar o sistema de pontos da plataforma. Abaixo, uma faixa de categorias facilita o acesso rápido a diferentes tipos de produtos, como suplementos, dermocosméticos, fraldas, perfumes e testes de COVID-19.
