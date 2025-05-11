@@ -74,7 +74,15 @@ Descrição da tela relativa à atividade 3 do processo 1.
 Descrição da tela relativa à atividade 1 do processo 2.
 
 > Insira aqui a tela da atividade 1
+![pontos de coleta](https://github.com/user-attachments/assets/16271d56-f0bb-4a45-a614-37f1ca9f21c4)
 
-Descrição da tela relativa à atividade 2 do processo 2.
 
-> Insira aqui a tela da atividade 2
+### Telas do processo 3
+
+Descrição da tela relativa à atividade 1 do processo 3.
+
+> Insira aqui a tela da atividade 1
+![Sign in - Cliente](https://github.com/user-attachments/assets/8816d37a-2af2-4555-a7fd-64824e28b650)
+
+
+
