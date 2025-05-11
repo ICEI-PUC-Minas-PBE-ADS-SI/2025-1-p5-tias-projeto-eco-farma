@@ -98,15 +98,6 @@ A entidade Cliente armazena informações pessoais como nome, sexo, data de nasc
 
 A entidade Produto contém dados como nome, categoria, preço, estoque, anexo e descrição, e está vinculada a uma Farmácia (que possui informações como nome, e-mail, telefone, CNPJ e endereço). Produtos podem estar associados a Promoções, que especificam um preço promocional, e podem receber avaliações de clientes. Os Pedidos, feitos por clientes, relacionam farmácia, cliente e produto, armazenando também a quantidade e o preço do produto no momento da compra. Vários pedidos podem gerar uma Entrega, que é realizada por um Entregador, cuja estrutura é similar à do cliente (incluindo CPF e endereço), e também possui vínculo com o sistema de usuario.
 
-
-### Esquema relacional
-
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-
-
-
-
 ### Modelo físico
 
 ```sql
