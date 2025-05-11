@@ -53,10 +53,20 @@ https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=61-3
 Descrição da tela relativa à atividade 1 do processo 1.
 
 > Insira aqui a tela da atividade 1
+![Detalhamento - Produto](https://github.com/user-attachments/assets/7a7f97ff-6f6b-4af6-b8f6-c7ec0588b14d)
+
 
 Descrição da tela relativa à atividade 2 do processo 1.
 
 > Insira aqui a tela da atividade 2
+![Sacola - usar pontos](https://github.com/user-attachments/assets/adf1090a-1ea1-47ff-b926-5bfc31ed0620)
+
+
+Descrição da tela relativa à atividade 3 do processo 1.
+
+> Insira aqui a tela da atividade 3
+![Checkout](https://github.com/user-attachments/assets/e8130d5d-f589-4d99-94d0-01c8cbef4564)
+
 
 
 ### Telas do processo 2
