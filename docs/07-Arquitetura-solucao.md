@@ -89,9 +89,6 @@ Representa o sistema de autenticação.
 ### Diagrama Entidade-Relacionamento (DER) em notação Pé de Galinha
 O diagrama apresentado representa o modelo de dados de um sistema de farmácia online, com funcionalidades como cadastro de usuários, gerenciamento de produtos, pedidos, entregas, promoções e avaliações. 
 
-
-![Diagrama sem nome1 drawio (1)](https://github.com/user-attachments/assets/6b8ccf24-9e6e-413f-a7a1-d0237b2e9b0e)
-
 ![Esquema Relacional](https://github.com/user-attachments/assets/160c31da-a4c3-431d-bed9-02554f579eb1)
  
 A entidade Cliente armazena informações pessoais como nome, sexo, data de nascimento, e-mail, telefone, CPF e endereço. O cliente está relacionado ao sistema do Usuario, responsável por armazenar o e-mail, senha e o papel (perfil de acesso), e também pode realizar Pedidos, fazer Avaliações gerais e de produtos (Avaliacao_produto), sendo essas avaliações compostas por autor, texto, nota e anexo.
