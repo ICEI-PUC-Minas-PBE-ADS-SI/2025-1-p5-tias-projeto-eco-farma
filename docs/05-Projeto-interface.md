@@ -14,11 +14,6 @@ O mapa de jornada do cliente da EcoFarma representa visualmente toda a experiên
 ![image](https://github.com/user-attachments/assets/7b9a3135-f159-4e1b-9c5f-5a039eb30c59)
 
 
-> **Links úteis**:
-> - [User flow: o quê é e como fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User flow vs site maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 user flow tools & templates for smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
 ### Diagrama de fluxo
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo, muitas vezes sem a necessidade de desenhar o design das telas da interface. Isso permite que o design das interações seja bem planejado e tenha impacto na qualidade do design do wireframe interativo que será desenvolvido logo em seguida.
@@ -30,11 +25,9 @@ O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, intername
 
 ## Wireframes
 
-São protótipos usados no design de interface para sugerir a estrutura de um site web e seu relacionamento entre suas páginas. Um wireframe web é uma ilustração que mostra o layout dos elementos fundamentais na interface.
+![WhatsApp Image 2025-05-11 at 20 35 16](https://github.com/user-attachments/assets/73790e9d-044c-4414-b420-005827f72134)
 
-![Exemplo de wireframe](images/wireframe.png)
  
-
 ## Interface do sistema
 
 Visão geral da interação do usuário por meio das telas do sistema. Apresente as principais interfaces da plataforma em sua versão final.
