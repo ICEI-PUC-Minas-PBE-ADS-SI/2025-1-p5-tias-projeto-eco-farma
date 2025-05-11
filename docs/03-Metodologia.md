@@ -38,16 +38,20 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 ###  Divisão de papéis
 
 #### Sprint 1
-- _Scrum master_: Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
-- Protótipos: Bianca Marques Teixeira
-- Testes: Walisson Ribeiro da Silva 
-- Documentação: Letícia Rodrigues Batista e Victoria Gonçalves da Silva
+- _Scrum master_: Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa;
+- _Testes_: Walisson Ribeiro da Silva e Bianca Marques Teixeira;
+- _Documentação_: Letícia Rodrigues Batista e Victoria Gonçalves da Silva.
 
 #### Sprint 2
-- Scrum Master= Walisson Ribeiro da Silva 
-- Modelagem (Diagrama)= Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa e Victória Gonçalves da Silva
-- Documentação= Victória Gonçalves da Silva e Bianca Marques Teixeira
-- Product Owner= Letícia Rodrigues Batista, Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa
+- _Scrum Master_: Walisson Ribeiro da Silva; 
+- _Modelagem (Diagrama)_: Bianca Marques Teixeira, Thiago Lacerda Santos Barbosa e Victória Gonçalves da Silva;
+- _Documentação_: Victória Gonçalves da Silva e Bianca Marques Teixeira;
+- _Product Owner_: Letícia Rodrigues Batista, Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa.
+
+#### Sprint 3
+- _Protótipo e interface_: Camila de Paula Rodrigues, Thiago Lacerda Santos Barbosa e Letícia Rodrigues Batista;
+- _Configuração do Banco de dados e tecnologias_: Victoria Gonçalves da Silva e Walisson Ribeiro da Silva;
+- _Pesquisa de template padrão do projeto_: Bianca Marques Teixeira.
   
 ###  Quadro de tarefas
 
@@ -112,7 +116,7 @@ Atualizado em: 06/04/2025
 
 #### Sprint 3
 
-Atualizado em: 03/05/2025
+Atualizado em: 11/05/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
@@ -124,7 +128,6 @@ Atualizado em: 03/05/2025
 | Bianca M.      | 06 - Template Padrão - Layout | 25/04/2025  | 20/04/2025 | ✔️    | 25/04/2025   |
 | Bianca M.      | 06 - Template Padrão - Aspectos de Responsividade | 26/04/2025  | 30/04/2025 | ✔️   | 26/04/2025  |
 |  Bianca M.     | 07 - Arquitetura Solução - (DER) em notação Peter Chen |  03/05/2025   | 05/05/2025 |  ✔️   |   03/05/2025  |
-|   Bianca M.    | 07 - Arquitetura Solução - (DER) em notação Pé de Galinha |  03/05/2025   | 05/05/2025 |  ✔️   |  03/05/2025  |
 |   Bianca M.    | 07 - Arquitetura Solução - Modelo físico| 03/05/2025 | 05/05/2025 |  ✔️   |  03/05/2025 |
 |  Bianca M.     | Documentação - Projeto do banco de dados |   03/05/2025 |03/05/2025 |   ✔️  |  03/05/2025  |
 |  Victória G.     | 07 - Arquitetura Solução - Diagrama de classes |   05/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
@@ -132,7 +135,6 @@ Atualizado em: 03/05/2025
 |  Victória G.     | 07 - Arquitetura Solução - Qualidade de software |   02/05/2025 |11/05/2025 |   ✔️  |  05/05/2025  |
 |   Walisson R.   | 07 - Arquitetura Solução - Esquema relacional |  06/05/2025  | 11/05/2025 | ✔️ |  07/05/2025  |
 |   Camila P   | Protótipo |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
-
 
 
 
@@ -154,10 +156,6 @@ Coloque informações sobre detalhes da implementação do Scrum seguido pelo gr
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. Todos os ambientes e frameworks utilizados no desenvolvimento da aplicação estão listados na seção abaixo.
 
 ### Ferramentas
-
-Liste todas as ferramentas que foram empregadas no projeto, justificando a escolha delas, sempre que possível.
-
-Exemplo: os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 | Ambiente                            | Plataforma                         | Link de acesso                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
