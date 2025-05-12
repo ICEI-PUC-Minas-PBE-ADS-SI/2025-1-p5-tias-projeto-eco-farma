@@ -13,6 +13,8 @@ O mapa de jornada do cliente da EcoFarma representa visualmente toda a experiên
 
 ![image](https://github.com/user-attachments/assets/7b9a3135-f159-4e1b-9c5f-5a039eb30c59)
 
+![WhatsApp Image 2025-05-11 at 20 35 16](https://github.com/user-attachments/assets/73790e9d-044c-4414-b420-005827f72134)
+
 
 ### Diagrama de fluxo
 
@@ -24,7 +26,11 @@ Esse diagrama de fluxo representa os principais caminhos que um usuário pode se
 
 ## Wireframes
 
-![WhatsApp Image 2025-05-11 at 20 35 16](https://github.com/user-attachments/assets/73790e9d-044c-4414-b420-005827f72134)
+![WhatsApp Image 2025-05-11 at 21 22 15](https://github.com/user-attachments/assets/f19faf8a-c4f0-478e-b855-e8c91ab79777)
+
+
+![image](https://github.com/user-attachments/assets/b3ae99da-93d4-4bc6-bc13-d8680a459e70)
+
 
  
 ## Interface do sistema
