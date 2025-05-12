@@ -16,7 +16,11 @@ O mapa de jornada do cliente da EcoFarma representa visualmente toda a experiên
 
 ### Diagrama de fluxo
 
-![Uploading diagram (1)_page-0001.jpg…]()
+O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo, muitas vezes sem a necessidade de desenhar o design das telas da interface. Isso permite que o design das interações seja bem planejado e tenha impacto na qualidade do design do wireframe interativo que será desenvolvido logo em seguida.
+
+O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem, internamente, a indicação dos principais elementos de interface — tais como menus e acessos — e funcionalidades, como editar, pesquisar, filtrar e configurar, além da conexão entre esses boxes a partir do processo de interação.
+
+![Exemplo de diagrama de fluxo](images/diagrama_fluxo.jpg)
 
 
 ## Wireframes
@@ -42,23 +46,26 @@ https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=61-3
 ![Página Inicial](https://github.com/user-attachments/assets/c86eaa00-0d6a-4808-9ae4-9ceb0820cd43)
 
 
-###  Telas do processo 1 - Pedidos e Itens
+###  Telas do processo 1
 
-Essa é a tela de detalhes do produto do site EcoFarma. Ela exibe uma imagem grande do medicamento à esquerda e, à direita, o nome, preço, nota média dos usuários e informações como código e categoria. O usuário pode escolher a quantidade desejada e ver o desconto com pontos. Abaixo disso, há botões de “Adicionar ao carrinho” e “Comprar”. Mais abaixo estão os detalhes do produto, explicando para que ele é indicado. Em seguida, aparecem as avaliações de outros clientes, com notas, comentários e perfis resumidos. No fim da página, há uma seção de produtos recomendados, com imagem, nome, preço e botão para adicionar ao carrinho
+Descrição da tela relativa à atividade 1 do processo 1.
 
-> Insira aqui a tela da atividade 1
+O objetivo da página de detalhamento do produto é apresentar todas as informações essenciais sobre um item específico de forma clara e completa, permitindo que o usuário conheça suas características, preço, benefícios, avaliações de outros clientes e possa realizar a compra de maneira rápida e segura.
+
 ![Detalhamento - Produto](https://github.com/user-attachments/assets/7a7f97ff-6f6b-4af6-b8f6-c7ec0588b14d)
 
 
 Descrição da tela relativa à atividade 2 do processo 1.
 
-> Insira aqui a tela da atividade 2
+O objetivo dessa tela é permitir que o usuário utilize seus pontos acumulados — obtidos ao descartar corretamente blisters ou medicamentos vencidos — como forma de desconto na compra. Ela informa a quantidade de pontos disponíveis, o valor correspondente em desconto e permite que o cliente selecione quantos pontos deseja aplicar antes de finalizar a compra.
+
 ![Sacola - usar pontos](https://github.com/user-attachments/assets/adf1090a-1ea1-47ff-b926-5bfc31ed0620)
 
 
 Descrição da tela relativa à atividade 3 do processo 1.
 
-> Insira aqui a tela da atividade 3
+O objetivo dessa tela é apresentar ao usuário um resumo final do pedido, permitindo a escolha do método de entrega (entrega no endereço ou retirada), a confirmação do endereço, a visualização dos produtos comprados com seus respectivos preços e quantidades, e o total a pagar, incluindo o desconto aplicado por pontos. Ela serve como última etapa de conferência antes de finalizar a compra.
+
 ![Checkout](https://github.com/user-attachments/assets/e8130d5d-f589-4d99-94d0-01c8cbef4564)
 
 
@@ -67,7 +74,8 @@ Descrição da tela relativa à atividade 3 do processo 1.
 
 Descrição da tela relativa à atividade 1 do processo 2.
 
-> Insira aqui a tela da atividade 1
+O objetivo dessa tela é permitir que o usuário visualize e escolha a farmácia parceira mais próxima para retirada ou entrega de produtos, com base em informações como endereço, status de funcionamento (aberto ou fechado) e localização no mapa da cidade.
+
 ![pontos de coleta](https://github.com/user-attachments/assets/16271d56-f0bb-4a45-a614-37f1ca9f21c4)
 
 
@@ -75,8 +83,34 @@ Descrição da tela relativa à atividade 1 do processo 2.
 
 Descrição da tela relativa à atividade 1 do processo 3.
 
-> Insira aqui a tela da atividade 1
+O objetivo dessa tela é permitir que o usuário faça login na plataforma Ecofarma com seu e-mail e senha ou se cadastre como novo cliente, garantindo acesso às funcionalidades do site, como acúmulo de pontos, acompanhamento de pedidos e finalização de compras.
+
 ![Sign in - Cliente](https://github.com/user-attachments/assets/8816d37a-2af2-4555-a7fd-64824e28b650)
 
 
+Descrição da tela relativa à atividade 2 do processo 3.
 
+O objetivo dessa tela é permitir que o usuário preencha e envie seus dados pessoais para efetuar o cadastro como cliente na plataforma Ecofarma, habilitando o acesso a funcionalidades como compras, acúmulo de pontos, rastreamento de pedidos e uso de serviços personalizados.
+
+![Cadastro dados cliente](https://github.com/user-attachments/assets/56115fbf-1dd2-4ce2-890f-2e5344f67d9c)
+
+
+Descrição da tela relativa à atividade 3 do processo 3.
+
+O objetivo dessa tela é permitir que o usuário visualize e edite suas informações pessoais cadastradas na plataforma Ecofarma, como nome, e-mail, data de nascimento, telefone e gênero, além de acessar seções relacionadas a pontuação, pedidos, endereços e pontos de coleta.
+
+![Perfil cliente - dados pessoais](https://github.com/user-attachments/assets/a4471782-9457-4f55-ace0-ae68308db932)
+
+
+Descrição da tela relativa à atividade 4 do processo 3.
+
+O objetivo dessa tela é permitir que o usuário consulte seu saldo de pontos acumulados na plataforma Ecofarma, simule o desconto que pode obter em compras ao utilizar esses pontos e visualize quantos ainda restarão após a aplicação.
+
+![Perfil cliente - pontuacao](https://github.com/user-attachments/assets/b4ef1493-928e-4caa-a9aa-44a348c9df95)
+
+
+Descrição da tela relativa à atividade 5 do processo 3.
+
+O objetivo dessa tela é permitir que o usuário visualize o histórico de seus pedidos realizados na plataforma Ecofarma, com detalhes como data da compra, status do pedido, produtos adquiridos, quantidades, valores e total pago.
+
+![Perfil cliente - pedidos](https://github.com/user-attachments/assets/f6814fa9-d5d8-4aaf-b03f-01898b6ddd6c)
