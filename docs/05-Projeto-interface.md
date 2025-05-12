@@ -26,13 +26,13 @@ Esse diagrama de fluxo representa os principais caminhos que um usuário pode se
 
 ## Wireframes
 
-### Wireframe 1 e 2
+### Wireframes 1 e 2
 ![WhatsApp Image 2025-05-11 at 21 22 15](https://github.com/user-attachments/assets/f19faf8a-c4f0-478e-b855-e8c91ab79777)
 
 
 
 
-### wireframe 3
+### Wireframe 3
 ![image](https://github.com/user-attachments/assets/b3ae99da-93d4-4bc6-bc13-d8680a459e70)
 
 
