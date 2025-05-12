@@ -140,6 +140,7 @@ Atualizado em: 11/05/2025
 |   Letícia R.   | 4.1 e 4.1.1 documentação APC |  06/04/2025  | 11/05/2025 | ✔️ |  05/05/2025  |
 |   Thiago L.   | Protótipação das telas |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
 |   Thiago L.   | Mapa de jornada do usuário |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
+|   Thiago L.   | Wireframes |  06/04/2025  | 11/05/2025 | ✔️ |  10/05/2025  |
 
 
 
