@@ -10,9 +10,10 @@ Visão geral da interação do usuário pelas telas do sistema e protótipo inte
  ## User flow
 
 O mapa de jornada do cliente da EcoFarma representa visualmente toda a experiência do usuário ao utilizar o serviço de entrega de medicamentos e produtos farmacêuticos, desde o primeiro contato até o recebimento final do produto.
-
+1.
 ![image](https://github.com/user-attachments/assets/7b9a3135-f159-4e1b-9c5f-5a039eb30c59)
 
+2.
 ![WhatsApp Image 2025-05-11 at 20 35 16](https://github.com/user-attachments/assets/73790e9d-044c-4414-b420-005827f72134)
 
 
