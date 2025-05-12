@@ -119,3 +119,138 @@ Descrição da tela relativa à atividade 5 do processo 3.
 O objetivo dessa tela é permitir que o usuário visualize o histórico de seus pedidos realizados na plataforma Ecofarma, com detalhes como data da compra, status do pedido, produtos adquiridos, quantidades, valores e total pago.
 
 ![Perfil cliente - pedidos](https://github.com/user-attachments/assets/f6814fa9-d5d8-4aaf-b03f-01898b6ddd6c)
+
+
+Descrição da tela relativa à atividade 6 do processo 3.
+
+O objetivo dessa tela é permitir que o usuário visualize, edite ou adicione endereços.
+
+![Perfil cliente - enderecos](https://github.com/user-attachments/assets/4cddcc1f-3864-4f7a-8b51-930b297ee04b)
+
+
+Descrição da tela relativa à atividade 7 do processo 3.
+
+O objetivo dessa tela é permitir que o usuário visualize pontos de coleta de blisters.
+
+![Perfil cliente - pontos de coleta](https://github.com/user-attachments/assets/055138a6-16c4-4d9e-ac5b-ed259790d734)
+
+
+### Telas do processo 4
+
+Descrição da tela relativa à atividade 1 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário faça login na plataforma Ecofarma com seu e-mail e senha ou se cadastre como novo entregador, garantindo acesso às funcionalidades do site, como entregas a fazer e pedidos entregues.
+
+![Sign in - entregador](https://github.com/user-attachments/assets/08c71e60-95e8-4c14-bc11-73c15ba64b3d)
+
+
+Descrição da tela relativa à atividade 2 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário preencha e envie seus dados pessoais para efetuar o cadastro como entregador na plataforma Ecofarma.
+
+![Cadastro dados parceiro](https://github.com/user-attachments/assets/a35a7bb3-48c0-4f8c-8c61-8377c2eaadf9)
+
+
+Descrição da tela relativa à atividade 3 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário visualize a pagina principal do perfil na plataforma, tendo acesso a informações e funcionalidades.
+
+![Perfil parceiro](https://github.com/user-attachments/assets/14be639d-e63d-497f-b084-78fc10bfd89b)
+
+
+Descrição da tela relativa à atividade 4 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário visualize e edite suas informações pessoais cadastradas na plataforma Ecofarma.
+
+![Perfil parceiro - dados pessoais](https://github.com/user-attachments/assets/28541c1b-58e7-47cf-ac79-0bed71e0bb1b)
+
+
+Descrição da tela relativa à atividade 5 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário visualize as entregas a serem feitas.
+
+![Perfil parceiro - entregas a fazer](https://github.com/user-attachments/assets/d388b098-2604-4333-a806-1654f0516977)
+
+
+Descrição da tela relativa à atividade 6 do processo 4.
+
+O objetivo dessa tela é permitir que o usuário visualize as entregas concluidas.
+
+![Perfil parceiro - pedidos entregues](https://github.com/user-attachments/assets/74638332-b61e-47d9-889b-85cb17c3f7c7)
+
+
+### Telas do processo 5
+
+Descrição da tela relativa à atividade 1 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário faça login na plataforma Ecofarma com seu e-mail e senha ou se cadastre como novo lojista.
+
+![Sign in - Lojista](https://github.com/user-attachments/assets/9d8aab42-6b82-4408-91a2-a75a210352a5)
+
+
+Descrição da tela relativa à atividade 2 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário preencha e envie seus dados pessoais para efetuar o cadastro como lojista na plataforma Ecofarma.
+
+![Cadastro dados lojista](https://github.com/user-attachments/assets/dccd9e7f-bc36-4584-a5d9-91c5b0127cec)
+
+
+Descrição da tela relativa à atividade 3 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário visualize a pagina principal do perfil na plataforma, tendo acesso a informações e funcionalidades.
+
+![perfil lojista](https://github.com/user-attachments/assets/97f40f44-fff8-4f3e-9a09-9362d5e370b2)
+
+
+Descrição da tela relativa à atividade 4 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário visualize e edite suas informações da empresa cadastradas na plataforma Ecofarma.
+
+![perfil lojista - dados pessoais](https://github.com/user-attachments/assets/ae1d884f-d0b6-4b5f-ad94-2b258ae6f56e)
+
+
+Descrição da tela relativa à atividade 5 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário visualize o dashboard da empresa na plataforma.
+
+![perfil lojista - dashboard](https://github.com/user-attachments/assets/4a39a432-ed95-4975-820a-e5c8c311dd85)
+
+
+Descrição da tela relativa à atividade 6 do processo 5.
+
+O objetivo dessa tela é permitir que o usuário cadastre itens na plataforma.
+
+![perfil lojista - cadastrar itens](https://github.com/user-attachments/assets/9ea7cce3-28ba-439e-ab0c-52a1e2f5bd7a)
+
+
+Descrição da tela relativa à atividade 7 do processo 5.
+
+O objetivo dessas tela é permitir que o usuário visualize e edite itens no estoque.
+
+1. visualizar estoque
+![perfil lojista - visualizar estoque](https://github.com/user-attachments/assets/d2a407b6-c818-4756-9c3c-10de2a07cb8d)
+
+2. editar estoque
+![perfil lojista - visualizar estoque editar](https://github.com/user-attachments/assets/123c2106-b148-42d4-83a5-4d7f87211981)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
