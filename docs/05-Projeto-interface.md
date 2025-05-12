@@ -44,7 +44,7 @@ https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=61-3
 
 ###  Telas do processo 1
 
-Descrição da tela relativa à atividade 1 do processo 1.
+Essa é a tela de detalhes do produto do site EcoFarma. Ela exibe uma imagem grande do medicamento à esquerda e, à direita, o nome, preço, nota média dos usuários e informações como código e categoria. O usuário pode escolher a quantidade desejada e ver o desconto com pontos. Abaixo disso, há botões de “Adicionar ao carrinho” e “Comprar”. Mais abaixo estão os detalhes do produto, explicando para que ele é indicado. Em seguida, aparecem as avaliações de outros clientes, com notas, comentários e perfis resumidos. No fim da página, há uma seção de produtos recomendados, com imagem, nome, preço e botão para adicionar ao carrinho
 
 > Insira aqui a tela da atividade 1
 ![Detalhamento - Produto](https://github.com/user-attachments/assets/7a7f97ff-6f6b-4af6-b8f6-c7ec0588b14d)
