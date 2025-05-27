@@ -146,7 +146,8 @@ Atualizado em: 11/05/2025
 #### Sprint 4
 
 Atualizado em: 27/05/2025
-
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 
 
 Legenda:
