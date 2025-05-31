@@ -1,0 +1,42 @@
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\appsettings.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Projeto TIAS.exe
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Projeto TIAS.deps.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Projeto TIAS.runtimeconfig.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Projeto TIAS.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Projeto TIAS.pdb
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.csproj.AssemblyReference.cache
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.AssemblyInfoInputs.cache
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.AssemblyInfo.cs
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.csproj.CoreCompileInputs.cache
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets\msbuild.Projeto TIAS.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets\msbuild.build.Projeto TIAS.props
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Projeto TIAS.props
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Projeto TIAS.props
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\scopedcss\bundle\Projeto TIAS.styles.css
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto .6D37F24B.Up2Date
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\refint\Projeto TIAS.dll
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.pdb
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\Projeto TIAS.genruntimeconfig.cache
+C:\Users\Bianc\source\repos\Projeto TIAS\Projeto TIAS\obj\Debug\net8.0\ref\Projeto TIAS.dll

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Projeto TIAS.props" />
+</Project>
