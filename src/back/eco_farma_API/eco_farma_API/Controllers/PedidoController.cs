@@ -1,43 +1,86 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace eco_farma_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class PedidoController : ControllerBase
     {
-        // GET: api/<PedidoController>
+        private readonly ApplicationDbContext _context;
+
+        public PedidoController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Pedido>>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Pedidos.ToListAsync();
         }
 
-        // GET api/<PedidoController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Pedido>> GetById(int id)
         {
-            return "value";
+            var pedido = await _context.Pedidos.FindAsync(id);
+            if (pedido == null)
+                return NotFound();
+
+            return pedido;
         }
 
-        // POST api/<PedidoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Pedido>> Create(Pedido novoPedido)
         {
+            _context.Pedidos.Add(novoPedido);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetById), new { id = novoPedido.id_pedido }, novoPedido);
         }
 
-        // PUT api/<PedidoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update(int id, Pedido pedidoAtualizado)
         {
+            if (id != pedidoAtualizado.id_pedido)
+                return BadRequest();
+
+            _context.Entry(pedidoAtualizado).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PedidoExists(id))
+                    return NotFound();
+                else
+                    throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<PedidoController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var pedido = await _context.Pedidos.FindAsync(id);
+            if (pedido == null)
+                return NotFound();
+
+            _context.Pedidos.Remove(pedido);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool PedidoExists(int id)
+        {
+            return _context.Pedidos.Any(p => p.id_pedido == id);
         }
     }
 }

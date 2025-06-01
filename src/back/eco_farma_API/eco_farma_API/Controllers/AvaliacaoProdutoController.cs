@@ -1,43 +1,77 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace eco_farma_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
-    public class AvaliacaoProdutoController : ControllerBase
+    [Route("api/[controller]")]
+    public class Avaliacao_produtoController : ControllerBase
     {
-        // GET: api/<AvaliacaoProdutoController>
+        private readonly ApplicationDbContext _context;
+
+        public Avaliacao_produtoController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Avaliacao_produto>>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Avaliacoes_produto.ToListAsync();
         }
 
-        // GET api/<AvaliacaoProdutoController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Avaliacao_produto>> GetById(int id)
         {
-            return "value";
+            var avaliacao = await _context.Avaliacoes_produto.FindAsync(id);
+            if (avaliacao == null) return NotFound();
+            return avaliacao;
         }
 
-        // POST api/<AvaliacaoProdutoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Avaliacao_produto>> Create(Avaliacao_produto novo)
         {
+            _context.Avaliacoes_produto.Add(novo);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetById), new { id = novo.id_avaliacao_produto }, novo);
         }
 
-        // PUT api/<AvaliacaoProdutoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update(int id, Avaliacao_produto atualizado)
         {
+            if (id != atualizado.id_avaliacao_produto)
+                return BadRequest();
+
+            _context.Entry(atualizado).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!AvaliacaoProdutoExists(id)) return NotFound();
+                else throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<AvaliacaoProdutoController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var avaliacao = await _context.Avaliacoes_produto.FindAsync(id);
+            if (avaliacao == null) return NotFound();
+
+            _context.Avaliacoes_produto.Remove(avaliacao);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
+
+        private bool AvaliacaoProdutoExists(int id) =>
+            _context.Avaliacoes_produto.Any(a => a.id_avaliacao_produto == id);
     }
 }

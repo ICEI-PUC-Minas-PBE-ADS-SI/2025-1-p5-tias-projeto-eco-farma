@@ -1,43 +1,77 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace eco_farma_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class ClienteController : ControllerBase
     {
-        // GET: api/<ClienteController>
+        private readonly ApplicationDbContext _context;
+
+        public ClienteController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Cliente>>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Clientes.ToListAsync();
         }
 
-        // GET api/<ClienteController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Cliente>> GetById(int id)
         {
-            return "value";
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente == null) return NotFound();
+            return cliente;
         }
 
-        // POST api/<ClienteController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Cliente>> Create(Cliente novo)
         {
+            _context.Clientes.Add(novo);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetById), new { id = novo.id_cliente }, novo);
         }
 
-        // PUT api/<ClienteController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update(int id, Cliente atualizado)
         {
+            if (id != atualizado.id_cliente)
+                return BadRequest();
+
+            _context.Entry(atualizado).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ClienteExists(id)) return NotFound();
+                else throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<ClienteController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var cliente = await _context.Clientes.FindAsync(id);
+            if (cliente == null) return NotFound();
+
+            _context.Clientes.Remove(cliente);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
+
+        private bool ClienteExists(int id) =>
+            _context.Clientes.Any(c => c.id_cliente == id);
     }
 }

@@ -1,43 +1,78 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace eco_farma_API.Controllers
 {
+    [18:13, 01 / 06 / 2025] amore 🍥: [ApiController]
     [Route("api/[controller]")]
-    [ApiController]
     public class ProdutoController : ControllerBase
     {
-        // GET: api/<ProdutoController>
+        private readonly ApplicationDbContext _context;
+
+        public ProdutoController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Produto>>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Produtos.ToListAsync();
         }
 
-        // GET api/<ProdutoController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Produto>> GetById(int id)
         {
-            return "value";
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto == null) return NotFound();
+            return produto;
         }
 
-        // POST api/<ProdutoController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Produto>> Create(Produto novo)
         {
+            _context.Produtos.Add(novo);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetById), new { id = novo.id_produto }, novo);
         }
 
-        // PUT api/<ProdutoController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update(int id, Produto atualizado)
         {
+            if (id != atualizado.id_produto)
+                return BadRequest();
+
+            _context.Entry(atualizado).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ProdutoExists(id)) return NotFound();
+                else throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<ProdutoController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var produto = await _context.Produtos.FindAsync(id);
+            if (produto == null) return NotFound();
+
+            _context.Produtos.Remove(produto);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
+
+        private bool ProdutoExists(int id) =>
+            _context.Produtos.Any(p => p.id_produto == id);
     }
+[18:13, 01 / 06 / 2025] amore 🍥: prue
 }

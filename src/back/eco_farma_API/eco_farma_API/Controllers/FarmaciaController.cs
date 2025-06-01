@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
 //using Projeto_TIAS.Classes;
 using System;
 
@@ -6,52 +9,72 @@ using System;
 
 namespace eco_farma_API.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     public class FarmaciaController : ControllerBase
     {
-        //private readonly AppDbContext _context;
+        private readonly ApplicationDbContext _context;
 
-        ///public FarmaciaController(AppDbContext context)
-        //{
-        //    _context = context;
-        //}
+        public FarmaciaController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
 
-        // POST api/<FarmaciaController>
-       // [HttpPost]
-        ////public async Task<IActionResult> Post([FromBody] Farmacia farmacia)
-        //{
-          //  if (farmacia == null)
-           //     return BadRequest();
-
-           // _context.Farmacias.Add(farmacia);
-          //  await _context.SaveChangesAsync();
-          //  return Ok(farmacia);
-       // }
-        // GET: api/<FarmaciaController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Farmacia>>> GetAll()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Farmacias.ToListAsync();
         }
 
-        // GET api/<FarmaciaController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Farmacia>> GetById(int id)
         {
-            return "value";
+            var farmacia = await _context.Farmacias.FindAsync(id);
+            if (farmacia == null) return NotFound();
+            return farmacia;
         }
 
-        // PUT api/<FarmaciaController>/5
+        [HttpPost]
+        public async Task<ActionResult<Farmacia>> Create(Farmacia novo)
+        {
+            _context.Farmacias.Add(novo);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetById), new { id = novo.id_farmacia }, novo);
+        }
+
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> Update(int id, Farmacia atualizado)
         {
+            if (id != atualizado.id_farmacia)
+                return BadRequest();
+
+            _context.Entry(atualizado).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!FarmaciaExists(id)) return NotFound();
+                else throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<FarmaciaController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var farmacia = await _context.Farmacias.FindAsync(id);
+            if (farmacia == null) return NotFound();
+
+            _context.Farmacias.Remove(farmacia);
+            await _context.SaveChangesAsync();
+            return NoContent();
         }
+
+        private bool FarmaciaExists(int id) =>
+            _context.Farmacias.Any(f => f.id_farmacia == id);
     }
 }

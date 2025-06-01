@@ -20,6 +20,31 @@ namespace eco_farma_API.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
+
+            modelBuilder.Entity("eco_farma_API.Classes.Avaliacao", b =>
+                {
+                    b.Property<int>("id_avaliacao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id_avaliacao"));
+
+                    b.Property<string>("autor")
+                        .HasColumnType("text");
+
+                    b.Property<string>("avaliacao")
+                        .HasColumnType("text");
+
+                    b.Property<int>("id_cliente")
+                        .HasColumnType("integer");
+
+                    b.Property<double>("nota")
+                        .HasColumnType("double precision");
+
+                    b.HasKey("id_avaliacao");
+
+                    b.ToTable("Avaliacoes");
+                });
 #pragma warning restore 612, 618
         }
     }
