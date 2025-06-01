@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using eco_farma_API.Classes;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,84 @@ namespace eco_farma_API.Controllers
     [ApiController]
     public class AvaliacaoController : ControllerBase
     {
-        // GET: api/<AvaliacaoController>
+        private readonly ApplicationDbContext _context;
+
+        public AvaliacaoController(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        // GET: api/Avaliacao
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<ActionResult<IEnumerable<Avaliacao>>> GetAvaliacoes()
         {
-            return new string[] { "value1", "value2" };
+            return await _context.Avaliacoes.ToListAsync();
         }
 
-        // GET api/<AvaliacaoController>/5
+        // GET: api/Avaliacao/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<ActionResult<Avaliacao>> GetAvaliacao(int id)
         {
-            return "value";
+            var avaliacao = await _context.Avaliacoes.FindAsync(id);
+
+            if (avaliacao == null)
+            {
+                return NotFound();
+            }
+
+            return avaliacao;
         }
 
-        // POST api/<AvaliacaoController>
+        // POST: api/Avaliacao
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<ActionResult<Avaliacao>> PostAvaliacao(Avaliacao avaliacao)
         {
+            _context.Avaliacoes.Add(avaliacao);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetAvaliacao), new { id = avaliacao.id_avaliacao }, avaliacao);
         }
 
-        // PUT api/<AvaliacaoController>/5
+        // PUT: api/Avaliacao/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<IActionResult> PutAvaliacao(int id, Avaliacao avaliacao)
         {
+            if (id != avaliacao.id_avaliacao)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(avaliacao).State = EntityState.Modified;
+
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Avaliacoes.Any(e => e.id_avaliacao == id))
+                    return NotFound();
+
+                throw;
+            }
+
+            return NoContent();
         }
 
-        // DELETE api/<AvaliacaoController>/5
+        // DELETE: api/Avaliacao/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<IActionResult> DeleteAvaliacao(int id)
         {
+            var avaliacao = await _context.Avaliacoes.FindAsync(id);
+            if (avaliacao == null)
+            {
+                return NotFound();
+            }
+
+            _context.Avaliacoes.Remove(avaliacao);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

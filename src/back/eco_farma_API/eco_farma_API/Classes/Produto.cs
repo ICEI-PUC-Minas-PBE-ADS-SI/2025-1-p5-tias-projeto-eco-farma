@@ -1,7 +1,11 @@
-﻿namespace eco_farma_API.Classes
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace eco_farma_API.Classes
 {
     public class Produto
     {
+        [Key]
         public int id_produto { get; set; }
         public string? nome { get; set; }
         public string? categoria { get; set; }
@@ -9,6 +13,7 @@
         public int estoque { get; set; }
         public string? anexo { get; set; }
         public string? descricao { get; set; }
+        [ForeignKey("Farmacia")]
         public int id_farmacia { get; set; }
 
     }

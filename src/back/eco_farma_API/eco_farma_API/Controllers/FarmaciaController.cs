@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Projeto_TIAS.Classes;
+//using Projeto_TIAS.Classes;
 using System;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -10,24 +10,24 @@ namespace eco_farma_API.Controllers
     [ApiController]
     public class FarmaciaController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        //private readonly AppDbContext _context;
 
-        public FarmaciaController(AppDbContext context)
-        {
-            _context = context;
-        }
+        ///public FarmaciaController(AppDbContext context)
+        //{
+        //    _context = context;
+        //}
 
         // POST api/<FarmaciaController>
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] Farmacia farmacia)
-        {
-            if (farmacia == null)
-                return BadRequest();
+       // [HttpPost]
+        ////public async Task<IActionResult> Post([FromBody] Farmacia farmacia)
+        //{
+          //  if (farmacia == null)
+           //     return BadRequest();
 
-            _context.Farmacias.Add(farmacia);
-            await _context.SaveChangesAsync();
-            return Ok(farmacia);
-        }
+           // _context.Farmacias.Add(farmacia);
+          //  await _context.SaveChangesAsync();
+          //  return Ok(farmacia);
+       // }
         // GET: api/<FarmaciaController>
         [HttpGet]
         public IEnumerable<string> Get()

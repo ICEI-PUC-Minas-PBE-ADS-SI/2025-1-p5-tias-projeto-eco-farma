@@ -1,7 +1,10 @@
-﻿namespace eco_farma_API.Classes
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace eco_farma_API.Classes
 {
     public class Farmacia
     {
+        [Key]
 
         public int id_farmacia { get; set; }
         public int numero { get; set; }

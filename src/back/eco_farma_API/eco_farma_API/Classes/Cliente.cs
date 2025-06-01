@@ -1,7 +1,10 @@
-﻿namespace eco_farma_API.Classes
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace eco_farma_API.Classes
 {
     public class Cliente
     {
+        [Key]
         public int id_cliente { get; set; }
         public string? nome { get; set; }
         public string? sexo { get; set; }
