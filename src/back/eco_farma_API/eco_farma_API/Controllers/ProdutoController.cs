@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace eco_farma_API.Controllers
 {
-    [18:13, 01 / 06 / 2025] amore 🍥: [ApiController]
+    [ApiController]
     [Route("api/[controller]")]
     public class ProdutoController : ControllerBase
     {
@@ -74,5 +74,4 @@ namespace eco_farma_API.Controllers
         private bool ProdutoExists(int id) =>
             _context.Produtos.Any(p => p.id_produto == id);
     }
-[18:13, 01 / 06 / 2025] amore 🍥: prue
 }
