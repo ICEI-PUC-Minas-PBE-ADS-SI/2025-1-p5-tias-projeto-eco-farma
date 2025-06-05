@@ -12,8 +12,8 @@ using eco_farma_API;
 namespace eco_farma_API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250601220411_AddPromocao")]
-    partial class AddPromocao
+    [Migration("20250602215404_CriarTabelasIniciais")]
+    partial class CriarTabelasIniciais
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -47,7 +47,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_avaliacao");
 
-                    b.ToTable("Avaliacoes");
+                    b.ToTable("avaliacao", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Avaliacao_produto", b =>
@@ -78,7 +78,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_avaliacao_produto");
 
-                    b.ToTable("Avaliacoes_produto");
+                    b.ToTable("avaliacao_produto", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Cliente", b =>
@@ -92,8 +92,8 @@ namespace eco_farma_API.Migrations
                     b.Property<int>("cep")
                         .HasColumnType("integer");
 
-                    b.Property<int>("cpf")
-                        .HasColumnType("integer");
+                    b.Property<string>("cpf")
+                        .HasColumnType("text");
 
                     b.Property<DateTime>("data_nasc")
                         .HasColumnType("timestamp with time zone");
@@ -113,12 +113,12 @@ namespace eco_farma_API.Migrations
                     b.Property<string>("sexo")
                         .HasColumnType("text");
 
-                    b.Property<int>("telefone")
-                        .HasColumnType("integer");
+                    b.Property<string>("telefone")
+                        .HasColumnType("text");
 
                     b.HasKey("id_cliente");
 
-                    b.ToTable("Clientes");
+                    b.ToTable("cliente", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Entrega", b =>
@@ -137,7 +137,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_entrega");
 
-                    b.ToTable("Entregas");
+                    b.ToTable("entrega", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Entregador", b =>
@@ -177,7 +177,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_entregador");
 
-                    b.ToTable("Entregadores");
+                    b.ToTable("entregador", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Farmacia", b =>
@@ -191,8 +191,8 @@ namespace eco_farma_API.Migrations
                     b.Property<int>("cep")
                         .HasColumnType("integer");
 
-                    b.Property<int>("cnpj")
-                        .HasColumnType("integer");
+                    b.Property<string>("cnpj")
+                        .HasColumnType("text");
 
                     b.Property<string>("email")
                         .HasColumnType("text");
@@ -211,7 +211,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_farmacia");
 
-                    b.ToTable("Farmacias");
+                    b.ToTable("farmacia", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Pedido", b =>
@@ -239,7 +239,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_pedido");
 
-                    b.ToTable("Pedidos");
+                    b.ToTable("pedido", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Produto", b =>
@@ -273,7 +273,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_produto");
 
-                    b.ToTable("Produtos");
+                    b.ToTable("produto", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Promocao", b =>
@@ -292,7 +292,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_promocao");
 
-                    b.ToTable("Promocoes");
+                    b.ToTable("promocao", (string)null);
                 });
 
             modelBuilder.Entity("eco_farma_API.Classes.Usuario", b =>
@@ -320,7 +320,7 @@ namespace eco_farma_API.Migrations
 
                     b.HasKey("id_usuario");
 
-                    b.ToTable("Usuarios");
+                    b.ToTable("usuario", (string)null);
                 });
 #pragma warning restore 612, 618
         }

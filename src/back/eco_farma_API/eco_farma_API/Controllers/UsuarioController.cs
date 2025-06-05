@@ -21,7 +21,7 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Usuario>>> GetAll()
         {
-            var usuarios = await _context.Usuarios.ToListAsync();
+            var usuarios = await _context.Usuario.ToListAsync();
             return Ok(usuarios);
         }
 
@@ -29,7 +29,7 @@ namespace eco_farma_API.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Usuario>> GetById(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(id);
 
             if (usuario == null)
                 return NotFound();
@@ -41,7 +41,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Usuario>> Create([FromBody] Usuario novoUsuario)
         {
-            _context.Usuarios.Add(novoUsuario);
+            _context.Usuario.Add(novoUsuario);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = novoUsuario.id_usuario }, novoUsuario);
@@ -54,7 +54,7 @@ namespace eco_farma_API.Controllers
             if (id != usuarioAtualizado.id_usuario)
                 return BadRequest("ID do usuário não confere");
 
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(id);
             if (usuario == null)
                 return NotFound();
 
@@ -83,11 +83,11 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var usuario = await _context.Usuarios.FindAsync(id);
+            var usuario = await _context.Usuario.FindAsync(id);
             if (usuario == null)
                 return NotFound();
 
-            _context.Usuarios.Remove(usuario);
+            _context.Usuario.Remove(usuario);
             await _context.SaveChangesAsync();
 
             return NoContent();

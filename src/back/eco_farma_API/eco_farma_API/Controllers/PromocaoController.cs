@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Promocao>>> GetAll()
         {
-            return await _context.Promocoes.ToListAsync();
+            return await _context.Promocao.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Promocao>> GetById(int id)
         {
-            var promocao = await _context.Promocoes.FindAsync(id);
+            var promocao = await _context.Promocao.FindAsync(id);
             if (promocao == null) return NotFound();
             return promocao;
         }
@@ -34,7 +34,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Promocao>> Create(Promocao novaPromocao)
         {
-            _context.Promocoes.Add(novaPromocao);
+            _context.Promocao.Add(novaPromocao);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = novaPromocao.id_promocao }, novaPromocao);
         }
@@ -63,15 +63,15 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var promocao = await _context.Promocoes.FindAsync(id);
+            var promocao = await _context.Promocao.FindAsync(id);
             if (promocao == null) return NotFound();
 
-            _context.Promocoes.Remove(promocao);
+            _context.Promocao.Remove(promocao);
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
         private bool PromocaoExists(int id) =>
-            _context.Promocoes.Any(p => p.id_promocao == id);
+            _context.Promocao.Any(p => p.id_promocao == id);
     }
 }

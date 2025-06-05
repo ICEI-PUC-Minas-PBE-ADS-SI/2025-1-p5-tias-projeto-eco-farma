@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Pedido>>> GetAll()
         {
-            return await _context.Pedidos.ToListAsync();
+            return await _context.Pedido.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Pedido>> GetById(int id)
         {
-            var pedido = await _context.Pedidos.FindAsync(id);
+            var pedido = await _context.Pedido.FindAsync(id);
             if (pedido == null)
                 return NotFound();
 
@@ -36,7 +36,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Pedido>> Create(Pedido novoPedido)
         {
-            _context.Pedidos.Add(novoPedido);
+            _context.Pedido.Add(novoPedido);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = novoPedido.id_pedido }, novoPedido);
@@ -68,11 +68,11 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var pedido = await _context.Pedidos.FindAsync(id);
+            var pedido = await _context.Pedido.FindAsync(id);
             if (pedido == null)
                 return NotFound();
 
-            _context.Pedidos.Remove(pedido);
+            _context.Pedido.Remove(pedido);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -80,7 +80,7 @@ namespace eco_farma_API.Controllers
 
         private bool PedidoExists(int id)
         {
-            return _context.Pedidos.Any(p => p.id_pedido == id);
+            return _context.Pedido.Any(p => p.id_pedido == id);
         }
     }
 }

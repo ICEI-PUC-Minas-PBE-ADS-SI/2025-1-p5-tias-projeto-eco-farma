@@ -3,15 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eco_farma_API.Classes
 {
-    [Table("avaliacao")]
-    public class Avaliacao
+    [Table("cupom")]
+    public class Cupom
     {
         [Key]
-        public int id_avaliacao { get; set; }
+        public int id_cupom { get; set; }
+        public string? codigo { get; set; }
         [ForeignKey("Cliente")]
         public int id_cliente { get; set; }
-        public string? autor { get; set; }
-        public string? avaliacao { get; set; }
-        public double nota { get; set; }
     }
 }

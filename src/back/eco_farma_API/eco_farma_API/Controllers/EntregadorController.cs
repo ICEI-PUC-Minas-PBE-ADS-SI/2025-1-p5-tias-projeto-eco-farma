@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Entregador>>> GetAll()
         {
-            return await _context.Entregadores.ToListAsync();
+            return await _context.Entregador.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Entregador>> GetById(int id)
         {
-            var entregador = await _context.Entregadores.FindAsync(id);
+            var entregador = await _context.Entregador.FindAsync(id);
             if (entregador == null) return NotFound();
             return entregador;
         }
@@ -34,7 +34,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Entregador>> Create(Entregador novo)
         {
-            _context.Entregadores.Add(novo);
+            _context.Entregador.Add(novo);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = novo.id_entregador }, novo);
         }
@@ -63,15 +63,15 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var entregador = await _context.Entregadores.FindAsync(id);
+            var entregador = await _context.Entregador.FindAsync(id);
             if (entregador == null) return NotFound();
 
-            _context.Entregadores.Remove(entregador);
+            _context.Entregador.Remove(entregador);
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
         private bool EntregadorExists(int id) =>
-            _context.Entregadores.Any(e => e.id_entregador == id);
+            _context.Entregador.Any(e => e.id_entregador == id);
     }
 }

@@ -21,14 +21,14 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Avaliacao>>> GetAvaliacoes()
         {
-            return await _context.Avaliacoes.ToListAsync();
+            return await _context.Avaliacao.ToListAsync();
         }
 
         // GET: api/Avaliacao/5
         [HttpGet("{id}")]
         public async Task<ActionResult<Avaliacao>> GetAvaliacao(int id)
         {
-            var avaliacao = await _context.Avaliacoes.FindAsync(id);
+            var avaliacao = await _context.Avaliacao.FindAsync(id);
 
             if (avaliacao == null)
             {
@@ -42,7 +42,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Avaliacao>> PostAvaliacao(Avaliacao avaliacao)
         {
-            _context.Avaliacoes.Add(avaliacao);
+            _context.Avaliacao.Add(avaliacao);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetAvaliacao), new { id = avaliacao.id_avaliacao }, avaliacao);
@@ -65,7 +65,7 @@ namespace eco_farma_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!_context.Avaliacoes.Any(e => e.id_avaliacao == id))
+                if (!_context.Avaliacao.Any(e => e.id_avaliacao == id))
                     return NotFound();
 
                 throw;
@@ -78,13 +78,13 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteAvaliacao(int id)
         {
-            var avaliacao = await _context.Avaliacoes.FindAsync(id);
+            var avaliacao = await _context.Avaliacao.FindAsync(id);
             if (avaliacao == null)
             {
                 return NotFound();
             }
 
-            _context.Avaliacoes.Remove(avaliacao);
+            _context.Avaliacao.Remove(avaliacao);
             await _context.SaveChangesAsync();
 
             return NoContent();

@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Entrega>>> GetAll()
         {
-            return await _context.Entregas.ToListAsync();
+            return await _context.Entrega.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Entrega>> GetById(int id)
         {
-            var entrega = await _context.Entregas.FindAsync(id);
+            var entrega = await _context.Entrega.FindAsync(id);
             if (entrega == null) return NotFound();
             return entrega;
         }
@@ -34,7 +34,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Entrega>> Create(Entrega novo)
         {
-            _context.Entregas.Add(novo);
+            _context.Entrega.Add(novo);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = novo.id_entrega }, novo);
         }
@@ -63,15 +63,15 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var entrega = await _context.Entregas.FindAsync(id);
+            var entrega = await _context.Entrega.FindAsync(id);
             if (entrega == null) return NotFound();
 
-            _context.Entregas.Remove(entrega);
+            _context.Entrega.Remove(entrega);
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
         private bool EntregaExists(int id) =>
-            _context.Entregas.Any(e => e.id_entrega == id);
+            _context.Entrega.Any(e => e.id_entrega == id);
     }
 }

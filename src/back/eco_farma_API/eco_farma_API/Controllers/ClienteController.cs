@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetAll()
         {
-            return await _context.Clientes.ToListAsync();
+            return await _context.Cliente.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Cliente>> GetById(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
+            var cliente = await _context.Cliente.FindAsync(id);
             if (cliente == null) return NotFound();
             return cliente;
         }
@@ -34,7 +34,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Cliente>> Create(Cliente novo)
         {
-            _context.Clientes.Add(novo);
+            _context.Cliente.Add(novo);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = novo.id_cliente }, novo);
         }
@@ -63,15 +63,15 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var cliente = await _context.Clientes.FindAsync(id);
+            var cliente = await _context.Cliente.FindAsync(id);
             if (cliente == null) return NotFound();
 
-            _context.Clientes.Remove(cliente);
+            _context.Cliente.Remove(cliente);
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
         private bool ClienteExists(int id) =>
-            _context.Clientes.Any(c => c.id_cliente == id);
+            _context.Cliente.Any(c => c.id_cliente == id);
     }
 }

@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eco_farma_API.Classes
 {
+    [Table("produto")]
     public class Produto
     {
         [Key]

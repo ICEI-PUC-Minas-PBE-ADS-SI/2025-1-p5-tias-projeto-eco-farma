@@ -20,13 +20,13 @@ namespace eco_farma_API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Avaliacao_produto>>> GetAll()
         {
-            return await _context.Avaliacoes_produto.ToListAsync();
+            return await _context.Avaliacao_produto.ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Avaliacao_produto>> GetById(int id)
         {
-            var avaliacao = await _context.Avaliacoes_produto.FindAsync(id);
+            var avaliacao = await _context.Avaliacao_produto.FindAsync(id);
             if (avaliacao == null) return NotFound();
             return avaliacao;
         }
@@ -34,7 +34,7 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Avaliacao_produto>> Create(Avaliacao_produto novo)
         {
-            _context.Avaliacoes_produto.Add(novo);
+            _context.Avaliacao_produto.Add(novo);
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetById), new { id = novo.id_avaliacao_produto }, novo);
         }
@@ -63,15 +63,15 @@ namespace eco_farma_API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var avaliacao = await _context.Avaliacoes_produto.FindAsync(id);
+            var avaliacao = await _context.Avaliacao_produto.FindAsync(id);
             if (avaliacao == null) return NotFound();
 
-            _context.Avaliacoes_produto.Remove(avaliacao);
+            _context.Avaliacao_produto.Remove(avaliacao);
             await _context.SaveChangesAsync();
             return NoContent();
         }
 
         private bool AvaliacaoProdutoExists(int id) =>
-            _context.Avaliacoes_produto.Any(a => a.id_avaliacao_produto == id);
+            _context.Avaliacao_produto.Any(a => a.id_avaliacao_produto == id);
     }
 }
