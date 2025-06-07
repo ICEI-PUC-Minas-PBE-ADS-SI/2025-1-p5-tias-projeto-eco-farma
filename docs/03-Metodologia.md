@@ -52,6 +52,11 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - _Protótipo e interface_: Camila de Paula Rodrigues, Thiago Lacerda Santos Barbosa e Letícia Rodrigues Batista;
 - _Configuração do Banco de dados e tecnologias_: Victoria Gonçalves da Silva e Walisson Ribeiro da Silva;
 - _Pesquisa de template padrão do projeto_: Bianca Marques Teixeira.
+
+#### Sprint 4
+- _Back-end_: Bianca Marques Teixeira e Letícia Rodrigues Batista;
+- _Front-end_: Victoria Gonçalves da Silva Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa;
+- _Estrutura de dados Banco de Dados_: Walisson Ribeiro da Silva.
   
 ###  Quadro de tarefas
 
@@ -148,7 +153,7 @@ Atualizado em: 11/05/2025
 Atualizado em: 27/05/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-
+| Bianca M.     | Criação da API |   29/05/2025    |  08/06/2025 | 📝    |     -    |
 
 Legenda:
 - ✔️: terminado
