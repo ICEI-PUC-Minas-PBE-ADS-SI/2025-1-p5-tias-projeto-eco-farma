@@ -38,6 +38,17 @@ namespace eco_farma_API.Controllers
             return cupom;
         }
 
+        [HttpGet("cupons/{idCliente}")]
+        public IActionResult VerificarCupons(int idCliente)
+        {
+            var cupons = _context.Cupom
+                .Where(c => c.id_cliente == idCliente)
+                .ToList();
+
+            return Ok(cupons); // Retorna lista (vazia ou não)
+        }
+
+
         // POST: api/Cupom
         [HttpPost]
         public async Task<ActionResult<Cupom>> PostCupom(Cupom cupom)

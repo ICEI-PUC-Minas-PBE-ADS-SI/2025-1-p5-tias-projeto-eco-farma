@@ -36,11 +36,49 @@ namespace eco_farma_API.Controllers
         [HttpPost]
         public async Task<ActionResult<Pedido>> Create(Pedido novoPedido)
         {
+            // Verifica se o produto existe
+            var produto = await _context.Produto.FindAsync(novoPedido.id_produto);
+            if (produto == null)
+                return NotFound("Produto não encontrado.");
+
+            // Verifica se há estoque suficiente
+            if (produto.estoque < novoPedido.qtd_produto)
+                return BadRequest("Estoque insuficiente.");
+
+            // Diminui o estoque
+            produto.estoque -= novoPedido.qtd_produto;
+
+            // Cadastra o pedido
             _context.Pedido.Add(novoPedido);
+
+            // Se o pedido for para entrega (exemplo: tem id_entregador enviado via query ou lógica interna)
+            if (Request.Query.ContainsKey("idEntregador"))
+            {
+                int idEntregador = int.Parse(Request.Query["idEntregador"]);
+
+                var entrega = new Entrega
+                {
+                    id_pedido = novoPedido.id_pedido, // Será preenchido após SaveChanges
+                    id_entregador = idEntregador
+                };
+
+                // Aguarda o pedido ser salvo para gerar ID
+                await _context.SaveChangesAsync();
+
+                // Corrige o id_pedido na entrega
+                entrega.id_pedido = novoPedido.id_pedido;
+
+                _context.Entrega.Add(entrega);
+            }
+
+            // Salva todas as mudanças
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = novoPedido.id_pedido }, novoPedido);
         }
+
+
+        
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Pedido pedidoAtualizado)

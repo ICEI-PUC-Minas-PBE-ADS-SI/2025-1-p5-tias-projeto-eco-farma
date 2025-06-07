@@ -1,6 +1,7 @@
 ﻿using eco_farma_API.Classes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using eco_farma_API.Funções;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -32,12 +33,25 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Cliente>> Create(Cliente novo)
+        public async Task<ActionResult<Cliente>> Create(Cliente novoCliente, Usuario novoClientes)
         {
-            _context.Cliente.Add(novo);
+            _context.Cliente.Add(novoCliente);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { id = novo.id_cliente }, novo);
+
+            var usuario = new Usuario
+            {
+                email = novoClientes.email,
+                senha = Criptografia.DecriptarSenha(novoClientes.senha), 
+                papel = "cliente",
+                id_papel = 1
+            };
+
+            _context.Usuario.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetById), new { id = novoCliente.id_cliente }, novoCliente);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Cliente atualizado)

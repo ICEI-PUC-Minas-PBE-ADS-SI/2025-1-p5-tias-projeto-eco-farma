@@ -31,6 +31,35 @@ namespace eco_farma_API.Controllers
             return produto;
         }
 
+        [HttpGet("por-farmacia/{id}")]
+        public IActionResult ProdutosPorFarmacia(int id)
+        {
+            var produtos = _context.Produto
+                .Where(p => p.id_farmacia == id)
+                .ToList();
+
+            return Ok(produtos);
+        }
+
+
+        [HttpGet("detalhes/{id}")]
+        public IActionResult DetalhesProduto(int id)
+        {
+            var produto = _context.Produto.FirstOrDefault(p => p.id_produto == id);
+            if (produto == null) return NotFound("Produto não encontrado.");
+
+            var avaliacoes = _context.Avaliacao_produto
+                .Where(a => a.id_produto == id)
+                .ToList();
+
+            return Ok(new
+            {
+                produto,
+                avaliacoes
+            });
+        }
+
+
         [HttpPost]
         public async Task<ActionResult<Produto>> Create(Produto novo)
         {
@@ -70,6 +99,24 @@ namespace eco_farma_API.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+
+        [HttpGet("filtrar")]
+        public IActionResult FiltrarProdutos([FromQuery] string? categoria, [FromQuery] double? precoMin, [FromQuery] double? precoMax)
+        {
+            var produtos = _context.Produto.AsQueryable();
+
+            if (!string.IsNullOrEmpty(categoria))
+                produtos = produtos.Where(p => p.categoria == categoria);
+
+            if (precoMin.HasValue)
+                produtos = produtos.Where(p => p.preco >= precoMin.Value);
+
+            if (precoMax.HasValue)
+                produtos = produtos.Where(p => p.preco <= precoMax.Value);
+
+            return Ok(produtos.ToList());
+        }
+
 
         private bool ProdutoExists(int id) =>
             _context.Produto.Any(p => p.id_produto == id);

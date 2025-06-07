@@ -1,4 +1,5 @@
 ﻿using eco_farma_API.Classes;
+using eco_farma_API.Funções;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -35,12 +36,25 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Farmacia>> Create(Farmacia novo)
+        public async Task<ActionResult<Farmacia>> Create(Farmacia novaFarmacia, Usuario novaFarmacias)
         {
-            _context.Farmacia.Add(novo);
+            _context.Farmacia.Add(novaFarmacia);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { id = novo.id_farmacia }, novo);
+
+            var usuario = new Usuario
+            {
+                email = novaFarmacias.email,
+                senha = Criptografia.DecriptarSenha(novaFarmacias.senha), 
+                papel = "farmacia",
+                id_papel = novaFarmacia.id_farmacia
+            };
+
+            _context.Usuario.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetById), new { id = novaFarmacia.id_farmacia }, novaFarmacia);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Farmacia atualizado)

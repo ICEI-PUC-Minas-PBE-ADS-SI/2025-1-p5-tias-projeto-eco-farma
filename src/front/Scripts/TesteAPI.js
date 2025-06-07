@@ -78,6 +78,11 @@ async function salvarAvaliacaoProduto() {
 }
 
 async function salvarCliente() {
+    const senhaCriptografada = CryptoJS.AES.encrypt(
+    document.getElementById("cliente_senha").value,
+    "chave-secreta"
+).toString();
+
     const data = {
         nome: document.getElementById("cliente_nome").value,
         sexo: document.getElementById("cliente_sexo").value,
@@ -86,6 +91,7 @@ async function salvarCliente() {
         endereco: document.getElementById("cliente_endereco").value,
         telefone: document.getElementById("cliente_telefone").value,
         cpf: document.getElementById("cliente_cpf").value,
+        senha: senhaCriptografada,
         cep: parseInt(document.getElementById("cliente_cep").value),
         numero: parseInt(document.getElementById("cliente_numero").value),
         //id_cliente: parseInt(document.getElementById("id_cliente").value)
@@ -115,6 +121,11 @@ async function salvarCliente() {
 }
 
 async function salvarEntregador() {
+    const senhaCriptografada = CryptoJS.AES.encrypt(
+    document.getElementById("entregador_senha").value,
+    "chave-secreta"
+).toString();
+
     const data = {
         nome: document.getElementById("entregador_nome").value,
         sexo: document.getElementById("entregador_sexo").value,
@@ -124,6 +135,7 @@ async function salvarEntregador() {
         telefone: document.getElementById("entregador_telefone").value,
         cpf: document.getElementById("entregador_cpf").value,
         cep: parseInt(document.getElementById("entregador_cep").value),
+        senha: senhaCriptografada,
         numero: parseInt(document.getElementById("entregador_numero").value),
         //id_entregador: parseInt(document.getElementById("id_entregador").value)
     };
@@ -152,6 +164,11 @@ async function salvarEntregador() {
 }
 
 async function salvarFarmacia() {
+    const senhaCriptografada = CryptoJS.AES.encrypt(
+    document.getElementById("farmacia_senha").value,
+    "chave-secreta"
+).toString();
+
     const data = {
         nome: document.getElementById("farmacia_nome").value,
         email: document.getElementById("farmacia_email").value,
@@ -161,6 +178,7 @@ async function salvarFarmacia() {
         cep: parseInt(document.getElementById("farmacia_cep").value),
         numero: parseInt(document.getElementById("farmacia_numero").value),
         //id_farmacia: parseInt(document.getElementById("id_farmacia").value)
+        senha: senhaCriptografada
     };
 
     try {
@@ -222,19 +240,23 @@ async function salvarProduto() {
 }
 
 //Se o pagamento der ok, chamar a função de salvarCompra()
-async function salvarPedido() { 
+async function salvarPedido() {
     const data = {
         qtd_produto: parseInt(document.getElementById("pedido_qtd_produto").value),
         preco_produto: parseFloat(document.getElementById("pedido_preco_produto").value),
         id_cliente: parseInt(document.getElementById("pedido_id_cliente").value),
         id_produto: parseInt(document.getElementById("pedido_id_produto").value),
         id_farmacia: parseInt(document.getElementById("pedido_id_farmacia").value)
-        //id_pedido: parseInt(document.getElementById("id_pedido").value)
     };
 
-    try {
+    const entregaSelecionada = document.getElementById("entregaCheckbox").checked;
 
-        const response = await fetch("http://localhost:5068/api/pedido", {
+    try {
+        const url = entregaSelecionada
+            ? "http://localhost:5068/api/pedido?idEntregador=1" // exemplo: entregador fixo ID=1
+            : "http://localhost:5068/api/pedido";
+
+        const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -242,7 +264,6 @@ async function salvarPedido() {
             body: JSON.stringify(data)
         });
 
-        //Mensagem não obrigatória
         if (response.ok) {
             const resultado = await response.json();
             alert("Pedido salvo com sucesso. ID: " + resultado.id_pedido);
@@ -255,7 +276,8 @@ async function salvarPedido() {
     }
 }
 
-async function salvarEntrega() { 
+
+async function salvarEntrega() {
     const data = {
         id_pedido: parseInt(document.getElementById("entrega_id_pedido").value),
         id_entregador: parseInt(document.getElementById("entrega_id_entregador").value)
@@ -285,7 +307,7 @@ async function salvarEntrega() {
 }
 
 
-async function salvarUsuario() { 
+async function salvarUsuario() {
     const data = {
         email: document.getElementById("usuario_email").value,
         senha: document.getElementById("usuario_senha").value,
@@ -316,7 +338,7 @@ async function salvarUsuario() {
     }
 }
 
-async function salvarPromocao() { 
+async function salvarPromocao() {
     const data = {
         id_produto: parseInt(document.getElementById("promocao_id_produto").value),
         preco_promocao: parseFloat(document.getElementById("promocao_preco_promocao").value)
@@ -345,7 +367,7 @@ async function salvarPromocao() {
     }
 }
 
-async function salvarCupom() { 
+async function salvarCupom() {
     const data = {
         codigo: document.getElementById("cupom_codigo").value,
         id_cliente: parseInt(document.getElementById("cupom_id_cliente").value)
@@ -724,3 +746,165 @@ async function carregarCupons() {
         alert(error.message);
     }
 }
+
+
+//-------------------------------------------------
+
+//METODOS DE FILTROS
+
+//-------------------------------------------------
+
+
+
+function buscarProdutos() {
+    const categoria = document.getElementById('categoria').value;
+    const precoMin = document.getElementById('precoMin').value;
+    const precoMax = document.getElementById('precoMax').value;
+
+    let url = `http://localhost:5068/api/produto/filtrar?`;
+
+    if (categoria) url += `categoria=${encodeURIComponent(categoria)}&`;
+    if (precoMin) url += `precoMin=${precoMin}&`;
+    if (precoMax) url += `precoMax=${precoMax}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = '';
+
+            if (data.length === 0) {
+                resultado.innerHTML = '<p>Nenhum produto encontrado.</p>';
+                return;
+            }
+
+            data.forEach(p => {
+                resultado.innerHTML += `<p><strong>${p.nome}</strong> - R$ ${p.preco.toFixed(2)} - Categoria: ${p.categoria}</p>`;
+            });
+        })
+        .catch(error => console.error('Erro:', error));
+}
+
+function buscarPorFarmacia(idFarmacia) {
+    fetch(`http://localhost:5068/api/produto/por-farmacia/${idFarmacia}`)
+        .then(response => response.json())
+        .then(data => {
+            const produtosDiv = document.getElementById('produtos');
+            produtosDiv.innerHTML = '';
+
+            if (data.length === 0) {
+                produtosDiv.innerHTML = '<p>Nenhum produto encontrado para esta farmácia.</p>';
+                return;
+            }
+
+            data.forEach(p => {
+                produtosDiv.innerHTML += `<p><strong>${p.nome}</strong> - R$ ${p.preco.toFixed(2)} - Estoque: ${p.estoque}</p>`;
+            });
+        })
+        .catch(error => console.error('Erro:', error));
+}
+
+function mostrarDetalhes(idProduto) {
+    fetch(`http://localhost:5068/api/produto/detalhes/${idProduto}`)
+        .then(response => response.json())
+        .then(data => {
+            const detalhesDiv = document.getElementById('detalhes');
+            detalhesDiv.innerHTML = `
+                    <h2>${data.produto.nome}</h2>
+                    <p>Categoria: ${data.produto.categoria}</p>
+                    <p>Preço: R$ ${data.produto.preco.toFixed(2)}</p>
+                    <p>Estoque: ${data.produto.estoque}</p>
+                    <p>Descrição: ${data.produto.descricao}</p>
+                    <hr/>
+                    <h3>Avaliações:</h3>
+                `;
+
+            if (data.avaliacoes.length === 0) {
+                detalhesDiv.innerHTML += '<p>Nenhuma avaliação disponível.</p>';
+            } else {
+                data.avaliacoes.forEach(av => {
+                    detalhesDiv.innerHTML += `
+                            <div style="margin-bottom:10px;">
+                                <strong>${av.autor}</strong> - Nota: ${av.nota}<br/>
+                                <p>${av.avaliacao}</p>
+                            </div>
+                        `;
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Erro ao carregar detalhes:", error);
+        });
+}
+
+
+function verificarCupons() {
+    const idCliente = 1; // Substitua pelo ID real do cliente logado
+
+    fetch(`http://localhost:5068/api/cupom/cupons/${idCliente}`)
+        .then(res => res.json())
+        .then(data => {
+            const cuponsDiv = document.getElementById('cupons');
+            if (data.length === 0) {
+                cuponsDiv.innerHTML = "<p>Você não possui cupons disponíveis.</p>";
+            } else {
+                cuponsDiv.innerHTML = "<h3>Seus Cupons:</h3>";
+                data.forEach(c => {
+                    cuponsDiv.innerHTML += `<p>Código: <strong>${c.codigo}</strong></p>`;
+                });
+            }
+        })
+        .catch(error => console.error("Erro ao buscar cupons:", error));
+}
+
+
+async function fazerLogin() {
+    const email = document.getElementById("email").value;
+    const senha = document.getElementById("senha").value;
+
+    const senhaCriptografada = CryptoJS.AES.encrypt(senha, "chave_secreta").toString();
+
+    const data = {
+        email: email,
+        senha: senhaCriptografada
+    };
+
+    try {
+        const response = await fetch("http://localhost:5068/api/usuario/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+            const usuario = await response.json();
+
+            localStorage.setItem("usuarioLogado", JSON.stringify(usuario));
+
+            // Redireciona de acordo com o papel
+            switch (usuario.papel.toLowerCase()) {
+                case "cliente":
+                    window.location.href = "/cliente/home.html";
+                    break;
+                case "farmacia":
+                    window.location.href = "/farmacia/home.html";
+                    break;
+                case "entregador":
+                    window.location.href = "/entregador/home.html";
+                    break;
+                default:
+                    alert("Papel não reconhecido.");
+            }
+        } else {
+            const erro = await response.text();
+            alert("Erro no login: " + erro);
+        }
+    } catch (e) {
+        alert("Erro na conexão: " + e.message);
+    }
+}
+
+
+

@@ -22,6 +22,7 @@
                 <input type="text" id="farmacia_endereco" placeholder="Endereço">
                 <input type="number" id="farmacia_cep" placeholder="CEP">
                 <input type="number" id="farmacia_numero" placeholder="Número da instalação">
+                <input type="password" id="farmacia_senha" placeholder="Senha">
                 <button onclick="salvarFarmacia()">Enviar</button>
             </div>
             <div class="col-6">
@@ -36,6 +37,7 @@
                 <input type="text" id="entregador_endereco" placeholder="Endereço">
                 <input type="number" id="entregador_cep" placeholder="CEP">
                 <input type="number" id="entregador_numero" placeholder="Número da casa">
+                <input type="password" id="entregador_senha" placeholder="Senha">
                 <button onclick="salvarEntregador()">Enviar</button>
             </div>
             <div class="col-6">
@@ -71,6 +73,7 @@
                 <input type="number" id="cliente_cep"
                     placeholder="CEP"><!-- Recomendo usar o viaCEP para busca de endereços (Se for usar me avise para criar mais itens na API, como bairro, logradouro, municipio) -->
                 <input type="number" id="cliente_numero" placeholder="Número da casa">
+                <input type="password" id="cliente_senha" placeholder="Senha">
                 <button onclick="salvarCliente()">Enviar</button>
             </div>
             <div class="col-6">
@@ -93,6 +96,10 @@
                 <input type="number" id="pedido_id_produto" placeholder="Id Produto">
                 <input type="number" id="pedido_qtd_produto" placeholder="Quantidade Produto">
                 <input type="number" id="pedido_preco_produto" placeholder="Preço de Produto">
+                <label>
+                    <input type="checkbox" id="entregaCheckbox" /> Entrega
+                </label>
+
                 <button onclick="salvarPedido()">Enviar</button>
             </div>
             <div class="col-6">
@@ -328,28 +335,87 @@
                 </table>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <br>
+                    <h3>Lista filtro Categoria</h3>
+                    <label>Categoria:</label>
+                    <input type="text" id="categoria">
+                    <!-- é recomendado fazer um select para a categoria ser exatamento igual ao que está no banco -->
+                    <!-- Esse item para testar melhor precisa colocar o mesmo nome que está no banco (tanto letra maiusculas quanto acentos) -->
+                    <!-- fazer a busca da lista de todos os produtos para ver as categorias feitas -->
+                    <!-- No momento de cadastro de produto fazer um select para padronizar as categorias -->
+                    <label>Preço Mínimo:</label>
+                    <input type="number" id="precoMin">
+
+                    <label>Preço Máximo:</label>
+                    <input type="number" id="precoMax">
+
+                    <button onclick="buscarProdutos()">Buscar</button>
+                </div>
+
+                <div id="resultado"></div>
+
+            </div>
+            <!-- Essa parte de baixo é para a tela inicial onde tem o carrossel de farmacias, ao clicar na farmacia deve 
+            direcionar para a tela de categoria ou lista de produtos já com o filtro de produtos cadastrados pela farmacia selecionada -->
+            <div class="col-12">
+                <br>
+                <h3>Filtro de produto por farmacias</h3>
+                <div id="farmacias">
+                    <button onclick="buscarPorFarmacia(1)">Farmácia 1</button>
+                    <button onclick="buscarPorFarmacia(2)">Farmácia 2</button>
+                    <button onclick="buscarPorFarmacia(3)">Farmácia 3</button>
+                </div>
+
+                <div id="produtos"></div>
+
+
+            </div>
+            <div class="col-12">
+                <br>
+                <h3>Detalhes produto e avaliação produto</h3>
+                <div id="produtos">
+                    <button onclick="mostrarDetalhes(1)">Produto 1</button><br />
+                    <button onclick="mostrarDetalhes(2)">Produto 2</button><br />
+                    <button onclick="mostrarDetalhes(3)">Produto 3</button><br />
+                </div>
+
+                <div id="detalhes"></div>
+
+
+
+            </div>
+
+            <div class="col-12">
+                <!-- Essa função não está 100% funcionando -->
+                <br>
+                <h3>Verificar Cupons</h3>
+                <div id="pagamento">
+                    <button onclick="verificarCupons()">Verificar se cliente tem cupom</button>
+                </div>
+
+                <div id="cupons"></div>
+
+
+            </div>
+
+            <div class="col-12">
+                <input type="email" id="email" placeholder="Email" />
+                <input type="password" id="senha" placeholder="Senha" />
+                <button onclick="fazerLogin()">Entrar</button>
+
+
+            </div>
+
+        </div>
 
     </div>
 
 
 
-
-    <!--   -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>

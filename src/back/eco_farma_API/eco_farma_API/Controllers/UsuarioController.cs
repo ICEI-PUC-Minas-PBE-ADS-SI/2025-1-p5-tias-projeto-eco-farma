@@ -1,6 +1,7 @@
 ﻿using eco_farma_API.Classes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using eco_farma_API.Funções;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -78,6 +79,44 @@ namespace eco_farma_API.Controllers
 
             return NoContent();
         }
+
+        [HttpPost("login")]
+        public IActionResult Login([FromBody] Usuario loginInfo)
+        {
+            string senhaDescriptografada;
+            try
+            {
+                senhaDescriptografada = Criptografia.DecriptarSenha(loginInfo.senha);
+            }
+            catch
+            {
+                return BadRequest("Erro ao descriptografar a senha.");
+            }
+
+            var usuario = _context.Usuario.FirstOrDefault(u => u.email == loginInfo.email);
+
+            if (usuario == null || usuario.senha != senhaDescriptografada)
+                return Unauthorized("Email ou senha inválidos.");
+
+            // Buscar dados adicionais do papel (exemplo com Cliente)
+            object dadosPapel = usuario.papel.ToLower() switch
+            {
+                "cliente" => _context.Cliente.FirstOrDefault(c => c.id_cliente == usuario.id_papel),
+                "farmacia" => _context.Farmacia.FirstOrDefault(f => f.id_farmacia == usuario.id_papel),
+                "entregador" => _context.Entregador.FirstOrDefault(e => e.id_entregador == usuario.id_papel),
+                _ => null
+            };
+
+            return Ok(new
+            {
+                usuario.id_usuario,
+                usuario.email,
+                usuario.papel,
+                usuario.id_papel,
+                dadosPapel
+            });
+        }
+
 
         // DELETE: api/usuario/5
         [HttpDelete("{id}")]
