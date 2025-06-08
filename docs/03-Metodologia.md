@@ -156,6 +156,8 @@ Atualizado em: 27/05/2025
 | Bianca M.     | Criação da API |   29/05/2025    |  08/06/2025 | 📝    |     -    |
 | Letícia R.     | Tratamento de API |   01/05/2025    |  08/06/2025 | ✔️   |     08/06/2025    |
 | Letícia R.     | Slides |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
+| Camila P.     | Front-end da tela principal |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
+| Camila P.     | Front-end da tela de detalhamento do produto |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
 
 
 
