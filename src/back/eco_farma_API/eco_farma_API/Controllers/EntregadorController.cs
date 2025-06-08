@@ -33,17 +33,17 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Entregador>> Create(Entregador novoEntregador, Usuario novoEntregadores)
+        public async Task<ActionResult<Entregador>> Create(Entregador novoEntregador)
         {
             _context.Entregador.Add(novoEntregador);
             await _context.SaveChangesAsync();
 
             var usuario = new Usuario
             {
-                email = novoEntregadores.email,
-                senha = Criptografia.DecriptarSenha(novoEntregadores.senha), 
+                email = novoEntregador.email,
+                senha = Criptografia.DecriptarSenha(novoEntregador.senha), 
                 papel = "entregador",
-                id_papel = novoEntregador.id_entregador
+                id_papel = 3
             };
 
             _context.Usuario.Add(usuario);

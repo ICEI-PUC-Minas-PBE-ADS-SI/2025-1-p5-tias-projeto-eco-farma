@@ -17,6 +17,7 @@ namespace eco_farma_API.Classes
         public string? endereco { get; set; }
         public int cep { get; set; }
         public int numero { get; set; }
+        public string senha { get; set; }
 
 
     }

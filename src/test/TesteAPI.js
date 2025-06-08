@@ -78,10 +78,20 @@ async function salvarAvaliacaoProduto() {
 }
 
 async function salvarCliente() {
-    const senhaCriptografada = CryptoJS.AES.encrypt(
-    document.getElementById("cliente_senha").value,
-    "chave-secreta"
-).toString();
+    /* const senhaCriptografada = CryptoJS.AES.encrypt(
+        document.getElementById("cliente_senha").value,
+        "chave-secreta"
+    ).toString();
+
+ */
+    const key = CryptoJS.enc.Utf8.parse("chave_secreta".padEnd(32, " "));
+    const iv = CryptoJS.enc.Utf8.parse("\0".repeat(16));
+
+    const encrypted = CryptoJS.AES.encrypt(
+        document.getElementById("cliente_senha").value,
+        key,
+        { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }
+    ).ciphertext.toString(CryptoJS.enc.Base64);
 
     const data = {
         nome: document.getElementById("cliente_nome").value,
@@ -91,7 +101,7 @@ async function salvarCliente() {
         endereco: document.getElementById("cliente_endereco").value,
         telefone: document.getElementById("cliente_telefone").value,
         cpf: document.getElementById("cliente_cpf").value,
-        senha: senhaCriptografada,
+        senha: encrypted,
         cep: parseInt(document.getElementById("cliente_cep").value),
         numero: parseInt(document.getElementById("cliente_numero").value),
         //id_cliente: parseInt(document.getElementById("id_cliente").value)
@@ -122,9 +132,9 @@ async function salvarCliente() {
 
 async function salvarEntregador() {
     const senhaCriptografada = CryptoJS.AES.encrypt(
-    document.getElementById("entregador_senha").value,
-    "chave-secreta"
-).toString();
+        document.getElementById("entregador_senha").value,
+        "chave-secreta"
+    ).toString();
 
     const data = {
         nome: document.getElementById("entregador_nome").value,
@@ -165,9 +175,9 @@ async function salvarEntregador() {
 
 async function salvarFarmacia() {
     const senhaCriptografada = CryptoJS.AES.encrypt(
-    document.getElementById("farmacia_senha").value,
-    "chave-secreta"
-).toString();
+        document.getElementById("farmacia_senha").value,
+        "chave-secreta"
+    ).toString();
 
     const data = {
         nome: document.getElementById("farmacia_nome").value,
@@ -862,11 +872,11 @@ async function fazerLogin() {
     const email = document.getElementById("email").value;
     const senha = document.getElementById("senha").value;
 
-    const senhaCriptografada = CryptoJS.AES.encrypt(senha, "chave_secreta").toString();
+    //const senhaCriptografada = CryptoJS.AES.encrypt(senha, "chave_secreta").toString();
 
     const data = {
         email: email,
-        senha: senhaCriptografada
+        senha: senha
     };
 
     try {
@@ -886,7 +896,7 @@ async function fazerLogin() {
             // Redireciona de acordo com o papel
             switch (usuario.papel.toLowerCase()) {
                 case "cliente":
-                    window.location.href = "/cliente/home.html";
+                    window.location.href = "Redirecionamento.html";
                     break;
                 case "farmacia":
                     window.location.href = "/farmacia/home.html";
