@@ -84,18 +84,18 @@ namespace eco_farma_API.Controllers
         public IActionResult Login([FromBody] Usuario loginInfo)
         {
             string senhaDescriptografada;
-            try
-            {
-                senhaDescriptografada = Criptografia.DecriptarSenha(loginInfo.senha);
-            }
-            catch
-            {
-                return BadRequest("Erro ao descriptografar a senha.");
-            }
+            //try
+            //{
+                //senhaDescriptografada = Criptografia.DecriptarSenha(loginInfo.senha);
+            //}
+            //catch
+            //{
+              //  return BadRequest("Erro ao descriptografar a senha.");
+            //}
 
             var usuario = _context.Usuario.FirstOrDefault(u => u.email == loginInfo.email);
 
-            if (usuario == null || usuario.senha != senhaDescriptografada)
+            if (usuario == null || usuario.senha != loginInfo.senha)
                 return Unauthorized("Email ou senha inválidos.");
 
             // Buscar dados adicionais do papel (exemplo com Cliente)

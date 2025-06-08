@@ -1,160 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header">
-      <div class="header__top">
-        <div class="header__container container">
-          <div class="header__contact">
-            <span>Faça o login, acumule pontos e ganhe descontos!</span>
-            <span>Sua localização: Betim</span>
-          </div>
-          <p class="header__alert-news">
-            Aumente seus pontos entregando seus blisters nos pontos de coleta!
-          </p>
-          <a href="login-register.html" class="header__top-action">
-            Entrar / Cadastre-se
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <title>Ecommerce Website</title>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Faça o login, acumule pontos e ganhe descontos!</span>
+          <span>Sua localização: Betim</span>
+        </div>
+        <p class="header__alert-news">
+          Aumente seus pontos entregando seus blisters nos pontos de coleta!
+        </p>
+        <a href="login-register.html" class="header__top-action">
+          Entrar / Cadastre-se
+        </a>
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.png" alt="">
           </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Página Inicial</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Produtos</a>
+          </li>
+          <!-- <li class="nav__item">
+              <a href="accounts.html" class="nav__link">Minha conta</a>
+            </li> -->
+          <li class="nav__item">
+            <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
+          </li>
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Do que você precisa?" class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
         </div>
       </div>
-
-      <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-          <img
-            class="nav__logo-img"
-            src="assets/img/logo.png"
-            alt="website logo"
-          />
+      <div class="header__user-actions">
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <!-- <span class="count">3</span> -->
         </a>
-        <div class="nav__menu" id="nav-menu">
-          <div class="nav__menu-top">
-            <a href="index.html" class="nav__menu-logo">
-              <img src="./assets/img/logo.png" alt="">
-            </a>
-            <div class="nav__close" id="nav-close">
-              <i class="fi fi-rs-cross-small"></i>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">Login / Registre-se</span></li>
+      </ul>
+    </section>
+
+    <!--=============== LOGIN-REGISTER ===============-->
+    <section class="login-register section--lg">
+      <div class="login-register__container container grid">
+        <div class="login">
+          <h3 class="section__title">Login</h3>
+          <form class="form grid">
+            <input type="text" placeholder="Seu e-mail" class="form__input" id="login_email"/>
+            <input type="password" placeholder="Sua senha" class="form__input" id="login_senha"/>
+            <div class="form__btn">
+              <!-- <a href="index.html" class="btn">Entrar</a> -->
+              <button class="btn btn-primary" onclick="fazerLogin()">Entrar</button>
             </div>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link active-link">Página Inicial</a>
-            </li>
-            <li class="nav__item">
-              <a href="shop.html" class="nav__link">Produtos</a>
-            </li>
-            <li class="nav__item">
-              <a href="accounts.html" class="nav__link">Minha conta</a>
-            </li>
-            <li class="nav__item">
-              <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
-            </li>
-          </ul>
-          <div class="header__search">
-            <input
-              type="text"
-              placeholder="Do que você precisa?"
-              class="form__input"
-            />
-            <button class="search__btn">
-              <img src="assets/img/search.png" alt="search icon" />
-            </button>
-          </div>
+          </form>
         </div>
-        <div class="header__user-actions">
-          <a href="cart.html" class="header__action-btn" title="Cart">
-            <img src="assets/img/icon-cart.svg" alt="" />
-            <span class="count">3</span>
-          </a>
-          <div class="header__action-btn nav__toggle" id="nav-toggle">
-            <img src="./assets//img/menu-burger.svg" alt="">
-          </div>
+        <div class="register">
+          <h3 class="section__title">Criar Conta</h3>
+          <form class="form grid">
+            <input type="text" placeholder="Nome de usuário" class="form__input" id="usuario_nome"/>
+            <input type="text" placeholder="Seu e-mail" class="form__input" id="usuario_email"/>
+            <input type="password" placeholder="Sua senha" class="form__input" id="usuario_senha"/>
+            <input type="password" placeholder="Confirme sua senha" class="form__input" />
+            <div class="form__btn">
+              <button class="btn" onclick="salvarUsuario()">Registrar-se</button>
+            </div>
+          </form>
         </div>
-      </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
-        <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Home</a></li>
-          <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Login / Registre-se</span></li>
-        </ul>
-      </section>
-
-      <!--=============== LOGIN-REGISTER ===============-->
-      <section class="login-register section--lg">
-        <div class="login-register__container container grid">
-          <div class="login">
-            <h3 class="section__title">Login</h3>
-            <form class="form grid">
-              <input
-                type="email"
-                placeholder="Seu e-mail"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Sua senha"
-                class="form__input"
-              />
-              <div class="form__btn">
-                <a href="index.html" class="btn">Entrar</a>
-              </div>
-            </form>
-          </div>
-          <div class="register">
-            <h3 class="section__title">Criar Conta</h3>
-            <form class="form grid">
-              <input
-                type="text"
-                placeholder="Nome de usuário"
-                class="form__input"
-              />
-              <input
-                type="email"
-                placeholder="Seu e-mail"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Sua senha"
-                class="form__input"
-              />
-              <input
-                type="password"
-                placeholder="Confirme sua senha"
-                class="form__input"
-              />
-              <div class="form__btn">
-                <button class="btn">Registrar-se</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
@@ -177,39 +143,19 @@
             <h4 class="footer__subtitle">Nossas redes sociais:</h4>
             <div class="footer__links flex">
               <a href="#">
-                <img
-                  src="./assets/img/icon-facebook.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-twitter.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-instagram.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-pinterest.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-youtube.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
               </a>
             </div>
           </div>
@@ -217,7 +163,7 @@
         <div class="footer__content">
           <h3 class="footer__title">FAQ</h3>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">Sobre nós</a></li>          
+            <li><a href="#" class="footer__link">Sobre nós</a></li>
             <li><a href="#" class="footer__link">Politica de Privacidade</a></li>
             <li><a href="#" class="footer__link">Termos e Condições</a></li>
           </ul>
@@ -231,11 +177,7 @@
         </div>
         <div class="footer__content">
           <h3 class="footer__title">Métodos de Pagamento</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
+          <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
         </div>
       </div>
       <div class="footer__bottom">
@@ -249,5 +191,8 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-  </body>
+    <script src="assets/js/login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+
 </html>
