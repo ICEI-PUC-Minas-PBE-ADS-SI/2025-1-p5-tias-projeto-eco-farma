@@ -65,7 +65,7 @@
     <div class="container">
         <h1>Testes de API - Eco Farma</h1>
         <p>Essa página tem o intuito de testar todas as funções que serão usadas no site Eco Farma. Cada função cada
-            funcionalidade será explicada para quê serve e também como é testada. Para fazer o teste, é necessário a APi
+            funcionalidade será explicada para quê serve e também como é testada. Para fazer o teste, é necessário a API
             estar ligada, selecione o modo 'http' para rodar normalmente.</p>
 
     </div>
@@ -310,18 +310,42 @@
                 </div>
             </div>
             <div class="col-6">
-                <h2>Pedido</h2>
-                <h3>Cadastro</h3>
-                <input type="number" id="pedido_id_cliente" placeholder="Id Cliente">
-                <input type="number" id="pedido_id_farmacia" placeholder="Id Farmacia">
-                <input type="number" id="pedido_id_produto" placeholder="Id Produto">
-                <input type="number" id="pedido_qtd_produto" placeholder="Quantidade Produto">
-                <input type="number" id="pedido_preco_produto" placeholder="Preço de Produto">
-                <label>
-                    <input type="checkbox" id="entregaCheckbox" /> Entrega
-                </label>
-
-                <button onclick="salvarPedido()">Enviar</button>
+                <h3>Pedido</h3>
+                <div class="row">
+                    <div class="col-6 mb-3">
+                        <label for="pedido_id_cliente" class="form-label">Id Cliente</label>
+                        <input type="number" class="form-control" id="pedido_id_cliente" placeholder="Id Cliente">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="pedido_id_farmacia" class="form-label">Id Farmacia</label>
+                        <input type="number" class="form-control" id="pedido_id_farmacia" placeholder="Id Farmacia">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="pedido_id_produto" class="form-label">Id Produto</label>
+                        <input type="number" class="form-control" id="pedido_id_produto" placeholder="Id Produto">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="pedido_qtd_produto" class="form-label">Quantidade Produto</label>
+                        <input type="number" class="form-control" id="pedido_qtd_produto"
+                            placeholder="Quantidade Produto">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <label for="pedido_preco_produto" class="form-label">Preço de Produto</label>
+                        <input type="number" class="form-control" id="pedido_preco_produto"
+                            placeholder="Preço de Produto">
+                    </div>
+                    <div class="col-6 mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="entregaCheckbox">
+                            <label class="form-check-label" for="entregaCheckbox">
+                                Entrega
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 mb-3">
+                        <button class="btn btn-primary" onclick="salvarPedido()">Enviar</button>
+                    </div>
+                </div>
             </div>
             <div class="col-6">
                 <h2>Entregas</h2>
