@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 // //Essa função é para fazer cópia para outros scripts
 // //
 // //Função POST (para salvar os dados no banco)
@@ -55,4 +53,3 @@ async function enviarAvaliacao() {
 }
 
 window.enviarAvaliacao = enviarAvaliacao;
->>>>>>> Stashed changes
