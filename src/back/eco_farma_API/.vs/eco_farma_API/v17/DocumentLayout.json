@@ -86,21 +86,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
-              "RelativeToolTip": "eco_farma_API\\Classes\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T13:19:17.33Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 10,
@@ -111,8 +98,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Farmacia.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:41:24.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T13:41:24.892Z"
             },
             {
               "$type": "Document",
@@ -124,8 +110,32 @@
               "RelativeToolTip": "eco_farma_API\\Controllers\\EntregadorController.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAA3wC0AAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:40:48.475Z",
+              "WhenOpened": "2025-06-07T20:40:48.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "eco_farma_API\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAGIAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:24:14.386Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
+              "RelativeToolTip": "eco_farma_API\\Classes\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T13:19:17.33Z"
             },
             {
               "$type": "Document",
@@ -137,8 +147,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Cupom.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T14:07:45.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T14:07:45.88Z"
             },
             {
               "$type": "Document",
@@ -150,8 +159,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Cliente.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAA8wA8AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:34:49.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T20:34:49.816Z"
             },
             {
               "$type": "Document",
@@ -163,8 +171,7 @@
               "RelativeToolTip": "eco_farma_API\\Migrations\\20250608123600_UpdateTabelas6.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:43:10.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T12:43:10.671Z"
             },
             {
               "$type": "Document",
@@ -176,21 +183,7 @@
               "RelativeToolTip": "eco_farma_API\\Fun\u00E7\u00F5es\\Criptografia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABSAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T19:24:57.408Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "eco_farma_API\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAwwGIAAABBAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T19:24:14.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T19:24:57.408Z"
             },
             {
               "$type": "Document",
@@ -202,8 +195,7 @@
               "RelativeToolTip": "eco_farma_API\\Controllers\\ClienteController.cs",
               "ViewState": "AQIAABsAAAAAAAAAAAA1wDQAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:34:51.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T20:34:51.332Z"
             },
             {
               "$type": "Document",
@@ -215,8 +207,7 @@
               "RelativeToolTip": "eco_farma_API\\Controllers\\FarmaciaController.cs",
               "ViewState": "AQIAACQAAAAAAAAAAAAYwDAAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:43:24.327Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T13:43:24.327Z"
             },
             {
               "$type": "Document",
@@ -228,8 +219,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Produto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:42:22.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T13:42:22.674Z"
             },
             {
               "$type": "Document",
@@ -241,8 +231,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Entregador.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAA3wBMAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T12:36:55.016Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T12:36:55.016Z"
             },
             {
               "$type": "Document",
@@ -254,8 +243,7 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Entrega.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T14:18:15.002Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T14:18:15.002Z"
             },
             {
               "$type": "Document",

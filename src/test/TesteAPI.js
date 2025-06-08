@@ -717,7 +717,6 @@ async function carregarUsuarios() {
             tr.innerHTML = `
                         <td>${usuario.id_usuario}</td>
                         <td>${usuario.email}</td>
-                        <td>${usuario.senha}</td>
                         <td>${usuario.papel}</td>
                         <td>${usuario.id_papel}</td>
                     `;
