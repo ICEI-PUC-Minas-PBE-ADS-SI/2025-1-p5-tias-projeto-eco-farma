@@ -153,7 +153,8 @@ Atualizado em: 11/05/2025
 Atualizado em: 27/05/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
-| Bianca M.     | Criação da API |   29/05/2025    |  08/06/2025 | 📝    |     -    |
+| Bianca M.     | Criação da API |   29/05/2025    |  08/06/2025 | ✔️    |     08/06/2025    |
+| Victória G.     | Front end - Carrinho, Resumo do pedido, Finalizar compra e usar pontos |   02/06/2025    |  08/06/2025 | ✔️    |     06/06/2025    |
 | Letícia R.     | Tratamento de API |   01/05/2025    |  08/06/2025 | ✔️   |     08/06/2025    |
 | Letícia R.     | Slides |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
 | Camila P.     | Front-end da tela principal |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
