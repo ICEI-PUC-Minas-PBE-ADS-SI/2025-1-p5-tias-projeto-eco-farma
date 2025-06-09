@@ -162,6 +162,7 @@ Atualizado em: 27/05/2025
 | Thiago L.     | Front-end da tela de perfil de usuário |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
 | Thiago L.     | Front-end da tela de pontos de coleta |   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
 | Thiago L.     | Front-end da tela de Login e cadastro de usuário|   01/05/2025    |  07/06/2025 | ✔️   |     08/06/2025    |
+| Walisson R.     | Banco de Dados|   01/06/2025    |  07/06/2025 | ✔️   |     07/06/2025    |
 
 
 
