@@ -188,6 +188,10 @@ namespace eco_farma_API.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("senha")
+<<<<<<< HEAD
+=======
+                        .IsRequired()
+>>>>>>> origin/main
                         .HasColumnType("text");
 
                     b.Property<string>("sexo")
@@ -228,6 +232,10 @@ namespace eco_farma_API.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("senha")
+<<<<<<< HEAD
+=======
+                        .IsRequired()
+>>>>>>> origin/main
                         .HasColumnType("text");
 
                     b.Property<int>("telefone")

@@ -125,6 +125,22 @@ CREATE TABLE Avaliacao_produto (
     anexo TEXT
 );
 
+-- buscas das informações de todos os itens
+
+SELECT * FROM Cliente;
+SELECT * FROM Farmacia;
+SELECT * FROM Usuario;
+SELECT * FROM Entregador;
+SELECT * FROM Produto;
+SELECT * FROM Promocao;
+SELECT * FROM Cupom;
+SELECT * FROM Cliente_Cupom;
+SELECT * FROM Pedido;
+SELECT * FROM Pedido_Produto;
+SELECT * FROM Entrega;
+SELECT * FROM Avaliacao;
+SELECT * FROM Avaliacao_produto;
+
 -- filtros
 
 -- pagina de busca: filtrar produtos pela categoria escolhida pelo usuario,

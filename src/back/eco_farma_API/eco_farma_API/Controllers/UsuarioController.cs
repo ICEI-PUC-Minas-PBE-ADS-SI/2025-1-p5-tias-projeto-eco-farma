@@ -90,7 +90,11 @@ namespace eco_farma_API.Controllers
             //}
             //catch
             //{
+<<<<<<< HEAD
               //  return BadRequest("Erro ao descriptografar a senha.");
+=======
+               //return BadRequest("Erro ao descriptografar a senha.");
+>>>>>>> origin/main
             //}
 
             var usuario = _context.Usuario.FirstOrDefault(u => u.email == loginInfo.email);
