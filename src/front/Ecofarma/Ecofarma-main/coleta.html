@@ -24,74 +24,65 @@
   <body>
     <!--=============== HEADER ===============-->
     <header class="header">
-      <div class="header__top">
-        <div class="header__container container">
-          <div class="header__contact">
-            <span>Olá Bia! Você tem um total de: 5 pontos</span>
-            <span>Sua localização: Betim</span>
-          </div>
-          <p class="header__alert-news">
-            Aumente seus pontos entregando seus blisters nos pontos de coleta!
-          </p>
-          <a href="login-register.html" class="header__top-action">
-            Sair
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span>Olá Bia! Você tem um total de: 5 pontos</span>
+          <span>Sua localização: Betim</span>
+        </div>
+        <p class="header__alert-news">
+          Aumente seus pontos entregando seus blisters nos pontos de coleta!
+        </p>
+        <a href="#" class="header__top-action" id="authLink"></a>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="index.html" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="index.html" class="nav__menu-logo">
+            <img src="./assets/img/logo.png" alt="">
           </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link active-link">Página Inicial</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Produtos</a>
+          </li>
+          <li class="nav__item" id="minhaContaItem" style="display: none;">
+            <a href="accounts.html" class="nav__link">Minha conta</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
+          </li>
+        </ul>
+        <div class="header__search">
+          <input type="text" placeholder="Do que você precisa?" class="form__input" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
         </div>
       </div>
-
-      <nav class="nav container">
-        <a href="index.html" class="nav__logo">
-          <img
-            class="nav__logo-img"
-            src="assets/img/logo.png"
-            alt="website logo"
-          />
+      <div class="header__user-actions">
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
         </a>
-        <div class="nav__menu" id="nav-menu">
-          <div class="nav__menu-top">
-            <a href="index.html" class="nav__menu-logo">
-              <img src="./assets/img/logo.png" alt="">
-            </a>
-            <div class="nav__close" id="nav-close">
-              <i class="fi fi-rs-cross-small"></i>
-            </div>
-          </div>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link active-link">Página Inicial</a>
-            </li>
-            <li class="nav__item">
-              <a href="shop.html" class="nav__link">Produtos</a>
-            </li>
-            <li class="nav__item">
-              <a href="accounts.html" class="nav__link">Minha conta</a>
-            </li>
-            <li class="nav__item">
-              <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
-            </li>
-          </ul>
-          <div class="header__search">
-            <input
-              type="text"
-              placeholder="Do que você precisa?"
-              class="form__input"
-            />
-            <button class="search__btn">
-              <img src="assets/img/search.png" alt="search icon" />
-            </button>
-          </div>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
         </div>
-        <div class="header__user-actions">
-          <a href="cart.html" class="header__action-btn" title="Cart">
-            <img src="assets/img/icon-cart.svg" alt="" />
-            <span class="count">3</span>
-          </a>
-          <div class="header__action-btn nav__toggle" id="nav-toggle">
-            <img src="./assets//img/menu-burger.svg" alt="">
-          </div>
-        </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
+  </header>
 
     <!--=============== MAIN ===============-->
     <main class="main">

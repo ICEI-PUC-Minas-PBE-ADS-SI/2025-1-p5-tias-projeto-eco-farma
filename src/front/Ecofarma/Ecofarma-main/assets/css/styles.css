@@ -6,7 +6,7 @@
   --header-height: 4rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(176, 88%, 27%);
+  --first-color: #228B22;
   --first-color-alt: hsl(129, 44%, 94%);
   --second-color: hsl(34, 94%, 87%);
   --title-color: hsl(0, 0%, 13%);
@@ -1149,6 +1149,7 @@ table {
 .details__price .new__price {
   font-size: var(--h2-font-size);
 }
+
 .details__price .old__price {
   font-size: var(--normal-font-size);
   font-weight: var(--weight-500);
@@ -1278,6 +1279,7 @@ table {
   font-weight: var(--weight-500);
   text-align: left;
 }
+
 .info__table tr td {
   color: var(--text-color-light);
 }
@@ -1923,6 +1925,7 @@ table {
     height: 42px;
     line-height: 35px;
   }
+
   .btn--sm {
     height: 38px;
     line-height: 35px;
@@ -2011,6 +2014,7 @@ table {
   .category__img {
     margin-bottom: 1rem;
   }
+
   .deals__item,
   .checkout__group:nth-child(2) {
     padding: 1.25rem;
@@ -2124,4 +2128,224 @@ table {
   .header__search {
     max-width: 270px;
   }
+}
+
+.separator {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.separator::before,
+.separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.separator::before {
+  left: 0;
+}
+
+.separator::after {
+  right: 0;
+}
+
+.separator span {
+  background-color: rgb(240, 240, 240);
+  padding: 0 10px;
+  color: #999;
+}
+
+.btn.green {
+  background-color: #28a745;
+  color: white;
+}
+
+
+.login-container h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.login-container p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.forgot {
+  text-align: right;
+  font-size: 0.8rem;
+  margin-top: 5px;
+}
+
+.forgot a {
+  color: #2e7d32;
+  text-decoration: none;
+}
+
+
+.btn.green {
+  background-color: #28a745;
+  color: white;
+}
+
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh; /* reduz altura mínima */
+  padding: 2rem;     /* menos espaço externo */
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px; /* aumenta largura do card */
+  padding: 2rem;    /* padding interno do card */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background: #fff;
+}
+
+
+.cadastrocliente-wrapper {
+  justify-content: center;
+  align-items: center; /* reduz altura mínima */
+  padding: 2rem;     /* menos espaço externo */
+}
+
+.cadastrocliente-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+  font-family: sans-serif;
+  background: #f7f8fa;
+  border-radius: 8px;
+}
+
+.cadastrocliente-obrigatorio {
+  color: red;
+}
+
+.cadastrocliente-form {
+  margin-top: 1rem;
+}
+
+.cadastrocliente-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.cadastrocliente-item label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.cadastrocliente-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.cadastrocliente-col-2 {
+  grid-column: span 2;
+}
+
+.cadastrocliente-botao {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #228b22;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.cadastrocliente-botao:hover {
+  background-color: #1b751b;
+}
+
+
+/* Estilo do modal */
+.modal {
+  display: none; /* Escondido inicialmente */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+}
+
+/* Botão fechar */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo dos botões de cadastro */
+.cadastro-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #1b751b;;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.cadastro-btn:hover {
+  background-color: #1b751b;;
 }

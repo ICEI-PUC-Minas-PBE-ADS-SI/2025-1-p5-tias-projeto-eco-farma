@@ -110,3 +110,48 @@ tabs.forEach((tab) => {
     tab.classList.add("active-tab");
   });
 });
+
+// função para limpar o localStorage
+function limparLocalStorage() {
+  localStorage.clear();
+  console.log("Local Storage limpo com sucesso.");
+
+  // Opcional: redirecionar para login após limpar
+  window.location.href = "login-register.html";
+}
+
+// Verifica se há usuário logado
+const usuarioStr = localStorage.getItem("usuarioLogado");
+if (usuarioStr) {
+  const usuario = JSON.parse(usuarioStr);  // converte de string para objeto
+  const idUsuario = usuario.id_usuario;
+
+  if (idUsuario) {
+    // Exibe o item "Minha conta" (exemplo)
+    document.getElementById("minhaContaItem").style.display = "block";
+
+    // Configura o link de "Sair"
+    const authLink = document.getElementById("authLink");
+    authLink.textContent = "Sair";
+    authLink.href = "login-register.html"; // ou '#' se preferir
+    authLink.onclick = function() {
+      limparLocalStorage();
+    };
+  } else {
+    // Se não tiver id_usuario, mostra "Entrar"
+    const authLink = document.getElementById("authLink");
+    authLink.textContent = "Entrar";
+    authLink.href = "login-register.html";
+    authLink.onclick = null;
+  }
+} else {
+  // Se não tiver usuário logado, mostrar "Entrar"
+  const authLink = document.getElementById("authLink");
+  authLink.textContent = "Entrar";
+  authLink.href = "login-register.html";
+  authLink.onclick = null;
+}
+
+
+
+

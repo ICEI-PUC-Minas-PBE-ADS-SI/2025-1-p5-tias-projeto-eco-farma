@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container container">
+                <div class="header__contact">
+                    <span>Olá Bia! Você tem um total de: 5 pontos</span>
+                    <span>Sua localização: Betim</span>
+                </div>
+                <p class="header__alert-news">
+                    Aumente seus pontos entregando seus blisters nos pontos de coleta!
+                </p>
+                <a href="#" class="header__top-action" id="authLink"></a>
+
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Página Inicial</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Produtos</a>
+                    </li>
+                    <li class="nav__item" id="minhaContaItem" style="display: none;">
+                        <a href="accounts.html" class="nav__link">Minha conta</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
+                    </li>
+                </ul>
+                <div class="header__search">
+                    <input type="text" placeholder="Do que você precisa?" class="form__input" />
+                    <button class="search__btn">
+                        <img src="assets/img/search.png" alt="search icon" />
+                    </button>
+                </div>
+            </div>
+            <div class="header__user-actions">
+                <a href="cart.html" class="header__action-btn" title="Cart">
+                    <img src="assets/img/icon-cart.svg" alt="" />
+                </a>
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="./assets//img/menu-burger.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <!--=============== BREADCRUMB ===============-->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><a href="login-register.html" class="breadcrumb__link">Login</a> </span></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Registre-se</span></li>
+            </ul>
+        </section>
+
+        <!--=============== LOGIN-REGISTER ===============-->
+
+        <div class="cadastrocliente-wrapper">
+            <div class="cadastrocliente-container" style="background-color: rgb(240, 240, 240);">
+                <h2>Cadastro cliente</h2>
+                <h3>Meus dados <span class="cadastrocliente-obrigatorio">*</span></h3>
+
+                <form class="cadastrocliente-form">
+                    <div class="cadastrocliente-grid">
+                        <div class="cadastrocliente-item">
+                            <label>Nome completo</label>
+                            <input type="text" placeholder="Seu nome" id="cliente_nome" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Gênero</label>
+                            <input type="text" placeholder="Feminino" id="cliente_sexo" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Data de nascimento</label>
+                            <input type="text" placeholder="DD/MM/AAAA" id="cliente_data_nasc" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Número de telefone</label>
+                            <input type="text" placeholder="(xx) xxxx-xxxx" id="cliente_telefone" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>CPF</label>
+                            <input type="text" placeholder="xxx.xxx.xxx-xx" id="cliente_cpf" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Email</label>
+                            <input type="email" placeholder="seu@email.com" id="cliente_email" />
+                        </div>
+
+                        <div class="cadastrocliente-item cadastrocliente-col-2">
+                            <label>Endereço (Rua e Bairro)</label>
+                            <input type="text" placeholder="Rua..." id="cliente_endereco" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>CEP</label>
+                            <input type="number" placeholder="xxxxx-xxx" id="cliente_cep" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Número</label>
+                            <input type="number" placeholder="Número" id="cliente_numero" />
+                        </div>
+
+                        <div class="cadastrocliente-item">
+                            <label>Senha</label>
+                            <input type="password" placeholder="Senha" id="cliente_senha" />
+                        </div>
+                    </div>
+
+                    <button type="button" class="cadastrocliente-botao" onclick="salvarCliente()">
+                        &#128100; Cadastrar
+                    </button>
+                </form>
+            </div>
+
+
+        </div>
+
+
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <div class="footer__container grid">
+                <div class="footer__content">
+                    <a href="index.html" class="footer__logo">
+                        <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+                    </a>
+                    <h4 class="footer__subtitle">Fale Conosco!</h4>
+                    <p class="footer__description">
+                        <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
+                    </p>
+                    <p class="footer__description">
+                        <span>Contato:</span> (31) 99986-5963
+                    </p>
+                    <p class="footer__description">
+                        <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
+                    </p>
+                    <div class="footer__social">
+                        <h4 class="footer__subtitle">Nossas redes sociais:</h4>
+                        <div class="footer__links flex">
+                            <a href="#">
+                                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+                            </a>
+                            <a href="#">
+                                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">FAQ</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Sobre nós</a></li>
+                        <li><a href="#" class="footer__link">Politica de Privacidade</a></li>
+                        <li><a href="#" class="footer__link">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Minha conta</h3>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Ajuda</a></li>
+                        <li><a href="#" class="footer__link">Pedidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Métodos de Pagamento</h3>
+                    <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
+                <span class="designer">Designer by Thiago </span>
+            </div>
+        </footer>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/Scripts/cliente.js"></script>
+</body>
+
+</html>

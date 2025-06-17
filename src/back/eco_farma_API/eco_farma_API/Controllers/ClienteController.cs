@@ -41,7 +41,7 @@ namespace eco_farma_API.Controllers
             var usuario = new Usuario
             {
                 email = novoCliente.email,
-                senha = Criptografia.DecriptarSenha(novoCliente.senha), 
+                senha = novoCliente.senha,
                 papel = "cliente",
                 id_papel = 1
             };
