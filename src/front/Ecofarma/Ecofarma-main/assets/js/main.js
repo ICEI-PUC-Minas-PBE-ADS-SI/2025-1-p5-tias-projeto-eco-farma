@@ -155,3 +155,135 @@ if (usuarioStr) {
 
 
 
+async function carregarProdutos(pagina = 1) {
+    try {
+        const response = await fetch(`http://localhost:5068/api/produto?pagina=${pagina}&tamanhoPagina=8`);
+
+        if (!response.ok) throw new Error("Erro ao buscar produtos");
+
+        const dados = await response.json();
+        const produtos = dados.produtos;
+        const total = dados.total;
+
+        const container = document.getElementById("container-produtos");
+        container.innerHTML = "";
+
+        produtos.forEach(produto => {
+            const card = criarCardProduto(produto);
+            container.appendChild(card);
+        });
+
+        atualizarPaginacao(pagina, total);
+        document.querySelector(".total__products span").textContent = total;
+    } catch (erro) {
+        console.error("Erro ao carregar produtos:", erro);
+    }
+}
+
+function atualizarPaginacao(paginaAtual, totalProdutos) {
+    const totalPaginas = Math.ceil(totalProdutos / 15);
+    const paginacao = document.getElementById("paginacao");
+    paginacao.innerHTML = "";
+
+    // Botão Anterior
+    const btnAnterior = document.createElement("li");
+    btnAnterior.innerHTML = `<a href="#" class="pagination__link icon">&laquo;</a>`;
+    if (paginaAtual > 1) {
+        btnAnterior.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(paginaAtual - 1);
+        });
+    } else {
+        btnAnterior.querySelector("a").classList.add("disabled");
+    }
+    paginacao.appendChild(btnAnterior);
+
+    // Números das páginas
+    for (let i = 1; i <= totalPaginas; i++) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "#";
+        link.className = "pagination__link" + (i === paginaAtual ? " active" : "");
+        link.textContent = i;
+
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(i);
+        });
+
+        li.appendChild(link);
+        paginacao.appendChild(li);
+    }
+
+    // Botão Próximo
+    const btnProximo = document.createElement("li");
+    btnProximo.innerHTML = `<a href="#" class="pagination__link icon">&raquo;</a>`;
+    if (paginaAtual < totalPaginas) {
+        btnProximo.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(paginaAtual + 1);
+        });
+    } else {
+        btnProximo.querySelector("a").classList.add("disabled");
+    }
+    paginacao.appendChild(btnProximo);
+}
+
+
+function criarCardProduto(produto) {
+    const card = document.createElement("div");
+    card.className = "product__item";
+
+    // Converte base64 (ou nulo para imagem padrão)
+    const imagemSrc = produto.anexo
+        ? `data:image/jpeg;base64,${produto.anexo}`
+        : "assets/img/product-1-1.jpg"; // fallback
+
+    const badgeHtml = produto.estoque < 10
+        ? `<div class="product__badge light-pink">Mais vendido!</div>`
+        : '';
+
+    card.innerHTML = `
+        <div class="product__banner">
+            <a href="details.html?id=${produto.id_produto}" class="product__images">
+                <img src="${imagemSrc}" alt="${produto.nome}" class="product__img default" />
+            </a>
+            <div class="product__actions">
+                <a href="details.html?id=${produto.id_produto}" class="action__btn" aria-label="Veja mais">
+                    <i class="fi fi-rs-eye"></i>
+                </a>
+            </div>
+            ${badgeHtml}
+        </div>
+        <div class="product__content">
+            <span class="product__category">${produto.categoria}</span>
+            <a href="details.html?id=${produto.id}">
+                <h3 class="product__title">${produto.nome}</h3>
+            </a>
+            <div class="product__price flex">
+                <span class="new__price">R$ ${(produto.preco / 100).toFixed(2)}</span>
+                
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Adicionar">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+        </div>
+    `;
+
+    return card;
+
+    //<span class="old__price">R$19.99</span> mexer nisso depois, nao é prioridade (promocao)
+}
+
+carregarProdutos(1);
+
+
+const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+const nome = usuarioLogado?.dadosPapel?.nome;
+
+  if (nome) {
+    // Se tiver nome, mostra o span com a mensagem e nome
+    const span = document.getElementById('nome_info');
+    span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
+    span.style.display = 'inline'; // ou block, se preferir
+  }

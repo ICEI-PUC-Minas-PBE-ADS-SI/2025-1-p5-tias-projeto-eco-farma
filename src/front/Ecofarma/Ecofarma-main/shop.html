@@ -79,7 +79,7 @@
     <div class="header__top">
       <div class="header__container container">
         <div class="header__contact">
-          <span>Olá Bia! Você tem um total de: 5 pontos</span>
+          <span id="nome_info" style="display:none;"></span>
           <span>Sua localização: Betim</span>
         </div>
         <p class="header__alert-news">
@@ -105,10 +105,10 @@
         </div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link active-link">Página Inicial</a>
+            <a href="index.html" class="nav__link ">Página Inicial</a>
           </li>
           <li class="nav__item">
-            <a href="shop.html" class="nav__link">Produtos</a>
+            <a href="shop.html" class="nav__link active-link">Produtos</a>
           </li>
           <li class="nav__item" id="minhaContaItem" style="display: none;">
             <a href="accounts.html" class="nav__link">Minha conta</a>
@@ -149,18 +149,66 @@
     </section>
 
     <!--=============== PRODUCTS ===============-->
-    <section class="products container section--lg">
-      <p class="total__products">Encontramos <span>12</span> itens para você!</p>
-      <div class="products__container grid">
-        <div id="container-produtos" class="products__grid">
-          <!-- os cards serão adicionados aqui -->
-        </div>
+    <section class="products container section--lg" style="display: flex; gap: 2rem;">
+  
+  <!-- FILTROS LATERAIS -->
+  <aside class="filters" style="flex: 0 0 250px; border: 1px solid #ddd; padding: 1rem; border-radius: 5px;">
+    <h3>Filtros</h3>
+    
+    <!-- Filtro por Categoria -->
+    <div class="filter-category" style="margin-bottom: 1.5rem;">
+      <label for="categoriaFiltro" style="font-weight: bold;">Categoria</label>
+      <select id="categoriaFiltro" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+        <option value="">Todas</option>
+        <option value="">Selecione</option>
+            <option value="remedios">Remédios</option>
+            <option value="higiene">Higiene</option>
+            <option value="alimento">Alimento</option>
+            <option value="infantil">Infantil</option>
+            <option value="pet">Pet</option>
+            <option value="analgésico">Analgésico</option>
+            <option value="antialergico">Antialérgico</option>
+            <option value="dor e febre">Dor e Febre</option>
+            <option value="doces">Doces</option>
+            <option value="skin care">Skin Care</option>
+            <option value="protetor solar">Protetor Solar</option>
+            <option value="maquiagem">Maquiagem</option>
+            <option value="unhas">Unhas</option>
+            <option value="tratamento">Tratamento</option>
+            <option value="fitness">Fitness</option>
+        <!-- Adicione mais categorias aqui -->
+      </select>
+    </div>
 
+    <!-- Filtro por Preço -->
+    <div class="filter-preco">
+      <label style="font-weight: bold;">Preço</label>
+      <div style="margin-top: 0.5rem;">
+        <input type="number" id="precoMin" placeholder="Preço mínimo" style="width: 100%; padding: 0.5rem; margin-bottom: 0.5rem;" />
+        <input type="number" id="precoMax" placeholder="Preço máximo" style="width: 100%; padding: 0.5rem;" />
       </div>
-      <ul class="pagination" id="paginacao">
-        <!-- Botões dinâmicos -->
-      </ul>
-    </section>
+    </div>
+
+    <button id="btnFiltrar" style="margin-top: 1rem; padding: 0.5rem 1rem; width: 100%; background-color: #2a7ae2; color: white; border: none; border-radius: 4px; cursor: pointer;">
+      Aplicar filtros
+    </button>
+  </aside>
+
+  <!-- GRID DE PRODUTOS -->
+  <div style="flex: 1;">
+    <p class="total__products">Encontramos <span></span> itens para você!</p>
+    <div class="products__container grid">
+      <div id="container-produtos" class="products__grid">
+        <!-- os cards serão adicionados aqui -->
+      </div>
+    </div>
+    <ul class="pagination" id="paginacao">
+      <!-- Botões dinâmicos -->
+    </ul>
+  </div>
+
+</section>
+
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">

@@ -83,33 +83,25 @@ namespace eco_farma_API.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] Usuario loginInfo)
         {
-            string senhaDescriptografada;
-            //try
-            //{
-                //senhaDescriptografada = Criptografia.DecriptarSenha(loginInfo.senha);
-            //}
-            //catch
-            //{
-
-              //  return BadRequest("Erro ao descriptografar a senha.");
-
-               //return BadRequest("Erro ao descriptografar a senha.");
-
-            //}
-
             var usuario = _context.Usuario.FirstOrDefault(u => u.email == loginInfo.email);
 
             if (usuario == null || usuario.senha != loginInfo.senha)
                 return Unauthorized("Email ou senha inválidos.");
 
-            // Buscar dados adicionais do papel (exemplo com Cliente)
-            object dadosPapel = usuario.papel.ToLower() switch
+            object dadosPapel = null;
+
+            switch (usuario.papel?.ToLower())
             {
-                "cliente" => _context.Cliente.FirstOrDefault(c => c.id_cliente == usuario.id_papel),
-                "farmacia" => _context.Farmacia.FirstOrDefault(f => f.id_farmacia == usuario.id_papel),
-                "entregador" => _context.Entregador.FirstOrDefault(e => e.id_entregador == usuario.id_papel),
-                _ => null
-            };
+                case "cliente":
+                    dadosPapel = _context.Cliente.FirstOrDefault(c => c.email == usuario.email);
+                    break;
+                case "farmacia":
+                    dadosPapel = _context.Farmacia.FirstOrDefault(f => f.id_farmacia == usuario.id_papel);
+                    break;
+                case "entregador":
+                    dadosPapel = _context.Entregador.FirstOrDefault(e => e.id_entregador == usuario.id_papel);
+                    break;
+            }
 
             return Ok(new
             {
@@ -120,6 +112,8 @@ namespace eco_farma_API.Controllers
                 dadosPapel
             });
         }
+
+
 
 
         // DELETE: api/usuario/5
