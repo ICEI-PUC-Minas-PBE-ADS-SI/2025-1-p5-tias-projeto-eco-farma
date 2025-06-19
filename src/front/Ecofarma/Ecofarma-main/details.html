@@ -1,40 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Ecommerce Website</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+
+  <title>Eco Farma</title>
+  <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
+  <style>
+    .reviews {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+.reviews__title,
+.reviews__subtitle {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.reviews__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.reviews__list li {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.reviews__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reviews__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews__input,
+.reviews__textarea {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.reviews__textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.reviews__button {
+  align-self: flex-start;
+}
+
+  </style>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
     <div class="header__top">
       <div class="header__container container">
         <div class="header__contact">
-          <span>Olá Bia! Você tem um total de: 5 pontos</span>
+          <span>Você tem um total de: 5 pontos</span>
           <span>Sua localização: Betim</span>
         </div>
         <p class="header__alert-news">
           Aumente seus pontos entregando seus blisters nos pontos de coleta!
         </p>
-        <a href="#" class="header__top-action" id="authLink"></a>
-
+        <a href="login-register.html" class="header__top-action">
+          Entrar / Cadastre-se
+        </a>
       </div>
     </div>
 
@@ -58,10 +114,9 @@
           <li class="nav__item">
             <a href="shop.html" class="nav__link">Produtos</a>
           </li>
-          <li class="nav__item" id="minhaContaItem" style="display: none;">
+          <li class="nav__item">
             <a href="accounts.html" class="nav__link">Minha conta</a>
           </li>
-
           <li class="nav__item">
             <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
           </li>
@@ -76,6 +131,7 @@
       <div class="header__user-actions">
         <a href="cart.html" class="header__action-btn" title="Cart">
           <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count">3</span>
         </a>
         <div class="header__action-btn nav__toggle" id="nav-toggle">
           <img src="./assets//img/menu-burger.svg" alt="">
@@ -84,200 +140,100 @@
     </nav>
   </header>
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
-        <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Página Inicial</a></li>
-          <li><span class="breadcrumb__link"></span>></li>
-          <li><span class="breadcrumb__link">Produtos</span></li>
-          <li><span class="breadcrumb__link"></span>></li>
-          <li><span class="breadcrumb__link">Neosaldina</span></li>
-        </ul>
-      </section>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Página Inicial</a></li>
+        <li><span class="breadcrumb__link"></span>></li>
+        <li><span class="breadcrumb__link">Produtos</span></li>
+        <li><span class="breadcrumb__link"></span>></li>
+        <li><span class="breadcrumb__link">Neosaldina</span></li>
+      </ul>
+    </section>
 
-      <!--=============== DETAILS ===============-->
-      <section class="details section--lg">
-        <div class="details__container container grid">
-          <div class="details__group">
-            <img
-              src="./assets/img/product-8-1.jpg"
-              alt=""
-              class="details__img"
-            />
-            <div class="details__small-images grid">
-              <img
-                src="./assets/img/product-8-1.jpg"
-                alt=""
-                class="details__small-img"
-              />
-              <img
-                src="./assets/img/product-8-2.jpg"
-                alt=""
-                class="details__small-img"
-              />
-              <img
-                src="./assets/img/product-8-3.jpg"
-                alt=""
-                class="details__small-img"
-              />
-            </div>
-          </div>
-          <div class="details__group">
-            <h3 class="details__title">Neosaldina - 20 comprimidos</h3>
-            <p class="details__brand">Ação rápida para dores de cabeça
-            <div class="details__price flex">
-              <span class="new__price">R$21,56</span>
-              <span class="old__price">R$34,15</span>
-              <span class="save__price">25% Off</span>
-            </div>
-            <p class="short__description">
-            Neosaldina® atua na diminuição da dor (ação analgésica) e da contração involuntária (ação antiespasmódica), sendo um medicamento indicado para tratar dores de cabeça, incluindo enxaquecas, e cólicas (dores causadas pela contração involuntária de músculos, como o útero durante o período menstrual).
-            </p>
-            <ul class="products__list">
-              <li class="list__item flex">
-                <i class="fi-rs-crown"></i> Marca: Neosaldina
-              </li>
-              <li class="list__item flex">
-                <i class="fi-rs-refresh"></i> 30 dias pra troca
-              </li>
+    <section class="details section--lg">
+      <div class="details__container container grid">
 
-            </ul>
- 
-            <div class="details__action">
-              <a href="#" class="btn btn--sm">Adicionar no carrinho</a>
-
-            </div>
-            <ul class="details__meta">
-              <li class="meta__list flex"><span>Código:</span>FWM15VKT</li>
-              <li class="meta__list flex">
-                <span>Fabricante:</span>Takeda
-              </li>
-              <li class="meta__list flex">
-                <span>Indicação:</span>Para o tratamento de diversos tipos de dor de cabeça, incluindo enxaquecas ou para o tratamento de cólicas.
-              </li>
-            </ul>
+        <!-- Imagens -->
+        <div class="details__group">
+          <img src="" alt="Imagem do Produto" class="details__img" />
+          <div class="details__small-images grid">
+            <img src="" alt="Imagem Miniatura" class="details__small-img" />
           </div>
         </div>
-      </section>
 
-      <!--=============== DETAILS TAB ===============-->
-      <section class="details__tab container">
-        <div class="detail__tabs">
-          <span class="detail__tab active-tab" data-target="#info">
-            Informações adicionais
-          </span>
-        </div>
-        <div class="details__tabs-content">
-          <div class="details__tab-content active-tab" content id="info">
-            <table class="info__table">
-              <tr>
-                <th>Composição</th>
-                <td>MUCATO DE ISOMETEPTENO 30.0MG + CAFEINA ANIDRA 30.0MG + DIPIRONA SÓDICA MONOIDRATADA 300.0MG</td>
-              </tr>
-              <tr>
-                <th>Contra Indicação
-                </th>
-                <td>Neosaldina é um medicamento com atividade analgésica (diminui a dor) e antiespasmódica (diminui contração involuntária) indicado para o tratamento de diversos tipos de dor de cabeça, incluindo enxaquecas ou para o tratamento de cólicas.</td>
-              </tr>
-              <tr>
-                <th>Tem retenção de receita?</th>
-                <td>Não</td>
-              </tr>
-              <tr>
-                <th>Forma de administração</th>
-                <td>Drágea</td>
-              </tr>
-              <tr>
-                <th>É genérico?</th>
-                <td>Não</td>
-              </tr>
-              <tr>
-                <th>RMS</th>
-                <td>1.7817.0899.008-4</td>
-              </tr>
-            </table>
+        <!-- Informações -->
+        <div class="details__group">
+          <h3 class="details__title">Carregando...</h3>
+
+          <div class="details__price flex">
+            <span class="new__price">R$ 0,00</span>
           </div>
 
-
-      <!--=============== PRODUCTS ===============-->
-     <footer class="footer container">
-      <div class="footer__container grid">
-        <div class="footer__content">
-          <a href="index.html" class="footer__logo">
-            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
-          </a>
-          <h4 class="footer__subtitle">Fale Conosco!</h4>
-          <p class="footer__description">
-            <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
-          </p>
-          <p class="footer__description">
-            <span>Contato:</span> (31) 99986-5963
-          </p>
-          <p class="footer__description">
-            <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
-          </p>
-          <div class="footer__social">
-            <h4 class="footer__subtitle">Nossas redes sociais:</h4>
-            <div class="footer__links flex">
-              <a href="#">
-                <img
-                  src="./assets/img/icon-facebook.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
-             
-              <a href="#">
-                <img
-                  src="./assets/img/icon-instagram.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
-             
-              <a href="#">
-                <img
-                  src="./assets/img/icon-youtube.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">FAQ</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Sobre nós</a></li>          
-            <li><a href="#" class="footer__link">Politica de Privacidade</a></li>
-            <li><a href="#" class="footer__link">Termos e Condições</a></li>
+          <ul class="products__list">
+            <li class="list__item flex">
+              <i class="fi-rs-refresh"></i> 30 dias pra troca
+            </li>
           </ul>
+
+          <div class="details__action">
+            <a href="#" class="btn btn--sm">Adicionar no carrinho</a>
+          </div>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Minha conta</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Ajuda</a></li>
-            <li><a href="#" class="footer__link">Pedidos</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Métodos de Pagamento</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
+
+      </div>
+    </section>
+
+    <!--=============== DETAILS TAB ===============-->
+    <section class="details__tab container">
+      <div class="detail__tabs">
+        <span class="detail__tab active-tab" data-target="#info">
+          Informações adicionais
+        </span>
+      </div>
+      <div class="details__tabs-content">
+        <div class="details__tab-content active-tab" id="info">
+          Carregando descrição...
         </div>
       </div>
-      <div class="footer__bottom">
-        <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
-        <span class="designer">Designer by Thiago Aparecido</span>
-      </div>
-    </footer>
+    </section>
 
-   <!--=============== FOOTER ===============-->
+    <!--=============== AVALIAÇÕES ===============-->
+    <section class="reviews section container">
+      <h3 class="reviews__title">Avaliações</h3>
+
+      <ul id="lista-avaliacoes" class="reviews__list">
+        <!-- avaliações serão inseridas aqui -->
+      </ul>
+
+      <h4 class="reviews__subtitle">Deixe sua avaliação</h4>
+      <form id="form-avaliacao" class="reviews__form">
+        <div class="reviews__field">
+          <label for="autor">Nome:</label>
+          <input type="text" id="autor" class="reviews__input" required />
+        </div>
+
+        <div class="reviews__field">
+          <label for="avaliacao">Comentário:</label>
+          <textarea id="avaliacao" class="reviews__textarea" required></textarea>
+        </div>
+
+        <div class="reviews__field">
+          <label for="nota">Nota (0 a 5):</label>
+          <input type="number" id="nota" min="0" max="5" step="0.5" class="reviews__input" required />
+        </div>
+
+        <button type="submit" class="btn btn--primary reviews__button">Enviar Avaliação</button>
+      </form>
+    </section>
+
+
+
+
+
+    <!--=============== FOOTER ===============-->
     <footer class="footer container">
       <div class="footer__container grid">
         <div class="footer__content">
@@ -298,39 +254,19 @@
             <h4 class="footer__subtitle">Nossas redes sociais:</h4>
             <div class="footer__links flex">
               <a href="#">
-                <img
-                  src="./assets/img/icon-facebook.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-twitter.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-instagram.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-pinterest.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
               </a>
               <a href="#">
-                <img
-                  src="./assets/img/icon-youtube.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
+                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
               </a>
             </div>
           </div>
@@ -338,7 +274,7 @@
         <div class="footer__content">
           <h3 class="footer__title">FAQ</h3>
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">Sobre nós</a></li>          
+            <li><a href="#" class="footer__link">Sobre nós</a></li>
             <li><a href="#" class="footer__link">Politica de Privacidade</a></li>
             <li><a href="#" class="footer__link">Termos e Condições</a></li>
           </ul>
@@ -352,11 +288,7 @@
         </div>
         <div class="footer__content">
           <h3 class="footer__title">Métodos de Pagamento</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
+          <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
         </div>
       </div>
       <div class="footer__bottom">
@@ -370,5 +302,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-  </body>
+    <script src="assets/js/Scripts/detalhesProduto.js"></script>
+</body>
+
 </html>

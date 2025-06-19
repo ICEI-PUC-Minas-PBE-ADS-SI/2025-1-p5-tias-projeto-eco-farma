@@ -71,6 +71,23 @@ namespace eco_farma_API.Controllers
             return NoContent();
         }
 
+        [HttpGet("produto/{idProduto}")]
+        public IActionResult GetAvaliacoesPorProduto(int idProduto)
+        {
+            var avaliacoes = _context.Avaliacao_produto
+                .Where(a => a.id_produto == idProduto)
+                .Select(a => new
+                {
+                    a.id_avaliacao_produto,
+                    a.autor,
+                    a.avaliacao,
+                    a.nota
+                })
+                .ToList();
+
+            return Ok(avaliacoes);
+        }
+
         private bool AvaliacaoProdutoExists(int id) =>
             _context.Avaliacao_produto.Any(a => a.id_avaliacao_produto == id);
     }

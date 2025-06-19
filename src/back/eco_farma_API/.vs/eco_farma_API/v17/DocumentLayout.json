@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250619164521_updatetabelas12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250619164521_updatetabelas12.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\avaliacao_produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\avaliacao_produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\avaliacaoprodutocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\controllers\\avaliacaoprodutocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250619153221_updatetabelas11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250619153221_updatetabelas11.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250619132547_updatetabelas8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250619132547_updatetabelas8.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250608163719_updatetabelas7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250608163719_updatetabelas7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,24 +63,12 @@
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250608152213_updatetabelas6.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250608163719_updatetabelas7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250608163719_updatetabelas7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250608152213_updatetabelas6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250608152213_updatetabelas6.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\20250608163719_updatetabelas7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\20250608163719_updatetabelas7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\farmacia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,14 +91,6 @@
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\entregador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\entregador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -73,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\cupom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\cupom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\classes\\avaliacao_produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\classes\\avaliacao_produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\entregadorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -101,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\controllers\\pedidocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|c:\\users\\bianc\\downloads\\ecofarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_api\\eco_farma_api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{297CA7DC-397B-4EE8-9666-018F4F9D52A9}|eco_farma_API\\eco_farma_API.csproj|solutionrelative:eco_farma_api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,126 +134,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20250608152213_UpdateTabelas6.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
-              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T22:31:46.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "20250608163719_UpdateTabelas7.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
-              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Title": "20250619164521_UpdateTabelas12.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619164521_UpdateTabelas12.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250619164521_UpdateTabelas12.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619164521_UpdateTabelas12.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250619164521_UpdateTabelas12.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T22:31:22.03Z",
+              "WhenOpened": "2025-06-19T16:45:37.076Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "20250608152213_UpdateTabelas6.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
-              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "DocumentIndex": 5,
+              "Title": "AvaliacaoProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\AvaliacaoProdutoController.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\AvaliacaoProdutoController.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\AvaliacaoProdutoController.cs",
+              "RelativeToolTip": "eco_farma_API\\Controllers\\AvaliacaoProdutoController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wCsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T22:31:15.819Z",
+              "WhenOpened": "2025-06-19T14:46:05.378Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "ApplicationDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
               "RelativeToolTip": "eco_farma_API\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AQIAANEAAAAAAAAAAAAkwOkAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAkwOkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-17T22:30:48.183Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Pedido.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Pedido.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Pedido.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Pedido.cs",
-              "RelativeToolTip": "eco_farma_API\\Classes\\Pedido.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "DocumentIndex": 4,
+              "Title": "Avaliacao_produto.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Avaliacao_produto.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Avaliacao_produto.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Avaliacao_produto.cs",
+              "RelativeToolTip": "eco_farma_API\\Classes\\Avaliacao_produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T14:18:28.488Z"
+              "WhenOpened": "2025-06-07T13:55:45.697Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Usuario.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
-              "RelativeToolTip": "eco_farma_API\\Classes\\Usuario.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:33:06.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "eco_farma_API\\Controllers\\UsuarioController.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAswHgAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T19:24:14.386Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "20250608163719_UpdateTabelas7.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
-              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T22:31:24.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Produto.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Produto.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Produto.cs",
-              "RelativeToolTip": "eco_farma_API\\Classes\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:42:22.674Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Program.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Program.cs",
@@ -246,7 +203,159 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "eco_farma_API\\Controllers\\ProdutoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAjwCcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T21:32:37.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\ApplicationDbContext.cs",
+              "RelativeToolTip": "eco_farma_API\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:46:36.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250619153221_UpdateTabelas11.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619153221_UpdateTabelas11.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250619153221_UpdateTabelas11.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619153221_UpdateTabelas11.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250619153221_UpdateTabelas11.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T16:44:50.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Produto.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Produto.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Produto.cs",
+              "RelativeToolTip": "eco_farma_API\\Classes\\Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T13:42:22.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "eco_farma_API\\Controllers\\UsuarioController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAswHgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T19:24:14.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Usuario.cs",
+              "RelativeToolTip": "eco_farma_API\\Classes\\Usuario.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T15:33:06.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Pedido.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Pedido.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Pedido.cs",
+              "RelativeToolTip": "eco_farma_API\\Classes\\Pedido.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:18:28.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20250619132547_UpdateTabelas8.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619132547_UpdateTabelas8.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250619132547_UpdateTabelas8.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250619132547_UpdateTabelas8.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250619132547_UpdateTabelas8.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-19T13:27:05.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250608163719_UpdateTabelas7.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T22:31:22.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 15,
+              "Title": "20250608152213_UpdateTabelas6.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T22:31:15.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20250608152213_UpdateTabelas6.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608152213_UpdateTabelas6.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T22:31:46.632Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250608163719_UpdateTabelas7.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
+              "RelativeDocumentMoniker": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
+              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
+              "RelativeToolTip": "eco_farma_API\\Migrations\\20250608163719_UpdateTabelas7.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T22:31:24.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Entregador.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Entregador.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Entregador.cs",
@@ -258,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "Cliente.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Cliente.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Cliente.cs",
@@ -266,12 +375,11 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Cliente.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:34:49.816Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T20:34:49.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "ClienteController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\ClienteController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\ClienteController.cs",
@@ -279,12 +387,11 @@
               "RelativeToolTip": "eco_farma_API\\Controllers\\ClienteController.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAuwCYAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T20:34:51.332Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T20:34:51.332Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 23,
               "Title": "Entrega.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Entrega.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Entrega.cs",
@@ -296,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Farmacia.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Farmacia.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Farmacia.cs",
@@ -304,12 +411,11 @@
               "RelativeToolTip": "eco_farma_API\\Classes\\Farmacia.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:41:24.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-07T13:41:24.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\appsettings.json",
               "RelativeDocumentMoniker": "eco_farma_API\\appsettings.json",
@@ -321,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": "Cupom.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Cupom.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Cupom.cs",
@@ -333,19 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Avaliacao_produto.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Avaliacao_produto.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Classes\\Avaliacao_produto.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Classes\\Avaliacao_produto.cs",
-              "RelativeToolTip": "eco_farma_API\\Classes\\Avaliacao_produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T13:55:45.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "eco_farma_API\\Properties\\launchSettings.json",
@@ -357,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "CupomController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\CupomController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\CupomController.cs",
@@ -369,7 +463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "EntregadorController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\EntregadorController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\EntregadorController.cs",
@@ -381,7 +475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "FarmaciaController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\FarmaciaController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\FarmaciaController.cs",
@@ -393,7 +487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "Criptografia.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Fun\u00E7\u00F5es\\Criptografia.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Fun\u00E7\u00F5es\\Criptografia.cs",
@@ -405,7 +499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "EntregaController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\EntregaController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\EntregaController.cs",
@@ -417,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "PedidoController.cs",
               "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\PedidoController.cs",
               "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\PedidoController.cs",
@@ -426,18 +520,6 @@
               "ViewState": "AQIAAFAAAAAAAAAAAAAAAFAAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T14:17:59.242Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "eco_farma_API\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "eco_farma_API\\Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAswDMAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T21:32:37.125Z"
             }
           ]
         }

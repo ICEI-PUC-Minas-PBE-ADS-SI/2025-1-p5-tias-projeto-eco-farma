@@ -18,18 +18,54 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Produto>>> GetAll()
+        public IActionResult GetPaginado(int pagina = 1, int tamanhoPagina = 15)
         {
-            return await _context.Produto.ToListAsync();
+            var total = _context.Produto.Count();
+
+            var produtos = _context.Produto
+                .Skip((pagina - 1) * tamanhoPagina)
+                .Take(tamanhoPagina)
+                .ToList();
+
+            var resultado = new
+            {
+                total,
+                paginaAtual = pagina,
+                tamanhoPagina,
+                produtos
+            };
+
+            return Ok(resultado);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Produto>> GetById(int id)
+        public IActionResult GetProdutoSemAvaliacoes(int id)
         {
-            var produto = await _context.Produto.FindAsync(id);
-            if (produto == null) return NotFound();
-            return produto;
+            var produto = _context.Produto
+                .FirstOrDefault(p => p.id_produto == id);
+
+            if (produto == null)
+                return NotFound();
+
+            var resultado = new
+            {
+                produto.id_produto,
+                produto.nome,
+                produto.categoria,
+                produto.preco,  // ajustar conforme seu armazenamento
+                produto.estoque,
+                produto.descricao,
+                anexo = produto.anexo != null ? Convert.ToBase64String(produto.anexo) : null
+            };
+
+            return Ok(resultado);
         }
+
+
+
+
+
+
 
         [HttpGet("por-farmacia/{id}")]
         public IActionResult ProdutosPorFarmacia(int id)
@@ -61,12 +97,44 @@ namespace eco_farma_API.Controllers
 
 
         [HttpPost]
-        public async Task<ActionResult<Produto>> Create(Produto novo)
+        public async Task<ActionResult<Produto>> Create(
+    [FromForm] string nome,
+    [FromForm] string categoria,
+    [FromForm] double preco,
+    [FromForm] int estoque,
+    [FromForm] string descricao,
+    [FromForm] int id_farmacia,
+    [FromForm] IFormFile imagem)
         {
-            _context.Produto.Add(novo);
+            byte[] anexoBytes = null;
+
+            if (imagem != null && imagem.Length > 0)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    await imagem.CopyToAsync(ms);
+                    anexoBytes = ms.ToArray();
+                }
+            }
+
+            var produto = new Produto
+            {
+                nome = nome,
+                categoria = categoria,
+                preco = preco,
+                estoque = estoque,
+                descricao = descricao,
+                id_farmacia = id_farmacia,
+                anexo = anexoBytes
+            };
+
+            _context.Produto.Add(produto);
             await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetById), new { id = novo.id_produto }, novo);
+
+            return produto;
         }
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Produto atualizado)

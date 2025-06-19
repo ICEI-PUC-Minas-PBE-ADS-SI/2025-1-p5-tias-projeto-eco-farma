@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Farma</title>
+    <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <style>
+        .cadastro_produto {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f9f9f9;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .btn_produto_c {
+            margin-top: 20px;
+            width: 100%;
+            padding: 12px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #preview {
+            margin-top: 10px;
+            max-width: 100%;
+            max-height: 200px;
+        }
+    </style>
+</head>
+
+<body class="cadastro_produto">
+
+    <!--=============== HEADER ===============-->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container container">
+                <div class="header__contact">
+                    <span>Olá Bia! Você tem um total de: 5 pontos</span>
+                    <span>Sua localização: Betim</span>
+                </div>
+                <p class="header__alert-news">
+                    Aumente seus pontos entregando seus blisters nos pontos de coleta!
+                </p>
+                <a href="#" class="header__top-action" id="authLink"></a>
+
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Página Inicial</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Produtos</a>
+                    </li>
+                    <li class="nav__item" id="minhaContaItem" style="display: none;">
+                        <a href="accounts.html" class="nav__link">Minha conta</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Cadastrar Produto</h1>
+    <form class="cadastrocliente-container" id="produtoForm" enctype="multipart/form-data">
+        <label class="cadastroproduto-item" for="produto_nome">Nome:</label>
+        <input class="cadastroproduto-item" type="text" id="produto_nome" name="nome" required>
+
+        <label class="cadastroproduto-item" for="produto_categoria">Categoria:</label>
+        <select class="cadastroproduto-item" id="produto_categoria" name="categoria" required>
+            <option value="">Selecione</option>
+            <option value="remedios">Remédios</option>
+            <option value="higiene">Higiene</option>
+            <option value="alimento">Alimento</option>
+            <option value="infantil">Infantil</option>
+            <option value="pet">Pet</option>
+            <option value="analgésico">Analgésico</option>
+            <option value="antialergico">Antialérgico</option>
+            <option value="dor e febre">Dor e Febre</option>
+            <option value="doces">Doces</option>
+            <option value="skin care">Skin Care</option>
+            <option value="protetor solar">Protetor Solar</option>
+            <option value="maquiagem">Maquiagem</option>
+            <option value="unhas">Unhas</option>
+        </select>
+
+        <label class="cadastroproduto-item" for="produto_preco">Preço:</label>
+        <input class="cadastroproduto-item" type="number" step="0.01" id="produto_preco" name="preco" required>
+
+        <label class="cadastroproduto-item" for="produto_estoque">Estoque:</label>
+        <input class="cadastroproduto-item" type="number" id="produto_estoque" name="estoque" required>
+
+        <label for="produto_descricao">Descrição:</label>
+        <textarea id="produto_descricao" name="descricao" rows="4"></textarea>
+
+        <label class="cadastroproduto-item" for="produto_anexo">Imagem (.jpg ou .png):</label>
+        <input class="cadastroproduto-item" type="file" id="produto_anexo" name="imagem" accept="image/png, image/jpeg,image/webp" required>
+        <img id="preview" src="#" alt="Pré-visualização" style="display:none;" />
+
+        <button class="btn_produto_c" type="button" onclick="salvarProduto()">Cadastrar</button>
+    </form>
+
+    <script>
+        const imagemInput = document.getElementById('produto_anexo');
+        const preview = document.getElementById('preview');
+
+        imagemInput.addEventListener('change', function () {
+            const file = this.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+    <script src="assets/js/Scripts/produto.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

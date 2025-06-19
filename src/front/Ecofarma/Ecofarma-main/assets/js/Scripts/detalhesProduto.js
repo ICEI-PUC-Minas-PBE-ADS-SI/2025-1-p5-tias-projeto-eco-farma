@@ -1,0 +1,156 @@
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+async function carregarDetalhesProduto(id) {
+    try {
+        const response = await fetch(`http://localhost:5068/api/produto/${id}`);
+        if (!response.ok) throw new Error("Produto não encontrado");
+
+        const produto = await response.json();
+
+        // Imagem principal
+        const imgPrincipal = document.querySelector(".details__img");
+        imgPrincipal.src = produto.anexo
+            ? `data:image/jpeg;base64,${produto.anexo}`
+            : "assets/img/default.jpg";
+
+        // Imagem miniatura
+        const imgPequena = document.querySelector(".details__small-img");
+        imgPequena.src = produto.anexo
+            ? `data:image/jpeg;base64,${produto.anexo}`
+            : "assets/img/default.jpg";
+
+        // Título
+        document.querySelector(".details__title").textContent = produto.nome;
+
+        // Preço
+        const preco = (produto.preco / 100).toFixed(2).replace('.', ',');
+        document.querySelector(".new__price").textContent = `R$ ${preco}`;
+
+        // Descrição
+        const info = document.getElementById("info");
+        info.textContent = produto.descricao || "Sem descrição disponível.";
+
+        // Avaliações
+        const lista = document.getElementById("lista-avaliacoes");
+        lista.innerHTML = ""; // limpa se recarregar
+
+        if (produto.avaliacoes && produto.avaliacoes.length > 0) {
+            produto.avaliacoes.forEach(av => {
+                const item = document.createElement("li");
+                item.innerHTML = `
+      <p><strong>${av.autor}</strong> - Nota: ${av.nota}</p>
+      <p>${av.avaliacao}</p>
+    `;
+                lista.appendChild(item);
+            });
+        } else {
+            lista.innerHTML = "<li>Nenhuma avaliação disponível.</li>";
+        }
+
+
+    } catch (error) {
+        console.error(error);
+        alert("Erro ao carregar detalhes do produto.");
+    }
+}
+
+// Formulário de avaliação
+const form = document.getElementById("form-avaliacao");
+if (form) {
+    form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        const autor = document.getElementById("autor").value;
+        const avaliacao = document.getElementById("avaliacao").value;
+        const nota = parseFloat(document.getElementById("nota").value);
+        //const imagemInput = document.getElementById("imagem-avaliacao");
+
+        await enviarAvaliacao({ autor, avaliacao, nota });
+
+    });
+}
+
+async function enviarAvaliacao(data) {
+
+    const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+    if (!usuarioLogado || !usuarioLogado.id_usuario) {
+        alert("Você precisa estar logado para enviar avaliações.");
+        // opcional: redirecionar para login
+        window.location.href = "/src/front/Ecofarma/Ecofarma-main/login-register.html";
+    } else {
+        const idProduto = getQueryParam("id");
+
+        const payload = {
+            id_produto: parseInt(idProduto),
+            autor: data.autor,
+            avaliacao: data.avaliacao,
+            nota: data.nota,
+            id_cliente: usuarioLogado.id_usuario
+        };
+
+        try {
+            const response = await fetch("http://localhost:5068/api/avaliacao_produto", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload)
+            });
+
+            if (response.ok) {
+                alert("Avaliação enviada com sucesso!");
+                location.reload(); // recarrega para exibir nova avaliação
+            } else {
+                alert("Erro ao enviar avaliação.");
+            }
+        } catch (err) {
+            console.error(err);
+            alert("Erro ao conectar com a API.");
+        }
+    }
+
+}
+
+// Inicialização
+const produtoId = getQueryParam("id");
+if (produtoId) {
+    carregarDetalhesProduto(produtoId);
+    carregarAvaliacoes(produtoId);
+} else {
+    alert("Produto não especificado.");
+}
+
+
+// Exemplo simples, adapte para sua forma real de armazenar login
+
+
+
+
+async function carregarAvaliacoes(idProduto) {
+    try {
+        const response = await fetch(`http://localhost:5068/api/avaliacao_produto/produto/${idProduto}`);
+        if (!response.ok) throw new Error("Erro ao buscar avaliações");
+
+        const avaliacoes = await response.json();
+        const lista = document.getElementById("lista-avaliacoes");
+        lista.innerHTML = "";
+
+        if (avaliacoes.length > 0) {
+            avaliacoes.forEach(av => {
+                const item = document.createElement("li");
+                item.className = "reviews__item";
+                item.innerHTML = `
+          <p class="reviews__author"><strong>${av.autor}</strong> - Nota: ${av.nota}</p>
+          <p class="reviews__text">${av.avaliacao}</p>
+        `;
+                lista.appendChild(item);
+            });
+        } else {
+            lista.innerHTML = "<li class='reviews__item'>Nenhuma avaliação disponível.</li>";
+        }
+    } catch (err) {
+        console.error(err);
+    }
+}

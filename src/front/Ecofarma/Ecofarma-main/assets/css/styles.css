@@ -2349,3 +2349,29 @@ input[type="password"] {
 .cadastro-btn:hover {
   background-color: #1b751b;;
 }
+
+
+.cadastroproduto-item label {
+  display: block;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.cadastroproduto-item input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}
+
+.cadastroproduto-item select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+}

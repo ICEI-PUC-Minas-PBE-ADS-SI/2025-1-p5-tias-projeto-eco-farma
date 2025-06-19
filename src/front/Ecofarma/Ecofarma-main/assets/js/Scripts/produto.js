@@ -1,4 +1,4 @@
-import api from '../services/Api.js';
+/* import api from '../services/Api.js';
 
 async function carregarProdutos() {
     try {
@@ -56,4 +56,171 @@ export default {
     criarProduto,
     atualizarProduto,
     excluirProduto
-};
+}; */
+
+
+window.onload = carregarProdutos;
+
+async function salvarProduto() {
+    const formData = new FormData();
+
+    // Pega valores do formulário
+    formData.append("nome", document.getElementById("produto_nome").value);
+    formData.append("categoria", document.getElementById("produto_categoria").value);
+    formData.append("descricao", document.getElementById("produto_descricao").value);
+    formData.append("preco", document.getElementById("produto_preco").value);
+    formData.append("estoque", document.getElementById("produto_estoque").value);
+
+    // Pega imagem
+    const imagemInput = document.getElementById("produto_anexo");
+    if (imagemInput.files.length > 0) {
+        formData.append("imagem", imagemInput.files[0]); // nome deve bater com parâmetro no C#
+    }
+
+    // Pega o ID da farmácia do localStorage (ou valor fixo se não existir)
+    const idFarmacia = localStorage.getItem("id_farmacia") || "99";
+    formData.append("id_farmacia", idFarmacia);
+
+    try {
+        const response = await fetch("http://localhost:5068/api/produto", {
+            method: "POST",
+            body: formData // sem headers — o navegador define boundary do multipart
+        });
+
+        if (response.ok) {
+            const resultado = await response.json();
+            alert("Produto cadastrado! ID: " + resultado.id_produto);
+            location.reload(); // 🔄 Recarrega a página após o alerta
+        }
+        else {
+            const erro = await response.text();
+            alert("Erro ao cadastrar o produto:\n" + erro);
+        }
+    } catch (e) {
+        alert("Erro de conexão com a API:\n" + e.message);
+    }
+}
+
+
+async function carregarProdutos(pagina = 1) {
+    try {
+        const response = await fetch(`http://localhost:5068/api/produto?pagina=${pagina}&tamanhoPagina=16`);
+
+        if (!response.ok) throw new Error("Erro ao buscar produtos");
+
+        const dados = await response.json();
+        const produtos = dados.produtos;
+        const total = dados.total;
+
+        const container = document.getElementById("container-produtos");
+        container.innerHTML = "";
+
+        produtos.forEach(produto => {
+            const card = criarCardProduto(produto);
+            container.appendChild(card);
+        });
+
+        atualizarPaginacao(pagina, total);
+        document.querySelector(".total__products span").textContent = total;
+    } catch (erro) {
+        console.error("Erro ao carregar produtos:", erro);
+    }
+}
+
+function atualizarPaginacao(paginaAtual, totalProdutos) {
+    const totalPaginas = Math.ceil(totalProdutos / 15);
+    const paginacao = document.getElementById("paginacao");
+    paginacao.innerHTML = "";
+
+    // Botão Anterior
+    const btnAnterior = document.createElement("li");
+    btnAnterior.innerHTML = `<a href="#" class="pagination__link icon">&laquo;</a>`;
+    if (paginaAtual > 1) {
+        btnAnterior.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(paginaAtual - 1);
+        });
+    } else {
+        btnAnterior.querySelector("a").classList.add("disabled");
+    }
+    paginacao.appendChild(btnAnterior);
+
+    // Números das páginas
+    for (let i = 1; i <= totalPaginas; i++) {
+        const li = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "#";
+        link.className = "pagination__link" + (i === paginaAtual ? " active" : "");
+        link.textContent = i;
+
+        link.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(i);
+        });
+
+        li.appendChild(link);
+        paginacao.appendChild(li);
+    }
+
+    // Botão Próximo
+    const btnProximo = document.createElement("li");
+    btnProximo.innerHTML = `<a href="#" class="pagination__link icon">&raquo;</a>`;
+    if (paginaAtual < totalPaginas) {
+        btnProximo.addEventListener("click", (e) => {
+            e.preventDefault();
+            carregarProdutos(paginaAtual + 1);
+        });
+    } else {
+        btnProximo.querySelector("a").classList.add("disabled");
+    }
+    paginacao.appendChild(btnProximo);
+}
+
+
+function criarCardProduto(produto) {
+    const card = document.createElement("div");
+    card.className = "product__item";
+
+    // Converte base64 (ou nulo para imagem padrão)
+    const imagemSrc = produto.anexo
+        ? `data:image/jpeg;base64,${produto.anexo}`
+        : "assets/img/product-1-1.jpg"; // fallback
+
+    const badgeHtml = produto.estoque < 10
+        ? `<div class="product__badge light-pink">Mais vendido!</div>`
+        : '';
+
+    card.innerHTML = `
+        <div class="product__banner">
+            <a href="details.html?id=${produto.id_produto}" class="product__images">
+                <img src="${imagemSrc}" alt="${produto.nome}" class="product__img default" />
+            </a>
+            <div class="product__actions">
+                <a href="details.html?id=${produto.id_produto}" class="action__btn" aria-label="Veja mais">
+                    <i class="fi fi-rs-eye"></i>
+                </a>
+            </div>
+            ${badgeHtml}
+        </div>
+        <div class="product__content">
+            <span class="product__category">${produto.categoria}</span>
+            <a href="details.html?id=${produto.id}">
+                <h3 class="product__title">${produto.nome}</h3>
+            </a>
+            <div class="product__price flex">
+                <span class="new__price">R$ ${(produto.preco / 100).toFixed(2)}</span>
+                
+            </div>
+            <a href="#" class="action__btn cart__btn" aria-label="Adicionar">
+                <i class="fi fi-rs-shopping-bag-add"></i>
+            </a>
+        </div>
+    `;
+
+    return card;
+
+    //<span class="old__price">R$19.99</span> mexer nisso depois, nao é prioridade (promocao)
+}
+
+carregarProdutos(1);
+

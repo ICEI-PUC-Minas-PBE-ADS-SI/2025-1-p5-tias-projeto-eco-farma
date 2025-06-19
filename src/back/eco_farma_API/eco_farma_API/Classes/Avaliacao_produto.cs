@@ -15,6 +15,7 @@ namespace eco_farma_API.Classes
         public string? autor { get; set; }
         public string? avaliacao { get; set; }
         public double nota { get; set; }
-        public string? anexo { get; set; }
+
+
     }
 }
