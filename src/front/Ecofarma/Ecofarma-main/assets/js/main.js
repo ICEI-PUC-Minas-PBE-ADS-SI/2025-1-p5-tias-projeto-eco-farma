@@ -287,3 +287,41 @@ const nome = usuarioLogado?.dadosPapel?.nome;
     span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
     span.style.display = 'inline'; // ou block, se preferir
   }
+
+  // Suponha que isso venha da API após o login
+
+
+/* function verificarSessao() {
+
+  const dadosRecebidos = await response.json();
+
+// Adiciona o horário de login
+dadosRecebidos.loginTime = new Date().getTime();
+
+// Salva no localStorage
+localStorage.setItem("usuarioLogado", JSON.stringify(dadosRecebidos));
+  const dados = localStorage.getItem("usuarioLogado");
+
+  if (!dados) {
+    redirecionarParaLogin();
+    return;
+  }
+
+  const usuario = JSON.parse(dados);
+  const agora = new Date().getTime();
+  //const umaHora = 60 * 60 * 1000;
+  const umaHora = 5 * 1000;  // 1 hora em ms
+
+  if (!usuario.loginTime || agora - usuario.loginTime > umaHora) {
+    localStorage.removeItem("usuario");
+    alert("Sua sessão expirou. Faça login novamente.");
+    redirecionarParaLogin();
+  }
+}
+
+function redirecionarParaLogin() {
+  window.location.href = "/src/front/Ecofarma/Ecofarma-main/login-register.html";
+}
+
+verificarSessao();
+ */

@@ -1,30 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== FLATICON ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--=============== SWIPER CSS ===============-->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <title>Eco Farma</title>
-    <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header">
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Eco Farma</title>
+  <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
+  <style>
+    /* Container geral da aba */
+    .perfil-edicao {
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 25px 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    /* Título da aba */
+    .perfil-edicao__titulo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #1a73e8;
+      text-align: center;
+    }
+
+    /* Labels */
+    .perfil-edicao__label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Inputs */
+    .perfil-edicao__input {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 18px;
+      border: 1.8px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .perfil-edicao__input:focus {
+      border-color: #1ae81a;
+      outline: none;
+      box-shadow: 0 0 6px #a8c0f7;
+    }
+
+    /* Botão salvar */
+    .perfil-edicao__btn {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #0b8615;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    .perfil-edicao__btn:hover {
+      background-color: #3bb615;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 480px) {
+      .perfil-edicao {
+        padding: 20px 15px;
+      }
+    }
+
+    /* Container do endereço */
+.endereco-container {
+  max-width: 450px;
+  padding: 20px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin: 20px auto;
+}
+
+/* Cabeçalho do endereço (h3 já existe, pode estilizar se quiser) */
+.tab__header {
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #126b0a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Linhas de endereço */
+.endereco-linha {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+/* Negrito no label */
+.endereco-linha strong {
+  color: #555;
+}
+
+/* Link de editar */
+.endereco-editar {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #3ce81a;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.endereco-editar:hover {
+  border-color: #2be81a;
+}
+
+  </style>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
     <div class="header__top">
       <div class="header__container container">
         <div class="header__contact">
@@ -54,13 +167,13 @@
         </div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link active-link">Página Inicial</a>
+            <a href="index.html" class="nav__link ">Página Inicial</a>
           </li>
           <li class="nav__item">
             <a href="shop.html" class="nav__link">Produtos</a>
           </li>
           <li class="nav__item" id="minhaContaItem" style="display: none;">
-            <a href="accounts.html" class="nav__link">Minha conta</a>
+            <a href="accounts.html" class="nav__link active-link">Minha conta</a>
           </li>
 
           <li class="nav__item">
@@ -86,51 +199,50 @@
   </header>
 
 
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== BREADCRUMB ===============-->
-      <section class="breadcrumb">
-        <ul class="breadcrumb__list flex container">
-          <li><a href="index.html" class="breadcrumb__link">Página Inicial</a></li>
-          <li><span class="breadcrumb__link">></span></li>
-          <li><span class="breadcrumb__link">Conta</span></li>
-        </ul>
-      </section>
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><a href="index.html" class="breadcrumb__link">Página Inicial</a></li>
+        <li><span class="breadcrumb__link">></span></li>
+        <li><span class="breadcrumb__link">Conta</span></li>
+      </ul>
+    </section>
 
-      <!--=============== ACCOUNTS ===============-->
-      <section class="accounts section--lg">
-        <div class="accounts__container container grid">
-          <div class="account__tabs">
-            <p class="account__tab active-tab" data-target="#dashboard">
-              <i class="fi fi-rs-settings-sliders"></i> Ver pontuação
-            </p>
-            <p class="account__tab" data-target="#orders">
-              <i class="fi fi-rs-shopping-bag"></i> Pedidos
-            </p>
-            <p class="account__tab" data-target="#update-profile">
-              <i class="fi fi-rs-user"></i> Editar Perfil
-            </p>
-            <p class="account__tab" data-target="#address">
-              <i class="fi fi-rs-marker"></i> Meu Endereço
-            </p>
-            <p class="account__tab" data-target="#change-password">
-              <i class="fi fi-rs-settings-sliders"></i> Mudar Senha
-            </p>
-            <p class="account__tab"><i class="fi fi-rs-exit"></i> Sair</p>
-          </div>
-          <div class="tabs__content">
-            <div class="tab__content active-tab" content id="dashboard">
-              <h3 class="tab__header">Olá Bia!</h3>
-              <div class="tab__body">
-                <p class="tab__description">
-                  Você tem: 100 pontos!
-                </p>
-              </div>
+    <!--=============== ACCOUNTS ===============-->
+    <section class="accounts section--lg">
+      <div class="accounts__container container grid">
+        <div class="account__tabs">
+          <p class="account__tab active-tab" data-target="#dashboard">
+            <i class="fi fi-rs-settings-sliders"></i> Ver pontuação
+          </p>
+          <p class="account__tab" data-target="#orders">
+            <i class="fi fi-rs-shopping-bag"></i> Pedidos
+          </p>
+          <p class="account__tab" data-target="#update-profile">
+            <i class="fi fi-rs-user"></i> Editar Perfil
+          </p>
+          <p class="account__tab" data-target="#address">
+            <i class="fi fi-rs-marker"></i> Meu Endereço
+          </p>
+          <p class="account__tab" data-target="#change-password">
+            <i class="fi fi-rs-settings-sliders"></i> Mudar Senha
+          </p>
+        </div>
+        <div class="tabs__content">
+          <div class="tab__content active-tab" content id="dashboard">
+            <h3 class="tab__header" id="saudacao-usuario"></h3>
+            <div class="tab__body">
+              <p class="tab__description">
+                Você tem: 100 pontos!
+              </p>
             </div>
-            <div class="tab__content" content id="orders">
-              <h3 class="tab__header">Meus pedidos</h3>
-              <div class="tab__body">
-                <table class="placed__order-table">
+          </div>
+          <div class="tab__content" content id="orders">
+            <h3 class="tab__header">Meus pedidos</h3>
+            <div class="tab__body">
+              <!-- <table class="placed__order-table">
                   <thead>
                     <tr>
                       <th>Número do pedido</th>
@@ -163,136 +275,127 @@
                       <td><a href="#" class="view__order">Ver</a></td>
                     </tr>
                   </tbody>
-                </table>
-              </div>
+                </table> -->
             </div>
-            <div class="tab__content" content id="update-profile">
-              <h3 class="tab__header">Editar Perfil</h3>
-              <div class="tab__body">
-                <form class="form grid">
-                  <input
-                    type="text"
-                    placeholder="Nome de usuário"
-                    class="form__input"
-                  />
-                  <div class="form__btn">
-                    <button class="btn btn--md">Salvar</button>
-                  </div>
+          </div>
+          <div class="tab__content" content id="update-profile">
+            <h3 class="tab__header">Editar Perfil</h3>
+            <div class="tab__body">
+              <div id="update-profile" class="account__content perfil-edicao">
+                <form id="form-editar-perfil" class="perfil-edicao__form">
+
+                  <label class="perfil-edicao__label" for="input-nome">Nome</label>
+                  <input class="perfil-edicao__input" type="text" id="input-nome" name="nome">
+
+                  <label class="perfil-edicao__label" for="input-email">Email</label>
+                  <input class="perfil-edicao__input" type="email" id="input-email" name="email">
+
+                  <label class="perfil-edicao__label" for="input-telefone">Telefone</label>
+                  <input class="perfil-edicao__input" type="tel" id="input-telefone" name="telefone">
+
+                  <label class="perfil-edicao__label" for="input-cpf">CPF</label>
+                  <input class="perfil-edicao__input" type="text" id="input-cpf" name="cpf">
+
+                  <button class="perfil-edicao__btn" type="submit">Salvar</button>
                 </form>
               </div>
+
+
             </div>
-            <div class="tab__content" content id="address">
-              <h3 class="tab__header">Meus endereços</h3>
-              <div class="tab__body">
-                <address class="address">
-                  R. do Rosário, 1081 - Angola, Betim - MG, 32604-115</p>
-                <a href="#" class="edit">Editar</a>
-              </div>
-            </div>
-            <div class="tab__content" content id="change-password">
-              <h3 class="tab__header">Mudar senha</h3>
-              <div class="tab__body">
-                <form class="form grid">
-                  <input
-                    type="password"
-                    placeholder="Senha atual"
-                    class="form__input"
-                  />
-                  <input
-                    type="password"
-                    placeholder="Nova senha"
-                    class="form__input"
-                  />
-                  <input
-                    type="password"
-                    placeholder="Confirmar Senha"
-                    class="form__input"
-                  />
-                  <div class="form__btn">
-                    <button class="btn btn--md">Salvar</button>
-                  </div>
-                </form>
-              </div>
+          </div>
+          <div class="tab__content" content id="address">
+  <h3 class="tab__header">Meus endereços</h3>
+  <div class="tab__body">
+    <address class="address endereco-container">
+      
+      <p class="endereco-linha"><strong>Endereço:</strong> <span id="endereco-texto"></span></p>
+      <p class="endereco-linha"><strong>Número:</strong> <span id="numero-texto"></span></p>
+      <p class="endereco-linha"><strong>CEP:</strong> <span id="cep-texto"></span></p>
+      <a href="#" class="endereco-editar">Editar</a>
+    </address>
+  </div>
+</div>
+
+          <div class="tab__content" content id="change-password">
+            <h3 class="tab__header">Mudar senha</h3>
+            <div class="tab__body">
+              <form class="form grid">
+                <input type="password" placeholder="Senha atual" class="form__input" />
+                <input type="password" placeholder="Nova senha" class="form__input" />
+                <input type="password" placeholder="Confirmar Senha" class="form__input" />
+                <div class="form__btn">
+                  <button class="btn btn--md">Salvar</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
-      <div class="footer__container grid">
-        <div class="footer__content">
-          <a href="index.html" class="footer__logo">
-            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
-          </a>
-          <h4 class="footer__subtitle">Fale Conosco!</h4>
-          <p class="footer__description">
-            <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
-          </p>
-          <p class="footer__description">
-            <span>Contato:</span> (31) 99986-5963
-          </p>
-          <p class="footer__description">
-            <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
-          </p>
-          <div class="footer__social">
-            <h4 class="footer__subtitle">Nossas redes sociais:</h4>
-            <div class="footer__links flex">
-              <a href="#">
-                <img
-                  src="./assets/img/icon-facebook.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
-             
-              <a href="#">
-                <img
-                  src="./assets/img/icon-instagram.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
-             
-              <a href="#">
-                <img
-                  src="./assets/img/icon-youtube.svg"
-                  alt=""
-                  class="footer__social-icon"
-                />
-              </a>
+        <div class="footer__container grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+                </a>
+                <h4 class="footer__subtitle">Fale Conosco!</h4>
+                <p class="footer__description">
+                    <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
+                </p>
+                <p class="footer__description">
+                    <span>Contato:</span> (31) 99986-5963
+                </p>
+                <p class="footer__description">
+                    <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
+                </p>
+                <div class="footer__social">
+                    <h4 class="footer__subtitle">Nossas redes sociais:</h4>
+                    <div class="footer__links flex">
+                        <a href="#">
+                            <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+                        </a>
+                        <a href="#">
+                            <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+                        </a>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="footer__content">
+                <h3 class="footer__title">FAQ</h3>
+                <ul class="footer__links">
+                    <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
+                    <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
+                    <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Minha conta</h3>
+                <ul class="footer__links">
+                    <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
+                    <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">Métodos de Pagamento</h3>
+                <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+            </div>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">FAQ</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Sobre nós</a></li>          
-            <li><a href="#" class="footer__link">Politica de Privacidade</a></li>
-            <li><a href="#" class="footer__link">Termos e Condições</a></li>
-          </ul>
+        <div class="footer__bottom">
+            <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
+            <span class="designer">Designer by Thiago </span>
         </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Minha conta</h3>
-          <ul class="footer__links">
-            <li><a href="#" class="footer__link">Ajuda</a></li>
-            <li><a href="#" class="footer__link">Pedidos</a></li>
-          </ul>
-        </div>
-        <div class="footer__content">
-          <h3 class="footer__title">Métodos de Pagamento</h3>
-          <img
-            src="./assets/img/payment-method.png"
-            alt=""
-            class="payment__img"
-          />
-        </div>
-      </div>
-      <div class="footer__bottom">
-        <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
-        <span class="designer">Designer by Thiago</span>
-      </div>
     </footer>
 
     <!--=============== SWIPER JS ===============-->
@@ -300,5 +403,7 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-  </body>
+    <script src="assets/js/accounts.js"></script>
+</body>
+
 </html>

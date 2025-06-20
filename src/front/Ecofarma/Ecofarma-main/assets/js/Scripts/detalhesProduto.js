@@ -50,11 +50,33 @@ async function carregarDetalhesProduto(id) {
             lista.innerHTML = "<li>Nenhuma avaliação disponível.</li>";
         }
 
+        const containerExtra = document.getElementById("info-produto-extra");
+
+// Frete fixo
+let html = `<p class="frete-message">🚚 Frete grátis em todo o Brasil</p>`;
+
+// Verifica estoque
+if (produto.estoque > 0) {
+    html += `
+      <p class="stock-message">✔ Estoque disponível</p>
+      <label for="quantidade">Quantidade:</label>
+      <input type="number" id="quantidade" min="1" max="${produto.estoque}" value="1" class="input-quantidade" />
+      <div class="details__action">
+      </div>
+    `;
+} else {
+    html += `<p style="color: red; font-weight: bold;">Produto fora de estoque</p>`;
+}
+
+containerExtra.innerHTML = html;
+
 
     } catch (error) {
         console.error(error);
         alert("Erro ao carregar detalhes do produto.");
     }
+
+
 }
 
 // Formulário de avaliação

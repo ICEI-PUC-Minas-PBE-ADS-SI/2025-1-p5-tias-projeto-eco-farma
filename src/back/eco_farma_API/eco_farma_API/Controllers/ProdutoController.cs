@@ -18,7 +18,7 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetPaginado(int pagina = 1, int tamanhoPagina = 15)
+        public IActionResult GetPaginado(int pagina = 1, int tamanhoPagina = 16)
         {
             var total = _context.Produto.Count();
 

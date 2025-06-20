@@ -133,7 +133,8 @@ async function carregarProdutos(pagina = 1) {
 
     const dados = await response.json();
     const produtos = dados.produtos || dados;
-    const total = dados.total || produtos.length;
+    const total = dados.totalProdutos || produtos.length;
+
 
     const container = document.getElementById("container-produtos");
     container.innerHTML = "";
@@ -279,3 +280,36 @@ document.getElementById('btnFiltrar').addEventListener('click', aplicarFiltros);
 
 // Carrega produtos na página 1 ao iniciar
 carregarProdutos(1);
+
+
+function buscarProdutos() {
+    const categoria = document.getElementById('categoria').value;
+    const precoMinRaw = document.getElementById('precoMin').value;
+    const precoMaxRaw = document.getElementById('precoMax').value;
+
+    const precoMin = precoMinRaw.trim() !== '' ? parseFloat(precoMinRaw) : null;
+    const precoMax = precoMaxRaw.trim() !== '' ? parseFloat(precoMaxRaw) : null;
+
+    let url = `http://localhost:5068/api/produto/filtrar?`;
+
+    if (categoria) url += `categoria=${encodeURIComponent(categoria)}&`;
+    if (precoMin !== null && !isNaN(precoMin)) url += `precoMin=${precoMin}&`;
+    if (precoMax !== null && !isNaN(precoMax)) url += `precoMax=${precoMax}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const resultado = document.getElementById('resultado');
+            resultado.innerHTML = '';
+
+            if (data.length === 0) {
+                resultado.innerHTML = '<p>Nenhum produto encontrado.</p>';
+                return;
+            }
+
+            data.forEach(p => {
+                resultado.innerHTML += `<p><strong>${p.nome}</strong> - R$ ${p.preco.toFixed(2)} - Categoria: ${p.categoria}</p>`;
+            });
+        })
+        .catch(error => console.error('Erro:', error));
+}
