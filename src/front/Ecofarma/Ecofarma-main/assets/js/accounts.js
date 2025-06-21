@@ -46,3 +46,58 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Outros campos...
 });
+
+
+function cadastrarCupom() {
+  const codigo = document.getElementById("codigoCupom").value.trim();
+  const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+
+  if (!codigo || !usuario?.id_usuario) {
+    alert("Preencha o código do cupom.");
+    return;
+  }
+
+  const data = {
+    codigo: codigo,
+    id_cliente: usuario.id_usuario
+  };
+
+  fetch("http://localhost:5068/api/cupom", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data)
+  })
+  .then(resp => {
+    if (!resp.ok) throw new Error("Erro ao cadastrar cupom");
+    return resp.json();
+  })
+  .then(() => {
+    document.getElementById("codigoCupom").value = "";
+    carregarCupons(); // Recarrega a lista
+  })
+  .catch(erro => alert(erro.message));
+}
+
+function carregarCupons() {
+  const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+  if (!usuario?.id_usuario) return;
+
+  fetch(`http://localhost:5068/api/cupom/cliente/${usuario.id_usuario}`)
+    .then(resp => resp.json())
+    .then(cupons => {
+      const lista = document.getElementById("lista-cupom");
+      lista.innerHTML = "";
+
+      if (cupons.length === 0) {
+        lista.innerHTML = "<li>Nenhum cupom cadastrado.</li>";
+      } else {
+        cupons.forEach(c => {
+          const li = document.createElement("li");
+          li.textContent = c.codigo;
+          lista.appendChild(li);
+        });
+      }
+    });
+}
+
+window.addEventListener("DOMContentLoaded", carregarCupons);

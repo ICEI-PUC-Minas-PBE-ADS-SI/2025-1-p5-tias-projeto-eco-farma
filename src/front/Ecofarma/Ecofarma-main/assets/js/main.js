@@ -293,12 +293,23 @@ carregarProdutos(1);
 const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 const nome = usuarioLogado?.dadosPapel?.nome;
 
-if (nome) {
-  // Se tiver nome, mostra o span com a mensagem e nome
-  const span = document.getElementById('nome_info');
-  span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
-  span.style.display = 'inline'; // ou block, se preferir
+if (nome && usuarioLogado?.id_usuario) {
+  fetch(`http://localhost:5068/api/cupom/cliente/${usuarioLogado.id_usuario}`)
+    .then(response => response.json())
+    .then(cupons => {
+      const quantidadePontos = cupons.length;
+      const span = document.getElementById('nome_info');
+      span.textContent = `Olá ${nome}! Você tem um total de: ${quantidadePontos} ponto${quantidadePontos !== 1 ? 's' : ''}`;
+      span.style.display = 'inline';
+    })
+    .catch(() => {
+      // Se der erro, mostra só o nome
+      const span = document.getElementById('nome_info');
+      span.textContent = `Olá ${nome}! (Erro ao carregar pontos)`;
+      span.style.display = 'inline';
+    });
 }
+
 
 // Suponha que isso venha da API após o login
 
@@ -470,3 +481,18 @@ document.getElementById("btnAddCarrinho").addEventListener("click", function (e)
     e.preventDefault();
     adicionarAoCarrinho(produto);
 });
+
+
+async function carregarCuponsCliente() {
+    const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+    if (!usuario || !usuario.dadosPapel?.id_cliente) return;
+
+    const idCliente = usuario.dadosPapel.id_cliente;
+    const response = await fetch(`http://localhost:5068/api/cupom/cliente/${idCliente}`);
+    const cupons = await response.json();
+
+    const container = document.getElementById("lista-cupom");
+    container.innerHTML = cupons.length > 0
+      ? cupons.map(c => `<li>${c.codigo}</li>`).join("")
+      : "<li>Você ainda não possui cupons.</li>";
+}

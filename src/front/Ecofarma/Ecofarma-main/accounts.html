@@ -88,50 +88,95 @@
     }
 
     /* Container do endereço */
-.endereco-container {
-  max-width: 450px;
-  padding: 20px 25px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  margin: 20px auto;
-}
+    .endereco-container {
+      max-width: 450px;
+      padding: 20px 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 20px auto;
+    }
 
-/* Cabeçalho do endereço (h3 já existe, pode estilizar se quiser) */
-.tab__header {
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: #126b0a;
-  margin-bottom: 15px;
-  text-align: center;
-}
+    /* Cabeçalho do endereço (h3 já existe, pode estilizar se quiser) */
+    .tab__header {
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: #126b0a;
+      margin-bottom: 15px;
+      text-align: center;
+    }
 
-/* Linhas de endereço */
-.endereco-linha {
-  font-size: 1.1rem;
-  margin-bottom: 12px;
-}
+    /* Linhas de endereço */
+    .endereco-linha {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
 
-/* Negrito no label */
-.endereco-linha strong {
-  color: #555;
-}
+    /* Negrito no label */
+    .endereco-linha strong {
+      color: #555;
+    }
 
-/* Link de editar */
-.endereco-editar {
-  display: inline-block;
-  margin-top: 12px;
-  font-weight: 600;
-  color: #3ce81a;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;
-  cursor: pointer;
-}
+    /* Link de editar */
+    .endereco-editar {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+      color: #3ce81a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
+      cursor: pointer;
+    }
 
-.endereco-editar:hover {
-  border-color: #2be81a;
-}
+    .endereco-editar:hover {
+      border-color: #2be81a;
+    }
 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      /* fundo escuro translúcido */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #2a7ae2;
+    }
+
+    .cupom-lista {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .cupom-lista li {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
   </style>
 </head>
 
@@ -234,14 +279,29 @@
           </p>
         </div>
         <div class="tabs__content">
-          <div class="tab__content active-tab" content id="dashboard">
-            <h3 class="tab__header" id="saudacao-usuario"></h3>
+          <div content id="meus-cupom">
+            <h3 class="tab__header">Meus Cupons</h3>
             <div class="tab__body">
-              <p class="tab__description">
-                Você tem: 100 pontos!
-              </p>
+
+              <p class="tab__description">Você pode cadastrar seus cupons aqui:</p>
+
+              <input type="text" id="codigoCupom" placeholder="Digite o código do novo cupom" class="form__input" style="width: 250px;"/>
+              <button class="btn btn--sm" onclick="cadastrarCupom()">Cadastrar Cupom</button>
+
+              <hr style="margin: 1rem 0;" />
+
+              <h4>Cupons Cadastrados</h4>
+              <ul id="lista-cupom" class="cupom-lista">
+                <!-- Lista será preenchida via JS -->
+              </ul>
+
             </div>
           </div>
+
+
+
+
+
           <div class="tab__content" content id="orders">
             <h3 class="tab__header">Meus pedidos</h3>
             <div class="tab__body">
@@ -307,17 +367,17 @@
             </div>
           </div>
           <div class="tab__content" content id="address">
-  <h3 class="tab__header">Meus endereços</h3>
-  <div class="tab__body">
-    <address class="address endereco-container">
-      
-      <p class="endereco-linha"><strong>Endereço:</strong> <span id="endereco-texto"></span></p>
-      <p class="endereco-linha"><strong>Número:</strong> <span id="numero-texto"></span></p>
-      <p class="endereco-linha"><strong>CEP:</strong> <span id="cep-texto"></span></p>
-      <a href="#" class="endereco-editar">Editar</a>
-    </address>
-  </div>
-</div>
+            <h3 class="tab__header">Meus endereços</h3>
+            <div class="tab__body">
+              <address class="address endereco-container">
+
+                <p class="endereco-linha"><strong>Endereço:</strong> <span id="endereco-texto"></span></p>
+                <p class="endereco-linha"><strong>Número:</strong> <span id="numero-texto"></span></p>
+                <p class="endereco-linha"><strong>CEP:</strong> <span id="cep-texto"></span></p>
+                <a href="#" class="endereco-editar">Editar</a>
+              </address>
+            </div>
+          </div>
 
           <div class="tab__content" content id="change-password">
             <h3 class="tab__header">Mudar senha</h3>
@@ -339,66 +399,66 @@
 
     <!--=============== FOOTER ===============-->
     <footer class="footer container">
-        <div class="footer__container grid">
-            <div class="footer__content">
-                <a href="index.html" class="footer__logo">
-                    <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
-                </a>
-                <h4 class="footer__subtitle">Fale Conosco!</h4>
-                <p class="footer__description">
-                    <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
-                </p>
-                <p class="footer__description">
-                    <span>Contato:</span> (31) 99986-5963
-                </p>
-                <p class="footer__description">
-                    <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
-                </p>
-                <div class="footer__social">
-                    <h4 class="footer__subtitle">Nossas redes sociais:</h4>
-                    <div class="footer__links flex">
-                        <a href="#">
-                            <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
-                        </a>
-                    </div>
-                </div>
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Fale Conosco!</h4>
+          <p class="footer__description">
+            <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
+          </p>
+          <p class="footer__description">
+            <span>Contato:</span> (31) 99986-5963
+          </p>
+          <p class="footer__description">
+            <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Nossas redes sociais:</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+              </a>
             </div>
-            <div class="footer__content">
-                <h3 class="footer__title">FAQ</h3>
-                <ul class="footer__links">
-                    <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
-                    <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
-                    <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Minha conta</h3>
-                <ul class="footer__links">
-                    <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
-                    <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Métodos de Pagamento</h3>
-                <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
-            </div>
+          </div>
         </div>
-        <div class="footer__bottom">
-            <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
-            <span class="designer">Designer by Thiago </span>
+        <div class="footer__content">
+          <h3 class="footer__title">FAQ</h3>
+          <ul class="footer__links">
+            <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
+            <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
+            <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
+          </ul>
         </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Minha conta</h3>
+          <ul class="footer__links">
+            <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
+            <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Métodos de Pagamento</h3>
+          <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
+        <span class="designer">Designer by Thiago </span>
+      </div>
     </footer>
 
     <!--=============== SWIPER JS ===============-->

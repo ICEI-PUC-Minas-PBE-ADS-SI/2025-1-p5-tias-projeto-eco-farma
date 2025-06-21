@@ -166,7 +166,7 @@ async function carregarAvaliacoes(idProduto) {
             });
         } else {
             lista.innerHTML = "<li class='reviews__item'>Nenhuma avaliação disponível.</li>";
-            
+
         }
     } catch (err) {
         console.error(err);
@@ -177,11 +177,21 @@ async function carregarAvaliacoes(idProduto) {
 const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 const nome = usuarioLogado?.dadosPapel?.nome;
 
-if (nome) {
-    // Se tiver nome, mostra o span com a mensagem e nome
-    const span = document.getElementById('nome_info');
-    span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
-    span.style.display = 'inline'; // ou block, se preferir
+if (nome && usuarioLogado?.id_usuario) {
+    fetch(`http://localhost:5068/api/cupom/cliente/${usuarioLogado.id_usuario}`)
+        .then(response => response.json())
+        .then(cupons => {
+            const quantidadePontos = cupons.length;
+            const span = document.getElementById('nome_info');
+            span.textContent = `Olá ${nome}! Você tem um total de: ${quantidadePontos} ponto${quantidadePontos !== 1 ? 's' : ''}`;
+            span.style.display = 'inline';
+        })
+        .catch(() => {
+            // Se der erro, mostra só o nome
+            const span = document.getElementById('nome_info');
+            span.textContent = `Olá ${nome}! (Erro ao carregar pontos)`;
+            span.style.display = 'inline';
+        });
 }
 
 function limparLocalStorage() {
@@ -264,33 +274,33 @@ async function buscarProdutos() {
 }
 
 
-function adicionarAoCarrinho(produto,quantidade) {
-  const usuarioStr = localStorage.getItem("usuarioLogado");
-  if (usuarioStr) {
-    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+function adicionarAoCarrinho(produto, quantidade) {
+    const usuarioStr = localStorage.getItem("usuarioLogado");
+    if (usuarioStr) {
+        let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
 
-    const produtoExistente = carrinho.find(p => p.id === produto.id_produto);
+        const produtoExistente = carrinho.find(p => p.id === produto.id_produto);
 
-    if (produtoExistente) {
-      produtoExistente.quantidade += 1;
+        if (produtoExistente) {
+            produtoExistente.quantidade += 1;
+        } else {
+            carrinho.push({
+                id: produto.id_produto,
+                nome: produto.nome,
+                preco: produto.preco,
+                imagem: produto.anexo
+                    ? `data:image/jpeg;base64,${produto.anexo}`
+                    : "assets/img/product-1-1.jpg",
+                quantidade: 1
+            });
+        }
+
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
+        atualizarContadorCarrinho();
+        exibirMensagemSucesso("Produto adicionado ao carrinho!");
     } else {
-      carrinho.push({
-        id: produto.id_produto,
-        nome: produto.nome,
-        preco: produto.preco,
-        imagem: produto.anexo
-          ? `data:image/jpeg;base64,${produto.anexo}`
-          : "assets/img/product-1-1.jpg",
-        quantidade: 1
-      });
+        exibirMensagemErro("Precisa de login para adicionar ao carrinho");
     }
-
-    localStorage.setItem("carrinho", JSON.stringify(carrinho));
-    atualizarContadorCarrinho();
-    exibirMensagemSucesso("Produto adicionado ao carrinho!");
-  }else{
-    exibirMensagemErro("Precisa de login para adicionar ao carrinho");
-  }
 
 }
 
@@ -304,7 +314,6 @@ function atualizarContadorCarrinho() {
         contador.style.display = total > 0 ? "block" : "none";
     }
 }
-
 
 
 

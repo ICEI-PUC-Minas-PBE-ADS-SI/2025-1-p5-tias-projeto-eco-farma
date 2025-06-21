@@ -37,27 +37,23 @@ namespace eco_farma_API.Controllers
 
             return cupom;
         }
-
-        [HttpGet("cupons/{idCliente}")]
-        public IActionResult VerificarCupons(int idCliente)
-        {
-            var cupons = _context.Cupom
-                .Where(c => c.id_cliente == idCliente)
-                .ToList();
-
-            return Ok(cupons); // Retorna lista (vazia ou não)
-        }
-
-
-        // POST: api/Cupom
         [HttpPost]
-        public async Task<ActionResult<Cupom>> PostCupom(Cupom cupom)
+        public IActionResult CadastrarCupom([FromBody] Cupom cupom)
         {
             _context.Cupom.Add(cupom);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction(nameof(GetCupom), new { id = cupom.id_cupom }, cupom);
+            _context.SaveChanges();
+            return Ok(cupom);
         }
+
+        [HttpGet("cliente/{id_cliente}")]
+        public IActionResult BuscarPorCliente(int id_cliente)
+        {
+            var cupons = _context.Cupom
+                .Where(c => c.id_cliente == id_cliente)
+                .ToList();
+            return Ok(cupons);
+        }
+
 
         // PUT: api/Cupom/5
         [HttpPut("{id}")]
