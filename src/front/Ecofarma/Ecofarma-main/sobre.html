@@ -177,7 +177,7 @@ FUNCIONANDO 100%
                 </div>
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link active-link">Página Inicial</a>
+                        <a href="index.html" class="nav__link">Página Inicial</a>
                     </li>
                     <li class="nav__item">
                         <a href="shop.html" class="nav__link">Produtos</a>
@@ -191,10 +191,12 @@ FUNCIONANDO 100%
                     </li>
                 </ul>
                 <div class="header__search">
-                    <input type="text" placeholder="Do que você precisa?" class="form__input" />
+                    <input type="text" placeholder="Do que você precisa?" class="form__input" id="campoBusca"
+                        oninput="buscarProdutos()" autocomplete="off" />
                     <button class="search__btn">
                         <img src="assets/img/search.png" alt="search icon" />
                     </button>
+                    <div id="sugestoesBusca" class="sugestoes__container"></div>
                 </div>
             </div>
             <div class="header__user-actions">
@@ -245,7 +247,7 @@ FUNCIONANDO 100%
 
         <div class="ecofarma-secao">
             <div class="ecofarma-imagem">
-                <img src="assets/img/Screenshot_4.png" alt="Equipe da EcoFarma" class="equipe"/>
+                <img src="assets/img/Screenshot_4.png" alt="Equipe da EcoFarma" class="equipe" />
             </div>
             <div class="ecofarma-textos">
                 <div class="ecofarma-texto-missao">

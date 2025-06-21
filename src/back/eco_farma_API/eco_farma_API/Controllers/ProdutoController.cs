@@ -38,6 +38,23 @@ namespace eco_farma_API.Controllers
             return Ok(resultado);
         }
 
+        [HttpGet("busca")]
+        public IActionResult BuscarProdutos(string termo)
+        {
+            var produtos = _context.Produto
+                .Where(p => p.nome.ToLower().Contains(termo.ToLower()))
+                .Select(p => new {
+                    p.id_produto,
+                    p.nome,
+                    p.anexo
+                })
+                .Take(10)
+                .ToList();
+
+            return Ok(produtos);
+        }
+
+
         [HttpGet("{id}")]
         public IActionResult GetProdutoSemAvaliacoes(int id)
         {

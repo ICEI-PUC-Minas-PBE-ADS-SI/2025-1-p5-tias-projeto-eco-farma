@@ -325,3 +325,43 @@ function redirecionarParaLogin() {
 
 verificarSessao();
  */
+
+
+async function buscarProdutos() {
+  const termo = document.getElementById("campoBusca").value.trim();
+  const container = document.getElementById("sugestoesBusca");
+
+  if (termo.length < 2) {
+    container.style.display = "none";
+    container.innerHTML = "";
+    return;
+  }
+
+  try {
+    const response = await fetch(`http://localhost:5068/api/produto/busca?termo=${encodeURIComponent(termo)}`);
+    if (!response.ok) throw new Error("Erro ao buscar sugestões");
+
+    const resultados = await response.json();
+    container.innerHTML = "";
+    resultados.forEach(produto => {
+      const imagem = produto.anexo
+        ? `data:image/jpeg;base64,${produto.anexo}`
+        : "assets/img/product-1-1.jpg";
+
+      const item = document.createElement("div");
+      item.className = "sugestao__item";
+      item.innerHTML = `
+        <img src="${imagem}" class="sugestao__img" alt="${produto.nome}" />
+        <span class="sugestao__nome">${produto.nome}</span>
+      `;
+      item.onclick = () => {
+        window.location.href = `details.html?id=${produto.id_produto}`;
+      };
+      container.appendChild(item);
+    });
+
+    container.style.display = resultados.length > 0 ? "block" : "none";
+  } catch (e) {
+    console.error(e);
+  }
+}

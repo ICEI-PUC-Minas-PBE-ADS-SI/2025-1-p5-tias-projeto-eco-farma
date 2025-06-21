@@ -187,6 +187,10 @@ FUNCIONANDO 100%
       border: 1px solid #ccc;
       resize: none;
     }
+
+
+  
+
   </style>
 </head>
 
@@ -236,11 +240,14 @@ FUNCIONANDO 100%
           </li>
         </ul>
         <div class="header__search">
-          <input type="text" placeholder="Do que você precisa?" class="form__input" />
+          <input type="text" placeholder="Do que você precisa?" class="form__input" id="campoBusca"
+            oninput="buscarProdutos()" autocomplete="off" />
           <button class="search__btn">
             <img src="assets/img/search.png" alt="search icon" />
           </button>
+          <div id="sugestoesBusca" class="sugestoes__container"></div>
         </div>
+
       </div>
       <div class="header__user-actions">
         <a href="cart.html" class="header__action-btn" title="Cart">

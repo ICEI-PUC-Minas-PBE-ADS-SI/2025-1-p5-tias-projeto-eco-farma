@@ -119,10 +119,12 @@
           </li>
         </ul>
         <div class="header__search">
-          <input type="text" placeholder="Do que você precisa?" class="form__input" />
+          <input type="text" placeholder="Do que você precisa?" class="form__input" id="campoBusca"
+            oninput="buscarProdutos()" autocomplete="off" />
           <button class="search__btn">
             <img src="assets/img/search.png" alt="search icon" />
           </button>
+          <div id="sugestoesBusca" class="sugestoes__container"></div>
         </div>
       </div>
       <div class="header__user-actions">
@@ -278,7 +280,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script> 
     <script src="assets/js/Scripts/produto.js"></script>
 
 </body>
