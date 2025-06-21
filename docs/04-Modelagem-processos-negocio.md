@@ -113,13 +113,13 @@ Oportunidades de melhoria:
 
 ## Modelagem dos processos
 
-[Processo 1 – Entrega dos Produtos](./processes/coleta-blisters-as-is "Detalhamento do processo 1.") 
+[Processo 1 – Entrega dos Produtos](./processes/entrega-produtos-as-is "Detalhamento do processo 1 AS IS.") 
 
-[Processo 1 – Entrega dos Produtos](./processes/entrega-produtos-to-be "Detalhamento do processo 1.") 
+[Processo 1 – Entrega dos Produtos](./processes/entrega-produtos-to-be "Detalhamento do processo 1 TO BE.") 
 
-[Processo 2 - Coleta dos Blisters](./processes/Coleta-de-Blisters-as-is "Detalhamento do processo 2.")
+[Processo 2 - Coleta dos Blisters](./processes/coleta-blisters-as-is "Detalhamento do processo 2 AS IS.")
 
-[Processo 2 - Coleta dos Blisters](./processes/Coleta-de-Blisters-to-be "Detalhamento do processo 2.")
+[Processo 2 - Coleta dos Blisters](./processes/coleta-blisters-to-be "Detalhamento do processo 2 TO BE.")
 
 
 ## Indicadores de desempenho
