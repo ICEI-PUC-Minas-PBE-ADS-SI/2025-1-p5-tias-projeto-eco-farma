@@ -302,6 +302,15 @@ table {
   -o-border-radius: 50%;
 }
 
+.header__action-btn span.count {
+  display: none; /* Oculto inicialmente */
+}
+
+.header__action-btn span.count.visivel {
+  display: inline-block; /* Visível quando a classe for adicionada */
+}
+
+
 .nav__menu-top,
 .nav__toggle {
   display: none;

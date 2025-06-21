@@ -105,6 +105,7 @@
           Aumente seus pontos entregando seus blisters nos pontos de coleta!
         </p>
         <a href="#" class="header__top-action" id="authLink"></a>
+
       </div>
     </div>
 
@@ -123,14 +124,15 @@
         </div>
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="index.html" class="nav__link">Página Inicial</a>
+            <a href="index.html" class="nav__link active-link">Página Inicial</a>
           </li>
           <li class="nav__item">
             <a href="shop.html" class="nav__link">Produtos</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item" id="minhaContaItem" style="display: none;">
             <a href="accounts.html" class="nav__link">Minha conta</a>
           </li>
+
           <li class="nav__item">
             <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
           </li>
@@ -143,11 +145,12 @@
           </button>
           <div id="sugestoesBusca" class="sugestoes__container"></div>
         </div>
+
       </div>
       <div class="header__user-actions">
         <a href="cart.html" class="header__action-btn" title="Cart">
           <img src="assets/img/icon-cart.svg" alt="" />
-          <!-- <span class="count">3</span> -->
+          <span class="count"></span>
         </a>
         <div class="header__action-btn nav__toggle" id="nav-toggle">
           <img src="./assets//img/menu-burger.svg" alt="">
@@ -196,9 +199,8 @@
             </li>
           </ul>
 
-          <div class="details__action">
-            <a href="#" class="btn btn--sm">Adicionar no carrinho</a>
-          </div>
+          
+
         </div>
 
       </div>

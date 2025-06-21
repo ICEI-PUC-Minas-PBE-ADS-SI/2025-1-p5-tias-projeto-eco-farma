@@ -134,7 +134,7 @@ if (usuarioStr) {
     const authLink = document.getElementById("authLink");
     authLink.textContent = "Sair";
     authLink.href = "login-register.html"; // ou '#' se preferir
-    authLink.onclick = function() {
+    authLink.onclick = function () {
       limparLocalStorage();
     };
   } else {
@@ -156,94 +156,105 @@ if (usuarioStr) {
 
 
 async function carregarProdutos(pagina = 1) {
-    try {
-        const response = await fetch(`http://localhost:5068/api/produto?pagina=${pagina}&tamanhoPagina=8`);
+  try {
+    const response = await fetch(`http://localhost:5068/api/produto?pagina=${pagina}&tamanhoPagina=8`);
 
-        if (!response.ok) throw new Error("Erro ao buscar produtos");
+    if (!response.ok) throw new Error("Erro ao buscar produtos");
 
-        const dados = await response.json();
-        const produtos = dados.produtos;
-        const total = dados.total;
+    const dados = await response.json();
+    const produtos = dados.produtos;
+    const total = dados.total;
 
-        const container = document.getElementById("container-produtos");
-        container.innerHTML = "";
+    const container = document.getElementById("container-produtos");
+    container.innerHTML = "";
 
-        produtos.forEach(produto => {
-            const card = criarCardProduto(produto);
-            container.appendChild(card);
-        });
+    produtos.forEach(produto => {
+      const card = criarCardProduto(produto);
+      container.appendChild(card);
+    });
 
-        atualizarPaginacao(pagina, total);
-        document.querySelector(".total__products span").textContent = total;
-    } catch (erro) {
-        console.error("Erro ao carregar produtos:", erro);
-    }
+    atualizarPaginacao(pagina, total);
+    document.querySelector(".total__products span").textContent = total;
+  } catch (erro) {
+    console.error("Erro ao carregar produtos:", erro);
+  }
 }
 
 function atualizarPaginacao(paginaAtual, totalProdutos) {
-    const totalPaginas = Math.ceil(totalProdutos / 15);
-    const paginacao = document.getElementById("paginacao");
-    paginacao.innerHTML = "";
+  const totalPaginas = Math.ceil(totalProdutos / 15);
+  const paginacao = document.getElementById("paginacao");
+  paginacao.innerHTML = "";
 
-    // Botão Anterior
-    const btnAnterior = document.createElement("li");
-    btnAnterior.innerHTML = `<a href="#" class="pagination__link icon">&laquo;</a>`;
-    if (paginaAtual > 1) {
-        btnAnterior.addEventListener("click", (e) => {
-            e.preventDefault();
-            carregarProdutos(paginaAtual - 1);
-        });
-    } else {
-        btnAnterior.querySelector("a").classList.add("disabled");
-    }
-    paginacao.appendChild(btnAnterior);
+  // Botão Anterior
+  const btnAnterior = document.createElement("li");
+  btnAnterior.innerHTML = `<a href="#" class="pagination__link icon">&laquo;</a>`;
+  if (paginaAtual > 1) {
+    btnAnterior.addEventListener("click", (e) => {
+      e.preventDefault();
+      carregarProdutos(paginaAtual - 1);
+    });
+  } else {
+    btnAnterior.querySelector("a").classList.add("disabled");
+  }
+  paginacao.appendChild(btnAnterior);
 
-    // Números das páginas
-    for (let i = 1; i <= totalPaginas; i++) {
-        const li = document.createElement("li");
-        const link = document.createElement("a");
-        link.href = "#";
-        link.className = "pagination__link" + (i === paginaAtual ? " active" : "");
-        link.textContent = i;
+  // Números das páginas
+  for (let i = 1; i <= totalPaginas; i++) {
+    const li = document.createElement("li");
+    const link = document.createElement("a");
+    link.href = "#";
+    link.className = "pagination__link" + (i === paginaAtual ? " active" : "");
+    link.textContent = i;
 
-        link.addEventListener("click", (e) => {
-            e.preventDefault();
-            carregarProdutos(i);
-        });
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      carregarProdutos(i);
+    });
 
-        li.appendChild(link);
-        paginacao.appendChild(li);
-    }
+    li.appendChild(link);
+    paginacao.appendChild(li);
+  }
 
-    // Botão Próximo
-    const btnProximo = document.createElement("li");
-    btnProximo.innerHTML = `<a href="#" class="pagination__link icon">&raquo;</a>`;
-    if (paginaAtual < totalPaginas) {
-        btnProximo.addEventListener("click", (e) => {
-            e.preventDefault();
-            carregarProdutos(paginaAtual + 1);
-        });
-    } else {
-        btnProximo.querySelector("a").classList.add("disabled");
-    }
-    paginacao.appendChild(btnProximo);
+  // Botão Próximo
+  const btnProximo = document.createElement("li");
+  btnProximo.innerHTML = `<a href="#" class="pagination__link icon">&raquo;</a>`;
+  if (paginaAtual < totalPaginas) {
+    btnProximo.addEventListener("click", (e) => {
+      e.preventDefault();
+      carregarProdutos(paginaAtual + 1);
+    });
+  } else {
+    btnProximo.querySelector("a").classList.add("disabled");
+  }
+  paginacao.appendChild(btnProximo);
 }
 
 
 function criarCardProduto(produto) {
-    const card = document.createElement("div");
-    card.className = "product__item";
+  const card = document.createElement("div");
+  card.className = "product__item";
 
-    // Converte base64 (ou nulo para imagem padrão)
-    const imagemSrc = produto.anexo
-        ? `data:image/jpeg;base64,${produto.anexo}`
-        : "assets/img/product-1-1.jpg"; // fallback
+  const btn = document.createElement("a");
+  btn.href = "#";
+  btn.className = "action__btn cart__btn";
+  btn.setAttribute("aria-label", "Adicionar");
+  btn.innerHTML = `<i class="fi fi-rs-shopping-bag-add"></i>`;
+  btn.addEventListener("click", e => {
+    e.preventDefault();
+    adicionarAoCarrinho(produto);
+  });
 
-    const badgeHtml = produto.estoque < 10
-        ? `<div class="product__badge light-pink">Mais vendido!</div>`
-        : '';
 
-    card.innerHTML = `
+  // Converte base64 (ou nulo para imagem padrão)
+  const imagemSrc = produto.anexo
+    ? `data:image/jpeg;base64,${produto.anexo}`
+    : "assets/img/product-1-1.jpg"; // fallback
+
+  const badgeHtml = produto.estoque < 10
+    ? `<div class="product__badge light-pink">Mais vendido!</div>`
+    : '';
+
+  card.innerHTML = `
         <div class="product__banner">
             <a href="details.html?id=${produto.id_produto}" class="product__images">
                 <img src="${imagemSrc}" alt="${produto.nome}" class="product__img default" />
@@ -264,15 +275,16 @@ function criarCardProduto(produto) {
                 <span class="new__price">R$ ${(produto.preco / 100).toFixed(2)}</span>
                 
             </div>
-            <a href="#" class="action__btn cart__btn" aria-label="Adicionar">
-                <i class="fi fi-rs-shopping-bag-add"></i>
-            </a>
+            <a href="#" class="action__btn cart__btn" aria-label="Adicionar" onclick='adicionarAoCarrinho(${JSON.stringify(produto)})'>
+  <i class="fi fi-rs-shopping-bag-add"></i>
+</a>
+
         </div>
     `;
 
-    return card;
+  return card;
 
-    //<span class="old__price">R$19.99</span> mexer nisso depois, nao é prioridade (promocao)
+  //<span class="old__price">R$19.99</span> mexer nisso depois, nao é prioridade (promocao)
 }
 
 carregarProdutos(1);
@@ -281,14 +293,14 @@ carregarProdutos(1);
 const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 const nome = usuarioLogado?.dadosPapel?.nome;
 
-  if (nome) {
-    // Se tiver nome, mostra o span com a mensagem e nome
-    const span = document.getElementById('nome_info');
-    span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
-    span.style.display = 'inline'; // ou block, se preferir
-  }
+if (nome) {
+  // Se tiver nome, mostra o span com a mensagem e nome
+  const span = document.getElementById('nome_info');
+  span.textContent = `Olá ${nome}! Você tem um total de: 5 pontos`;
+  span.style.display = 'inline'; // ou block, se preferir
+}
 
-  // Suponha que isso venha da API após o login
+// Suponha que isso venha da API após o login
 
 
 /* function verificarSessao() {
@@ -365,3 +377,96 @@ async function buscarProdutos() {
     console.error(e);
   }
 }
+
+
+function adicionarAoCarrinho(produto) {
+  const usuarioStr = localStorage.getItem("usuarioLogado");
+  if (usuarioStr) {
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    const produtoExistente = carrinho.find(p => p.id === produto.id_produto);
+
+    if (produtoExistente) {
+      produtoExistente.quantidade += 1;
+    } else {
+      carrinho.push({
+        id: produto.id_produto,
+        nome: produto.nome,
+        preco: produto.preco,
+        imagem: produto.anexo
+          ? `data:image/jpeg;base64,${produto.anexo}`
+          : "assets/img/product-1-1.jpg",
+        quantidade: 1
+      });
+    }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizarContadorCarrinho();
+    exibirMensagemSucesso("Produto adicionado ao carrinho!");
+  }else{
+    exibirMensagemErro("Precisa de login para adicionar ao carrinho");
+  }
+
+}
+
+
+function atualizarContadorCarrinho() {
+  const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+  const total = carrinho.reduce((acc, item) => acc + item.quantidade, 0);
+  const contador = document.querySelector(".count");
+
+  if (contador) {
+    if (total > 0) {
+      contador.textContent = total;
+      contador.classList.add("visivel");
+    } else {
+      contador.textContent = '';
+      contador.classList.remove("visivel");
+    }
+  }
+}
+
+
+
+document.addEventListener("DOMContentLoaded", atualizarContadorCarrinho);
+
+
+function exibirMensagemSucesso(msg) {
+  const alerta = document.createElement("div");
+  alerta.textContent = msg;
+  alerta.style.position = "fixed";
+  alerta.style.top = "1rem";
+  alerta.style.right = "1rem";
+  alerta.style.backgroundColor = "#4CAF50";
+  alerta.style.color = "white";
+  alerta.style.padding = "0.75rem 1rem";
+  alerta.style.borderRadius = "5px";
+  alerta.style.zIndex = 1000;
+  alerta.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+  document.body.appendChild(alerta);
+
+  setTimeout(() => alerta.remove(), 3000);
+}
+
+function exibirMensagemErro(msg) {
+  const alerta = document.createElement("div");
+  alerta.textContent = msg;
+  alerta.style.position = "fixed";
+  alerta.style.top = "1rem";
+  alerta.style.right = "1rem";
+  alerta.style.backgroundColor = "rgb(255, 7, 7)";
+  alerta.style.color = "white";
+  alerta.style.padding = "0.75rem 1rem";
+  alerta.style.borderRadius = "5px";
+  alerta.style.zIndex = 1000;
+  alerta.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+  document.body.appendChild(alerta);
+
+  setTimeout(() => alerta.remove(), 3000);
+}
+
+
+document.getElementById("btnAddCarrinho").addEventListener("click", function (e) {
+    e.preventDefault();
+    adicionarAoCarrinho(produto);
+});

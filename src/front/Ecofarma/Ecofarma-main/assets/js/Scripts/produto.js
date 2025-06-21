@@ -78,7 +78,7 @@ async function salvarProduto() {
     }
 
     // Pega o ID da farmácia do localStorage (ou valor fixo se não existir)
-    const idFarmacia = localStorage.getItem("id_farmacia") || "99";
+    const idFarmacia = localStorage.getItem("id_farmacia") || "100";
     formData.append("id_farmacia", idFarmacia);
 
     try {
@@ -115,6 +115,7 @@ async function carregarProdutos(pagina = 1) {
   try {
     filtrosAtuais.pagina = pagina;
 
+    const idFarmacia = getParametroUrl("id_farmacia");
     let url = `http://localhost:5068/api/produto/filtrar?pagina=${pagina}&tamanhoPagina=16`;
 
     if (filtrosAtuais.categoria) {
@@ -126,6 +127,9 @@ async function carregarProdutos(pagina = 1) {
     if (filtrosAtuais.precoMax !== '') {
       url += `&precoMax=${filtrosAtuais.precoMax}`;
     }
+    if (idFarmacia) {
+      url += `&id_farmacia=${idFarmacia}`;
+    }
 
     const response = await fetch(url);
 
@@ -134,7 +138,6 @@ async function carregarProdutos(pagina = 1) {
     const dados = await response.json();
     const produtos = dados.produtos || dados;
     const total = dados.totalProdutos || produtos.length;
-
 
     const container = document.getElementById("container-produtos");
     container.innerHTML = "";
@@ -238,6 +241,17 @@ function criarCardProduto(produto) {
   const card = document.createElement("div");
   card.className = "product__item";
 
+  const btn = document.createElement("a");
+btn.href = "#";
+btn.className = "action__btn cart__btn";
+btn.setAttribute("aria-label", "Adicionar");
+btn.innerHTML = `<i class="fi fi-rs-shopping-bag-add"></i>`;
+btn.addEventListener("click", e => {
+  e.preventDefault();
+  adicionarAoCarrinho(produto);
+});
+
+
   const imagemSrc = produto.anexo
     ? `data:image/jpeg;base64,${produto.anexo}`
     : "assets/img/product-1-1.jpg";
@@ -266,9 +280,10 @@ function criarCardProduto(produto) {
         <div class="product__price flex">
             <span class="new__price">R$ ${(produto.preco / 100).toFixed(2)}</span>
         </div>
-        <a href="#" class="action__btn cart__btn" aria-label="Adicionar">
-            <i class="fi fi-rs-shopping-bag-add"></i>
-        </a>
+        <a href="#" class="action__btn cart__btn" aria-label="Adicionar" onclick='adicionarAoCarrinho(${JSON.stringify(produto)})'>
+  <i class="fi fi-rs-shopping-bag-add"></i>
+</a>
+
     </div>
   `;
 
@@ -352,4 +367,9 @@ async function buscarProdutos() {
   } catch (e) {
     console.error(e);
   }
+}
+
+function getParametroUrl(nome) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(nome);
 }

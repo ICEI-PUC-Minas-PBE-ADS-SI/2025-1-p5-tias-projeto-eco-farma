@@ -83,4 +83,17 @@ async function enviarAvaliacao() {
     }
 }
 
+document.querySelectorAll(".category__item").forEach(item => {
+    item.addEventListener("click", function (e) {
+        e.preventDefault(); // evita o link padrão
+        const id = this.getAttribute("data-id");
+        if (id) {
+            window.location.href = `shop.html?id_farmacia=${id}`;
+        } else {
+            window.location.href = "shop.html";
+        }
+    });
+});
+
+
 window.onload = carregarAvaliacoes;

@@ -16,7 +16,6 @@ namespace eco_farma_API.Classes
         [ForeignKey("Farmacia")]
         public int id_farmacia { get; set; }
         public byte[]? anexo { get; set; }
-        public virtual ICollection<Avaliacao_produto> Avaliacoes { get; set; } = new List<Avaliacao_produto>();
 
 
 

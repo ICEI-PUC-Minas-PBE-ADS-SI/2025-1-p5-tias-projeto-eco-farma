@@ -186,21 +186,39 @@ namespace eco_farma_API.Controllers
         }
 
         [HttpGet("filtrar")]
-        public IActionResult FiltrarProdutos([FromQuery] string? categoria, [FromQuery] double? precoMin, [FromQuery] double? precoMax)
+        public IActionResult FiltrarProdutos(
+    [FromQuery] string? categoria,
+    [FromQuery] double? precoMin,
+    [FromQuery] double? precoMax,
+    [FromQuery] int? id_farmacia,
+    [FromQuery] int pagina = 1,
+    [FromQuery] int tamanhoPagina = 16)
         {
-            var produtos = _context.Produto.AsQueryable();
+            var query = _context.Produto.AsQueryable();
 
             if (!string.IsNullOrEmpty(categoria))
-                produtos = produtos.Where(p => p.categoria == categoria);
+                query = query.Where(p => p.categoria == categoria);
 
             if (precoMin.HasValue)
-                produtos = produtos.Where(p => p.preco >= precoMin.Value);
+                query = query.Where(p => p.preco / 100 >= precoMin.Value);
 
             if (precoMax.HasValue)
-                produtos = produtos.Where(p => p.preco <= precoMax.Value);
+                query = query.Where(p => p.preco / 100 <= precoMax.Value);
 
-            return Ok(produtos.ToList());
+            if (id_farmacia.HasValue)
+                query = query.Where(p => p.id_farmacia == id_farmacia);
+
+            var totalProdutos = query.Count();
+
+            var produtos = query
+                .Skip((pagina - 1) * tamanhoPagina)
+                .Take(tamanhoPagina)
+                .ToList();
+
+            return Ok(new { produtos, totalProdutos });
         }
+
+
 
 
         private bool ProdutoExists(int id) =>

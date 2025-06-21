@@ -10,74 +10,69 @@ async function carregarDetalhesProduto(id) {
 
         const produto = await response.json();
 
-        // Imagem principal
-        const imgPrincipal = document.querySelector(".details__img");
-        imgPrincipal.src = produto.anexo
+        // Atualiza imagem principal
+        document.querySelector(".details__img").src = produto.anexo
             ? `data:image/jpeg;base64,${produto.anexo}`
             : "assets/img/default.jpg";
 
-        // Imagem miniatura
-        const imgPequena = document.querySelector(".details__small-img");
-        imgPequena.src = produto.anexo
+        // Miniatura
+        document.querySelector(".details__small-img").src = produto.anexo
             ? `data:image/jpeg;base64,${produto.anexo}`
             : "assets/img/default.jpg";
 
-        // Título
+        // Título e preço
         document.querySelector(".details__title").textContent = produto.nome;
-
-        // Preço
         const preco = (produto.preco / 100).toFixed(2).replace('.', ',');
         document.querySelector(".new__price").textContent = `R$ ${preco}`;
 
         // Descrição
-        const info = document.getElementById("info");
-        info.textContent = produto.descricao || "Sem descrição disponível.";
+        document.getElementById("info").textContent = produto.descricao || "Sem descrição disponível.";
 
         // Avaliações
-        const lista = document.getElementById("lista-avaliacoes");
-        lista.innerHTML = ""; // limpa se recarregar
+        /* const lista = document.getElementById("lista-avaliacoes");
+        lista.innerHTML = produto.avaliacoes?.length > 0
+            ? produto.avaliacoes.map(av => `
+                <li>
+                    <p><strong>${av.autor}</strong> - Nota: ${av.nota}</p>
+                    <p>${av.avaliacao}</p>
+                </li>
+              `).join('')
+            : "<li>Nenhuma avaliação disponível.</li>"; */
 
-        if (produto.avaliacoes && produto.avaliacoes.length > 0) {
-            produto.avaliacoes.forEach(av => {
-                const item = document.createElement("li");
-                item.innerHTML = `
-      <p><strong>${av.autor}</strong> - Nota: ${av.nota}</p>
-      <p>${av.avaliacao}</p>
-    `;
-                lista.appendChild(item);
-            });
-        } else {
-            lista.innerHTML = "<li>Nenhuma avaliação disponível.</li>";
-        }
-
+        // HTML extra (frete, estoque e botão)
         const containerExtra = document.getElementById("info-produto-extra");
+        let html = `<p class="frete-message">🚚 Frete grátis em todo o Brasil</p>`;
 
-// Frete fixo
-let html = `<p class="frete-message">🚚 Frete grátis em todo o Brasil</p>`;
+        if (produto.estoque > 0) {
+            html += `
+                <p class="stock-message">✔ Estoque disponível</p>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" id="quantidade" min="1" max="${produto.estoque}" value="1" class="input-quantidade" />
+                <div class="details__action">
+                    <a href="#" class="btn btn--sm" id="btnAddCarrinho">Adicionar no carrinho</a>
+                </div>
+            `;
+            containerExtra.innerHTML = html;
 
-// Verifica estoque
-if (produto.estoque > 0) {
-    html += `
-      <p class="stock-message">✔ Estoque disponível</p>
-      <label for="quantidade">Quantidade:</label>
-      <input type="number" id="quantidade" min="1" max="${produto.estoque}" value="1" class="input-quantidade" />
-      <div class="details__action">
-      </div>
-    `;
-} else {
-    html += `<p style="color: red; font-weight: bold;">Produto fora de estoque</p>`;
-}
+            // Evento do botão de adicionar ao carrinho
+            document.getElementById("btnAddCarrinho").addEventListener("click", function (e) {
+                e.preventDefault();
+                const quantidade = parseInt(document.getElementById("quantidade").value) || 1;
+                adicionarAoCarrinho(produto, quantidade);
+                //alert("Produto adicionado ao carrinho!");
+            });
 
-containerExtra.innerHTML = html;
-
+        } else {
+            html += `<p style="color: red; font-weight: bold;">Produto fora de estoque</p>`;
+            containerExtra.innerHTML = html;
+        }
 
     } catch (error) {
         console.error(error);
         alert("Erro ao carregar detalhes do produto.");
     }
-
-
 }
+
 
 // Formulário de avaliação
 const form = document.getElementById("form-avaliacao");
@@ -171,6 +166,7 @@ async function carregarAvaliacoes(idProduto) {
             });
         } else {
             lista.innerHTML = "<li class='reviews__item'>Nenhuma avaliação disponível.</li>";
+            
         }
     } catch (err) {
         console.error(err);
@@ -227,4 +223,126 @@ if (usuarioStr) {
     authLink.href = "login-register.html";
     authLink.onclick = null;
 }
+
+async function buscarProdutos() {
+    const termo = document.getElementById("campoBusca").value.trim();
+    const container = document.getElementById("sugestoesBusca");
+
+    if (termo.length < 2) {
+        container.style.display = "none";
+        container.innerHTML = "";
+        return;
+    }
+
+    try {
+        const response = await fetch(`http://localhost:5068/api/produto/busca?termo=${encodeURIComponent(termo)}`);
+        if (!response.ok) throw new Error("Erro ao buscar sugestões");
+
+        const resultados = await response.json();
+        container.innerHTML = "";
+        resultados.forEach(produto => {
+            const imagem = produto.anexo
+                ? `data:image/jpeg;base64,${produto.anexo}`
+                : "assets/img/product-1-1.jpg";
+
+            const item = document.createElement("div");
+            item.className = "sugestao__item";
+            item.innerHTML = `
+        <img src="${imagem}" class="sugestao__img" alt="${produto.nome}" />
+        <span class="sugestao__nome">${produto.nome}</span>
+      `;
+            item.onclick = () => {
+                window.location.href = `details.html?id=${produto.id_produto}`;
+            };
+            container.appendChild(item);
+        });
+
+        container.style.display = resultados.length > 0 ? "block" : "none";
+    } catch (e) {
+        console.error(e);
+    }
+}
+
+
+function adicionarAoCarrinho(produto,quantidade) {
+  const usuarioStr = localStorage.getItem("usuarioLogado");
+  if (usuarioStr) {
+    let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    const produtoExistente = carrinho.find(p => p.id === produto.id_produto);
+
+    if (produtoExistente) {
+      produtoExistente.quantidade += 1;
+    } else {
+      carrinho.push({
+        id: produto.id_produto,
+        nome: produto.nome,
+        preco: produto.preco,
+        imagem: produto.anexo
+          ? `data:image/jpeg;base64,${produto.anexo}`
+          : "assets/img/product-1-1.jpg",
+        quantidade: 1
+      });
+    }
+
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+    atualizarContadorCarrinho();
+    exibirMensagemSucesso("Produto adicionado ao carrinho!");
+  }else{
+    exibirMensagemErro("Precisa de login para adicionar ao carrinho");
+  }
+
+}
+
+
+function atualizarContadorCarrinho() {
+    const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+    const total = carrinho.reduce((soma, item) => soma + item.quantidade, 0);
+    const contador = document.querySelector(".header__action-btn span.count");
+    if (contador) {
+        contador.textContent = total;
+        contador.style.display = total > 0 ? "block" : "none";
+    }
+}
+
+
+
+
+document.addEventListener("DOMContentLoaded", atualizarContadorCarrinho);
+
+
+function exibirMensagemSucesso(msg) {
+    const alerta = document.createElement("div");
+    alerta.textContent = msg;
+    alerta.style.position = "fixed";
+    alerta.style.top = "1rem";
+    alerta.style.right = "1rem";
+    alerta.style.backgroundColor = "#4CAF50";
+    alerta.style.color = "white";
+    alerta.style.padding = "0.75rem 1rem";
+    alerta.style.borderRadius = "5px";
+    alerta.style.zIndex = 1000;
+    alerta.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+    document.body.appendChild(alerta);
+
+    setTimeout(() => alerta.remove(), 3000);
+}
+
+function exibirMensagemErro(msg) {
+    const alerta = document.createElement("div");
+    alerta.textContent = msg;
+    alerta.style.position = "fixed";
+    alerta.style.top = "1rem";
+    alerta.style.right = "1rem";
+    alerta.style.backgroundColor = "rgb(255, 7, 7)";
+    alerta.style.color = "white";
+    alerta.style.padding = "0.75rem 1rem";
+    alerta.style.borderRadius = "5px";
+    alerta.style.zIndex = 1000;
+    alerta.style.boxShadow = "0 2px 6px rgba(0,0,0,0.2)";
+    document.body.appendChild(alerta);
+
+    setTimeout(() => alerta.remove(), 3000);
+}
+
 
