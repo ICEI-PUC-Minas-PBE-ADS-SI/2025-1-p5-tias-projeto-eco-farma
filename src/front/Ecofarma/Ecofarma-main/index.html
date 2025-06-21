@@ -1,4 +1,3 @@
-
 <!-- 
 ======================================
 
@@ -26,8 +25,8 @@ FUNCIONANDO 100%
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <title>Eco Farma</title>
-    <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
-    <style>
+  <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
+  <style>
     .products__grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -79,6 +78,114 @@ FUNCIONANDO 100%
     .pagination__link.disabled {
       pointer-events: none;
       opacity: 0.5;
+    }
+
+
+    .avaliacoes {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .avaliacoes__carrossel {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      max-width: 1700px;
+      margin: 0 auto 2rem;
+    }
+
+    .avaliacoes__wrapper {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      max-width: 1800px;
+    }
+
+    .avaliacoes__item {
+      width: 300px;
+      margin: 0 10px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      box-sizing: border-box;
+      text-align: left;
+      flex-shrink: 0;
+    }
+
+    .avaliacoes__autor {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .avaliacoes__nota {
+      color: #ad8e10;
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .avaliacoes__btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #f0f0f0;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0.5rem 1rem;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .avaliacoes__btn.prev {
+      left: -5px;
+      background-color: #e7e7e733;
+    }
+
+    .avaliacoes__btn.next {
+      right: -5px;
+      background-color: #e7e7e733;
+    }
+
+    @media screen and (max-width: 1000px) {
+      .avaliacoes__item {
+        width: 100%;
+        max-width: 90vw;
+        margin: 0 auto;
+      }
+
+
+
+      .avaliacoes__wrapper {
+        flex-wrap: nowrap;
+      }
+    }
+
+
+    /* .avaliacoes__btn.prev,
+    .avaliacoes__btn.next {
+      display: none;
+    } */
+
+
+    .avaliacoes__formulario {
+      max-width: 600px;
+      margin: auto;
+      text-align: left;
+    }
+
+    .avaliacoes__form-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .avaliacoes__input {
+      width: 100%;
+      height: 100px;
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: none;
     }
   </style>
 </head>
@@ -227,7 +334,33 @@ FUNCIONANDO 100%
       </ul>
 
     </section>
+    <!--=============== AVALIAÇÕES ===============-->
+    <section class="avaliacoes container section">
+      <h3 class="section__title">O que dizem sobre nós</h3>
+      <div class="avaliacoes__carrossel">
+        <div id="avaliacoes-container" class="avaliacoes__wrapper">
+          <!-- Itens de avaliação via JS -->
+        </div>
+        <button class="avaliacoes__btn prev">&#10094;</button>
+        <button class="avaliacoes__btn next">&#10095;</button>
+      </div>
 
+      <div class="avaliacoes__formulario">
+        <h4 class="avaliacoes__form-title">Avalie a gente!</h4>
+        <textarea id="textoAvaliacao" class="avaliacoes__input" placeholder="Escreva sua avaliação..."></textarea>
+        <div class="avaliacoes__nota">
+          Nota:
+          <select id="notaAvaliacao">
+            <option value="5">⭐⭐⭐⭐⭐</option>
+            <option value="4">⭐⭐⭐⭐</option>
+            <option value="3">⭐⭐⭐</option>
+            <option value="2">⭐⭐</option>
+            <option value="1">⭐</option>
+          </select>
+        </div>
+        <button class="btn" onclick="enviarAvaliacao()">Enviar Avaliação</button>
+      </div>
+    </section>
 
     <!--=============== NEWSLETTER ===============-->
     <section class="newsletter section home__newsletter">
@@ -247,75 +380,77 @@ FUNCIONANDO 100%
     </section>
   </main>
 
+
   <!--=============== FOOTER ===============-->
   <footer class="footer container">
-        <div class="footer__container grid">
-            <div class="footer__content">
-                <a href="index.html" class="footer__logo">
-                    <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
-                </a>
-                <h4 class="footer__subtitle">Fale Conosco!</h4>
-                <p class="footer__description">
-                    <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
-                </p>
-                <p class="footer__description">
-                    <span>Contato:</span> (31) 99986-5963
-                </p>
-                <p class="footer__description">
-                    <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
-                </p>
-                <div class="footer__social">
-                    <h4 class="footer__subtitle">Nossas redes sociais:</h4>
-                    <div class="footer__links flex">
-                        <a href="#">
-                            <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
-                        </a>
-                        <a href="#">
-                            <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">FAQ</h3>
-                <ul class="footer__links">
-                    <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
-                    <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
-                    <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Minha conta</h3>
-                <ul class="footer__links">
-                    <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
-                    <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
-                </ul>
-            </div>
-            <div class="footer__content">
-                <h3 class="footer__title">Métodos de Pagamento</h3>
-                <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
-            </div>
+    <div class="footer__container grid">
+      <div class="footer__content">
+        <a href="index.html" class="footer__logo">
+          <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+        </a>
+        <h4 class="footer__subtitle">Fale Conosco!</h4>
+        <p class="footer__description">
+          <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
+        </p>
+        <p class="footer__description">
+          <span>Contato:</span> (31) 99986-5963
+        </p>
+        <p class="footer__description">
+          <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
+        </p>
+        <div class="footer__social">
+          <h4 class="footer__subtitle">Nossas redes sociais:</h4>
+          <div class="footer__links flex">
+            <a href="#">
+              <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+            </a>
+            <a href="#">
+              <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+            </a>
+          </div>
         </div>
-        <div class="footer__bottom">
-            <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
-            <span class="designer">Designer by Thiago </span>
-        </div>
-    </footer>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">FAQ</h3>
+        <ul class="footer__links">
+          <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
+          <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
+          <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Minha conta</h3>
+        <ul class="footer__links">
+          <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
+          <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
+        </ul>
+      </div>
+      <div class="footer__content">
+        <h3 class="footer__title">Métodos de Pagamento</h3>
+        <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
+      <span class="designer">Designer by Thiago </span>
+    </div>
+  </footer>
 
   <!--=============== SWIPER JS ===============-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!--=============== MAIN JS ===============-->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/Scripts/index.js"></script>
 </body>
 
 </html>
