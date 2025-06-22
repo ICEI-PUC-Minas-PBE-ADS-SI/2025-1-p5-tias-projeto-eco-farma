@@ -177,6 +177,86 @@
       border-radius: 5px;
       background-color: #f9f9f9;
     }
+
+    /* -------------------- MELHORIAS VISUAIS MODERNAS -------------------- */
+
+/* Ícones nos inputs */
+.perfil-edicao__form input {
+  background-image: url('assets/img/icon-user.svg');
+  background-position: 10px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  padding-left: 40px;
+}
+
+.perfil-edicao__input[type="email"] {
+  background-image: url('assets/img/icon-mail.svg');
+}
+.perfil-edicao__input[type="tel"] {
+  background-image: url('assets/img/icon-phone.svg');
+}
+.perfil-edicao__input[name="cpf"] {
+  background-image: url('assets/img/icon-id.svg');
+}
+
+/* Animação suave no foco */
+.perfil-edicao__input:focus {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(82, 239, 111, 0.5);
+}
+
+/* Menu lateral fixo (desktop) */
+@media (min-width: 1024px) {
+  .account__tabs {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: #f8fdf7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .account__tab {
+    margin-bottom: 12px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+  }
+
+  .account__tab:hover,
+  .account__tab.active-tab {
+    background-color: #e9ffe5;
+    color: #0b8615;
+    font-weight: bold;
+  }
+}
+
+/* Suavizar aparência de seções */
+.tab__body {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-top: 10px;
+}
+
+/* Botões */
+.perfil-edicao__btn, .btn, .btn--sm, .btn--md {
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Melhor responsividade para inputs */
+@media (max-width: 480px) {
+  .perfil-edicao__input {
+    font-size: 0.95rem;
+    padding-left: 35px;
+  }
+}
+
   </style>
 </head>
 
@@ -262,9 +342,8 @@
     <section class="accounts section--lg">
       <div class="accounts__container container grid">
         <div class="account__tabs">
-          <p class="account__tab active-tab" data-target="#dashboard">
-            <i class="fi fi-rs-settings-sliders"></i> Ver pontuação
-          </p>
+          <p class="account__tab active-tab" data-target="#meus-cupom"><i class="fi fi-rs-settings-sliders"></i> Ver pontuação</p>
+          
           <p class="account__tab" data-target="#orders">
             <i class="fi fi-rs-shopping-bag"></i> Pedidos
           </p>
@@ -278,121 +357,98 @@
             <i class="fi fi-rs-settings-sliders"></i> Mudar Senha
           </p>
         </div>
-        <div class="tabs__content">
-          <div content id="meus-cupom">
-            <h3 class="tab__header">Meus Cupons</h3>
-            <div class="tab__body">
+        <!-- Substitua o conteúdo da <div class="tabs__content"> por este novo: -->
+<div class="tabs__content">
+  <!-- Aba: Meus Cupons -->
+  <div class="tab__content" id="meus-cupom">
+    <h3 class="tab__header">Meus Cupons</h3>
+    <div class="tab__body">
+      <p class="tab__description">Você pode cadastrar seus cupons aqui:</p>
 
-              <p class="tab__description">Você pode cadastrar seus cupons aqui:</p>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 15px;">
+        <input type="text" id="codigoCupom" placeholder="Digite o código do novo cupom" class="form__input" style="flex: 1; min-width: 200px;" />
+        <button class="btn btn--sm perfil-edicao__btn" style="padding: 10px 16px; flex-shrink: 0;" onclick="cadastrarCupom()">Cadastrar</button>
+      </div>
 
-              <input type="text" id="codigoCupom" placeholder="Digite o código do novo cupom" class="form__input" style="width: 250px;"/>
-              <button class="btn btn--sm" onclick="cadastrarCupom()">Cadastrar Cupom</button>
+      <hr style="margin: 1rem 0;" />
+      <h4>Cupons Cadastrados</h4>
+      <ul id="lista-cupom" class="cupom-lista"></ul>
+    </div>
+  </div>
 
-              <hr style="margin: 1rem 0;" />
+  <!-- Aba: Pedidos -->
+  <div class="tab__content" id="orders">
+    <h3 class="tab__header">Meus pedidos</h3>
+    <div class="tab__body">
+      <!-- Conteúdo a ser preenchido -->
+    </div>
+  </div>
 
-              <h4>Cupons Cadastrados</h4>
-              <ul id="lista-cupom" class="cupom-lista">
-                <!-- Lista será preenchida via JS -->
-              </ul>
+  <!-- Aba: Editar Perfil -->
+  <div class="tab__content" id="update-profile">
+    <h3 class="tab__header">Editar Perfil</h3>
+    <div class="tab__body perfil-edicao">
+      <form id="form-editar-perfil" class="perfil-edicao__form">
+        <label class="perfil-edicao__label" for="input-nome">Nome</label>
+        <input class="perfil-edicao__input" type="text" id="input-nome" name="nome">
 
-            </div>
-          </div>
+        <label class="perfil-edicao__label" for="input-email">Email</label>
+        <input class="perfil-edicao__input" type="email" id="input-email" name="email">
 
+        <label class="perfil-edicao__label" for="input-telefone">Telefone</label>
+        <input class="perfil-edicao__input" type="tel" id="input-telefone" name="telefone">
 
+        <label class="perfil-edicao__label" for="input-cpf">CPF</label>
+        <input class="perfil-edicao__input" type="text" id="input-cpf" name="cpf">
 
+        <button class="perfil-edicao__btn" type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
 
+  <!-- Aba: Endereço -->
+  <!-- Aba: Endereço -->
+<div class="tab__content" id="address">
+  <h3 class="tab__header">Meus endereços</h3>
+  <div class="tab__body">
+    <div class="endereco-container">
+      <form id="form-endereco" class="perfil-edicao__form">
+        <label class="perfil-edicao__label" for="input-endereco">Endereço</label>
+        <input class="perfil-edicao__input" type="text" id="input-endereco" name="endereco" />
 
-          <div class="tab__content" content id="orders">
-            <h3 class="tab__header">Meus pedidos</h3>
-            <div class="tab__body">
-              <!-- <table class="placed__order-table">
-                  <thead>
-                    <tr>
-                      <th>Número do pedido</th>
-                      <th>Data</th>
-                      <th>Status</th>
-                      <th>Total</th>
-                      <th>Produtos</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>#1357</td>
-                      <td>19 de Março de 2025</td>
-                      <td>Processando</td>
-                      <td>R$ 125,00</td>
-                      <td><a href="#" class="view__order">Ver</a></td>
-                    </tr>
-                    <tr>
-                      <td>#2468</td>
-                      <td>29 de Junho de 2025</td>
-                      <td>Finalizado</td>
-                      <td>R$ 36,40</td>
-                      <td><a href="#" class="view__order">Ver</a></td>
-                    </tr>
-                    <tr>
-                      <td>#2366</td>
-                      <td>02 de Agosto de 2024</td>
-                      <td>Finalizado</td>
-                      <td>R$ 28.00</td>
-                      <td><a href="#" class="view__order">Ver</a></td>
-                    </tr>
-                  </tbody>
-                </table> -->
-            </div>
-          </div>
-          <div class="tab__content" content id="update-profile">
-            <h3 class="tab__header">Editar Perfil</h3>
-            <div class="tab__body">
-              <div id="update-profile" class="account__content perfil-edicao">
-                <form id="form-editar-perfil" class="perfil-edicao__form">
+        <label class="perfil-edicao__label" for="input-numero">Número</label>
+        <input class="perfil-edicao__input" type="number" id="input-numero" name="numero" />
 
-                  <label class="perfil-edicao__label" for="input-nome">Nome</label>
-                  <input class="perfil-edicao__input" type="text" id="input-nome" name="nome">
+        <label class="perfil-edicao__label" for="input-cep">CEP</label>
+        <input class="perfil-edicao__input" type="text" id="input-cep" name="cep" />
 
-                  <label class="perfil-edicao__label" for="input-email">Email</label>
-                  <input class="perfil-edicao__input" type="email" id="input-email" name="email">
-
-                  <label class="perfil-edicao__label" for="input-telefone">Telefone</label>
-                  <input class="perfil-edicao__input" type="tel" id="input-telefone" name="telefone">
-
-                  <label class="perfil-edicao__label" for="input-cpf">CPF</label>
-                  <input class="perfil-edicao__input" type="text" id="input-cpf" name="cpf">
-
-                  <button class="perfil-edicao__btn" type="submit">Salvar</button>
-                </form>
-              </div>
+        <button class="perfil-edicao__btn" type="submit">Salvar Alterações</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
-            </div>
-          </div>
-          <div class="tab__content" content id="address">
-            <h3 class="tab__header">Meus endereços</h3>
-            <div class="tab__body">
-              <address class="address endereco-container">
+  <!-- Aba: Mudar Senha -->
+  <div class="tab__content" id="change-password">
+    <h3 class="tab__header">Mudar senha</h3>
+    <div class="tab__body perfil-edicao">
+      <form class="perfil-edicao__form">
+        <label class="perfil-edicao__label">Senha atual</label>
+        <input type="password" class="perfil-edicao__input" />
 
-                <p class="endereco-linha"><strong>Endereço:</strong> <span id="endereco-texto"></span></p>
-                <p class="endereco-linha"><strong>Número:</strong> <span id="numero-texto"></span></p>
-                <p class="endereco-linha"><strong>CEP:</strong> <span id="cep-texto"></span></p>
-                <a href="#" class="endereco-editar">Editar</a>
-              </address>
-            </div>
-          </div>
+        <label class="perfil-edicao__label">Nova senha</label>
+        <input type="password" class="perfil-edicao__input" />
 
-          <div class="tab__content" content id="change-password">
-            <h3 class="tab__header">Mudar senha</h3>
-            <div class="tab__body">
-              <form class="form grid">
-                <input type="password" placeholder="Senha atual" class="form__input" />
-                <input type="password" placeholder="Nova senha" class="form__input" />
-                <input type="password" placeholder="Confirmar Senha" class="form__input" />
-                <div class="form__btn">
-                  <button class="btn btn--md">Salvar</button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
+        <label class="perfil-edicao__label">Confirmar nova senha</label>
+        <input type="password" class="perfil-edicao__input" />
+
+        <button class="perfil-edicao__btn" type="submit">Salvar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
 

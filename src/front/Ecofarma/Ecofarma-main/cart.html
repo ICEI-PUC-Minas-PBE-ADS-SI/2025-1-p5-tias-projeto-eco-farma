@@ -18,178 +18,281 @@
   <title>Eco Farma</title>
   <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
   <style>
-  
+    .btn-verde {
+      background: green;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      width: 200px;
+    }
+
+    .btn-vermelho {
+      background: red;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      margin-left: 0.5rem;
+    }
+
+    .btn-azul {
+      background: #2a7ae2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      margin-top: 1rem;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      width: 200px;
+    }
+
+    .carrinho-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+      flex-wrap: nowrap;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .carrinho-lista {
+      width: 750px;
+      max-height: 600px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 1.5rem;
+      border-radius: 8px;
+      background-color: #fff;
+    }
+
+    .carrinho-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      gap: 1rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 1rem;
+    }
+
+    .carrinho-item img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .carrinho-item input[type="number"] {
+      width: 60px;
+      padding: 0.25rem;
+      text-align: center;
+    }
+
+    .carrinho-resumo {
+      width: 300px;
+      background-color: #f8f8f8;
+      padding: 1.5rem;
+      border-radius: 8px;
+      height: fit-content;
+      font-size: 0.95rem;
+    }
 
 
+    /* Fundo escuro transparente para modal */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: none;
+      z-index: 999;
+    }
 
+    /* Caixa do modal */
+    .modal-pontos {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 2rem;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+      display: none;
+    }
 
+    .modal-pontos h3 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #2e2e2e;
+    }
 
-.btn-verde {
-  background: green;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
-  width: 200px;
-}
+    .modal-pontos p {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: #444;
+    }
 
-.btn-vermelho {
-  background: red;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
-  margin-left: 0.5rem;
-}
+    .modal-pontos input[type="number"] {
+      width: 80px;
+      padding: 6px;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 0.5rem;
+    }
 
-.btn-azul {
-  background: #2a7ae2;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  width: 200px;
-}
+    .modal-pontos .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
 
-.carrinho-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: nowrap;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+    .modal-pontos .confirmar {
+      background-color: green;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.carrinho-lista {
-  width: 750px;
-  max-height: 600px;
-  overflow-y: auto;
-  border: 1px solid #ccc;
-  padding: 1.5rem;
-  border-radius: 8px;
-  background-color: #fff;
-}
+    .modal-pontos .cancelar {
+      background-color: red;
+      color: white;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
 
-.carrinho-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.5rem;
-  gap: 1rem;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 1rem;
-}
+    .overlay-finalizacao {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      z-index: 999;
+    }
 
-.carrinho-item img {
-  width: 60px;
-  height: 60px;
-  object-fit: cover;
-  flex-shrink: 0;
-}
+    .modal-finalizacao {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 1700px;
+      max-height: 1500px;
+      overflow-y: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 2rem;
+      display: none;
+      z-index: 1000;
+    }
 
-.carrinho-item input[type="number"] {
-  width: 60px;
-  padding: 0.25rem;
-  text-align: center;
-}
+    .modal-header-finalizacao {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
 
-.carrinho-resumo {
-  width: 300px;
-  background-color: #f8f8f8;
-  padding: 1.5rem;
-  border-radius: 8px;
-  height: fit-content;
-  font-size: 0.95rem;
-}
+    .btn-fechar-finalizacao {
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+    }
 
+    .modal-body-finalizacao {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
 
-/* Fundo escuro transparente para modal */
-.modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  display: none;
-  z-index: 999;
-}
+    .coluna-finalizacao {
+      flex: 1 1 30%;
+      min-width: 300px;
+      background: #f5f5f5;
+      padding: 1rem;
+      border-radius: 8px;
+    }
 
-/* Caixa do modal */
-.modal-pontos {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 2rem;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 10px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  font-family: Arial, sans-serif;
-  z-index: 1000;
-  display: none;
-}
+    .coluna-finalizacao 
+    select {
+      width: 100%;
+      padding: .5rem;
+      margin: .5rem 0;
+      background-color: #ffffff;
+    }
 
-.modal-pontos h3 {
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-  color: #2e2e2e;
-}
+    .coluna-finalizacao-input {
+      width: 100%;
+      padding: .5rem;
+      margin: .5rem 0;
+      background-color: #ffffff;
+    }
 
-.modal-pontos p {
-  margin: 10px 0;
-  font-size: 1rem;
-  color: #444;
-}
+    .lista-produtos {
+      list-style: none;
+      padding: 0;
+    }
 
-.modal-pontos input[type="number"] {
-  width: 80px;
-  padding: 6px;
-  font-size: 1rem;
-  text-align: center;
-  margin-top: 0.5rem;
-}
+    .lista-produtos li {
+      display: flex;
+      justify-content: space-between;
+      margin: .5rem 0;
+    }
 
-.modal-pontos .botoes {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
+    .row-duplo {
+      display: flex;
+      gap: .5rem;
+    }
 
-.modal-pontos .confirmar {
-  background-color: green;
-  color: white;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .text-green {
+      color: green;
+    }
 
-.modal-pontos .cancelar {
-  background-color: red;
-  color: white;
-  padding: 8px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-}
+    .btn-confirmar-finalizacao {
+      margin-top: 1rem;
+      background: #2a7ae2;
+      color: #fff;
+      border: none;
+      padding: .75rem;
+      width: 100%;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
+    .opcoes-entrega {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
 
-
-
+    .opcoes-entrega label {
+      font-size: 1rem;
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -260,32 +363,41 @@
   </header>
 
   <div class="carrinho-container">
-  <div class="carrinho-lista" id="lista-carrinho"></div>
+    <div class="carrinho-lista" id="lista-carrinho"></div>
 
-  <div class="carrinho-resumo">
-    <h3>Resumo da Compra</h3>
-    <p id="total-produtos">Total: R$ 0,00</p>
-    <p>Frete: Grátis</p>
-    <p id="desconto-cupom">Desconto: R$ 0,00</p>
-    <p><strong id="total-final">Total Final: R$ 0,00</strong></p>
-    <button onclick="abrirModalCupons()" class="btn-verde">Visualizar meus cupons</button>
-    <a href="#" class="btn-azul">Finalizar compra</a>
+    <div class="carrinho-resumo">
+      <h3>Resumo da Compra</h3>
+      <p id="total-produtos">Total: R$ 0,00</p>
+      <p style="color: green;"><strong>Frete: Grátis</strong></p>
+      <p id="desconto-cupom">Desconto: R$ 0,00</p>
+      <p><strong id="total-final">Total Final: R$ 0,00</strong></p>
+      <button onclick="mostrarModalPontos()" class="btn-verde">Visualizar meus cupons</button>
+      <button onclick="abrirModalFinalizacao()" class="btn-azul">Finalizar Compra</button>
+    </div>
   </div>
-</div>
 
-<!-- Overlay e modal -->
-<div class="modal-overlay" id="overlayCupons" onclick="fecharModal()"></div>
+  <!-- Overlay e modal -->
+  <div class="modal-overlay" id="overlayCupons" onclick="fecharModal()"></div>
 
-<div class="modal-pontos" id="modalCupons">
-  <h3>Pontos</h3>
-  <p id="pontosTotais">Você tem <strong>5</strong> pontos :)</p>
-  <p><strong>Quantos deseja usar?</strong></p>
-  <input type="number" id="pontosUsar" min="0" value="0" />
-  <div class="botoes">
-    <button class="confirmar" onclick="confirmarPontos()">Confirmar</button>
-    <button class="cancelar" onclick="fecharModal()">Cancelar</button>
+  <div class="modal-pontos" id="modalCupons">
+    <h3>Cupons - Pontos</h3>
+    <div style="border: 1px solid #ccc; padding: 10px; border-radius: 7px;">
+      <p style="text-align: justify;">Para cada blister ou medicamento vencido que tiver o descarta correto você recebe
+        1 ponto.
+      </p>
+      <br>
+      <p style="text-align: justify;">1 ponto = 0,25 centavos de desconto.
+      </p>
+      <p style="text-align: justify;">Obs.: Esses pontos não expiram.</p>
+    </div>
+    <p id="pontosTotais">Você tem <strong>5 pontos :)</strong> </p>
+    <p><strong>Quantos deseja usar?</strong></p>
+    <input type="number" id="pontosUsar" min="0" value="0" style="align-items: justify;border: 1px solid #ccc;" />
+    <div class="botoes">
+      <button class="confirmar" onclick="confirmarPontos()">Confirmar</button>
+      <button class="cancelar" onclick="fecharModal()">Cancelar</button>
+    </div>
   </div>
-</div>
 
 
 
@@ -354,6 +466,72 @@
     </div>
   </footer>
 
+
+  <div class="overlay-finalizacao" id="overlayFinalizacao" onclick="fecharModalFinalizacao()"></div>
+
+  <div class="modal-finalizacao" id="modalFinalizacao">
+    <div class="modal-header-finalizacao">
+      <h2>Finalizar Compra</h2>
+      <button class="btn-fechar-finalizacao" onclick="fecharModalFinalizacao()">×</button>
+    </div>
+    <div class="modal-body-finalizacao">
+      <!-- Coluna de entrega/pontos -->
+      <div class="coluna-finalizacao">
+        <h3>Opções de Entrega</h3>
+        <div class="opcoes-entrega">
+          <label>
+            <input type="radio" name="entrega" value="retirada" checked onchange="toggleEndereco(false)">
+            Retirar na loja
+          </label>
+          <label>
+            <input type="radio" name="entrega" value="domicilio" onchange="toggleEndereco(true)">
+            Entrega em domicílio
+          </label>
+        </div>
+
+        <div id="formEndereco" class="form-endereco" style="display:none;">
+          <h4>Endereço de Entrega</h4>
+          <input class="coluna-finalizacao-input" type="text" id="enderecoCampo" placeholder="Rua, Número">
+          <input class="coluna-finalizacao-input" type="text" id="cepCampo" placeholder="CEP">
+        </div>
+        <hr>
+      </div>
+
+
+      <!-- Coluna de pagamento -->
+      <div class="coluna-finalizacao">
+        <h3>Pagamento</h3>
+        <select id="formaPagamento">
+          <option>Cartão de Crédito</option>
+          <option>Cartão de Débito</option>
+          <option>Pix</option>
+        </select>
+        <input class="coluna-finalizacao-input" type="text" id="nomeCartao" placeholder="Nome no Cartão">
+        <input class="coluna-finalizacao-input" type="text" id="numeroCartao" placeholder="Número do Cartão">
+        <div class="row-duplo">
+          <input class="coluna-finalizacao-input" type="text" id="validadeCartao" placeholder="Validade (MM/AA)">
+          <input class="coluna-finalizacao-input" type="text" id="cvvCartao" placeholder="CVV">
+        </div>
+      </div>
+
+      <div class="coluna-finalizacao">
+        <h3>Resumo do Pedido</h3>
+        <ul class="lista-produtos" id="listaResumo"></ul>
+        <hr>
+        <p>Subtotal: <span id="subtotalResumo">R$0.00</span></p>
+        <p style="color: green;"> <strong>Frete: <span>Grátis</span></strong></p>
+        <p id="descontoFinal">Desconto: R$ 0,00</p>
+        <hr>
+        <p><strong>Total:</strong> <span id="totalFinal">R$0.00</span></p>
+        <button class="btn-confirmar-finalizacao" onclick="finalizarCompra()">Finalizar Compra</button>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="abrirModalFinalizacao()">Finalizar Compra</button>
+
+
+
   <!--=============== SWIPER JS ===============-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -363,114 +541,3 @@
 </body>
 
 </html>
-
-<!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-fullscreen">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">Finalizar Compra</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <div class="modal-content p-4">
-            <h2 class="text-center fw-bold mb-4">Finalizar Pedido</h2>
-
-            <div class="row">
-              <div class="col-md-4 mb-3">
-                <h5>Seus Pontos</h5>
-                <p>Cada descarte vale 1 ponto = R$0,25.</p>
-                <p>Você tem <strong>5 pontos</strong> disponíveis.</p>
-                <label for="pontos">Usar pontos:</label>
-                <select id="pontos" class="form-select mb-2">
-                  <option>0 pontos</option>
-                  <option>1 ponto</option>
-                  <option selected>2 pontos</option>
-                  <option>3 pontos</option>
-                  <option>4 pontos</option>
-                  <option>5 pontos</option>
-                </select>
-                <p><strong>Desconto:</strong> R$0,50</p>
-                <p><strong>Restante:</strong> 3 pontos</p>
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <h5>Resumo do Pedido</h5>
-                <ul class="list-unstyled">
-                  <li>Paracetamol 4mg <span class="float-end">R$14,99</span></li>
-                  <li>Neutrogena Hydro Boost <span class="float-end">R$59,99</span></li>
-                  <li>Histamin 4mg <span class="float-end">R$6,99</span></li>
-                </ul>
-                <hr>
-                <p>Subtotal: <span class="float-end">R$81,97</span></p>
-                <p>Entrega: <span class="float-end">R$10,00</span></p>
-                <p>Desconto: <span class="float-end text-success">-R$0,50</span></p>
-                <hr>
-                <p class="fw-bold">Total: <span class="float-end">R$91,47</span></p>
-
-                <hr>
-                <div class="mb-2">
-                  <hr>
-<div class="mb-3">
-  <h5 class="mb-2">Opção de Entrega</h5>
-  <div class="d-flex gap-3 mb-3">
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="tipoEntrega" id="entregar" checked>
-      <label class="form-check-label" for="entregar">Entregar no endereço</label>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="tipoEntrega" id="retirada">
-      <label class="form-check-label" for="retirada">Retirada</label>
-    </div>
-  </div>
-
-  <div class="border rounded p-3 bg-light">
-    <div class="d-flex align-items-center mb-2">
-      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="green" class="bi bi-geo-alt-fill me-2" viewBox="0 0 16 16">
-        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zM8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"/>
-      </svg>
-      <strong>Endereço de Entrega</strong>
-    </div>
-    <p class="mb-2 ms-4">R. do Rosário, 1081 - Angola, Betim - MG, 32604-115</p>
-    <button class="btn btn-outline-secondary btn-sm ms-4">Mudar endereço</button>
-  </div>
-</div>
-
-                </div>
-              </div>
-
-              <div class="col-md-4 mb-3">
-                <h5>Pagamento</h5>
-                <form>
-                  <label for="forma" class="form-label">Forma de Pagamento</label>
-                  <select id="forma" class="form-select mb-2">
-                    <option>Cartão de Crédito</option>
-                    <option>Cartão de Débito</option>
-                    <option>Pix</option>
-                  </select>
-
-                  <input type="text" class="form-control mb-2" placeholder="Nome no Cartão" />
-                  <input type="text" class="form-control mb-2" placeholder="Número do Cartão" />
-                  
-                  <div class="row">
-                    <div class="col">
-                      <input type="text" class="form-control mb-2" placeholder="Validade (MM/AA)" />
-                    </div>
-                    <div class="col">
-                      <input type="text" class="form-control mb-2" placeholder="CVV" />
-                    </div>
-                  </div>
-
-                  <button type="submit" class="btn btn-success w-100">Confirmar Pagamento</button>
-                </form>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary">Finalizar Pedido</button>
-        </div>
-      </div>
-    </div>
-  </div> -->

@@ -496,3 +496,41 @@ async function carregarCuponsCliente() {
       ? cupons.map(c => `<li>${c.codigo}</li>`).join("")
       : "<li>Você ainda não possui cupons.</li>";
 }
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(async (position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+
+        try {
+          const response = await fetch(
+            `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`,
+            {
+              headers: {
+                "User-Agent": "EcoFarmaApp - seuemail@exemplo.com"
+              }
+            }
+          );
+
+          if (!response.ok) throw new Error("Erro na API de geocodificação");
+
+          const data = await response.json();
+
+          // Tenta pegar cidade, vila ou condado
+          const cidade = data.address.city || data.address.town || data.address.village || data.address.county || "Localização desconhecida";
+
+          document.getElementById("localizacaoUsuario").textContent = cidade;
+        } catch (error) {
+          console.error(error);
+          document.getElementById("localizacaoUsuario").textContent = "Erro ao obter localização";
+        }
+      }, (error) => {
+        console.warn("Usuário negou a localização ou erro:", error.message);
+        document.getElementById("localizacaoUsuario").textContent = "Localização indisponível";
+      });
+    } else {
+      document.getElementById("localizacaoUsuario").textContent = "Geolocalização não suportada";
+    }
+  });
