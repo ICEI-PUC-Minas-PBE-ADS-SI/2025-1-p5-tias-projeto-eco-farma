@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj": {}
+    "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj": {
+    "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
+        "projectUniqueName": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
         "projectName": "eco_farma_API",
-        "projectPath": "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
+        "projectPath": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
         "packagesPath": "C:\\Users\\Bianc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\obj\\",
+        "outputPath": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bianc\\AppData\\Roaming\\NuGet\\NuGet.Config",

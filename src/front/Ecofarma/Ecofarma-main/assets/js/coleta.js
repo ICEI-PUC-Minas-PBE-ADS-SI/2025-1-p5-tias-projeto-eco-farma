@@ -28,6 +28,31 @@ document.addEventListener("DOMContentLoaded", function () {
             lat: -19.958406161497727,
             lng: -44.1968990811489, 
         },
+        {
+            nome: "Drogaria Pague Menos",
+            endereco: "Condomínio Cidade Jardim Eldorado - Av. João César de Oliveira, 1144 - Eldorado, Contagem - MG, 32310-000",
+            lat: -19.942504519597673, 
+            lng: -44.03904455889797, 
+        },
+        {
+            nome: "Drogasil",
+            endereco: "AVENIDA GETÚLIO VARGAS, 504, 500 Loja 2, 504, 3 508 - Loja 1 - Centro, Belo Horizonte - MG, 35680-037",
+            lat: -19.91334362659825, 
+            lng: -43.93634858977011, 
+        },
+        {
+            nome: "Drogaria Pacheco",
+            endereco: "Av. Juiz Marco Túlio Isaac, 50 - Jardim da Cidade, Betim - MG, 32604-245",
+            lat: -19.964347451720005, 
+            lng: -44.19892536373215, 
+        },
+        {
+            nome: "Drogaria Souza Aguiar",
+            endereco: "R. Dr. Antônio Gravata, 39 - Centro, Betim - MG, 32600-016",
+            lat: -19.967321185916465, 
+            lng: -44.20278887005421, 
+        },
+
     ];
 
     // Adiciona os marcadores
