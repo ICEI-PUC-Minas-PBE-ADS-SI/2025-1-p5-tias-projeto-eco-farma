@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kPAJKF9A2h8=",
+  "dgSpecHash": "3zOjDy8YDoc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Bianc\\Downloads\\EcoFarma\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
+  "projectFilePath": "C:\\Users\\Bianc\\Downloads\\teste\\2025-1-p5-tias-projeto-eco-farma\\src\\back\\eco_farma_API\\eco_farma_API\\eco_farma_API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bianc\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Bianc\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
