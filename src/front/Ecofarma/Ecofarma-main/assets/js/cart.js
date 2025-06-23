@@ -182,39 +182,77 @@ function atualizarResumoFinalizacao(){
   });
 }
 
-function finalizarCompra(){
-  // valida
+async function finalizarCompra() {
   const entrega = document.querySelector('input[name="entrega"]:checked').value;
   const endereco = document.getElementById("enderecoCampo").value.trim();
-  if (entrega==="domicilio" && endereco===""){
+  const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const id = usuario?.id_usuario;
+
+  if (!id) return alert("Usuário não encontrado.");
+
+  // Validação dos campos obrigatórios
+  if (entrega === "domicilio" && endereco === "") {
     return alert("Preencha o endereço!");
   }
+
   if (!document.getElementById("formaPagamento").value ||
       !document.getElementById("nomeCartao").value ||
-      !document.getElementById("numeroCartao").value){
-    return alert("Preencha os dados de pagamento!");
+      !document.getElementById("numeroCartao").value ||
+      !document.getElementById("validadeCartao").value ||
+      !document.getElementById("cvvCartao").value) {
+    return alert("Preencha todos os dados de pagamento!");
   }
-  // salva pedidos individuais
-  const pedidos = JSON.parse(localStorage.getItem("meusPedidos"))||[];
-  carrinho.forEach(item=>{
-    const novaCompra = {
-      id_cliente: JSON.parse(localStorage.getItem("usuarioLogado")).id_usuario,
+
+  // Recuperar carrinho atualizado
+  carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+  if (carrinho.length === 0) {
+    return alert("Carrinho está vazio!");
+  }
+
+  // Salvar pedidos no localStorage
+  const pedidos = JSON.parse(localStorage.getItem("meusPedidos")) || [];
+  carrinho.forEach(item => {
+    pedidos.push({
+      id_cliente: id,
       id_farmacia: 1,
       id_produto: item.id,
+      nome_produto: item.nome,
       qtd_produto: item.quantidade,
-      preco_produto: item.preco/100,
-      //data: new Date().toISOString(),
+      preco_produto: item.preco / 100,
       entrega: entrega,
-      endereco: entrega==="domicilio"? endereco : null
-    };
-    pedidos.push(novaCompra);
+      endereco: entrega === "domicilio" ? endereco : null
+    });
   });
   localStorage.setItem("meusPedidos", JSON.stringify(pedidos));
+
+  // Remover cupons usados
+  const pontosUsados = parseInt(document.getElementById("pontosUsar")?.value || 0);
+  if (pontosUsados > 0) {
+    try {
+      const r = await fetch(`http://localhost:5068/api/cupom/cliente/${id}`);
+      const cupons = await r.json();
+
+      for (let i = 0; i < pontosUsados && i < cupons.length; i++) {
+        await fetch(`http://localhost:5068/api/cupom/${cupons[i].id_cupom}`, {
+          method: "DELETE"
+        });
+      }
+    } catch (err) {
+      console.error("Erro ao excluir cupons:", err);
+      alert("Erro ao remover cupons usados.");
+    }
+  }
+
+  // Limpar carrinho e finalizar
   localStorage.removeItem("carrinho");
-  alert("Compra realizada!");
+  alert("Compra realizada com sucesso!");
   fecharModalFinalizacao();
-  window.location.href = "/src/front/Ecofarma/Ecofarma-main/index.html";
+  window.location.href = "/src/front/Ecofarma/Ecofarma-main/accounts.html";
 }
+
+
+
 
 
 function abrirModalFinalizacao() {

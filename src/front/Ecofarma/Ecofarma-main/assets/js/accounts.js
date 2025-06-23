@@ -1,81 +1,150 @@
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", async () => {
+  // === Dados do usuário ===
+  const API_URL = "http://localhost:5068/api/cliente";
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+  const idCliente = usuarioLogado?.dadosPapel?.id_cliente;
+
   if (!usuarioLogado || !usuarioLogado.dadosPapel) return;
 
   const dados = usuarioLogado.dadosPapel;
 
-  // Atualiza o h3 com o nome do usuário
+  // Saudação
   const saudacao = document.getElementById("saudacao-usuario");
-  if (saudacao) {
-    saudacao.textContent = `Olá ${dados.nome || "Usuário"}!`;
-  }
+  if (saudacao) saudacao.textContent = `Olá ${dados.nome || "Usuário"}!`;
 
-  // Nome no campo de perfil
-  const nomeInput = document.getElementById("input-nome");
-  if (nomeInput) nomeInput.value = dados.nome || "";
+  // Preencher inputs direto do localStorage (evita fetch extra se quiser)
+  if (document.getElementById("input-nome")) document.getElementById("input-nome").value = dados.nome || "";
+  if (document.getElementById("input-email")) document.getElementById("input-email").value = dados.email || "";
+  if (document.getElementById("input-telefone")) document.getElementById("input-telefone").value = dados.telefone || "";
+  if (document.getElementById("input-cpf")) document.getElementById("input-cpf").value = dados.cpf || "";
 
-  // Endereço
-  const enderecoDiv = document.getElementById("endereco-usuario");
-  if (enderecoDiv) {
-    enderecoDiv.innerHTML = `
+  if (document.getElementById("input-endereco")) document.getElementById("input-endereco").value = dados.endereco || "";
+  if (document.getElementById("input-numero")) document.getElementById("input-numero").value = dados.numero || "";
+  if (document.getElementById("input-cep")) document.getElementById("input-cep").value = dados.cep || "";
+
+  // Endereço resumido
+  if (document.getElementById("endereco-usuario")) {
+    document.getElementById("endereco-usuario").innerHTML = `
       ${dados.endereco || "Sem endereço cadastrado"}<br>
-      <a href="#" class="edit">Editar</a>
-    `;
+      <a href="#" class="edit">Editar</a>`;
   }
 
+  // Cupom
+  carregarCupons();
 
-  const emailInput = document.getElementById("input-email");
-  if (emailInput) emailInput.value = dados.email || "";
+  // Tabs
+  const tabs = document.querySelectorAll(".account__tab");
+  const contents = document.querySelectorAll(".tab__content");
 
-  const telefoneInput = document.getElementById("input-telefone");
-  if (telefoneInput) telefoneInput.value = dados.telefone || "";
+  tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+      tabs.forEach(t => t.classList.remove("active-tab"));
+      contents.forEach(c => c.style.display = "none");
 
-  const cpfInput = document.getElementById("input-cpf");
-  if (cpfInput) cpfInput.value = dados.cpf || "";
+      tab.classList.add("active-tab");
+      const targetId = tab.getAttribute("data-target");
+      const targetContent = document.querySelector(targetId);
+      if (targetContent) targetContent.style.display = "block";
+    });
+  });
 
-  // Exemplo de endereço (se tiver)
-   // Preenche os dados do endereço
-  const enderecoTexto = document.getElementById("endereco-texto");
-  if (enderecoTexto) enderecoTexto.textContent = dados.endereco || "Não cadastrado";
+  const activeTab = document.querySelector(".account__tab.active-tab");
+  if (activeTab) {
+    const targetId = activeTab.getAttribute("data-target");
+    contents.forEach(c => c.style.display = "none");
+    const activeContent = document.querySelector(targetId);
+    if (activeContent) activeContent.style.display = "block";
+  }
 
-  const numeroTexto = document.getElementById("numero-texto");
-  if (numeroTexto) numeroTexto.textContent = dados.numero || "Não cadastrado";
+  // Atualizar perfil
+  document.getElementById("form-editar-perfil")?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const clienteAtualizado = {
+      id_cliente: idCliente,
+      nome: document.getElementById("input-nome").value,
+      email: document.getElementById("input-email").value,
+      telefone: document.getElementById("input-telefone").value,
+      cpf: document.getElementById("input-cpf").value,
+    };
+    const response = await fetch(`${API_URL}/${idCliente}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(clienteAtualizado),
+    });
+    if (response.ok) alert("Perfil atualizado com sucesso! Deslogue para atualizar os dados");
+  });
 
-  const cepTexto = document.getElementById("cep-texto");
-  if (cepTexto) cepTexto.textContent = dados.cep || "Não cadastrado";
+  // Atualizar senha
+  document.querySelector("#change-password form")?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const senhaAtual = e.target[0].value;
+    const novaSenha = e.target[1].value;
+    const confirmar = e.target[2].value;
 
-  // Outros campos...
+    if (novaSenha !== confirmar) return alert("As senhas não coincidem");
+
+    const cliente = await fetch(`${API_URL}/${idCliente}`).then(res => res.json());
+    if (cliente.senha !== senhaAtual) return alert("Senha atual incorreta!");
+
+    cliente.senha = novaSenha;
+    const response = await fetch(`${API_URL}/${idCliente}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cliente),
+    });
+    if (response.ok) alert("Senha atualizada com sucesso!");
+  });
+
+  // Atualizar endereço
+  document.getElementById("form-endereco")?.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const endereco = document.getElementById("input-endereco").value;
+    const numero = parseInt(document.getElementById("input-numero").value);
+    const cep = parseInt(document.getElementById("input-cep").value);
+
+    const cliente = await fetch(`${API_URL}/${idCliente}`).then(res => res.json());
+    cliente.endereco = endereco;
+    cliente.numero = numero;
+    cliente.cep = cep;
+
+    const response = await fetch(`${API_URL}/${idCliente}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cliente),
+    });
+
+    if (response.ok) {
+      alert("Endereço atualizado com sucesso!");
+    } else {
+      alert("Erro ao atualizar endereço.");
+    }
+  });
+
 });
 
-
+// ====================== CUPOM ========================
 function cadastrarCupom() {
   const codigo = document.getElementById("codigoCupom").value.trim();
   const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
+  if (!codigo || !usuario?.id_usuario) return alert("Preencha o código do cupom.");
 
-  if (!codigo || !usuario?.id_usuario) {
-    alert("Preencha o código do cupom.");
-    return;
-  }
-
-  const data = {
-    codigo: codigo,
-    id_cliente: usuario.id_usuario
-  };
+  const data = { codigo: codigo, id_cliente: usuario.id_usuario };
 
   fetch("http://localhost:5068/api/cupom", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
   })
-  .then(resp => {
-    if (!resp.ok) throw new Error("Erro ao cadastrar cupom");
-    return resp.json();
-  })
-  .then(() => {
-    document.getElementById("codigoCupom").value = "";
-    carregarCupons(); // Recarrega a lista
-  })
-  .catch(erro => alert(erro.message));
+    .then(resp => {
+      if (!resp.ok) throw new Error("Erro ao cadastrar cupom");
+      return resp.json();
+    })
+    .then(() => {
+      document.getElementById("codigoCupom").value = "";
+      carregarCupons();
+    })
+    .catch(erro => alert(erro.message));
 }
 
 function carregarCupons() {
@@ -100,139 +169,45 @@ function carregarCupons() {
     });
 }
 
-window.addEventListener("DOMContentLoaded", carregarCupons);
 
+function carregarPedidos() {
+  const container = document.querySelector("#orders .tab__body");
+  container.innerHTML = "";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const tabs = document.querySelectorAll(".account__tab");
-  const contents = document.querySelectorAll(".tab__content");
-
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      // Remove classe ativa de todas as abas
-      tabs.forEach(t => t.classList.remove("active-tab"));
-
-      // Oculta todos os conteúdos
-      contents.forEach(c => c.style.display = "none");
-
-      // Ativa a aba clicada
-      tab.classList.add("active-tab");
-
-      // Exibe o conteúdo correspondente
-      const targetId = tab.getAttribute("data-target");
-      const targetContent = document.querySelector(targetId);
-      if (targetContent) {
-        targetContent.style.display = "block";
-      }
-    });
-  });
-
-  // Garante que apenas a aba ativa seja exibida ao carregar
-  const activeTab = document.querySelector(".account__tab.active-tab");
-  if (activeTab) {
-    const targetId = activeTab.getAttribute("data-target");
-    document.querySelectorAll(".tab__content").forEach(c => c.style.display = "none");
-    const activeContent = document.querySelector(targetId);
-    if (activeContent) activeContent.style.display = "block";
+  const pedidos = JSON.parse(localStorage.getItem("meusPedidos")) || [];
+  if (pedidos.length === 0) {
+    container.innerHTML = "<p>Nenhum pedido encontrado.</p>";
+    return;
   }
-});
 
+  // Somar o total geral
+  const totalGeral = pedidos.reduce((sum, p) => sum + p.qtd_produto * p.preco_produto, 0);
 
-const API_URL = "http://localhost:5068/api/cliente";
-const idCliente = JSON.parse(localStorage.getItem("usuarioLogado"))?.id_cliente;
+  // Criar o container do pedido único
+  const div = document.createElement("div");
+  div.className = "pedido";
+  div.style = `
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+  `;
 
-async function carregarDadosCliente() {
-  const response = await fetch(`${API_URL}/${idCliente}`);
-  const cliente = await response.json();
+  const icone = "🛍️"; // sacola
+  const data = new Date().toLocaleDateString("pt-BR"); // data atual, pois não temos timestamp real agrupado
 
-  document.getElementById("input-nome").value = cliente.nome || "";
-  document.getElementById("input-email").value = cliente.email || "";
-  document.getElementById("input-telefone").value = cliente.telefone || "";
-  document.getElementById("input-cpf").value = cliente.cpf || "";
+  div.innerHTML = `
+    <h4 style="margin-bottom: 5px;">${icone} Pedidos Feitos</h4>
+    <p><strong>Data:</strong> ${data}</p>
+    <p><strong>Total:</strong> R$ ${totalGeral.toFixed(2)}</p>
+    <ul style="margin-top: 10px; padding-left: 20px;">
+      ${pedidos.map(p => `<li>${p.qtd_produto}x ${p.nome_produto} - <strong>R$ ${(p.qtd_produto * p.preco_produto).toFixed(2)}</strong></li>`).join("")}
+    </ul>
+  `;
 
-  document.getElementById("input-endereco").value = cliente.endereco || "";
-document.getElementById("input-numero").value = cliente.numero || "";
-document.getElementById("input-cep").value = cliente.cep || "";
-
+  container.appendChild(div);
 }
 
-// Atualizar perfil
-document.getElementById("form-editar-perfil").addEventListener("submit", async (e) => {
-  e.preventDefault();
+document.addEventListener("DOMContentLoaded", carregarPedidos);
 
-  const clienteAtualizado = {
-    id_cliente: idCliente,
-    nome: document.getElementById("input-nome").value,
-    email: document.getElementById("input-email").value,
-    telefone: document.getElementById("input-telefone").value,
-    cpf: document.getElementById("input-cpf").value,
-  };
-
-  const response = await fetch(`${API_URL}/${idCliente}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(clienteAtualizado),
-  });
-
-  if (response.ok) alert("Perfil atualizado com sucesso!");
-});
-
-// Atualizar senha
-document.querySelector("#change-password form").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const senhaAtual = e.target[0].value;
-  const novaSenha = e.target[1].value;
-  const confirmar = e.target[2].value;
-
-  if (novaSenha !== confirmar) {
-    alert("As senhas não coincidem");
-    return;
-  }
-
-  const cliente = await fetch(`${API_URL}/${idCliente}`).then(res => res.json());
-
-  if (cliente.senha !== senhaAtual) {
-    alert("Senha atual incorreta!");
-    return;
-  }
-
-  cliente.senha = novaSenha;
-
-  const response = await fetch(`${API_URL}/${idCliente}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(cliente),
-  });
-
-  if (response.ok) alert("Senha atualizada com sucesso!");
-});
-
-// Atualizar endereço
-document.getElementById("form-endereco").addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  const endereco = document.getElementById("input-endereco").value;
-  const numero = parseInt(document.getElementById("input-numero").value);
-  const cep = parseInt(document.getElementById("input-cep").value);
-
-  const cliente = await fetch(`${API_URL}/${idCliente}`).then(res => res.json());
-  cliente.endereco = endereco;
-  cliente.numero = numero;
-  cliente.cep = cep;
-
-  const response = await fetch(`${API_URL}/${idCliente}`, {
-    method: "PUT",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(cliente),
-  });
-
-  if (response.ok) {
-    alert("Endereço atualizado com sucesso!");
-  } else {
-    alert("Erro ao atualizar endereço.");
-  }
-});
-
-
-// Inicialização
-window.addEventListener("DOMContentLoaded", carregarDadosCliente);
