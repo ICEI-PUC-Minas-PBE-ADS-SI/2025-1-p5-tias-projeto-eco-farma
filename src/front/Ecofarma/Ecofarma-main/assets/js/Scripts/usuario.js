@@ -157,10 +157,10 @@ function abrirCadastro(tipo) {
             window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-cliente.html";
             break;
         case "farmacia":
-            window.location.href = "/farmacia/home.html";
+            window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-entregador.html";
             break;
         case "entregador":
-            window.location.href = "/entregador/home.html";
+            window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-farmacia.html";
             break;
         default:
             alert("Papel não reconhecido.");
