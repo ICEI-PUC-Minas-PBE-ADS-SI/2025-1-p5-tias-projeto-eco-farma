@@ -187,6 +187,45 @@ FUNCIONANDO 100%
       border: 1px solid #ccc;
       resize: none;
     }
+
+    .blister-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+  flex-wrap: wrap; /* se quiser responsivo */
+}
+
+.blister-left {
+  max-width: 40%;
+}
+
+.blister-left h2 {
+  color: green;
+  font-size: 2.5em;
+}
+
+.blister-left p {
+  margin: 20px 0;
+  font-size: 1.2em;
+}
+
+.blister-left button {
+  background-color: #2e8b2e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.blister-right img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
   </style>
 </head>
 
@@ -260,11 +299,9 @@ FUNCIONANDO 100%
   <!--=============== MAIN ===============-->
   <main class="main">
     <!--=============== HOME ===============-->
-    <section class="home section--lg">
-      <div class="home__container container grid">
-        <div class="home__content">
-          <span class="home__subtitle">Mais Saúde
-            <h1 class="home__title">
+    <!-- <section class="home section--lg">
+      <div class="home__container container grid" style="display: flex;">
+        <it<h1 class="home__title" style="margin-top: 100px;">
               <span>Mais Economia</span>
             </h1>
             <p class="home__description">
@@ -273,9 +310,21 @@ FUNCIONANDO 100%
             </p>
             <a href="shop.html" class="btn">Comece a comprar!</a>
         </div>
-        <img src="assets/img/home-img.png" class="home__img" alt="hats" />
+        <img src="assets/img/home-img.png" class="home__img" alt="hats" style="display: flex; width: 1000px;" />
       </div>
-    </section>
+    </section> -->
+
+    <section class="blister-container">
+  <div class="blister-left">
+    <h2>Mais Economia</h2>
+    <p>Troque seu blister de remédio vazio por descontos!</p>
+    <a href="shop.html" class="btn">Comece a comprar!</a>
+  </div>
+  <div class="blister-right">
+    <img src="assets/img/home-img.png" alt="EcoFarma Info" />
+  </div>
+</section>
+
 
     <!--=============== CATEGORIES ===============-->
     <section class="categories container section">

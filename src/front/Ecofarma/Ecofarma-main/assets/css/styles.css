@@ -1921,9 +1921,9 @@ table {
     row-gap: 2.75rem;
   }
 
-  .home__img {
+  /* .home__img {
     justify-self: center;
-  }
+  } */
 
   .btn {
     height: 45px;
