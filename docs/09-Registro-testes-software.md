@@ -23,12 +23,12 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-015 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | [requisito15](docs/videos/Requisito15.mp4) |
+| Registro de evidência | [requisito15](videos/Requisito15.mp4) |
 
 | **Caso de teste** 	| **CT-016 – Realizar login** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [requisito16](docs/videos/Requisito16.mp4) |
+| Registro de evidência | [requisito16](videos/Requisito16.mp4) |
 
 
 > **Links úteis**:
