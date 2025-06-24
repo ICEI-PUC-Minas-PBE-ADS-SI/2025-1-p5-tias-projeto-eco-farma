@@ -20,15 +20,32 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 
 
-| **Caso de teste** 	| **CT-015 – Cadastrar perfil** 	|
-|:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
-| Registro de evidência | [requisito15](videos/Requisito15.mp4) |
 
-| **Caso de teste** 	| **CT-016 – Realizar login** 	|
+
+
+
+
+
+
+
+
+
+
+
+
+| **Caso de teste** 	| **CT-015 – Avaliar Produto** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
-| Registro de evidência | [requisito16](videos/Requisito16.mp4) |
+| Requisito associado | 	RF-015 - Realizar avaliações sobre o produto na página de detalhes |
+
+https://github.com/user-attachments/assets/9c2967f7-aebe-47ef-80ff-b763710a56b8
+
+| **Caso de teste** 	| **CT-016 – Selecionar Produto Farmacia** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principal |
+
+https://github.com/user-attachments/assets/4263741e-33bc-4e84-8bd1-508067a7fe1a
+
+
 
 
 > **Links úteis**:
