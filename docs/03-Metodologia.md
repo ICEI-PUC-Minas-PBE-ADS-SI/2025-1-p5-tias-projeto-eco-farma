@@ -166,6 +166,17 @@ Atualizado em: 27/05/2025
 
 
 
+#### Sprint 5
+
+Atualizado em: 24/06/2025
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+| Bianca M.     | Revisãodo código |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
+| Bianca M.     | Requisito 15 e 16 |   24/06/2025   |  27/06/2025 | ❌    |     -    |
+| Bianca M.     | 2 Usabilidades |   24/06/2025  |  27/06/2025 | ❌    |   -   |
+| Bianca M.     | Instruções de Uso |   28/06/2025   |  29/06/2025 | ❌    |   -  |
+| Bianca M.     | Alteração do README da pasta src |   28/06/2025   |  29/06/2025 | ❌   |  -    |
+
 Legenda:
 - ✔️: terminado
 - 📝: em execução
