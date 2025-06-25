@@ -57,6 +57,12 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 - _Back-end_: Bianca Marques Teixeira e Letícia Rodrigues Batista;
 - _Front-end_: Victoria Gonçalves da Silva Camila de Paula Rodrigues e Thiago Lacerda Santos Barbosa;
 - _Estrutura de dados Banco de Dados_: Walisson Ribeiro da Silva.
+
+#### Sprint 5
+- _Testers_: Todos;
+- _DevOps_: Bianca Marques Teixeira;
+- _Product Owner_: Camila de Paula Rodrigues;
+- _Desenvolvedor_: Thiago Lacerda Santos Barbosa;
   
 ###  Quadro de tarefas
 
@@ -168,14 +174,16 @@ Atualizado em: 27/05/2025
 
 #### Sprint 5
 
-Atualizado em: 24/06/2025
+Atualizado em: 25/06/2025
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Bianca M.     | Revisãodo código |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
-| Bianca M.     | Requisito 15 e 16 |   24/06/2025   |  27/06/2025 | ❌    |     -    |
-| Bianca M.     | 2 Usabilidades |   24/06/2025  |  27/06/2025 | ❌    |   -   |
+| Bianca M.     | Requisito 15 e 16 |   24/06/2025   |  27/06/2025 |  ✔️  |    24/06/2025    |
+| Bianca M.     | 2 Usabilidades |   24/06/2025  |  27/06/2025 |  ✔️   |  24/06/2025    |
 | Bianca M.     | Instruções de Uso |   28/06/2025   |  29/06/2025 | ❌    |   -  |
 | Bianca M.     | Alteração do README da pasta src |   28/06/2025   |  29/06/2025 | ❌   |  -    |
+| Bianca M.     | Hospedagem |   23/06/2025   |  29/06/2025 | ✔️  |  25/06/2025   |
+
 
 Legenda:
 - ✔️: terminado
@@ -202,5 +210,5 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. Tod
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/tree/main/docs |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=0-1&p=f&t=9W10KkF089SChMwX-0 |
 | Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/24                          |
-| Hospedagem                          | Vercel                             | http://....                            |
+| Hospedagem                          | Vercel                             |    https://eco-farma.vercel.app/index.html                       |
  
