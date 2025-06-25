@@ -84,36 +84,17 @@ As US abaixo foram elaboradas com base nas personas definidas e nos casos de uso
 |Ana Clara (Consumidora)  | Visualizar pontos de descarte (farmácias) | Entregar blisters no local correto |
 |Ana Clara (Consumidora)  | Converter pontos de descarte em descontos | Descartar os blister de forma correta e comprar produtos com desconto |
 |Ana Clara (Consumidora)  | Acompanhar o histórico de descartes | Medir e acompanhar meu impacto ambiental |
-
------------
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
 |Carlos Mendes (Farmacêutico)   | Cadastrar minha farmácia como ponto de coleta | Atrair mais clientes e gerenciar resíduos |
 |Carlos Mendes (Farmacêutico)   | Definir descontos para produtos específicos | Incentivar compras recorrentes |
 |Carlos Mendes (Farmacêutico)   | Visualizar relatórios de blisters coletados | Monitorar a eficiência do programa de reciclagem |
-
------------
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
 |João Ribeiro (Ciclista)   | Receber notificações sobre entregas a serem feitas para o cliente | Agilizar o processo de reciclagem |
 |João Ribeiro (Ciclista)   | Acompanhar o impacto ambiental das minhas entregas | Comprovar minha contribuição para a sustentabilidade |
-
------------
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
 |Mariana Costa (Cooperativa)   | Registrar-me na plataforma com e-mail e CPF | Ter um cadastro no sistema e utiliza-lo |
 |Mariana Costa (Cooperativa)   | Gerar relatórios de materiais processados | Demonstrar resultados para parceiros e órgãos ambientais|
-
------------
-
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
 |Todos os usuários | Registrar-me na plataforma com e-mail e CPF | Ter um cadastro no sistema e utiliza-lo |
 |Todos os usuários | Visualizar pontos de descarte | Entregar blisters no local correto |
 |Todos os usuários | Converter pontos de descarte em descontos | Descartar os blister de forma correta e comprar produtos com desconto |
+-----------
 
 ## Requisitos
 
