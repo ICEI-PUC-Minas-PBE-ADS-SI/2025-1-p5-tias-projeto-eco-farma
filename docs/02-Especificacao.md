@@ -115,18 +115,20 @@ Os requisitos foram priorizados usando a técnica MoSCoW (Must have, Should have
 |RF-001| Permitir que usuários se cadastrem na plataforma com e-mail, CPF e endereço | ALTA | 
 |RF-002| Exibir mapa interativo com geolocalização de farmácias parceiras | ALTA |
 |RF-003| Sistema de pontuação por descarte de blisters (ex: 1 blister = 10 pontos) | ALTA |
-|RF-004| Enviar notificações push sobre novos descontos e campanhas | BAIXA |
-|RF-005| Permitir que farmácias cadastrem descontos em produtos que não sejam medicamentos | ALTA |
-|RF-006| Sistema de confirmação de coleta via QR Code ou foto do material descartado | MÉDIA |
-|RF-007| Permitir que ciclistas visualizem solicitações de coleta próximas | ALTA |
-|RF-008| Permitir que farmácias se cadastrem na plataforma | ALTA | 
-|RF-009| Dashboard com métricas de descarte | MÉDIA | 
-|RF-010| Permitir que farmácias cadastrem itens no sistema | ALTA | 
-|RF-011| Gerar cupons de desconto para os clientes que realizarem descarte de materiais | ALTA | 
-|RF-012| Permitir que clientes cadastrem os cupons de desconto no sistema | ALTA | 
-|RF-013| Permitir que clientes realizem compras no sistema | ALTA | 
-|RF-014| Permitir que ciclistas se cadastrem no sistema | MÉDIA | 
-|RF-015| Permitir que ciclistas selecionem entregas disponíveis | ALTA |
+|RF-004| Avaliar o sistema com sugestão e nota | BAIXA |
+|RF-005| Permitir que farmácias cadastrem itens no sistema | ALTA |
+|RF-006| Gerar cupons de desconto para os clientes que realizem descarte de materiais | ALTA |
+|RF-007| Permitir que clientes cadastrem os cupons de desconto no sistema | ALTA |
+|RF-008| Permitir que clientes realizem compras no sistema | ALTA | 
+|RF-009| Permitir que ciclistas selecionem entregas disponíveis | ALTA | 
+|RF-010| Exibir informações institucionais sobre o projeto e seus objetivos | BAIXA | 
+|RF-011| Permitir que o cliente visualize e edite suas informações de conta | MÉDIA | 
+|RF-012| Exibir detalhes dos produtos antes da compra | ALTA | 
+|RF-013| Gerenciar o carrinho de compras do cliente | ALTA | 
+|RF-014| Realizar checkout das compras com inserção de informações de pagamento | ALTA | 
+|RF-015| Realizar avaliações sobre o produto na página de detalhes | MÉDIA |
+|RF-016| Visualizar somente produtos da farmácia que selecionar na página principal | MÉDIA |
+
 
 ### Requisitos não funcionais
 
