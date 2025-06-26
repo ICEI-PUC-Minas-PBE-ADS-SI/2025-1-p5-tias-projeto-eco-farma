@@ -1,15 +1,15 @@
 
 # Metodologia
 
-Utilizamos ferramentas que facilitam a organização e o controle de versões:
+Foram utilizadas ferramentas que facilitam a organização e o controle de versões:
 
-GitHub: Armazenamento do código fonte e documentos do projeto. Utilizamos GitHub Projects para o controle de tarefas e progresso.
+GitHub: Responsável pelo armazenamento do código-fonte e dos documentos do projeto. O GitHub Projects foi utilizado para o controle de tarefas e acompanhamento do progresso.
 
-Figma: Criação do design da interface.
+Figma: Ferramenta empregada para a criação do design da interface.
 
-Trabalhamos com reuniões semanais em sala de aula onde aproveitamos o momento presencial para alinhar os próximos passos, além disso, temos a interação diária via WhatsApp para acompanhamento e ajustes rápidos.
+As reuniões semanais ocorreram em sala de aula, aproveitando o momento presencial para o alinhamento dos próximos passos. Além disso, houve interação diária via WhatsApp para acompanhamento contínuo e realização de ajustes rápidos.
 
-O objetivo é minimizar retrabalho e garantir alinhamento entre todos do grupo.
+O objetivo foi minimizar o retrabalho e garantir o alinhamento entre todos os integrantes do grupo.
 
 
 ## Controle de versão
