@@ -56,6 +56,35 @@ Por exemplo:
 
 
 
+| **Caso de teste**  | **CT-008 – Realizar compra de um produto**  |
+|:---: |:---: |
+| Requisito associado | RF-008	Permitir que os clientes realizem compras no sistema. |
+| Objetivo do teste | Verificar se o cliente consegue adicionar um produto e iniciar o processo de compra com sucesso. |
+| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Produtos" ou rolar até a seção de produtos - Selecionar um produto disponível - Clicar em "Adicionar ao carrinho" - Verificar se o produto foi adicionado corretamente |
+| Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
+| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
+
+<br>
+
+| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
+|:---: |:---: |
+| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
+| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
+| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
+|:---: |:---: |
+| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
+| Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
+| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
 
 | **Caso de teste**  | **CT-015 – Avaliar Produto**  |
 |:---: |:---: |
