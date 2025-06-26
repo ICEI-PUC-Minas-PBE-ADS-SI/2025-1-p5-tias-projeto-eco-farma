@@ -23,15 +23,78 @@ Além disso, promovemos uma entrega ecológica para as farmácias participantes,
 
 * Amália Soares Vieira de Vasconcelos
 
-## Instruções de utilização
+# Instruções de Utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+## Como instalar e executar a aplicação
 
-Não deixe de informar o link onde a aplicação estará disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+### 1. Pré-requisitos
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+- **PostgreSQL:**  
+PostGreSQL 17 esteja instalado em seu computador.  
+Faça o download em: [https://www.postgresql.org/download/](https://www.postgresql.org/download/)
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+- **Extensões recomendadas (opcional):**  
+  - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) (para ajudar na checagem de código)  
+  - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (para formatação automática de código)  
+  - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (para rodar aplicações localmente com recarga automática)
+
+### 2. Como obter o código do projeto
+
+- **Clonando o repositório:**  
+Abra o terminal e clone o repositório do seu projeto com o comando:  
+```bash
+git clone https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/tree/eco_farma_1.0.0
+```
+
+- **Abrindo o código:**  
+Abra a pasta do projeto utilizando um editor de código de sua preferência, como o [Visual Studio Code](https://code.visualstudio.com/).  
+No VSCode, basta clicar em "File" > "Open Folder" e selecionar a pasta do seu projeto.
+
+### 3. Instalando o Banco
+
+Abra o PgAdmin4 e Crie um servidor com o nome de sua preferência. Em "Connection":
+- _Host name_: localhost;
+- _Port_: 5432;
+- _Username_: postgres 
+- _Senha_: "Secreta1234".
+
+Após isso, ao configurar o servidor, em "Database" > Create > database, crie o banco com o nome "ecofarma_db".
+
+No terminal do seu computador coloque 
+```bash
+psql "host=localhost port=5432 dbname=ecofarma_db user=postgres password=Secreta1234" -f C:\Local da pasta criada\2025-1-p5-tias-projeto-eco-farma-eco_farma_1.0.0\src\db\backup_db.dump
+```
+
+**Ele irá pedir a senha do seu banco = Secreta1234**
+
+### 4. Executando a aplicação API
+
+Para a API funcionar pode usar o editor Visual Studio 2022 [Visual Studio 2022](https://visualstudio.microsoft.com/pt-br/downloads/?cid=learn-onpage-download-cta)
+
+Abra o executável que se encontra em:
+_"Nome do Projeto" > 2025-1-p5-tias-projeto-eco-farma > src > back > eco_farma_API > eco_farma_API.sln_
+
+- **Abrindo o código:**  
+Selecione o projeto com o botão direito e abra o terminal, após isso digite **dotnet ef update database**;
+Selecione a opção do executar para "HTTP" ;
+Deixe Rodando enquanto executa o front.
+
+### 5. Acessando a aplicação
+
+Abra seu navegador e acesse o seguinte link:  
+[https://eco-farma.vercel.app/](https://eco-farma.vercel.app/)
+
+*Se estiver rodando localmente, o endereço geralmente será:*  
+http://localhost:5050
+
+---
+
+## Login de teste
+
+- **Usuário:** admin@gmail.com
+- **Senha:** Secreta1234
+
+
 
 # Documentação
 
