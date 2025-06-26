@@ -60,11 +60,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-008	Permitir que os clientes realizem compras no sistema. |
 | Objetivo do teste | Verificar se o cliente consegue adicionar um produto e iniciar o processo de compra com sucesso. |
-| Passos | - Acessar o navegador 
-- Informar o endereço do site: https://eco-farma.vercel.app/index.html
-- Clicar em "Produtos" ou rolar até a seção de produtos - Selecionar um produto disponível
-- Clicar em "Adicionar ao carrinho"
-- Verificar se o produto foi adicionado corretamente |
+| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Produtos" ou rolar até a seção de produtos - Selecionar um produto disponível - Clicar em "Adicionar ao carrinho" - Verificar se o produto foi adicionado corretamente |
 | Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
 | Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
 
@@ -74,12 +70,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-013	Gerenciar o carrinho de compras do cliente. |
 | Objetivo do teste | Verificar se o cliente pode visualizar, adicionar, remover e atualizar itens no carrinho. |
-| Passos | - Acessar o site https://eco-farma.vercel.app/cart.html
-- Selecionar um ou mais produtos
-- Clicar em "Adicionar ao carrinho"
-- Ir até o ícone ou botão do carrinho
-- Verificar a lista de produtos
-- Clicar em "Remover" ou alterar quantidade (caso disponível) |
+| Passos | - Acessar o site https://eco-farma.vercel.app/cart.html - Selecionar um ou mais produtos - Clicar em "Adicionar ao carrinho - Ir até o ícone ou botão do carrinho - Verificar a lista de produtos - Clicar em "Remover" ou alterar quantidade (caso disponível) |
 | Critério de êxito | - O cliente consegue visualizar o carrinho corretamente e remover ou alterar itens conforme desejado. |
 | Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
 
@@ -89,11 +80,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-014 - Realizar checkout das compras com inserção de informações de pagamento. |
 | Objetivo do teste | Validar se o processo de finalização da compra permite a inserção dos dados de pagamento corretamente. |
-| Passos | - Acessar o site https://eco-farma.vercel.app/cart.html
-- Adicionar um produto ao carrinho
-- Clicar no carrinho e ir para o checkout
-- Preencher os dados solicitados de entrega e pagamento (ex: cartão de crédito, endereço, etc.)
-- Clicar em "Finalizar compra" |
+| Passos | - Acessar o site https://eco-farma.vercel.app/cart.html - Adicionar um produto ao carrinho - Clicar no carrinho e ir para o checkout - Preencher os dados solicitados de entrega e pagamento (ex: cartão de crédito, endereço, etc.) - Clicar em "Finalizar compra" |
 | Critério de êxito | - O sistema conclui a compra e apresenta uma confirmação de sucesso. |
 | Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
 
