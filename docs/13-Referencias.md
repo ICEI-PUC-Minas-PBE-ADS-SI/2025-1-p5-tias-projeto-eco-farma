@@ -1,6 +1,6 @@
 # Referências
 
-*ABRELPE – ASSOCIAÇÃO BRASILEIRA DE EMPRESAS DE LIMPEZA PÚBLICA E RESÍDUOS ESPECIAIS.* Panorama dos resíduos sólidos no Brasil. São Paulo: ABRELPE, 2023.
+**ABRELPE – ASSOCIAÇÃO BRASILEIRA DE EMPRESAS DE LIMPEZA PÚBLICA E RESÍDUOS ESPECIAIS.** Panorama dos resíduos sólidos no Brasil. São Paulo: ABRELPE, 2023.
 
 BPMN.IO. BPMN - Modelo de Processo de Negócio e Notação. [S.l.: s.n.], [s.d.].
 
