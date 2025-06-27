@@ -46,6 +46,56 @@ Cenário 4: Realizar compras nesta farmácia
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
 | 1       | SIM             | 4                    | 01:39,59 minutos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+
+
+Cenário 5: Escolher entrega
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+
+
+Cenário 6: Concluir entrega e visualizar entregas realizadas
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+
+
+Cenário 7: Cadastrar cupom de desconto
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+
+
+Cenário 8: Cadastrar produto
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
 
 Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
