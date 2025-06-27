@@ -38,8 +38,10 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 | 2             | Você quer comprar um produto mas não sabe como achar |
 | 3             | Escolher uma farmácia |
 | 4             | Realizar compras nesta farmácia |
-| 5             | Realizar compras nesta farmácia |
-| 6             | Realizar compras nesta farmácia |
+| 5             | Escolher entrega |
+| 6             | Concluir entrega e visualizar entregas realizadas |
+| 7             | Cadastrar cupom de desconto |
+| 8             | Cadastrar produto |
 
 
 
@@ -47,7 +49,7 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 | Nº do cenário | Participantes |
 |---------------|----------------------|
 | 1 e 2           | Uma mulher da faixa etária de 40-50 anos e um senhor da faixa etária dos 70-80 anos. Ambos com conhecimento básico de tecnologia, possuem celular e possuem ensino médio completo e superior completo. |
-|           |  |
+|           | hhhhhhhh |
 | 3 e 4           | Uma mulher da faixa etária de 40-50 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino médio completo e superior completo. |
 |           |  |
 
