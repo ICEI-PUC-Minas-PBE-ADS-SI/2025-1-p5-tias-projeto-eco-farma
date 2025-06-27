@@ -81,24 +81,24 @@ Cenário 7: Cadastrar cupom de desconto
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+| 1       | SIM             | 5                    | 01:04,70 minutos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Média**     | 100%           | 4               | 01:04,70 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 12,98 segundos |
 
-Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+Comentários dos usuários: Tive dúvidas na criação e preenchimento do código do cupom. 
 
 
 Cenário 8: Cadastrar produto
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+| 1       | SIM             | 5                    | 01:11,72 minutos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Média**     | 100%           | 5               | 01:11,72 minutos                          |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 25,28 segundos |
 
-Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+Comentários dos usuários: Achei de fácil entendimento. 
 
 
 Cenário x: Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando.
