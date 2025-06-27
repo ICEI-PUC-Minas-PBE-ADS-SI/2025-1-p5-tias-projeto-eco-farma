@@ -62,7 +62,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o cliente consegue adicionar um produto e iniciar o processo de compra com sucesso. |
 | Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Produtos" ou rolar até a seção de produtos - Selecionar um produto disponível - Clicar em "Adicionar ao carrinho" - Verificar se o produto foi adicionado corretamente |
 | Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
-| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
+| Responsável pela elaboração do caso de teste | Bianca Marques Teixeira|
 
 <br>
 
