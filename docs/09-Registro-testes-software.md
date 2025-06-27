@@ -33,17 +33,19 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 |:---:	|:---:	|
 | Requisito associado | RF-008 Permitir que os clientes realizem compras no sistema. |
 
-
+https://github.com/user-attachments/assets/96c1cb31-0377-446e-8e6b-3ff99872201d
 
 | **Caso de teste** 	| **CT-013 – Gerenciar produtos no carrinho** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-013 Gerenciar o carrinho de compras do cliente. |
 
+https://github.com/user-attachments/assets/44240ab4-3400-4220-a2c6-572cf52ba377
 
 | **Caso de teste** 	| **CT-014 – Finalizar compra com pagamento** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-014 - Realizar checkout das compras com inserção de informações de pagamento. |
 
+https://github.com/user-attachments/assets/f189c3ae-59d0-4d8a-9cea-3d7ab30abf72
 
 | **Caso de teste** 	| **CT-015 – Avaliar Produto** 	|
 |:---:	|:---:	|
