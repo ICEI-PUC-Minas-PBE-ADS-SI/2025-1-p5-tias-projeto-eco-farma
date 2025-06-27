@@ -81,7 +81,7 @@ Cenário 7: Cadastrar cupom de desconto
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 5                    | 01:04,70 minutos                          |
+| 1       | SIM             | 4                    | 01:04,70 minutos                          |
 |  |  |  |  |
 | **Média**     | 100%           | 4               | 01:04,70 minutos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 12,98 segundos |
