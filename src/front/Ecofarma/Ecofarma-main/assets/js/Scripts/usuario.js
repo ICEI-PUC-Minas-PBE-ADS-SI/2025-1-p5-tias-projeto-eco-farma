@@ -73,7 +73,7 @@ async function fazerLogin() {
     };
 
     try {
-        const response = await fetch("http://localhost:5068/api/usuario/login", {
+        const response = await fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/usuario/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -100,13 +100,13 @@ async function fazerLogin() {
             // Redireciona de acordo com o papel
             switch (usuario.papel.toLowerCase()) {
                 case "cliente":
-                    window.location.href = "/src/front/Ecofarma/Ecofarma-main/index.html";
+                    window.location.href = "https://eco-farma.vercel.app/index.html";
                     break;
                 case "farmacia":
-                    window.location.href = "/farmacia/home.html";
+                    window.location.href = "https://eco-farma.vercel.app/accounts-farmacia.html";
                     break;
                 case "entregador":
-                    window.location.href = "/entregador/home.html";
+                    window.location.href = "https://eco-farma.vercel.app/accounts-entregador.html";
                     break;
                 default:
                     alert("Papel não reconhecido.");
@@ -154,13 +154,13 @@ function abrirCadastro(tipo) {
     // Aqui você pode redirecionar ou abrir o formulário de cadastro correspondente
     switch (tipo) {
         case "cliente":
-            window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-cliente.html";
-            break;
-        case "farmacia":
-            window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-entregador.html";
+            window.location.href = "https://eco-farma.vercel.app/cadastro-cliente.html";
             break;
         case "entregador":
-            window.location.href = "/src/front/Ecofarma/Ecofarma-main/cadastro-farmacia.html";
+            window.location.href = "https://eco-farma.vercel.app/cadastro-entregador.html";
+            break;
+        case "farmacia":
+            window.location.href = "https://eco-farma.vercel.app/cadastro-farmacia.html";
             break;
         default:
             alert("Papel não reconhecido.");

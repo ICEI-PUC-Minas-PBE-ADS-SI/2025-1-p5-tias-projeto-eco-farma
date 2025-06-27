@@ -51,34 +51,32 @@ namespace eco_farma_API.Controllers
             // Cadastra o pedido
             _context.Pedido.Add(novoPedido);
 
-            // Se o pedido for para entrega (exemplo: tem id_entregador enviado via query ou lógica interna)
-            if (Request.Query.ContainsKey("idEntregador"))
-            {
-                int idEntregador = int.Parse(Request.Query["idEntregador"]);
+            // Salva o pedido para gerar o ID
+            await _context.SaveChangesAsync();
 
+            // Busca todos os entregadores cadastrados
+            var entregadores = await _context.Entregador.ToListAsync();
+
+            // Cria uma entrega para cada entregador
+            foreach (var entregador in entregadores)
+            {
                 var entrega = new Entrega
                 {
-                    id_pedido = novoPedido.id_pedido, // Será preenchido após SaveChanges
-                    id_entregador = idEntregador
+                    id_pedido = novoPedido.id_pedido,
+                    id_entregador = entregador.id_entregador
                 };
-
-                // Aguarda o pedido ser salvo para gerar ID
-                await _context.SaveChangesAsync();
-
-                // Corrige o id_pedido na entrega
-                entrega.id_pedido = novoPedido.id_pedido;
-
                 _context.Entrega.Add(entrega);
             }
 
-            // Salva todas as mudanças
+            // Salva todas as entregas
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(GetById), new { id = novoPedido.id_pedido }, novoPedido);
         }
 
 
-        
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, Pedido pedidoAtualizado)
@@ -101,6 +99,17 @@ namespace eco_farma_API.Controllers
             }
 
             return NoContent();
+        }
+
+        [HttpGet("ultimos-tres")]
+        public async Task<ActionResult<IEnumerable<Pedido>>> GetUltimosTres()
+        {
+            var pedidos = await _context.Pedido
+                .OrderByDescending(p => p.id_pedido) // ou por uma data se disponível
+                .Take(3)
+                .ToListAsync();
+
+            return pedidos;
         }
 
         [HttpDelete("{id}")]

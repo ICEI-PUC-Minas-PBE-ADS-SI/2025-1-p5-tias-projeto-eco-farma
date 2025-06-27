@@ -157,7 +157,7 @@ if (usuarioStr) {
 
 async function carregarProdutos(pagina = 1) {
   try {
-    const response = await fetch(`http://localhost:5068/api/produto?pagina=${pagina}&tamanhoPagina=8`);
+    const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto?pagina=${pagina}&tamanhoPagina=8`);
 
     if (!response.ok) throw new Error("Erro ao buscar produtos");
 
@@ -294,7 +294,7 @@ const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 const nome = usuarioLogado?.dadosPapel?.nome;
 
 if (nome && usuarioLogado?.id_usuario) {
-  fetch(`http://localhost:5068/api/cupom/cliente/${usuarioLogado.id_usuario}`)
+  fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${usuarioLogado.id_usuario}`)
     .then(response => response.json())
     .then(cupons => {
       const quantidadePontos = cupons.length;
@@ -361,7 +361,7 @@ async function buscarProdutos() {
   }
 
   try {
-    const response = await fetch(`http://localhost:5068/api/produto/busca?termo=${encodeURIComponent(termo)}`);
+    const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/busca?termo=${encodeURIComponent(termo)}`);
     if (!response.ok) throw new Error("Erro ao buscar sugestões");
 
     const resultados = await response.json();
@@ -488,7 +488,7 @@ async function carregarCuponsCliente() {
     if (!usuario || !usuario.dadosPapel?.id_cliente) return;
 
     const idCliente = usuario.dadosPapel.id_cliente;
-    const response = await fetch(`http://localhost:5068/api/cupom/cliente/${idCliente}`);
+    const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${idCliente}`);
     const cupons = await response.json();
 
     const container = document.getElementById("lista-cupom");

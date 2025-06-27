@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--=============== FLATICON ===============-->
+  <link rel="stylesheet"
+    href="https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css" />
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <title>Eco Farma</title>
+  <link rel="shortcut icon" href="assets/img/LOGO.ico" type="image/x-icon">
+  <style>
+    /* Container geral da aba */
+    .perfil-edicao {
+      max-width: 450px;
+      margin: 0 auto;
+      padding: 25px 30px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+    }
+
+    /* Título da aba */
+    .perfil-edicao__titulo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #1a73e8;
+      text-align: center;
+    }
+
+    /* Labels */
+    .perfil-edicao__label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    /* Inputs */
+    .perfil-edicao__input {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 18px;
+      border: 1.8px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .perfil-edicao__input:focus {
+      border-color: #1ae81a;
+      outline: none;
+      box-shadow: 0 0 6px #a8c0f7;
+    }
+
+    /* Botão salvar */
+    .perfil-edicao__btn {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #0b8615;
+      color: white;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.25s ease;
+    }
+
+    .perfil-edicao__btn:hover {
+      background-color: #3bb615;
+    }
+
+    /* Responsividade simples */
+    @media (max-width: 480px) {
+      .perfil-edicao {
+        padding: 20px 15px;
+      }
+    }
+
+    /* Container do endereço */
+    .endereco-container {
+      max-width: 450px;
+      padding: 20px 25px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #333;
+      margin: 20px auto;
+    }
+
+    /* Cabeçalho do endereço (h3 já existe, pode estilizar se quiser) */
+    .tab__header {
+      font-weight: 700;
+      font-size: 1.7rem;
+      color: #126b0a;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    /* Linhas de endereço */
+    .endereco-linha {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+    }
+
+    /* Negrito no label */
+    .endereco-linha strong {
+      color: #555;
+    }
+
+    /* Link de editar */
+    .endereco-editar {
+      display: inline-block;
+      margin-top: 12px;
+      font-weight: 600;
+      color: #3ce81a;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .endereco-editar:hover {
+      border-color: #2be81a;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+      /* fundo escuro translúcido */
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: auto;
+      padding: 2rem;
+      border-radius: 8px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    .modal-content h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #2a7ae2;
+    }
+
+    .cupom-lista {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .cupom-lista li {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      margin-bottom: 0.5rem;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+    }
+
+    .cadastro_produto {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .btn_produto_c {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    #preview {
+      margin-top: 10px;
+      max-width: 100%;
+      max-height: 200px;
+    }
+
+    /* -------------------- MELHORIAS VISUAIS MODERNAS -------------------- */
+
+    /* Ícones nos inputs */
+    .perfil-edicao__form input {
+      background-image: url('assets/img/icon-user.svg');
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      padding-left: 40px;
+    }
+
+    .perfil-edicao__input[type="email"] {
+      background-image: url('assets/img/icon-mail.svg');
+    }
+
+    .perfil-edicao__input[type="tel"] {
+      background-image: url('assets/img/icon-phone.svg');
+    }
+
+    .perfil-edicao__input[name="cpf"] {
+      background-image: url('assets/img/icon-id.svg');
+    }
+
+    /* Animação suave no foco */
+    .perfil-edicao__input:focus {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(82, 239, 111, 0.5);
+    }
+
+    /* Menu lateral fixo (desktop) */
+    @media (min-width: 1024px) {
+      .account__tabs {
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        padding: 1rem;
+        border-radius: 12px;
+        background-color: #f8fdf7;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
+
+      .account__tab {
+        margin-bottom: 12px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.25s;
+      }
+
+      .account__tab:hover,
+      .account__tab.active-tab {
+        background-color: #e9ffe5;
+        color: #0b8615;
+        font-weight: bold;
+      }
+    }
+
+    /* Suavizar aparência de seções */
+    .tab__body {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      margin-top: 10px;
+    }
+
+    /* Botões */
+    .perfil-edicao__btn,
+    .btn,
+    .btn--sm,
+    .btn--md {
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Melhor responsividade para inputs */
+    @media (max-width: 480px) {
+      .perfil-edicao__input {
+        font-size: 0.95rem;
+        padding-left: 35px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!--=============== HEADER ===============-->
+  <header class="header">
+    <div class="header__top">
+      <div class="header__container container">
+        <div class="header__contact">
+          <span id="nome_info" style="display:none;"></span>
+          <span>Sua localização: Betim</span>
+        </div>
+        <p class="header__alert-news">
+          Aumente seus pontos entregando seus blisters nos pontos de coleta!
+        </p>
+        <a href="#" class="header__top-action" id="authLink"></a>
+
+      </div>
+    </div>
+
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/LOGO.png" alt="website logo" />
+      </a>
+      <div class="nav__menu" id="nav-menu">
+        <div class="nav__menu-top">
+          <a href="#" class="nav__menu-logo">
+            <img src="assets/img/LOGO.png" alt="">
+          </a>
+          <div class="nav__close" id="nav-close">
+            <i class="fi fi-rs-cross-small"></i>
+          </div>
+        </div>
+        <!-- <ul class="nav__list">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link ">Página Inicial</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Produtos</a>
+          </li>
+          <li class="nav__item" id="minhaContaItem" style="display: none;">
+            <a href="accounts.html" class="nav__link active-link">Minha conta</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
+          </li>
+        </ul> -->
+        <!-- <div class="header__search">
+          <input type="text" placeholder="Do que você precisa?" class="form__input" id="campoBusca"
+            oninput="buscarProdutos()" autocomplete="off" />
+          <button class="search__btn">
+            <img src="assets/img/search.png" alt="search icon" />
+          </button>
+          <div id="sugestoesBusca" class="sugestoes__container"></div>
+        </div>
+      </div>
+      <div class="header__user-actions">
+        <a href="cart.html" class="header__action-btn" title="Cart">
+          <img src="assets/img/icon-cart.svg" alt="" />
+          <span class="count"></span>
+        </a>
+        <div class="header__action-btn nav__toggle" id="nav-toggle">
+          <img src="./assets//img/menu-burger.svg" alt="">
+        </div>
+      </div> -->
+    </nav>
+  </header>
+
+
+  <!--=============== MAIN ===============-->
+  <main class="main">
+    <!--=============== BREADCRUMB ===============-->
+    <section class="breadcrumb">
+      <ul class="breadcrumb__list flex container">
+        <li><span class="breadcrumb__link">Conta Farmacia</span></li>
+      </ul>
+    </section>
+
+    <!--=============== ACCOUNTS ===============-->
+    <section class="accounts section--lg">
+      <div class="accounts__container container grid">
+        <div class="account__tabs">
+          <p class="account__tab active-tab" data-target="#meus-cupom"><i class="fi fi-rs-ticket"></i> Cupons</p>
+
+
+          <p class="account__tab" data-target="#update-profile">
+            <i class="fi fi-rs-box"></i> Produtos
+          </p>
+
+          <p class="account__tab" data-target="#change-password">
+            <i class="fi fi-rs-settings-sliders"></i> Mudar Senha
+          </p>
+        </div>
+        <!-- Substitua o conteúdo da <div class="tabs__content"> por este novo: -->
+        <div class="tabs__content">
+          <!-- Aba: Meus Cupons -->
+          <div class="tab__content" id="meus-cupom">
+            <h3 class="tab__header">Gere cupons de desconto</h3>
+            <div class="tab__body">
+              <p class="tab__description">O código do cupom pode ser feito da maneira que você quiser, como a junção do
+                código do produto e uma data ou somente um número aleatório</p>
+              <p class="tab__description">Digite o código do cupom:</p>
+
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-bottom: 15px;">
+                <input type="number" id="codigoCupom" placeholder="10102302501020" class="form__input"
+                  style="flex: 1; min-width: 200px;" />
+                <button class="btn btn--sm perfil-edicao__btn" style="padding: 10px 16px; flex-shrink: 0;"
+                  onclick="cadastrarCupom()">Cadastrar</button>
+              </div>
+
+              <hr style="margin: 1rem 0;" />
+              <h4>Cupons Cadastrados</h4>
+              <ul id="lista-cupom" class="cupom-lista"></ul>
+            </div>
+          </div>
+
+          <!-- Aba: Pedidos 
+  <div class="tab__content" id="orders">
+    <h3 class="tab__header">Meus pedidos</h3>
+    <div class="tab__body">
+    
+    </div>
+  </div>-->
+
+          <!-- Aba: Editar Perfil -->
+          <div class="tab__content" id="update-profile">
+            <h3 class="tab__header">Cadastrar Produto</h3>
+            <div class="tab__body perfil-edicao">
+              <form class="cadastrocliente-container" id="produtoForm" enctype="multipart/form-data">
+                <label class="cadastroproduto-item" for="produto_nome">Nome:</label>
+                <input class="cadastroproduto-item" type="text" id="produto_nome" name="nome" required>
+
+                <label class="cadastroproduto-item" for="produto_categoria">Categoria:</label>
+                <select class="cadastroproduto-item" id="produto_categoria" name="categoria" required>
+                  <option value="">Selecione</option>
+                  <option value="remedios">Remédios</option>
+                  <option value="higiene">Higiene</option>
+                  <option value="alimento">Alimento</option>
+                  <option value="infantil">Infantil</option>
+                  <option value="pet">Pet</option>
+                  <option value="analgésico">Analgésico</option>
+                  <option value="antialergico">Antialérgico</option>
+                  <option value="dor e febre">Dor e Febre</option>
+                  <option value="doces">Doces</option>
+                  <option value="skin care">Skin Care</option>
+                  <option value="protetor solar">Protetor Solar</option>
+                  <option value="maquiagem">Maquiagem</option>
+                  <option value="unhas">Unhas</option>
+                  <option value="tratamento">Tratamento</option>
+                  <option value="fitness">Fitness</option>
+                </select>
+
+                <label class="cadastroproduto-item" for="produto_preco">Preço:</label>
+                <input class="cadastroproduto-item" type="number" step="0.01" id="produto_preco" name="preco" required>
+
+                <label class="cadastroproduto-item" for="produto_estoque">Estoque:</label>
+                <input class="cadastroproduto-item" type="number" id="produto_estoque" name="estoque" required>
+
+                <label for="produto_descricao">Descrição:</label>
+                <textarea id="produto_descricao" name="descricao" rows="4"></textarea>
+
+                <label class="cadastroproduto-item" for="produto_anexo">Imagem (.jpg ou .png):</label>
+                <input class="cadastroproduto-item" type="file" id="produto_anexo" name="imagem"
+                  accept="image/png, image/jpeg,image/webp" required>
+                <img id="preview" src="#" alt="Pré-visualização" style="display:none;" />
+
+                <button class="btn_produto_c" type="button" onclick="salvarProduto()">Cadastrar</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Aba: Endereço -->
+          <!-- Aba: Endereço 
+<div class="tab__content" id="address">
+  <h3 class="tab__header">Meus endereços</h3>
+  <div class="tab__body">
+    <div class="endereco-container">
+      <form id="form-endereco" class="perfil-edicao__form">
+        <label class="perfil-edicao__label" for="input-endereco">Endereço</label>
+        <input class="perfil-edicao__input" type="text" id="input-endereco" name="endereco" />
+
+        <label class="perfil-edicao__label" for="input-numero">Número</label>
+        <input class="perfil-edicao__input" type="number" id="input-numero" name="numero" />
+
+        <label class="perfil-edicao__label" for="input-cep">CEP</label>
+        <input class="perfil-edicao__input" type="text" id="input-cep" name="cep" />
+
+        <button class="perfil-edicao__btn" type="submit">Salvar Alterações</button>
+      </form>
+    </div>
+  </div>
+</div>-->
+
+
+          <!-- Aba: Mudar Senha -->
+          <div class="tab__content" id="change-password">
+            <h3 class="tab__header">Mudar senha</h3>
+            <div class="tab__body perfil-edicao">
+              <form class="perfil-edicao__form">
+                <label class="perfil-edicao__label">Senha atual</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <label class="perfil-edicao__label">Nova senha</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <label class="perfil-edicao__label">Confirmar nova senha</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <button class="perfil-edicao__btn" type="submit">Salvar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer container">
+      <div class="footer__container grid">
+        <div class="footer__content">
+          <a href="index.html" class="footer__logo">
+            <img src="./assets/img/LOGO.png" alt="" class="footer__logo-img" />
+          </a>
+          <h4 class="footer__subtitle">Fale Conosco!</h4>
+          <p class="footer__description">
+            <span>Endereço:</span> R. do Rosário, 1081 - Angola, Betim - MG, 32604-115
+          </p>
+          <p class="footer__description">
+            <span>Contato:</span> (31) 99986-5963
+          </p>
+          <p class="footer__description">
+            <span>Horário:</span> 10:00 - 18:00 | Seg - Sex
+          </p>
+          <div class="footer__social">
+            <h4 class="footer__subtitle">Nossas redes sociais:</h4>
+            <div class="footer__links flex">
+              <a href="#">
+                <img src="./assets/img/icon-facebook.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-twitter.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-instagram.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-pinterest.svg" alt="" class="footer__social-icon" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-youtube.svg" alt="" class="footer__social-icon" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">FAQ</h3>
+          <ul class="footer__links">
+            <li><a href="sobre.html" class="footer__link">Sobre nós</a></li>
+            <li><a href="sobre.html" class="footer__link">Politica de Privacidade</a></li>
+            <li><a href="sobre.html" class="footer__link">Termos e Condições</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Minha conta</h3>
+          <ul class="footer__links">
+            <li><a href="accounts.html" class="footer__link">Ajuda</a></li>
+            <li><a href="accounts.html" class="footer__link">Pedidos</a></li>
+          </ul>
+        </div>
+        <div class="footer__content">
+          <h3 class="footer__title">Métodos de Pagamento</h3>
+          <img src="./assets/img/payment-method.png" alt="" class="payment__img" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="copyright">&copy; 2025 Ecofarma. Todos os direitos reservados.</p>
+        <span class="designer">Designer by Thiago </span>
+      </div>
+    </footer>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+
+    <script>
+      const imagemInput = document.getElementById('produto_anexo');
+      const preview = document.getElementById('preview');
+
+      imagemInput.addEventListener('change', function () {
+        const file = this.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function (e) {
+            preview.src = e.target.result;
+            preview.style.display = 'block';
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    </script>
+    <script src="assets/js/Scripts/produto.js"></script>
+    <script src="assets/js/Scripts/farmacia.js"></script>
+    <script>
+      const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+      const nome = usuarioLogado?.dadosPapel?.nome;
+
+      if (nome && usuarioLogado?.id_usuario) {
+        const span = document.getElementById('nome_info');
+        span.textContent = `Olá ${nome}!`;
+        span.style.display = 'inline';
+
+      }
+
+      // Verifica se há usuário logado
+      const usuarioStr = localStorage.getItem("usuarioLogado");
+      if (usuarioStr) {
+        const usuario = JSON.parse(usuarioStr);  // converte de string para objeto
+        const idUsuario = usuario.id_usuario;
+
+        if (idUsuario) {
+
+          // Configura o link de "Sair"
+          const authLink = document.getElementById("authLink");
+          authLink.textContent = "Sair";
+          authLink.href = "login-register.html"; // ou '#' se preferir
+          authLink.onclick = function () {
+            limparLocalStorage();
+          };
+        } else {
+          // Se não tiver id_usuario, mostra "Entrar"
+          const authLink = document.getElementById("authLink");
+          authLink.textContent = "Entrar";
+          authLink.href = "login-register.html";
+          authLink.onclick = null;
+        }
+      } else {
+        // Se não tiver usuário logado, mostrar "Entrar"
+        const authLink = document.getElementById("authLink");
+        authLink.textContent = "Entrar";
+        authLink.href = "login-register.html";
+        authLink.onclick = null;
+      }
+    </script>
+
+</body>
+
+</html>

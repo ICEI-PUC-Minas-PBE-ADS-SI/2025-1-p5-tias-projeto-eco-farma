@@ -82,8 +82,8 @@ namespace eco_farma_API.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id_cliente"));
 
-                    b.Property<int>("cep")
-                        .HasColumnType("integer");
+                    b.Property<string>("cep")
+                        .HasColumnType("text");
 
                     b.Property<string>("cpf")
                         .HasColumnType("text");
@@ -163,8 +163,8 @@ namespace eco_farma_API.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id_entregador"));
 
-                    b.Property<int>("cep")
-                        .HasColumnType("integer");
+                    b.Property<string>("cep")
+                        .HasColumnType("text");
 
                     b.Property<string>("cpf")
                         .HasColumnType("text");
@@ -206,8 +206,8 @@ namespace eco_farma_API.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("id_farmacia"));
 
-                    b.Property<int>("cep")
-                        .HasColumnType("integer");
+                    b.Property<string>("cep")
+                        .HasColumnType("text");
 
                     b.Property<string>("cnpj")
                         .HasColumnType("text");
@@ -227,8 +227,8 @@ namespace eco_farma_API.Migrations
                     b.Property<string>("senha")
                         .HasColumnType("text");
 
-                    b.Property<int>("telefone")
-                        .HasColumnType("integer");
+                    b.Property<string>("telefone")
+                        .HasColumnType("text");
 
                     b.HasKey("id_farmacia");
 

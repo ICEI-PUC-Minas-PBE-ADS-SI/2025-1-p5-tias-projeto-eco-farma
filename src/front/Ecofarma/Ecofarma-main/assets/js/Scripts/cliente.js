@@ -89,14 +89,14 @@ async function salvarCliente() {
         telefone: document.getElementById("cliente_telefone").value,
         cpf: document.getElementById("cliente_cpf").value,
         senha: document.getElementById("cliente_senha").value,
-        cep: parseInt(document.getElementById("cliente_cep").value),
+        cep: document.getElementById("cliente_cep").value,
         numero: parseInt(document.getElementById("cliente_numero").value),
         //id_cliente: parseInt(document.getElementById("id_cliente").value)
     };
 
     try {
 
-        const response = await fetch("http://localhost:5068/api/cliente", {
+        const response = await fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cliente", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -107,7 +107,7 @@ async function salvarCliente() {
         //Mensagem não obrigatória
         if (response.ok) {
             alert("Cliente cadastrado com sucesso! Acesse a página de login para entrar no site");
-            window.location.href = "/src/front/Ecofarma/Ecofarma-main/login-register.html";
+            window.location.href = "https://eco-farma.vercel.app/login-register.html";
         } else {
             const erro = await response.text();
             alert("Erro ao cadastrar cliente:\n" + erro);

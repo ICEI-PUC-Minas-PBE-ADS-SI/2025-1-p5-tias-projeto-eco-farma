@@ -1,7 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", async () => {
   // === Dados do usuário ===
-  const API_URL = "http://localhost:5068/api/cliente";
+  const API_URL = "https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cliente";
   const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
   const idCliente = usuarioLogado?.dadosPapel?.id_cliente;
 
@@ -131,7 +131,7 @@ function cadastrarCupom() {
 
   const data = { codigo: codigo, id_cliente: usuario.id_usuario };
 
-  fetch("http://localhost:5068/api/cupom", {
+  fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
@@ -151,7 +151,7 @@ function carregarCupons() {
   const usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
   if (!usuario?.id_usuario) return;
 
-  fetch(`http://localhost:5068/api/cupom/cliente/${usuario.id_usuario}`)
+  fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${usuario.id_usuario}`)
     .then(resp => resp.json())
     .then(cupons => {
       const lista = document.getElementById("lista-cupom");

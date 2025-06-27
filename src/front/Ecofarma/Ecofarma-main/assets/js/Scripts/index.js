@@ -44,7 +44,7 @@ function renderAvaliacoes() {
 
 async function carregarAvaliacoes() {
     try {
-        const res = await fetch('http://localhost:5068/api/avaliacao');
+        const res = await fetch('https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/avaliacao');
         if (!res.ok) throw new Error('Erro ao carregar avaliações');
         avaliacoes = await res.json();
         renderAvaliacoes();
@@ -69,7 +69,7 @@ async function enviarAvaliacao() {
 
     const nova = { id_cliente: parseInt(id_cliente), autor, avaliacao, nota };
     try {
-        const res = await fetch('http://localhost:5068/api/avaliacao', {
+        const res = await fetch('https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/avaliacao', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(nova)

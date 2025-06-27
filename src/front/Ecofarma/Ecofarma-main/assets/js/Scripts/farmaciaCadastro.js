@@ -82,23 +82,19 @@ async function salvarEstabelecimento() {
 
     const data = {
         nome: document.getElementById("estabelecimento_nome").value,
-        nome: document.getElementById("adm_nome").value,
-      
-       
         email: document.getElementById("estabelecimento_email").value,
         endereco: document.getElementById("estabelecimento_endereco").value,
         telefone: document.getElementById("adm_telefone").value,
-        cpf: document.getElementById("adm_cpf").value,
         cnpj: document.getElementById("estabelecimento_cnpj").value,
         senha: document.getElementById("estabelecimento_senha").value,
-        cep: parseInt(document.getElementById("estabelecimento_cep").value),
+        cep: document.getElementById("estabelecimento_cep").value,
         numero: parseInt(document.getElementById("estabelecimento_numero").value),
         //id_cliente: parseInt(document.getElementById("id_cliente").value)
     };
 
     try {
 
-        const response = await fetch("http://localhost:5068/api/farmacia", {
+        const response = await fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/farmacia", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -109,7 +105,7 @@ async function salvarEstabelecimento() {
         //Mensagem não obrigatória
         if (response.ok) {
             alert("Estabelecimento cadastrado com sucesso! Acesse a página de login para entrar no site");
-            window.location.href = "/src/front/Ecofarma/Ecofarma-main/login-register.html";
+            window.location.href = "https://eco-farma.vercel.app/login-register.html";
         } else {
             const erro = await response.text();
             alert("Erro ao cadastrar Estabelecimento:\n" + erro);

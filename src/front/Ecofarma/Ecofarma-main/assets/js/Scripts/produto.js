@@ -78,11 +78,12 @@ async function salvarProduto() {
     }
 
     // Pega o ID da farmácia do localStorage (ou valor fixo se não existir)
-    const idFarmacia = localStorage.getItem("id_farmacia") || "100";
+    const dados = localStorage.getItem("usuarioLogado")
+    const idFarmacia = 99;
     formData.append("id_farmacia", idFarmacia);
 
     try {
-        const response = await fetch("http://localhost:5068/api/produto", {
+        const response = await fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto", {
             method: "POST",
             body: formData // sem headers — o navegador define boundary do multipart
         });
@@ -116,7 +117,7 @@ async function carregarProdutos(pagina = 1) {
     filtrosAtuais.pagina = pagina;
 
     const idFarmacia = getParametroUrl("id_farmacia");
-    let url = `http://localhost:5068/api/produto/filtrar?pagina=${pagina}&tamanhoPagina=16`;
+    let url = `https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/filtrar?pagina=${pagina}&tamanhoPagina=16`;
 
     if (filtrosAtuais.categoria) {
       url += `&categoria=${encodeURIComponent(filtrosAtuais.categoria)}`;
@@ -305,7 +306,7 @@ function buscarProdutos() {
     const precoMin = precoMinRaw.trim() !== '' ? parseFloat(precoMinRaw) : null;
     const precoMax = precoMaxRaw.trim() !== '' ? parseFloat(precoMaxRaw) : null;
 
-    let url = `http://localhost:5068/api/produto/filtrar?`;
+    let url = `https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/filtrar?`;
 
     if (categoria) url += `categoria=${encodeURIComponent(categoria)}&`;
     if (precoMin !== null && !isNaN(precoMin)) url += `precoMin=${precoMin}&`;
@@ -341,7 +342,7 @@ async function buscarProdutos() {
   }
 
   try {
-    const response = await fetch(`http://localhost:5068/api/produto/busca?termo=${encodeURIComponent(termo)}`);
+    const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/busca?termo=${encodeURIComponent(termo)}`);
     if (!response.ok) throw new Error("Erro ao buscar sugestões");
 
     const resultados = await response.json();

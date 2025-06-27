@@ -103,7 +103,7 @@ async function mostrarModalPontos() {
   if (!id) return alert("Usuário não encontrado.");
 
   try {
-    const response = await fetch(`http://localhost:5068/api/cupom/cliente/${id}`);
+    const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${id}`);
     const cupons = await response.json();
 
     pontosUsuario = cupons.length; // ← define pontos globalmente
@@ -230,11 +230,11 @@ async function finalizarCompra() {
   const pontosUsados = parseInt(document.getElementById("pontosUsar")?.value || 0);
   if (pontosUsados > 0) {
     try {
-      const r = await fetch(`http://localhost:5068/api/cupom/cliente/${id}`);
+      const r = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${id}`);
       const cupons = await r.json();
 
       for (let i = 0; i < pontosUsados && i < cupons.length; i++) {
-        await fetch(`http://localhost:5068/api/cupom/${cupons[i].id_cupom}`, {
+        await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/${cupons[i].id_cupom}`, {
           method: "DELETE"
         });
       }
@@ -248,7 +248,9 @@ async function finalizarCompra() {
   localStorage.removeItem("carrinho");
   alert("Compra realizada com sucesso!");
   fecharModalFinalizacao();
-  window.location.href = "/src/front/Ecofarma/Ecofarma-main/accounts.html";
+  await cadastrarPedidosNoBanco(pedidos);
+  window.location.href = "https://eco-farma.vercel.app/accounts.html";
+
 }
 
 
@@ -282,3 +284,33 @@ function abrirModalFinalizacao() {
     document.getElementById("modalFinalizacao").style.display = "none";
     document.getElementById("overlayFinalizacao").style.display = "none";
   }
+
+
+  async function cadastrarPedidosNoBanco(pedidos) {
+  const url = 'https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/pedido'; // substitua pelo seu endpoint real
+  for (const item of pedidos) {
+    const pedidoData = {
+      id_cliente: item.id_cliente,
+      id_farmacia: item.id_farmacia,
+      id_produto: item.id_produto,
+      qtd_produto: item.qtd_produto,
+      preco_produto: item.preco_produto
+    };
+    try {
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(pedidoData)
+      });
+      if (!response.ok) {
+        throw new Error(`Erro ao cadastrar produto ${item.nome_produto}`);
+      }
+    } catch (err) {
+      console.error(err);
+      alert(`Erro ao cadastrar produto ${item.nome_produto}.`);
+      // Você pode decidir interromper ou continuar dependendo do comportamento desejado
+    }
+  }
+}

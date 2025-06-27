@@ -96,10 +96,10 @@ namespace eco_farma_API.Controllers
                     dadosPapel = _context.Cliente.FirstOrDefault(c => c.email == usuario.email);
                     break;
                 case "farmacia":
-                    dadosPapel = _context.Farmacia.FirstOrDefault(f => f.id_farmacia == usuario.id_papel);
+                    dadosPapel = _context.Farmacia.FirstOrDefault(f => f.email == usuario.email);
                     break;
                 case "entregador":
-                    dadosPapel = _context.Entregador.FirstOrDefault(e => e.id_entregador == usuario.id_papel);
+                    dadosPapel = _context.Entregador.FirstOrDefault(e => e.email == usuario.email);
                     break;
             }
 

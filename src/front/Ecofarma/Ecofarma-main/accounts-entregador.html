@@ -180,83 +180,87 @@
 
     /* -------------------- MELHORIAS VISUAIS MODERNAS -------------------- */
 
-/* Ícones nos inputs */
-.perfil-edicao__form input {
-  background-image: url('assets/img/icon-user.svg');
-  background-position: 10px center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  padding-left: 40px;
-}
+    /* Ícones nos inputs */
+    .perfil-edicao__form input {
+      background-image: url('assets/img/icon-user.svg');
+      background-position: 10px center;
+      background-repeat: no-repeat;
+      background-size: 20px;
+      padding-left: 40px;
+    }
 
-.perfil-edicao__input[type="email"] {
-  background-image: url('assets/img/icon-mail.svg');
-}
-.perfil-edicao__input[type="tel"] {
-  background-image: url('assets/img/icon-phone.svg');
-}
-.perfil-edicao__input[name="cpf"] {
-  background-image: url('assets/img/icon-id.svg');
-}
+    .perfil-edicao__input[type="email"] {
+      background-image: url('assets/img/icon-mail.svg');
+    }
 
-/* Animação suave no foco */
-.perfil-edicao__input:focus {
-  transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(82, 239, 111, 0.5);
-}
+    .perfil-edicao__input[type="tel"] {
+      background-image: url('assets/img/icon-phone.svg');
+    }
 
-/* Menu lateral fixo (desktop) */
-@media (min-width: 1024px) {
-  .account__tabs {
-    position: sticky;
-    top: 100px;
-    height: fit-content;
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: #f8fdf7;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-  }
+    .perfil-edicao__input[name="cpf"] {
+      background-image: url('assets/img/icon-id.svg');
+    }
 
-  .account__tab {
-    margin-bottom: 12px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.25s;
-  }
+    /* Animação suave no foco */
+    .perfil-edicao__input:focus {
+      transition: all 0.3s ease;
+      box-shadow: 0 0 10px rgba(82, 239, 111, 0.5);
+    }
 
-  .account__tab:hover,
-  .account__tab.active-tab {
-    background-color: #e9ffe5;
-    color: #0b8615;
-    font-weight: bold;
-  }
-}
+    /* Menu lateral fixo (desktop) */
+    @media (min-width: 1024px) {
+      .account__tabs {
+        position: sticky;
+        top: 100px;
+        height: fit-content;
+        padding: 1rem;
+        border-radius: 12px;
+        background-color: #f8fdf7;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      }
 
-/* Suavizar aparência de seções */
-.tab__body {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
-  margin-top: 10px;
-}
+      .account__tab {
+        margin-bottom: 12px;
+        padding: 10px 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.25s;
+      }
 
-/* Botões */
-.perfil-edicao__btn, .btn, .btn--sm, .btn--md {
-  border-radius: 10px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+      .account__tab:hover,
+      .account__tab.active-tab {
+        background-color: #e9ffe5;
+        color: #0b8615;
+        font-weight: bold;
+      }
+    }
 
-/* Melhor responsividade para inputs */
-@media (max-width: 480px) {
-  .perfil-edicao__input {
-    font-size: 0.95rem;
-    padding-left: 35px;
-  }
-}
+    /* Suavizar aparência de seções */
+    .tab__body {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+      margin-top: 10px;
+    }
 
+    /* Botões */
+    .perfil-edicao__btn,
+    .btn,
+    .btn--sm,
+    .btn--md {
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Melhor responsividade para inputs */
+    @media (max-width: 480px) {
+      .perfil-edicao__input {
+        font-size: 0.95rem;
+        padding-left: 35px;
+      }
+    }
   </style>
 </head>
 
@@ -278,13 +282,13 @@
     </div>
 
     <nav class="nav container">
-      <a href="index.html" class="nav__logo">
-        <img class="nav__logo-img" src="assets/img/logo.png" alt="website logo" />
+      <a href="#" class="nav__logo">
+        <img class="nav__logo-img" src="assets/img/LOGO.png" alt="website logo" />
       </a>
       <div class="nav__menu" id="nav-menu">
-        <div class="nav__menu-top">
+        <!-- <div class="nav__menu-top">
           <a href="index.html" class="nav__menu-logo">
-            <img src="./assets/img/logo.png" alt="">
+            <img src="assets/img/LOGO.png" alt="">
           </a>
           <div class="nav__close" id="nav-close">
             <i class="fi fi-rs-cross-small"></i>
@@ -298,9 +302,9 @@
           <li class="nav__item">
             <a href="coleta.html" class="nav__link">Pontos de Coleta</a>
           </li>
-        </ul>
-       
-        </div>
+        </ul> -->
+
+      </div>
       </div>
     </nav>
   </header>
@@ -311,9 +315,7 @@
     <!--=============== BREADCRUMB ===============-->
     <section class="breadcrumb">
       <ul class="breadcrumb__list flex container">
-        <li><a href="index.html" class="breadcrumb__link">Página Inicial</a></li>
-        <li><span class="breadcrumb__link">></span></li>
-        <li><span class="breadcrumb__link">Conta</span></li>
+        <li><span class="breadcrumb__link">Conta Entregador</span></li>
       </ul>
     </section>
 
@@ -321,59 +323,67 @@
     <section class="accounts section--lg">
       <div class="accounts__container container grid">
         <div class="account__tabs">
-          
-          
+
+
           <p class="account__tab" data-target="#orders">
             <i class="fi fi-rs-marker"></i> Entregas a Fazer
           </p>
-         
-         <p class="account__tab" data-target="#orders">
-            <i class="fi fi-rs-box-circle-check"></i> Entregas concluidas
+
+          <p class="account__tab" data-target="#orders2">
+            <i class="fi fi-rs-box-circle-check"></i> Entregas concluídas
           </p>
           <p class="account__tab" data-target="#change-password">
             <i class="fi fi-rs-settings-sliders"></i> Mudar Senha
           </p>
         </div>
         <!-- Substitua o conteúdo da <div class="tabs__content"> por este novo: -->
-<div class="tabs__content">
-  <!-- Aba: Meus Cupons -->
-  
-
-  <!-- Aba: Pedidos -->
-  <div class="tab__content" id="orders">
-    <h3 class="tab__header">Entregas disponíveis</h3>
-    <div class="tab__body">
-      <!-- Conteúdo a ser preenchido -->
-    </div>
-  </div>
-
-  <!-- Aba: Editar Perfil -->
-  
-
-  <!-- Aba: Endereço -->
-  <!-- Aba: Endereço -->
+        <div class="tabs__content">
+          <!-- Aba: Meus Cupons -->
 
 
+          <!-- Aba: Pedidos -->
+          <div class="tab__content" id="orders">
+            <h3 class="tab__header">Entregas disponíveis</h3>
+            <div class="tab__body">
+              <!-- Conteúdo a ser preenchido -->
+            </div>
+          </div>
 
-  <!-- Aba: Mudar Senha -->
-  <div class="tab__content" id="change-password">
-    <h3 class="tab__header">Mudar senha</h3>
-    <div class="tab__body perfil-edicao">
-      <form class="perfil-edicao__form">
-        <label class="perfil-edicao__label">Senha atual</label>
-        <input type="password" class="perfil-edicao__input" />
+           <!-- Aba: Pedidos -->
+          <div class="tab__content" id="orders2">
+            <h3 class="tab__header">Entregas concluídas</h3>
+            <div class="tab__body">
+              <!-- Conteúdo a ser preenchido -->
+            </div>
+          </div>
 
-        <label class="perfil-edicao__label">Nova senha</label>
-        <input type="password" class="perfil-edicao__input" />
+          <!-- Aba: Editar Perfil -->
 
-        <label class="perfil-edicao__label">Confirmar nova senha</label>
-        <input type="password" class="perfil-edicao__input" />
 
-        <button class="perfil-edicao__btn" type="submit">Salvar</button>
-      </form>
-    </div>
-  </div>
-</div>
+          <!-- Aba: Endereço -->
+          <!-- Aba: Endereço -->
+
+
+
+          <!-- Aba: Mudar Senha -->
+          <div class="tab__content" id="change-password">
+            <h3 class="tab__header">Mudar senha</h3>
+            <div class="tab__body perfil-edicao">
+              <form class="perfil-edicao__form">
+                <label class="perfil-edicao__label">Senha atual</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <label class="perfil-edicao__label">Nova senha</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <label class="perfil-edicao__label">Confirmar nova senha</label>
+                <input type="password" class="perfil-edicao__input" />
+
+                <button class="perfil-edicao__btn" type="submit">Salvar</button>
+              </form>
+            </div>
+          </div>
+        </div>
 
       </div>
     </section>
@@ -384,7 +394,7 @@
       <div class="footer__container grid">
         <div class="footer__content">
           <a href="index.html" class="footer__logo">
-            <img src="./assets/img/logo.png" alt="" class="footer__logo-img" />
+            <img src="./assets/img/LOGO.png" alt="" class="footer__logo-img" />
           </a>
           <h4 class="footer__subtitle">Fale Conosco!</h4>
           <p class="footer__description">
@@ -445,10 +455,51 @@
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+      const nome = usuarioLogado?.dadosPapel?.nome;
+
+      if (nome && usuarioLogado?.id_usuario) {
+        const span = document.getElementById('nome_info');
+        span.textContent = `Olá ${nome}!`;
+        span.style.display = 'inline';
+
+      }
+
+      // Verifica se há usuário logado
+      const usuarioStr = localStorage.getItem("usuarioLogado");
+      if (usuarioStr) {
+        const usuario = JSON.parse(usuarioStr);  // converte de string para objeto
+        const idUsuario = usuario.id_usuario;
+
+        if (idUsuario) {
+
+          // Configura o link de "Sair"
+          const authLink = document.getElementById("authLink");
+          authLink.textContent = "Sair";
+          authLink.href = "login-register.html"; // ou '#' se preferir
+          authLink.onclick = function () {
+            limparLocalStorage();
+          };
+        } else {
+          // Se não tiver id_usuario, mostra "Entrar"
+          const authLink = document.getElementById("authLink");
+          authLink.textContent = "Entrar";
+          authLink.href = "login-register.html";
+          authLink.onclick = null;
+        }
+      } else {
+        // Se não tiver usuário logado, mostrar "Entrar"
+        const authLink = document.getElementById("authLink");
+        authLink.textContent = "Entrar";
+        authLink.href = "login-register.html";
+        authLink.onclick = null;
+      }
+    </script>
 
     <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/accounts.js"></script>
+    <!-- <script src="assets/js/main.js"></script> -->
+    <script src="assets/js/Scripts/entrega.js"></script>
 </body>
 
 </html>

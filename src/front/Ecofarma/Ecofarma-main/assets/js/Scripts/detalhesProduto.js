@@ -5,7 +5,7 @@ function getQueryParam(param) {
 
 async function carregarDetalhesProduto(id) {
     try {
-        const response = await fetch(`http://localhost:5068/api/produto/${id}`);
+        const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/${id}`);
         if (!response.ok) throw new Error("Produto não encontrado");
 
         const produto = await response.json();
@@ -110,7 +110,7 @@ async function enviarAvaliacao(data) {
         };
 
         try {
-            const response = await fetch("http://localhost:5068/api/avaliacao_produto", {
+            const response = await fetch("https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/avaliacao_produto", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(payload)
@@ -147,7 +147,7 @@ if (produtoId) {
 
 async function carregarAvaliacoes(idProduto) {
     try {
-        const response = await fetch(`http://localhost:5068/api/avaliacao_produto/produto/${idProduto}`);
+        const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/avaliacao_produto/produto/${idProduto}`);
         if (!response.ok) throw new Error("Erro ao buscar avaliações");
 
         const avaliacoes = await response.json();
@@ -178,7 +178,7 @@ const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
 const nome = usuarioLogado?.dadosPapel?.nome;
 
 if (nome && usuarioLogado?.id_usuario) {
-    fetch(`http://localhost:5068/api/cupom/cliente/${usuarioLogado.id_usuario}`)
+    fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/cupom/cliente/${usuarioLogado.id_usuario}`)
         .then(response => response.json())
         .then(cupons => {
             const quantidadePontos = cupons.length;
@@ -245,7 +245,7 @@ async function buscarProdutos() {
     }
 
     try {
-        const response = await fetch(`http://localhost:5068/api/produto/busca?termo=${encodeURIComponent(termo)}`);
+        const response = await fetch(`https://ecofarma-f4ake0gkhwapfmh3.canadacentral-01.azurewebsites.net/api/produto/busca?termo=${encodeURIComponent(termo)}`);
         if (!response.ok) throw new Error("Erro ao buscar sugestões");
 
         const resultados = await response.json();
