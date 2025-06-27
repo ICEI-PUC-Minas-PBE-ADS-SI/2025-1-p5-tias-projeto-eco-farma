@@ -36,7 +36,7 @@ Cenário 3: Escolher uma farmácia
 | 1       | SIM             | 5                    | 24,92 segundos                          |
 |  |  |  |  |
 | **Média**     | 100%           | 5               | 24,92 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 08,44 segundos |
 
 Comentários dos usuários: Bem autoexplicativo, qualquer pessoa com conhecimento básico de tecnologia consegue realizar.
 
@@ -48,7 +48,7 @@ Cenário 4: Realizar compras nesta farmácia
 | 1       | SIM             | 4                    | 01:39,59 minutos                          |
 |  |  |  |  |
 | **Média**     | 100%           | 4               | 01:39,59 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 22,02 segundos |
 
 Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
 
