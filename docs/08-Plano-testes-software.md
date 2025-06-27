@@ -90,7 +90,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-015 - Realizar avaliações sobre o produto na página de detalhes |
 | Objetivo do teste | Avaliar produto específico |
-| Passos | - Acessar o navegador; <br> - Informar o endereço do site; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página produtos; <br> - Selecionar produto específico; <br> - rolar a tela ao final da página; <br> - Colocar nome, avaliação(descrição) e nota; <br> - Clicar em "Enviar Avaliação"  |
+| Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página produtos; <br> - Selecionar produto específico; <br> - rolar a tela ao final da página; <br> - Colocar nome, avaliação(descrição) e nota; <br> - Clicar em "Enviar Avaliação"  |
 | Critério de êxito | - Avaliação enviada com sucesso! |
 | Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
 
@@ -100,7 +100,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principal |
 | Objetivo do teste | visualizar somente produtos cadastrados da farmacia selecionada |
-| Passos | - Acessar o navegador; <br> - Informar o endereço do site; <br> - Ir a página principal; <br> -Selecionar a farmácia específica;|
+| Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Ir a página principal; <br> -Selecionar a farmácia específica;|
 | Critério de êxito | - Redirecionado a lista de produtos filtrados |
 | Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
 
