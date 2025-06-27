@@ -180,8 +180,8 @@ Atualizado em: 25/06/2025
 | Bianca M.     | Revisãodo código |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
 | Bianca M.     | Requisito 15 e 16 |   24/06/2025   |  27/06/2025 |  ✔️  |    24/06/2025    |
 | Bianca M.     | 2 Usabilidades |   24/06/2025  |  27/06/2025 |  ✔️   |  24/06/2025    |
-| Bianca M.     | Instruções de Uso |   28/06/2025   |  29/06/2025 | ❌    |   -  |
-| Bianca M.     | Alteração do README da pasta src |   28/06/2025   |  29/06/2025 | ❌   |  -    |
+| Bianca M.     | Instruções de Uso |   28/06/2025   |  29/06/2025 | ✔️   |  26/06/2025 |
+| Bianca M.     | Alteração do README da pasta src |   28/06/2025   |  29/06/2025 | ✔️  |  26/06/2025   |
 | Bianca M.     | Hospedagem |   23/06/2025   |  29/06/2025 | ✔️  |  25/06/2025   |
 
 
@@ -210,5 +210,5 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas. Tod
 | Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma/tree/main/docs |
 | Projeto de interface                | Figma                              | https://www.figma.com/design/6BmtSgnISOiSBeITbnYzIf/TIAS---ECOFARMA?node-id=0-1&p=f&t=9W10KkF089SChMwX-0 |
 | Gerenciamento do projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PBE-ADS-SI/projects/24                          |
-| Hospedagem                          | Vercel                             |    https://eco-farma.vercel.app/index.html                       |
+| Hospedagem                          | Vercel                             |    https://eco-farma.vercel.app                      |
  
