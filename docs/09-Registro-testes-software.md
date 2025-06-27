@@ -50,12 +50,20 @@ https://github.com/user-attachments/assets/f189c3ae-59d0-4d8a-9cea-3d7ab30abf72
 | **Caso de teste** 	| **CT-015 – Avaliar Produto** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-015 - Realizar avaliações sobre o produto na página de detalhes |
-| Registro de evidência |  |
+| Registro de evidência | 
+
+https://github.com/user-attachments/assets/a4120313-2338-4665-b0d9-65c63ea16763
+
+ |
 
 | **Caso de teste** 	| **CT-016 – Selecionar Produto Farmácia** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principals |
-| Registro de evidência |  |
+| Registro de evidência | 
+
+https://github.com/user-attachments/assets/56911b70-1129-4403-b2c9-4060f84bdcb8
+
+ |
 
 
 
