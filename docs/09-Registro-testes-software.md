@@ -49,12 +49,14 @@ https://github.com/user-attachments/assets/f189c3ae-59d0-4d8a-9cea-3d7ab30abf72
 
 | **Caso de teste** 	| **CT-015 – Avaliar Produto** 	|
 |:---:	|:---:	|
-| Requisito associado | 	RF-015 - Realizar avaliações sobre o produto na página de detalhes |
+| Requisito associado | RF-015 - Realizar avaliações sobre o produto na página de detalhes |
+| Registro de evidência |  |
 
-
-| **Caso de teste** 	| **CT-016 – Selecionar Produto Farmacia** 	|
+| **Caso de teste** 	| **CT-016 – Selecionar Produto Farmácia** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principal |
+| Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principals |
+| Registro de evidência |  |
+
 
 
 
