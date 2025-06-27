@@ -57,10 +57,10 @@ Cenário 5: Escolher entrega
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+| 1       | SIM             | 5                    | 17,56 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Média**     | 100%           | 5               | 17,56 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 08,87 segundos |
 
 Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
 
@@ -69,10 +69,10 @@ Cenário 6: Concluir entrega e visualizar entregas realizadas
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
 |---------|-----------------|----------------------|---------------------------------|
-| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+| 1       | SIM             | 5                    | 13,50 segundos                          |
 |  |  |  |  |
-| **Média**     | 100%           | 4               | 01:39,59 minutos                           |
-| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+| **Média**     | 100%           | 5               | 13,50 segundos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 03,49 segundos |
 
 Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
 
