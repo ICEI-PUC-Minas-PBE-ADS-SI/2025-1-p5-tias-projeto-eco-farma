@@ -29,6 +29,28 @@ Cenário 2: Você quer comprar um produto mas não sabe como achar
 Comentários dos usuários: Ambos conseguiram realizar a pesquisa porem o segundo teve dificuldades em descrever o que gostaria, colocou algo muito abstrato, dificultando a busca. 
 
 
+Cenário 3: Escolher uma farmácia
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 5                    | 24,92 segundos                          |
+|  |  |  |  |
+| **Média**     | 100%           | 5               | 24,92 minutos                           |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Bem autoexplicativo, qualquer pessoa com conhecimento básico de tecnologia consegue realizar.
+
+
+Cenário 4: Realizar compras nesta farmácia
+
+| Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
+|---------|-----------------|----------------------|---------------------------------|
+| 1       | SIM             | 4                    | 01:39,59 minutos                          |
+| **Tempo para conclusão pelo especialista** | SIM | 5 | 10,21 segundos |
+
+Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+
+
 Cenário x: Você é uma pessoa que deseja comprar um iPhone. Encontre no site um iPhone e veja detalhes de localização e contato da loja que o está anunciando.
 
 | Usuário | Taxa de sucesso | Satisfação subjetiva | Tempo para conclusão do cenário |
