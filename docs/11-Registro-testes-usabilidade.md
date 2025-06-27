@@ -62,7 +62,7 @@ Cenário 5: Escolher entrega
 | **Média**     | 100%           | 5               | 17,56 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 08,87 segundos |
 
-Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+Comentários dos usuários: Achei muito prático e fácil de se usar no dia dia.
 
 
 Cenário 6: Concluir entrega e visualizar entregas realizadas
@@ -74,7 +74,7 @@ Cenário 6: Concluir entrega e visualizar entregas realizadas
 | **Média**     | 100%           | 5               | 13,50 segundos                           |
 | **Tempo para conclusão pelo especialista** | SIM | 5 | 03,49 segundos |
 
-Comentários dos usuários: Como nunca tinha realizado nenhuma compra antes, tive algumas dificuldades, mas o site está muito autoexplicativo e de fácil entendimento. 
+Comentários dos usuários: Achei muito intuitivo. 
 
 
 Cenário 7: Cadastrar cupom de desconto
