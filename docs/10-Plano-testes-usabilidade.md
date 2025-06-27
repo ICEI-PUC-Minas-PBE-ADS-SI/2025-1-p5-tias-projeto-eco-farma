@@ -63,7 +63,104 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 | 1 e 2           | Cronometro/Computador/Ambiente de Teste|
 |           |  |
 
+## Cenários de teste de usabilidade
 
+| Nº do cenário | Descrição do cenário |
+|---------------|----------------------|
+| 1             | Escolher uma farmácia |
+| 2             | Realizar compras nesta farmácia |
+
+
+## Participantes
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Uma mulher da faixa etária de 40-50 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino médio completo e superior completo. |
+|           |  |
+
+## Procedimentos
+| Nº do cenário | Procedimentos |
+|---------------|----------------------|
+| 1 e 2           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
+|           |  |
+
+## Métricas Coletadas
+| Nº do cenário | Métricas Coletadas |
+|---------------|----------------------|
+| 1 e 2           | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
+|           |  |
+
+
+## Recursos Utilizados
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Cronometro/Computador/Ambiente de Teste|
+|           |  |
+
+## Cenários de teste de usabilidade
+
+| Nº do cenário | Descrição do cenário |
+|---------------|----------------------|
+| 1             | Avaliar Produto no site, dizer que acha do produto e que nota daria para outras pessoas visualizarem |
+| 2             | Você quer comprar um produto mas não sabe como achar |
+
+
+## Participantes
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Uma mulher da faixa etária de 40-50 anos e um senhor da faixa etária dos 70-80 anos. Ambos com conhecimento básico de tecnologia, possuem celular e possuem ensino médio completo e superior completo. |
+|           |  |
+
+## Procedimentos
+| Nº do cenário | Procedimentos |
+|---------------|----------------------|
+| 1 e 2           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
+|           |  |
+
+## Métricas Coletadas
+| Nº do cenário | Métricas Coletadas |
+|---------------|----------------------|
+| 1 e 2           | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
+|           |  |
+
+
+## Recursos Utilizados
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Cronometro/Computador/Ambiente de Teste|
+|           |  |
+
+## Cenários de teste de usabilidade
+
+| Nº do cenário | Descrição do cenário |
+|---------------|----------------------|
+| 1             | Avaliar Produto no site, dizer que acha do produto e que nota daria para outras pessoas visualizarem |
+| 2             | Você quer comprar um produto mas não sabe como achar |
+
+
+## Participantes
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Uma mulher da faixa etária de 40-50 anos e um senhor da faixa etária dos 70-80 anos. Ambos com conhecimento básico de tecnologia, possuem celular e possuem ensino médio completo e superior completo. |
+|           |  |
+
+## Procedimentos
+| Nº do cenário | Procedimentos |
+|---------------|----------------------|
+| 1 e 2           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
+|           |  |
+
+## Métricas Coletadas
+| Nº do cenário | Métricas Coletadas |
+|---------------|----------------------|
+| 1 e 2           | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
+|           |  |
+
+
+## Recursos Utilizados
+| Nº do cenário | Participantes |
+|---------------|----------------------|
+| 1 e 2           | Cronometro/Computador/Ambiente de Teste|
+|           |  |
 
 > **Links úteis**:
 > - [Teste de usabilidade: o que é e como fazer passo a passo](https://neilpatel.com/br/blog/teste-de-usabilidade/)
