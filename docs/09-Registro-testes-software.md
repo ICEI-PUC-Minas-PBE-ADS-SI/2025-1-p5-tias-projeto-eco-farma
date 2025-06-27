@@ -29,6 +29,16 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 
 
+| **Caso de teste** 	| **CT-008 – Realizar compra de um produto** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-008 Permitir que os clientes realizem compras no sistema. |
+
+
+
+| **Caso de teste** 	| **CT-013 – Gerenciar produtos no carrinho** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-013 Gerenciar o carrinho de compras do cliente. |
+
 
 
 
@@ -37,13 +47,12 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 |:---:	|:---:	|
 | Requisito associado | 	RF-015 - Realizar avaliações sobre o produto na página de detalhes |
 
-https://github.com/user-attachments/assets/9c2967f7-aebe-47ef-80ff-b763710a56b8
 
 | **Caso de teste** 	| **CT-016 – Selecionar Produto Farmacia** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-016 - Visualizar somente produtos da farmacia que selecionar na página principal |
 
-https://github.com/user-attachments/assets/4263741e-33bc-4e84-8bd1-508067a7fe1a
+
 
 
 
