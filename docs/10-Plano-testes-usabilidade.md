@@ -49,35 +49,29 @@ Objetivando respeitar as diretrizes da Lei Geral de Proteção de Dados, as info
 | Nº do cenário | Participantes |
 |---------------|----------------------|
 | 1 e 2           | Uma mulher da faixa etária de 40-50 anos e um senhor da faixa etária dos 70-80 anos. Ambos com conhecimento básico de tecnologia, possuem celular e possuem ensino médio completo e superior completo. |
-|           | hhhhhhhh |
-| 3 e 4           | Uma mulher da faixa etária de 40-50 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino médio completo e superior completo. |
-|           |  |
+| 3 e 4 | Uma menina de 14 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino fundamental incompleto. |
+| 5 e 6 | Um homem de 20 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino médio completo. |
+| 7 e 8 | Um homem da faixa etária de 40-50 anos. Com conhecimento básico de tecnologia, possui celular e possui ensino médio completo e superior completo. |
 
 
 ## Procedimentos
 | Nº do cenário | Procedimentos |
 |---------------|----------------------|
-| 1 e 2           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
-|           |  |
-| 3 e 4           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
-|           |  |
+| 1 ao 8           | Foi feito presencialmente com a observação direta do desenvolvedor para busca de métricas |
+
 
 ## Métricas Coletadas
 | Nº do cenário | Métricas Coletadas |
 |---------------|----------------------|
-| 1 e 2           | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
-|           |  |
-| 3 e 4           | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
-|           |  |
+| 1 ao 8        | Taxa de sucesso (conseguiu ou não concluir a tarefa)/Tempo de execução (em segundos)/Número de cliques/Número de erros (ações incorretas ou hesitações)/Satisfação subjetiva (escala de 1 a 5: 1–péssimo a 5–ótimo) |
+
 
 
 ## Recursos Utilizados
 | Nº do cenário | Participantes |
 |---------------|----------------------|
-| 1 e 2           | Cronometro/Computador/Ambiente de Teste|
-|           |  |
-| 3 e 4           | Cronometro/Computador/Ambiente de Teste|
-|           |  |
+| 1 ao 8        | Cronometro/Computador/Ambiente de Teste|
+
 
 
 
