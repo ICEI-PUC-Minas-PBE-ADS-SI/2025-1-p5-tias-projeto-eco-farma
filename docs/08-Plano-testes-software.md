@@ -72,7 +72,7 @@ Por exemplo:
 | Objetivo do teste | Verificar se o cliente pode visualizar, adicionar, remover e atualizar itens no carrinho. |
 | Passos | - Acessar o site https://eco-farma.vercel.app/cart.html - Selecionar um ou mais produtos - Clicar em "Adicionar ao carrinho - Ir até o ícone ou botão do carrinho - Verificar a lista de produtos - Clicar em "Remover" ou alterar quantidade (caso disponível) |
 | Critério de êxito | - O cliente consegue visualizar o carrinho corretamente e remover ou alterar itens conforme desejado. |
-| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
+| Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
 
 <br>
 
@@ -82,7 +82,7 @@ Por exemplo:
 | Objetivo do teste | Validar se o processo de finalização da compra permite a inserção dos dados de pagamento corretamente. |
 | Passos | - Acessar o site https://eco-farma.vercel.app/cart.html - Adicionar um produto ao carrinho - Clicar no carrinho e ir para o checkout - Preencher os dados solicitados de entrega e pagamento (ex: cartão de crédito, endereço, etc.) - Clicar em "Finalizar compra" |
 | Critério de êxito | - O sistema conclui a compra e apresenta uma confirmação de sucesso. |
-| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
+| Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
 
 <br>
 
@@ -92,7 +92,7 @@ Por exemplo:
 | Objetivo do teste | Avaliar produto específico |
 | Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página produtos; <br> - Selecionar produto específico; <br> - rolar a tela ao final da página; <br> - Colocar nome, avaliação(descrição) e nota; <br> - Clicar em "Enviar Avaliação"  |
 | Critério de êxito | - Avaliação enviada com sucesso! |
-| Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
+| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
 
 <br>
 
@@ -102,7 +102,7 @@ Por exemplo:
 | Objetivo do teste | visualizar somente produtos cadastrados da farmacia selecionada |
 | Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Ir a página principal; <br> -Selecionar a farmácia específica;|
 | Critério de êxito | - Redirecionado a lista de produtos filtrados |
-| Responsável pela elaboração do caso de teste | Bianca Marques Teixeira |
+| Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
 
 
 ## Ferramentas de testes (opcional)
