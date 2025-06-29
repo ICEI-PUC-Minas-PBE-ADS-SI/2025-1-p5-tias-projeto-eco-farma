@@ -17,8 +17,21 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 
+| **Caso de teste** 	| **CT-003 – Entrar e sair do site** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-003 - Realizar login e logout do sistema. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+
+https://github.com/user-attachments/assets/33d289fa-95a1-4677-af14-cf518f47cc41
 
 
+| **Caso de teste** 	| **CT-004 – Avaliações e notas** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-004 - Avaliar o sistema com sugestões e nota. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+
+
+https://github.com/user-attachments/assets/b2222cbe-56a2-403c-b3ab-1d063d1ed77e
 
 
 | **Caso de teste** 	| **CT-005 – Cadastrar itens** 	|
@@ -26,6 +39,14 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
+
+| **Caso de teste** 	| **CT-006 – Gerar cupons** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-003 - Gerar cupons de desconto para os clientes que realizarem descarte de materiais. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+
+
+https://github.com/user-attachments/assets/53191ba3-e4a7-45da-af8d-9951d268ae91
 
 
 
