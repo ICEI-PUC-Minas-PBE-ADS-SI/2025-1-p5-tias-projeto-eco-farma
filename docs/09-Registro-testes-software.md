@@ -8,12 +8,12 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que esses consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-001 - Permitir que usuários se cadastrem na plataforma com e-mail, CPF e endereço. |
 | Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
 
-| **Caso de teste** 	| **CT-002 – Realizar login** 	|
+| **Caso de teste** 	| **CT-002 – Visualizar mapa interativo** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login. |
+| Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 
@@ -21,13 +21,18 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 
 
+| **Caso de teste** 	| **CT-005 – Cadastrar itens** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 
 
 
-
-
-
+| **Caso de teste** 	| **CT-007 – Cadastrar Cupons de desconto** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-007 - Permitir que clientes cadastrem os cupons de desconto no sistema. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-008 – Realizar compra de um produto** 	|
 |:---:	|:---:	|
@@ -35,6 +40,11 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 
 https://github.com/user-attachments/assets/96c1cb31-0377-446e-8e6b-3ff99872201d
 
+
+| **Caso de teste** 	| **CT-009 – Selecionar entregas disponíveis** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-007 - Permitir que ciclistas selecionem entregas disponíveis. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 | **Caso de teste** 	| **CT-010 – Exibir informações institucionais** 	|
 |:---:	|:---:	|
@@ -46,6 +56,13 @@ https://github.com/user-attachments/assets/4d8896c3-2cf7-4eff-bc87-4302d425b7e4
 | **Caso de teste** 	| **CT-011 – Gerenciar informações de perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-011 Permitir que o cliente visualize e edite suas informações de conta. |
+
+
+| **Caso de teste** 	| **CT-0012 – Exibir detalhes** 	|
+|:---:	|:---:	|
+| Requisito associado | RF-0012 - Exibir detalhes dos produtos antes da compra. |
+| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+
 
 
 | **Caso de teste** 	| **CT-013 – Gerenciar produtos no carrinho** 	|
