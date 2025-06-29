@@ -17,7 +17,7 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
 
 
-| **Caso de teste** 	| **CT-003 – Entrar e sair do site** 	|
+| **Caso de teste** 	| **CT-003 – Entrar e sair** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - Realizar login e logout do sistema. |
 | Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
