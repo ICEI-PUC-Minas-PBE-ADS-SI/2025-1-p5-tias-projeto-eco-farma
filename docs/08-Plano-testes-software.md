@@ -52,7 +52,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-010	Exibir informações institucionais sobre o projeto e seus objetivos. |
 | Objetivo do teste | Verificar se o cliente consegue visualizar informações sobre o projeto. |
-| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Descer até a seção de rodapé - Clicar em "Sobre Nós" na aba de FAQ |
+| Passos | - Acessar o navegador; <br> Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> Descer até a seção de rodapé; <br> Clicar em "Sobre Nós" na aba de FAQ |
 | Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
 | Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
 
@@ -62,7 +62,7 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-011	Permitir que o cliente visualize e edite suas informações de conta. |
 | Objetivo do teste | Verificar se o cliente consegue visualizar e editar as informações de conta. |
-| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Entrar" na seção de cabeçalho - Inserir as informações de login - Clicar no botão "Entrar" - Esperar a página carregar novamente - Clicar em "Minha Conta" na seção de cabeçalho - Fazer as mudanças desejadas nas abas "Editar Perfil", "Meu Endereço" e "Mudar Senha" |
+| Passos | - Acessar o navegador; <br> Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> Clicar em "Entrar" na seção de cabeçalho; <br> Inserir as informações de login; <br> Clicar no botão "Entrar"; <br> Esperar a página carregar novamente; <br> Clicar em "Minha Conta" na seção de cabeçalho; <br> Fazer as mudanças desejadas nas abas "Editar Perfil", "Meu Endereço" e "Mudar Senha" |
 | Critério de êxito | - As informações são alteradas com sucesso. |
 | Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
 
