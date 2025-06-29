@@ -53,7 +53,7 @@ Por exemplo:
 | Requisito associado | RF-010	Exibir informações institucionais sobre o projeto e seus objetivos. |
 | Objetivo do teste | Verificar se o cliente consegue visualizar informações sobre o projeto. |
 | Passos | - Acessar o navegador; <br> Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> Descer até a seção de rodapé; <br> Clicar em "Sobre Nós" na aba de FAQ |
-| Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
+| Critério de êxito | - O site exibe com sucesso as informações do projeto. |
 | Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
 
 <br>
