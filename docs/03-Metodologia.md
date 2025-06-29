@@ -183,6 +183,10 @@ Atualizado em: 25/06/2025
 | Bianca M.     | Instruções de Uso |   28/06/2025   |  29/06/2025 | ✔️   |  26/06/2025 |
 | Bianca M.     | Alteração do README da pasta src |   28/06/2025   |  29/06/2025 | ✔️  |  26/06/2025   |
 | Bianca M.     | Hospedagem |   23/06/2025   |  29/06/2025 | ✔️  |  25/06/2025   |
+| Thiago L.     | Requisitos 1, 7 e 9 |   26/06/2025   |  27/06/2025 | ✔️    |     28/06/2025    |
+| Thiago L.     | Front-end tela de Perfil da Farmácia |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
+| Thiago L.     | Front-end tela de Perfil do entregador |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
+
 
 
 Legenda:
