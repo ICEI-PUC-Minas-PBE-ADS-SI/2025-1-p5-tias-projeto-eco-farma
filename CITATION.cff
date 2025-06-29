@@ -27,6 +27,10 @@ keywords:
   - consumo consciente
   - tecnologia sustentável
 
+test-user:
+- login: admin@gmail.com
+  password: Secreta1234
+
 repository-code: https://github.com/ICEI-PUC-Minas-PBE-ADS-SI/2025-1-p5-tias-projeto-eco-farma.git
 license: CC-BY-4.0
 version: 1.0.0
