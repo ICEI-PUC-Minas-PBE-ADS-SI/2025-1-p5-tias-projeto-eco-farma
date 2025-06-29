@@ -6,7 +6,11 @@
 ## Slides
 
 Sprint 1
-https://docs.google.com/presentation/d/15lbFmuPBrKJkuHIrdRpqoNaE6Ze-YSI-mLyKDpNGfMo/edit?usp=sharing
+
+[T.I Sustentabilidade - Sprint 1 (2).pdf](https://github.com/user-attachments/files/20966494/T.I.Sustentabilidade.-.Sprint.1.2.pdf)
+
+Sprint 2
+
 
 
 ## Vídeo
