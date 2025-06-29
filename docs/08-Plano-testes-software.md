@@ -38,24 +38,6 @@ Por exemplo:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 | **Caso de teste**  | **CT-008 – Realizar compra de um produto**  |
 |:---: |:---: |
 | Requisito associado | RF-008	Permitir que os clientes realizem compras no sistema. |
@@ -63,6 +45,26 @@ Por exemplo:
 | Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Produtos" ou rolar até a seção de produtos - Selecionar um produto disponível - Clicar em "Adicionar ao carrinho" - Verificar se o produto foi adicionado corretamente |
 | Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
 | Responsável pela elaboração do caso de teste | Victória Gonçalves da Silva |
+
+<br>
+
+| **Caso de teste**  | **CT-010 – Exibir informações institucionais**  |
+|:---: |:---: |
+| Requisito associado | RF-010	Exibir informações institucionais sobre o projeto e seus objetivos. |
+| Objetivo do teste | Verificar se o cliente consegue visualizar informações sobre o projeto. |
+| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Descer até a seção de rodapé - Clicar em "Sobre Nós" na aba de FAQ |
+| Critério de êxito | - O produto é adicionado ao carrinho com sucesso e o botão de compra está habilitado. |
+| Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
+
+<br>
+
+| **Caso de teste**  | **CT-011 – Gerenciar informações de conta**  |
+|:---: |:---: |
+| Requisito associado | RF-011	Permitir que o cliente visualize e edite suas informações de conta. |
+| Objetivo do teste | Verificar se o cliente consegue visualizar e editar as informações de conta. |
+| Passos | - Acessar o navegador - Informar o endereço do site: https://eco-farma.vercel.app/index.html - Clicar em "Entrar" na seção de cabeçalho - Inserir as informações de login - Clicar no botão "Entrar" - Esperar a página carregar novamente - Clicar em "Minha Conta" na seção de cabeçalho - Fazer as mudanças desejadas nas abas "Editar Perfil", "Meu Endereço" e "Mudar Senha" |
+| Critério de êxito | - As informações são alteradas com sucesso. |
+| Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
 
 <br>
 
