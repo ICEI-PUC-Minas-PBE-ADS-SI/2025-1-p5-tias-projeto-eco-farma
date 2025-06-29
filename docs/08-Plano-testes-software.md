@@ -12,41 +12,41 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-001 – Cadastrar perfil**  |
 |:---: |:---: |
-| Requisito associado | RF-00X - A aplicação deve apresentar, na página principal, a funcionalidade de cadastro de usuários para que estes consigam criar e gerenciar seu perfil. |
+| Requisito associado | RF-001 - Permitir que usuários se cadastrem na plataforma com e-mail, CPF e endereço. |
 | Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
 | Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
 | Critério de êxito | - O cadastro foi realizado com sucesso. |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Thiago Lacerda Santos Barbosa |
 
 <br>
 
 | **Caso de teste**  | **CT-002 – Visualizar mapa interativo**  |
 |:---: |:---: |
 | Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
-| Objetivo do teste |  |
+| Objetivo do teste | Verificar se o usuário consegue visualizar o mapa interativo com geolocalização de farmácias parceiras. |
 | Passos |  |
 | Critério de êxito |  |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Camila de Paula Rodrigues |
 
 <br>
 
 | **Caso de teste**  | **CT-005 – Cadastrar itens**  |
 |:---: |:---: |
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
-| Objetivo do teste |  |
+| Objetivo do teste | Verificar se a farmácias consegue cadastrar itens no sistema. |
 | Passos |  |
 | Critério de êxito |  |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste |Camila de Paula Rodrigues |
 
 <br>
 
 | **Caso de teste**  | **CT-007 – Cadastrar Cupons de desconto**  |
 |:---: |:---: |
 | Requisito associado | RF-007 - Permitir que clientes cadastrem os cupons de desconto no sistema. |
-| Objetivo do teste |  |
+| Objetivo do teste | Verificar se o usuário consegue cadastrar os cupons de desconto no sistema. |
 | Passos |  |
 | Critério de êxito |  |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste |Thiago Lacerda Santos Barbosa |
 
 <br>
 
@@ -71,10 +71,10 @@ Por exemplo:
 | **Caso de teste**  | **CT-009 – Selecionar entregas disponíveis**  |
 |:---: |:---: |
 | Requisito associado | RF-009 - Permitir que ciclistas selecionem entregas disponíveis. |
-| Objetivo do teste |  |
+| Objetivo do teste | Verificar se o entregador consegue selecionar as entregas disponíveis no sistema. |
 | Passos |  |
 | Critério de êxito |  |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Thiago Lacerda Santos Barbosa |
 
 <br>
 
@@ -101,10 +101,10 @@ Por exemplo:
 | **Caso de teste**  | **CT-012 – Exibir detalhes**  |
 |:---: |:---: |
 | Requisito associado | RF-012 - Exibir detalhes dos produtos antes da compra. |
-| Objetivo do teste |  |
+| Objetivo do teste | Verificar se o usuário consegue ver os detalhes dos produtos no sistema |
 | Passos |  |
 | Critério de êxito |  |
-| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+| Responsável pela elaboração do caso de teste | Camila de Paula Rodrigues |
 
 <br>
 
