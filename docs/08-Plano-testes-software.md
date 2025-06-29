@@ -20,12 +20,32 @@ Por exemplo:
 
 <br>
 
-| **Caso de teste**  | **CT-002 – Efetuar login**  |
+| **Caso de teste**  | **CT-002 – Visualizar mapa interativo**  |
 |:---: |:---: |
-| Requisito associado | RF-00Y - A aplicação deve possuir opção de fazer login, sendo o login o endereço de e-mail. |
-| Objetivo do teste | Verificar se o usuário consegue realizar login. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar no botão "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo de senha <br> - Clicar em "Login" |
-| Critério de êxito | - O login foi realizado com sucesso. |
+| Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
+| Objetivo do teste |  |
+| Passos |  |
+| Critério de êxito |  |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-005 – Cadastrar itens**  |
+|:---: |:---: |
+| Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
+| Objetivo do teste |  |
+| Passos |  |
+| Critério de êxito |  |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
+| **Caso de teste**  | **CT-007 – Cadastrar Cupons de desconto**  |
+|:---: |:---: |
+| Requisito associado | RF-007 - Permitir que clientes cadastrem os cupons de desconto no sistema. |
+| Objetivo do teste |  |
+| Passos |  |
+| Critério de êxito |  |
 | Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
 
 <br>
@@ -48,6 +68,16 @@ Por exemplo:
 
 <br>
 
+| **Caso de teste**  | **CT-009 – Selecionar entregas disponíveis**  |
+|:---: |:---: |
+| Requisito associado | RF-009 - Permitir que ciclistas selecionem entregas disponíveis. |
+| Objetivo do teste |  |
+| Passos |  |
+| Critério de êxito |  |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
+
+<br>
+
 | **Caso de teste**  | **CT-010 – Exibir informações institucionais**  |
 |:---: |:---: |
 | Requisito associado | RF-010	Exibir informações institucionais sobre o projeto e seus objetivos. |
@@ -65,6 +95,16 @@ Por exemplo:
 | Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar" na seção de cabeçalho; <br> - Inserir as informações de login; <br> - Clicar no botão "Entrar"; <br> - Esperar a página carregar novamente; <br> - Clicar em "Minha Conta" na seção de cabeçalho; <br> - Fazer as mudanças desejadas nas abas "Editar Perfil", "Meu Endereço" e "Mudar Senha" |
 | Critério de êxito | - As informações são alteradas com sucesso. |
 | Responsável pela elaboração do caso de teste | Letícia Rodrigues Batista |
+
+<br>
+
+| **Caso de teste**  | **CT-012 – Exibir detalhes**  |
+|:---: |:---: |
+| Requisito associado | RF-012 - Exibir detalhes dos produtos antes da compra. |
+| Objetivo do teste |  |
+| Passos |  |
+| Critério de êxito |  |
+| Responsável pela elaboração do caso de teste | Nome do integrante da equipe. |
 
 <br>
 
