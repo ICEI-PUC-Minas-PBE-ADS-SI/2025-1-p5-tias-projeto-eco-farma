@@ -29,6 +29,9 @@ https://github.com/user-attachments/assets/616c8eb7-72a0-48dc-b3d0-12ee4287d93e
 
 
 
+https://github.com/user-attachments/assets/a184576f-d620-4492-af61-7429f517ab6d
+
+
 
 | **Caso de teste** 	| **CT-004 – Avaliações e notas** 	|
 |:---:	|:---:	|
