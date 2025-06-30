@@ -8,13 +8,19 @@
 
 - SPRINT 1:
 
-[T.I Sustentabilidade - Sprint 1 (2).pdf](https://github.com/user-attachments/files/20967023/T.I.Sustentabilidade.-.Sprint.1.2.pdf)
+[T.I Sustentabilidade - Sprint 1 Slides.pdf](https://github.com/user-attachments/files/20970844/T.I.Sustentabilidade.-.Sprint.1.Slides.pdf)
 
 - SPRINT 2:
 
+[T.I Sustentabilidade - Sprint 2 Slides.pdf](https://github.com/user-attachments/files/20970857/T.I.Sustentabilidade.-.Sprint.2.Slides.pdf)
+
 - SPRINT 3:
 
+[T.I Sustentabilidade - Sprint 3 Slides.pdf](https://github.com/user-attachments/files/20970853/T.I.Sustentabilidade.-.Sprint.3.Slides.pdf)
+
 - SPRINT 4:
+
+[T.I Sustentabilidade - Sprint 4 Slides.pdf](https://github.com/user-attachments/files/20970842/T.I.Sustentabilidade.-.Sprint.4.Slides.pdf)
 
 - SPRINT 5:
 
