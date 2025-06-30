@@ -30,6 +30,26 @@ Por exemplo:
 
 <br>
 
+| **Caso de teste**  | **CT-003 – Entrar e sair**  |
+|:---: |:---: |
+| Requisito associado | RF-003 - Realizar login e logout do sistema. |
+| Objetivo do teste | Verificar se o usuário consegue entrar e sair da conta. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://eco-farma.vercel.app/login-register.html <br> - Preencher email e senha <br> - Clicar em "Entrar" <br> - Clicar em "Sair" |
+| Critério de êxito | - O usuário logou e deslogou com sucesso. |
+| Responsável pela elaboração do caso de teste | Walisson Ribeiro da Silva |
+
+<br>
+
+| **Caso de teste**  | **CT-004 – Avaliações e notas**  |
+|:---: |:---: |
+| Requisito associado | RF-004 - Avaliar o sistema com sugestões e nota. |
+| Objetivo do teste | Realizar uma avaliação com nota. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://eco-farma.vercel.app/index.html <br> - Rolar a tela até a aba de avaliações <br> - Escrever a avaliação <br> - Selecionar a nota e enviar |
+| Critério de êxito | - O usuário enviou a avaliação com sucesso. |
+| Responsável pela elaboração do caso de teste | Walisson Ribeiro da Silva |
+
+<br>
+
 | **Caso de teste**  | **CT-005 – Cadastrar itens**  |
 |:---: |:---: |
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
@@ -37,6 +57,16 @@ Por exemplo:
 | Passos |  |
 | Critério de êxito |  |
 | Responsável pela elaboração do caso de teste |Camila de Paula Rodrigues |
+
+<br>
+
+| **Caso de teste**  | **CT-006 – Gerar cupons**  |
+|:---: |:---: |
+| Requisito associado | RF-006 - Gerar cupons de desconto para os clientes que realizarem descarte de materiais. |
+| Objetivo do teste | Verificar se os cupons estão sendo gerados |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site https://eco-farma.vercel.app/accounts-farmacia.html <br> - Digitar o cupom na aba "Gere cupons de desconto" <br> - Cadastrar o cupom <br> |
+| Critério de êxito | - O usuário enviou a avaliação com sucesso. |
+| Responsável pela elaboração do caso de teste | Walisson Ribeiro da Silva |
 
 <br>
 
