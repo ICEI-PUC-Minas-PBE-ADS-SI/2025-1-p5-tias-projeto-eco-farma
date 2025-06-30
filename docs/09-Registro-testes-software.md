@@ -90,6 +90,11 @@ https://github.com/user-attachments/assets/4d8896c3-2cf7-4eff-bc87-4302d425b7e4
 | Requisito associado | RF-011 Permitir que o cliente visualize e edite suas informações de conta. |
 
 
+https://github.com/user-attachments/assets/8ddcf526-3462-4981-9242-e252a59f97f2
+
+
+
+
 | **Caso de teste** 	| **CT-0012 – Exibir detalhes** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-0012 - Exibir detalhes dos produtos antes da compra. |
