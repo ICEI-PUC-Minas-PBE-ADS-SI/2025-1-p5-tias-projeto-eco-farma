@@ -45,7 +45,7 @@ https://github.com/user-attachments/assets/b2222cbe-56a2-403c-b3ab-1d063d1ed77e
 
 | **Caso de teste** 	| **CT-006 – Gerar cupons** 	|
 |:---:	|:---:	|
-| Requisito associado | RF-003 - Gerar cupons de desconto para os clientes que realizarem descarte de materiais. |
+| Requisito associado | RF-006 - Gerar cupons de desconto para os clientes que realizarem descarte de materiais. |
 | Registro de evidência | 
 
 
