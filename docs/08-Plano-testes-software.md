@@ -24,8 +24,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
 | Objetivo do teste | Verificar se o usuário consegue visualizar o mapa interativo com geolocalização de farmácias parceiras. |
-| Passos |  |
-| Critério de êxito |  |
+| Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página “Pontos de coleta”; <br> - Visualizar o mapa abaixo do cabeçalho da página<br> - Passar o cursor por cima dos pontos demarcados mapa; <br> |
+| Critério de êxito | - Mapa funcional e exibindo endereço e nome do estabelecimento ao interagir com o cursor|
 | Responsável pela elaboração do caso de teste | Camila de Paula Rodrigues |
 
 <br>
@@ -54,8 +54,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
 | Objetivo do teste | Verificar se a farmácias consegue cadastrar itens no sistema. |
-| Passos |  |
-| Critério de êxito |  |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar" <br> - Logar no sistema com os dados da farmácia; <br> - Ir na aba “Produtos” ;<br> - Preencher os campos obrigatórios (Nome, Categoria, Preço, Estoque, Descrição, Imagem (.jpg ou .png)) <br> - Clicar em "Cadastrar" |
+| Critério de êxito | -Mensagem de produto cadastrado com seu respectivo ID. |
 | Responsável pela elaboração do caso de teste |Camila de Paula Rodrigues |
 
 <br>
@@ -132,8 +132,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-012 - Exibir detalhes dos produtos antes da compra. |
 | Objetivo do teste | Verificar se o usuário consegue ver os detalhes dos produtos no sistema |
-| Passos |  |
-| Critério de êxito |  |
+| Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página produtos; <br> - Selecionar produto específico; <br> - rolar a tela até "Informações adicionais"; <br> |
+| Critério de êxito | - É possível ver os detalhes do produto|
 | Responsável pela elaboração do caso de teste | Camila de Paula Rodrigues |
 
 <br>
