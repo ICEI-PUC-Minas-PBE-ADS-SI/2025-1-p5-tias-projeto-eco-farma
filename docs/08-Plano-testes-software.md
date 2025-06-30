@@ -52,11 +52,11 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-005 – Cadastrar itens**  |
 |:---: |:---: |
-| Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
-| Objetivo do teste | Verificar se a farmácias consegue cadastrar itens no sistema. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar" <br> - Logar no sistema com os dados da farmácia; <br> - Ir na aba “Produtos” ;<br> - Preencher os campos obrigatórios (Nome, Categoria, Preço, Estoque, Descrição, Imagem (.jpg ou .png)) <br> - Clicar em "Cadastrar" |
+| Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema |
+| Objetivo do teste | Verificar se a farmácias consegue cadastrar itens no sistema |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar" <br> - Logar no sistema com os dados da farmácia; <br> - Ir na aba “Produtos” ;<br> - Preencher os campos obrigatórios (Nome, categoria, preço, estoque, descrição, imagem (.jpg ou .png)) <br> - Clicar em "Cadastrar" |
 | Critério de êxito | -Mensagem de produto cadastrado com seu respectivo ID. |
-| Responsável pela elaboração do caso de teste |Camila de Paula Rodrigues |
+| Responsável pela elaboração do caso de teste | Camila de Paula |
 
 <br>
 
@@ -79,14 +79,6 @@ Por exemplo:
 | Responsável pela elaboração do caso de teste |Thiago Lacerda Santos Barbosa |
 
 <br>
-
-
-
-
-
-
-
-
 
 | **Caso de teste**  | **CT-008 – Realizar compra de um produto**  |
 |:---: |:---: |
@@ -130,11 +122,11 @@ Por exemplo:
 
 | **Caso de teste**  | **CT-012 – Exibir detalhes**  |
 |:---: |:---: |
-| Requisito associado | RF-012 - Exibir detalhes dos produtos antes da compra. |
+| Requisito associado | RF-012 - Exibir detalhes dos produtos antes da compra |
 | Objetivo do teste | Verificar se o usuário consegue ver os detalhes dos produtos no sistema |
 | Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página produtos; <br> - Selecionar produto específico; <br> - rolar a tela até "Informações adicionais"; <br> |
-| Critério de êxito | - É possível ver os detalhes do produto|
-| Responsável pela elaboração do caso de teste | Camila de Paula Rodrigues |
+| Critério de êxito | - É possível ver os detalhes dos produtos |
+| Responsável pela elaboração do caso de teste | Camila de Paula |
 
 <br>
 
