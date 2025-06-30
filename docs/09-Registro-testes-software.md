@@ -9,26 +9,29 @@ Para cada caso de teste definido no <a href="08-Plano-testes-software.md"> Plano
 | **Caso de teste** 	| **CT-001 – Cadastrar perfil** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-001 - Permitir que usuários se cadastrem na plataforma com e-mail, CPF e endereço. |
-| Registro de evidência | [www.teste.com.br/drive/ct-01](http://www.teste.com.br/drive/ct-01) |
+| Registro de evidência | 
+
+https://github.com/user-attachments/assets/575e042e-e8a0-4433-9031-978886aad1dd
+
 
 | **Caso de teste** 	| **CT-002 – Visualizar mapa interativo** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
 
 | **Caso de teste** 	| **CT-003 – Entrar e sair** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - Realizar login e logout do sistema. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
-https://github.com/user-attachments/assets/33d289fa-95a1-4677-af14-cf518f47cc41
+
 
 
 | **Caso de teste** 	| **CT-004 – Avaliações e notas** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-004 - Avaliar o sistema com sugestões e nota. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
 
 https://github.com/user-attachments/assets/b2222cbe-56a2-403c-b3ab-1d063d1ed77e
@@ -37,27 +40,30 @@ https://github.com/user-attachments/assets/b2222cbe-56a2-403c-b3ab-1d063d1ed77e
 | **Caso de teste** 	| **CT-005 – Cadastrar itens** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
 
 | **Caso de teste** 	| **CT-006 – Gerar cupons** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-003 - Gerar cupons de desconto para os clientes que realizarem descarte de materiais. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
 
 https://github.com/user-attachments/assets/53191ba3-e4a7-45da-af8d-9951d268ae91
 
 
-
 | **Caso de teste** 	| **CT-007 – Cadastrar Cupons de desconto** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-007 - Permitir que clientes cadastrem os cupons de desconto no sistema. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
+
+https://github.com/user-attachments/assets/5b96b1de-d893-402a-afa3-2cb497a68247
+
 
 | **Caso de teste** 	| **CT-008 – Realizar compra de um produto** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-008 Permitir que os clientes realizem compras no sistema. |
+| Registro de evidência | 
 
 https://github.com/user-attachments/assets/96c1cb31-0377-446e-8e6b-3ff99872201d
 
@@ -65,11 +71,16 @@ https://github.com/user-attachments/assets/96c1cb31-0377-446e-8e6b-3ff99872201d
 | **Caso de teste** 	| **CT-009 – Selecionar entregas disponíveis** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-007 - Permitir que ciclistas selecionem entregas disponíveis. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
+
+https://github.com/user-attachments/assets/cafc09a0-c9ff-483c-8ab7-5dd4c3fc501b
+
 
 | **Caso de teste** 	| **CT-010 – Exibir informações institucionais** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-010 Exibir informações institucionais sobre o projeto e seus objetivos. |
+| Registro de evidência | 
+
 
 https://github.com/user-attachments/assets/4d8896c3-2cf7-4eff-bc87-4302d425b7e4
 
@@ -82,13 +93,15 @@ https://github.com/user-attachments/assets/4d8896c3-2cf7-4eff-bc87-4302d425b7e4
 | **Caso de teste** 	| **CT-0012 – Exibir detalhes** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-0012 - Exibir detalhes dos produtos antes da compra. |
-| Registro de evidência | [www.teste.com.br/drive/ct-02](http://www.teste.com.br/drive/ct-02) |
+| Registro de evidência | 
 
 
 
 | **Caso de teste** 	| **CT-013 – Gerenciar produtos no carrinho** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-013 Gerenciar o carrinho de compras do cliente. |
+| Registro de evidência | 
+
 
 https://github.com/user-attachments/assets/44240ab4-3400-4220-a2c6-572cf52ba377
 
@@ -96,6 +109,7 @@ https://github.com/user-attachments/assets/44240ab4-3400-4220-a2c6-572cf52ba377
 | **Caso de teste** 	| **CT-014 – Finalizar compra com pagamento** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-014 - Realizar checkout das compras com inserção de informações de pagamento. |
+| Registro de evidência | 
 
 https://github.com/user-attachments/assets/f189c3ae-59d0-4d8a-9cea-3d7ab30abf72
 
