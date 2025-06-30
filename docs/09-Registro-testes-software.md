@@ -19,6 +19,8 @@ https://github.com/user-attachments/assets/575e042e-e8a0-4433-9031-978886aad1dd
 | Requisito associado | RF-002 - Exibir mapa interativo com geolocalização de farmácias parceiras. |
 | Registro de evidência | 
 
+https://github.com/user-attachments/assets/616c8eb7-72a0-48dc-b3d0-12ee4287d93e
+
 
 | **Caso de teste** 	| **CT-003 – Entrar e sair** 	|
 |:---:	|:---:	|
@@ -41,6 +43,8 @@ https://github.com/user-attachments/assets/b2222cbe-56a2-403c-b3ab-1d063d1ed77e
 |:---:	|:---:	|
 | Requisito associado | RF-005 - Permitir que farmácias cadastrem itens no sistema. |
 | Registro de evidência | 
+
+https://github.com/user-attachments/assets/18ad0b80-8c54-4e33-a786-e3b9cf6d1daf
 
 
 | **Caso de teste** 	| **CT-006 – Gerar cupons** 	|
@@ -93,13 +97,12 @@ https://github.com/user-attachments/assets/4d8896c3-2cf7-4eff-bc87-4302d425b7e4
 https://github.com/user-attachments/assets/8ddcf526-3462-4981-9242-e252a59f97f2
 
 
-
-
 | **Caso de teste** 	| **CT-0012 – Exibir detalhes** 	|
 |:---:	|:---:	|
 | Requisito associado | RF-0012 - Exibir detalhes dos produtos antes da compra. |
 | Registro de evidência | 
 
+https://github.com/user-attachments/assets/d1d35de0-f322-4515-ac83-ecf7dea38267
 
 
 | **Caso de teste** 	| **CT-013 – Gerenciar produtos no carrinho** 	|
