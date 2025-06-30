@@ -14,8 +14,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-001 - Permitir que usuários se cadastrem na plataforma com e-mail, CPF e endereço. |
 | Objetivo do teste | Verificar se o usuário consegue se cadastrar na aplicação. |
-| Passos | - Acessar o navegador <br> - Informar o endereço do site https://adota-pet.herokuapp.com/src/index.html <br> - Clicar em "Criar conta" <br> - Preencher os campos obrigatórios (e-mail, nome, sobrenome, celular, CPF, senha, confirmação de senha) <br> - Aceitar os termos de uso <br> - Clicar em "Registrar" |
-| Critério de êxito | - O cadastro foi realizado com sucesso. |
+| Passos | - Acessar o navegador <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar" <br> - Clicar em "Cadastrar" <br> - Preencher os campos obrigatórios (Nome completo, Gênero, Data de nascimento, celular, CPF, senha, Email e endereço) <br> - Clicar em "Cadastrar" |
+| Critério de êxito | - Cliente cadastrado com sucesso! Acesse a página de login para entrar no site. |
 | Responsável pela elaboração do caso de teste | Thiago Lacerda Santos Barbosa |
 
 <br>
@@ -44,8 +44,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-007 - Permitir que clientes cadastrem os cupons de desconto no sistema. |
 | Objetivo do teste | Verificar se o usuário consegue cadastrar os cupons de desconto no sistema. |
-| Passos |  |
-| Critério de êxito |  |
+| Passos | -Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema; <br> - Ir na página “Minha conta”; <br> - Selecionar aba “ver pontuação”; <br> - Digitar o código do cupom no campo “Você pode cadastrar seus cupons aqui:”; <br> - Clicar em "Cadastrar"|
+| Critério de êxito | - Cupom exibido no campo “Cupons Cadastrados” |
 | Responsável pela elaboração do caso de teste |Thiago Lacerda Santos Barbosa |
 
 <br>
@@ -72,8 +72,8 @@ Por exemplo:
 |:---: |:---: |
 | Requisito associado | RF-009 - Permitir que ciclistas selecionem entregas disponíveis. |
 | Objetivo do teste | Verificar se o entregador consegue selecionar as entregas disponíveis no sistema. |
-| Passos |  |
-| Critério de êxito |  |
+| Passos | - Acessar o navegador; <br> - Informar o endereço do site: https://eco-farma.vercel.app/index.html; <br> - Clicar em "Entrar"; <br> - Logar no sistema com os dados de entregador; <br> - Ir na aba “Entregas a Fazer”; <br> -Clicar em “fazer entrega” ou “concluir entrega”; <br> |
+| Critério de êxito | - Ao clicar em “fazer entrega” o status do pedido muda para “Fazendo entrega” <br> - Ao clicar em “Concluir entrega” o status do pedido muda para “Concluído” |
 | Responsável pela elaboração do caso de teste | Thiago Lacerda Santos Barbosa |
 
 <br>
