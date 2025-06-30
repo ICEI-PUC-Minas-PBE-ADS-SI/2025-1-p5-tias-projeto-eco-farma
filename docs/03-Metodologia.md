@@ -186,6 +186,10 @@ Atualizado em: 25/06/2025
 | Thiago L.     | Requisitos 1, 7 e 9 |   26/06/2025   |  27/06/2025 | ✔️    |     28/06/2025    |
 | Thiago L.     | Front-end tela de Perfil da Farmácia |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
 | Thiago L.     | Front-end tela de Perfil do entregador |   17/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
+| Victória G.     | Testes de usabilidade |   20/06/2025   |  25/06/2025 | ✔️    |     24/06/2025    |
+| Victória G.     | Planos e registro de testes |   20/06/2025   |  25/06/2025 | ✔️    |     24/06/2025    |
+| Victória G.     | Conclusão |   20/06/2025   |  25/06/2025 | ✔️    |     24/06/2025    |
+| Victória G.     | Entrar em contato com empresa parceira para testes e feedback |   20/06/2025   |  25/06/2025 | ✔️    |     23/06/2025    |
 
 
 
