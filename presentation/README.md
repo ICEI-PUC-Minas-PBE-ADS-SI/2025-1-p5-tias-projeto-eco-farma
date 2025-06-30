@@ -28,6 +28,8 @@
 
 ## Vídeo
 
+Link com melhor qualidade: https://drive.google.com/file/d/1MmXrgqKjghDu8fC0TCA4exObQ9nbi_O0/view?usp=sharing
+
 https://github.com/user-attachments/assets/e5c9f2d3-1847-4686-9d98-48077556cdf3
 
 
